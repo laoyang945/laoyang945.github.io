@@ -2,13 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://laoyang945.github.com
+title: Verba Volant, Scripta Manent
+subtitle: Verba Volant, Scripta Manent
+author: 老杨
 simple_search: http://google.com/search
-description:
-
+description: 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
@@ -19,7 +18,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: laoyang945@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -27,21 +26,21 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+paginate: 5          # Posts per page on the blog index
+pagination_dir: # Directory base for pagination URLs eg. /blog/page/2/
+recent_posts: 10       # Posts in the sidebar Recent Posts section
+excerpt_link: "继续阅读 &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
-titlecase: true       # Converts page and post titles to titlecase
+titlecase: false       # Converts page and post titles to tilecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -56,23 +55,24 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
-
+# Douban
+douban_user: yanglc
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: laoyang945
+github_repo_count: 10
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_tweet_count: 4
+twitter_user: laoyang945
+twitter_tweet_count: 10
 twitter_show_replies: false
 twitter_follow_button: true
 twitter_show_follower_count: false
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -89,11 +89,26 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: mystaticblog
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-27860850-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
+# ----------------------- #
+#    Categories           #
+# ----------------------- #
+# create categories page
+category_list: false
+# use counter after categories
+category_counter: false
+# category title
+category_title: Tag Cloud
+# create an include categories list in @source/_includes/asides/categories_sidebar.html
+# and don't forget to add 'asides/categories_sidebar.html' into @default_asides if you want to enable it.
+category_sidebar: false
+# create an include categories tag cloud page in @source/_includes/asides/categories_tag.html
+# and don't forget to add 'asides/categories_tag.html' to @default_asides if you want to enable it.
+category_tag_cloud: false

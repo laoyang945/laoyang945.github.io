@@ -1,0 +1,8 @@
+---
+layout: post
+title: '几个小工具，提高生产力'
+date: 2009-6-3
+wordpress-id: small-productive-tools
+comments: true
+---
+<p>首发于葡挞生活，<a href="http://www.productivelife.cn/2009/05/some-small-softwares.html">http://www.productivelife.cn/2009/05/some-small-softwares.html</a></p>  <ol>   <li>Fences：正如它的名字——篱笆，把桌面分成几个部分，每个部分都可以放无数的图标，也带有滚动条。并且可以实现双击隐藏所有的桌面图标，还你一个简洁的桌面。更详细的介绍在<a href="http://www.appinn.com/fences/">http://www.appinn.com/fences/</a>，下载在<a href="http://www.stardock.com/products/fences/downloads.asp">http://www.stardock.com/products/fences/downloads.asp</a></li>    <li>Desktop Manager 2：可以把窗口最小化到系统栏，置顶以及缩小为一个图标，最强的是可以在文件操作窗口中有一个自定义的快捷路径，很方便，更详细的介绍在<a href="http://www.appinn.com/dm2/">http://www.appinn.com/dm2/</a>，下载在<a href="http://dm2.sourceforge.net/">http://dm2.sourceforge.net/</a></li>    <li>StrokeIt：鼠标手势软件，具体不用多说了吧。功能很强大，能自定义目标程序。下载在<a href="http://www.tcbmi.com/strokeit/">http://www.tcbmi.com/strokeit/</a></li>    <li>Chromium：就是Chrome的开发版。配合StrokeIt，让我逐渐有远离Opera的想法。支持userjs，可以用很多Firefox中GreaseMonkey的脚本。还可以把网站直接保存为快捷方式，这样toodledo、Gmail等就像一个桌面程序一样直接使用了。我是在<a href="http://www.googlechrome.cn/">http://www.googlechrome.cn/</a>下载的 </li>    <li>pidgin：整合MSN\GTALK\FETION\QQ，即使你要开即时通信软件，开这一个也就好。新版本不要用中文安装，要不然会老崩溃。下载在<a href="http://www.pidgin.im/">http://www.pidgin.im/</a><a href="http://www.pidgin.im"></a></li>    <li>Directory Opus：我用过的最好用的资源管理器软件，功能实在太强大，强大到必须另外写一篇专文描述。这个因为不是免费的，所以Google吧，我如果工作了第一个要买的软件就是这个。 </li>    <li>一种快速启动工具：我用的win+r，你也可以试试其他类似的软件</li> </ol>  <p>这些软件如何可以提高生产力呢？比如我在写论文的时候，可以双击隐藏桌面图标减少干扰，也可以在桌面快速找到自己所需的文件（一般我会把桌面移动到非系统盘）。当需要看参考资料的时候，直接桌面用鼠标手势打开DO，用它的收藏夹或者文件收集区定位到参考资料里面。需要在toodledo上面新建一个任务，直接win+r运行t。当我在网站上下载文件的时候，使用DM2的收藏夹定位到我的下载文件夹，省去到处摆放下载文件的潜在损失。</p>

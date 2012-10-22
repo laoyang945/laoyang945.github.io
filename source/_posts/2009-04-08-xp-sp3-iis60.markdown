@@ -1,0 +1,12 @@
+---
+layout: post
+title: 'XP SP3安装IIS6.0'
+date: 2009-4-8
+wordpress-id: xp-sp3-iis60
+comments: true
+---
+搞得很郁闷，很多文章说xp只能安5.x
+
+1.首先要删除掉附件-游戏-Internet游戏
+
+2.然后再安装IIS6，中间不断的要在IIS安装包和windows安装包之间切换。

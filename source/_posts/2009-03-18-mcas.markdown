@@ -1,0 +1,16 @@
+---
+layout: post
+title: '考了MS Office的专家认证'
+date: 2009-3-18
+wordpress-id: mcas
+comments: true
+---
+抱着试试看玩一玩的心情去考了Microsoft Certificated Application Specialist for Word2007 and Excel 2007。没什么意外的通过了，负责那人一再说再考Powerpoint和Outlook可以获得Office Master证书，你以为是功夫熊猫啊，还Master，再说又不是不要钱。
+
+
+
+考试不难，但是有些题目很诡异，估计是翻译得不好。都能提前10分钟左右做完（考试时间50分钟）。比起Officesoft版上各种古怪的问题，那是轻松多了。
+
+
+
+在Office套件里面，其实最难替代、功能最强大的的是Excel，我研究了很久都感觉不是很熟悉，估计是要真正工作要用到的时候才会体会到。而ppt是需要很多设计知识的，最简单的反而是word和outlook。

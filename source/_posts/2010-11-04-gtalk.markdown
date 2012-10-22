@@ -1,0 +1,31 @@
+---
+layout: post
+title: '给Gtalk一个机会'
+date: 2010-11-4
+wordpress-id: gtalk
+comments: true
+---
+好处：
+<ul>
+	<li>不需要客户端，网页上也可聊天，界面简洁</li>
+	<li>加密链接，安全放心，</li>
+	<li>不扫描硬盘，不监控进程</li>
+	<li>不过滤，不审查，不会不让你说“移<span style="color: #ff0000;"><strong>动乱</strong></span>收费”或者“这几天旅行社<span style="color: #ff0000;"><strong>退团</strong></span>的真多”</li>
+	<li>没有广告，没有弹窗，没有“15岁少女凹凸有致”</li>
+	<li>聊天记录可以保留在gmail中，随时随地，尽情搜索</li>
+	<li>联系人数目没有上限</li>
+	<li>不用担心号码不吉利</li>
+	<li>语音视频效果好，在国外，你可能连不上qq的服务器，但是不可能连不上gmail</li>
+	<li>gtalk中联系人可与安卓/苹果/黑莓/诺基亚手机同步，手机丢失，联系人信息没丢</li>
+	<li>支持群聊</li>
+	<li>支持导入动态表情</li>
+</ul>
+<!--more-->缺点：
+<ul>
+	<li>客户端更新慢，不过可以尝试pidgin/digspy/psi/miranda等多协议客户端</li>
+	<li>不能在聊天中附加图片</li>
+	<li>不能在聊天中发送文件（英文版客户端可以）</li>
+	<li>群功能没有QQ方便</li>
+	<li>语音视频功能，小区共享宽带用户谨慎使用</li>
+</ul>
+你的vote virginity 还在你的手里，给gtalk一个机会，也给自己一个选择的机会

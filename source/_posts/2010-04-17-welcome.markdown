@@ -1,0 +1,16 @@
+---
+layout: post
+title: '欢迎来到我的博客'
+date: 2010-4-17
+wordpress-id: welcome
+comments: true
+---
+<ul>
+	<li>我的博客是用<a href="http://cn.wordpress.org/" target="_blank">Wordpress</a>搭建的，它曾获得2009开源<strong>CMS</strong>大奖综合类评比冠军（2009 Open Source CMS Award）。如果你想搭建一个Wordpress博客站，需要一个域名，一个php主机，一个mysql数据库。</li>
+	<li>博客里有<a title="Permanent Link to 人人网(校内网)日志导出方法" rel="bookmark" href="/renren-blog-export">人人网(校内网)日志导出方法</a></li>
+	<li>推荐用RSS阅读器来订阅我的博客，这样可以把你的资讯流充分的整合起来。订阅地址是<a title="http://feeds.feedburner.com/laoyang945" href="http://feeds.feedburner.com/laoyang945">http://feeds.feedburner.com/laoyang945</a> （Google Reader）和 <a onclick="javascript:_gaq.push(['_trackEvent','outbound-article','feed.feedsky.com']);" href="http://feed.feedsky.com/laoyang945" target="_blank">http://feed.feedsky.com/laoyang945</a> （其他阅读器）<a onclick="javascript:_gaq.push(['_trackEvent','outbound-article','feed.feedsky.com']);" href="http://feed.feedsky.com/laoyang945" target="_blank">
+</a></li>
+	<li>如果你不知道什么是RSS，可以看看我的<a href="http://laoyang.info/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a71%e5%a6%82%e4%bd%95%e8%ae%a2%e9%98%85%e8%87%aa%e5%b7%b1%e6%84%9f%e5%85%b4%e8%b6%a3%e7%9a%84%e5%86%85%e5%ae%b9%ef%bc%9f" target="_blank">这篇文章</a>，RSS阅读器我推荐用Google reader，原因在<a href="http://laoyang.info/why-google-reader" target="_blank">这里</a>和<a href="推荐Google Reader的另外两个理由+一些RSS源" target="_blank">这里</a></li>
+	<li>因为是从yo2搬过来的，所以有些图片的链接是在yo2上，如果你看不了某篇文章的配图请留言，我会重新上传图片。</li>
+	<li>不知道是为什么，我的博客不能发送邮件提醒。所以如果你想和我讨论一些问题的话，可以到我的Google Profile页面留言，在Twitter上@我，或者直接发送邮件给我。</li>
+</ul>

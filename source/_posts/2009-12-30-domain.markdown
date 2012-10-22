@@ -1,0 +1,19 @@
+---
+layout: post
+title: '即将启用独立域名'
+date: 2009-12-30
+wordpress-id: domain
+comments: true
+---
+原因都知道
+
+新的域名是<a href="../../">http://laoyang.info</a>
+
+订阅地址没变，还是  <a title="http://feed.feedsky.com/laoyang945" href="http://feed.feedsky.com/laoyang945">http://feed.feedsky.com/laoyang945</a>，不过说不定哪天feedsky就挂了，所以另外启用了一个feedburner的地址<a title="http://feeds.feedburner.com/laoyang945" href="http://feeds.feedburner.com/laoyang945">http://feeds.feedburner.com/laoyang945</a>
+
+新的博客里面有原来的内容，但是图片还是在yo2上，如果哪篇里面的图片不能看的话，希望留言指出我好更新。（这里我很佩服<a href="http://www.xiaoqiushui.com/" target="_blank">萧秋水</a>啊，日志里面图就很少）
+
+另外，大家能不能推荐一些插件和主题呢？
+<blockquote>我希望庆国的人民都能成为不羁之民。 受到他人虐待时有不屈服之心，受到灾恶侵袭时有不受挫折之心； 若有不正之事时，不恐惧修正之心；不向豺虎献媚……  我希望庆国的国民，每一位都能成为王；都能成为统治被称为‘自己’这块领土的，独一无二的王。
+
+——《十二国记》</blockquote>

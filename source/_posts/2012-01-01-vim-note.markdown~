@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Vim学习笔记"
+date: 2012-01-01 16:23
+comments: true
+categories: [Vim]
+---
+# 进入插入模式
+- i/I 光标前插入/行首插入 (**I**nsert)
+- a/A 光标后插入/行尾插入 (**A**ppend)
+- s/S 插入并删除光标下字符/插入并删除整段 (**S**ubstitute)
+- o/O 在下方插入新行/在上方插入新行
+- r/R 替换光标下字符/进入替换模式 (**R**eplace)
+- gI 在第一列前插入文本
+- gi 在当前窗口最近一次插入模式停止的位置插入

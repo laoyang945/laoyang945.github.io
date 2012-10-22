@@ -1,0 +1,174 @@
+---
+layout: post
+title: '介绍一个超好用的Twitter客户端Mixero'
+date: 2010-4-22
+wordpress-id: mixero
+comments: true
+---
+如果你不知道Twitter是什么，可以看看<a href="http://baike.baidu.com/view/843376.htm" target="_blank">百度百科有关Twitter的介绍</a>。如果你有Twitter的帐号，但是不大会用Twitter，可以看看李笑来写的<a href="http://www.lixiaolai.com/index.php/archives/8993.html">Twitter非官方指南</a>，他推荐的是用<a href="http://hootsuite.com//" target="_blank">Hootsuite</a>这个网页客户端，但是Hootsuite在我这链接被重置（你懂的），我比较推荐用Mixero这个精致并且功能强大客户端，他的功能有：
+<ul>
+	<li>跨平台</li>
+	<li>支持Twitter API，支持官方RT</li>
+	<li>内置翻译功能，多少能帮助你了解外文推的意思</li>
+	<li>可以同时显示多个Twitter帐户</li>
+	<li>自动缩短网址，内置上传图片和地理信息功能</li>
+	<li>对话线索显示</li>
+	<li>无需打开网页即可查看flickr图片</li>
+	<li>无需打开网页即可查看用户资料</li>
+	<li>好友列表管理，可与Twitter列表同步</li>
+	<li>好友用户名自动完成，hash tag自动完成</li>
+	<li>头像模式</li>
+	<li>监视关键字，情景和频道</li>
+	<li>支持<a title="http://www.microchats.com/" href="http://www.microchats.com/">MircoChats</a>（不过我没用过）</li>
+</ul>
+Mixero的主页在<a title="http://www.mixero.com/" href="http://www.mixero.com/">http://www.mixero.com/</a>，桌面版下载地址在<a href="http://mixero.com/media/mixero.air" target="_blank">这里</a>，要求已安装<a href="http://get.adobe.com/cn/air/" target="_blank">Adobe Air</a>。
+
+下面通过截图来讲解一下功能和使用方法：
+<h4 style="background-color: grey; color: white;">界面</h4>
+Mixero程序界面从左到右分为三块，左面板，主面板和右面板
+
+<a title="01" href="http://www.flickr.com/photos/42183992@N05/4542233407/"><img src="http://ac4.farm3.static.flickr.com/2720/4542233407_5386bd7cec.jpg" border="0" alt="01" /></a>
+
+主面板内，把鼠标移动到自己的头像上，右边的两个发推和发私信的按钮就会浮现出来。头像左边的两个按钮分别是查看提到我的推以及查看私信。
+
+<a title="02" href="http://www.flickr.com/photos/42183992@N05/4542867038/"><img src="http://ac4.farm3.static.flickr.com/4053/4542867038_159d2ca7c5.jpg" border="0" alt="02" /></a>
+
+头像下方三个按钮分别是更新动态列表，查看timeline以及搜索。左右各有一个箭头，左边箭头控制左面板显示内容，包括timeline，收藏，私信，回复等。
+
+<a title="03" href="http://www.flickr.com/photos/42183992@N05/4542867268/"><img src="http://ac4.farm3.static.flickr.com/2683/4542867268_7477b7ec08.jpg" border="0" alt="03" /></a>
+
+右边面板有两个功能，一是好友管理（联系人），另一个是频道。那个Chats和Microchats有关，我没有用过。
+
+<a title="04" href="http://www.flickr.com/photos/42183992@N05/4542234115/"><img src="http://ac4.farm3.static.flickr.com/4017/4542234115_65e7421ea7.jpg" border="0" alt="04" /></a>
+
+频道内可以查看当前的热词，点击后会用热词进行搜索
+
+<a title="05" href="http://www.flickr.com/photos/42183992@N05/4542867672/"><img src="http://ac4.farm3.static.flickr.com/4002/4542867672_cdb9853a0c.jpg" border="0" alt="05" /></a>
+
+点击主面板左上方Mixero的logo，可以进入头像模式，此时头像和动态列表会悬浮在桌面，当有更新的时候有数字显示。
+
+<a title="06" href="http://www.flickr.com/photos/42183992@N05/4542234515/"><img src="http://ac4.farm3.static.flickr.com/2731/4542234515_80796a6324.jpg" border="0" alt="06" /></a>
+
+鼠标移动到数字上的时候可以看到相关最新那一条推。
+
+<a title="07" href="http://www.flickr.com/photos/42183992@N05/4542868146/"><img src="http://ac4.farm3.static.flickr.com/4053/4542868146_52d84d0a75.jpg" border="0" alt="07" /></a>
+<h4 style="background-color: grey; color: white;">看推</h4>
+左面板的上面六个按键功能如下：
+
+<a title="07-5" href="http://www.flickr.com/photos/42183992@N05/4542966152/"><img src="http://ac4.farm3.static.flickr.com/4019/4542966152_23bd6372e2.jpg" border="0" alt="07-5" /></a>
+
+可以按照内容和/或用户来过滤推：
+
+<a title="10" href="http://www.flickr.com/photos/42183992@N05/4542235389/"><img src="http://ac4.farm3.static.flickr.com/4048/4542235389_1f167607a4.jpg" border="0" alt="10" /></a><a title="11" href="http://www.flickr.com/photos/42183992@N05/4542235647/"><img src="http://ac4.farm3.static.flickr.com/4071/4542235647_7c55af0a09.jpg" border="0" alt="11" /></a>头像下面左边的图标表示这条推是针对某条推的回复，点击可以查看被回复的原推。
+
+<a title="08" href="http://www.flickr.com/photos/42183992@N05/4542234909/"><img src="http://ac4.farm3.static.flickr.com/4060/4542234909_3bbc05e4f0.jpg" border="0" alt="08" /></a>
+
+头像下面右边的图标表示这条推在你的好友里面被回复过，点击可以查看
+
+<a title="09" href="http://www.flickr.com/photos/42183992@N05/4542868676/"><img src="http://ac4.farm3.static.flickr.com/4039/4542868676_bb223c58a1.jpg" border="0" alt="09" /></a>
+
+鼠标移动到每一条推上，右下角会浮现出四个按钮，分别是“回复”，“转发（可选官方RT和传统RT）”，“发私信给该用户”和“更多”：
+
+<a title="11-5" href="http://www.flickr.com/photos/42183992@N05/4542235517/"><img src="http://ac4.farm3.static.flickr.com/4009/4542235517_506e5606e9.jpg" border="0" alt="11-5" /></a>
+
+在“更多”里面可以做很多事情：
+
+<a title="12" href="http://www.flickr.com/photos/42183992@N05/4542235811/"><img src="http://ac4.farm3.static.flickr.com/4028/4542235811_584721788e.jpg" border="0" alt="12" /></a>
+
+可以翻译外文推（你懂的）：
+
+<a title="13" href="http://www.flickr.com/photos/42183992@N05/4542235931/"><img src="http://ac4.farm3.static.flickr.com/4022/4542235931_7a2d563a56.jpg" border="0" alt="13" /></a>
+
+也可以撤销翻译：
+
+<a title="14" href="http://www.flickr.com/photos/42183992@N05/4542236217/"><img src="http://ac4.farm3.static.flickr.com/2256/4542236217_db6342fe00.jpg" border="0" alt="14" /></a>
+
+某些图片链接（我暂时只发现flickr），鼠标悬停一段时间可以有预览：
+
+<a title="14-5" href="http://www.flickr.com/photos/42183992@N05/4542869556/"><img src="http://ac4.farm3.static.flickr.com/4019/4542869556_09ceca145d.jpg" border="0" alt="14-5" /></a>
+<h4 style="background-color: grey; color: white;">动态列表、频道和情景</h4>
+头像下面的动态列表，其实可以理解成一些推的集合，他可以由你的好友列表构成，比如我将Twitter上的贵阳好友都放到动态列表里面，这样他们发推我就能快速的查看和回复
+
+<a title="15" href="http://www.flickr.com/photos/42183992@N05/4542236439/"><img src="http://ac4.farm3.static.flickr.com/4011/4542236439_58245eefb5.jpg" border="0" alt="15" /></a>
+
+动态列表也可以由搜索结果构成（Mixero叫做频道），可以设置排除或者限定的内容，还有刷新频道的时间间隔。
+
+<a title="16" href="http://www.flickr.com/photos/42183992@N05/4542236631/"><img src="http://ac4.farm3.static.flickr.com/4031/4542236631_c609bc6658.jpg" border="0" alt="16" /></a>
+
+情景模式，就是对动态列表进行管理，比如下图中我除了“Default”模式之外还有一个“无聊的时候”模式：
+
+<a title="17" href="http://www.flickr.com/photos/42183992@N05/4542870232/"><img src="http://ac4.farm3.static.flickr.com/4069/4542870232_2561af0e25.jpg" border="0" alt="17" /></a>
+
+这个模式里面，有两个频道，一个包括“帮我”的搜索结果，一个包括标签#iwantfo的搜索结果，在无聊的时候可以看看能不能帮别人小忙，或者关注那些希望被关注的用户：
+
+<a title="18" href="http://www.flickr.com/photos/42183992@N05/4542870382/"><img src="http://ac4.farm3.static.flickr.com/4051/4542870382_2c0f90baeb.jpg" border="0" alt="18" /></a>
+<h4 style="background-color: grey; color: white;">发推</h4>
+在头像模式就能直接发推：
+
+<a title="20" href="http://www.flickr.com/photos/42183992@N05/4542237255/"><img src="http://ac4.farm3.static.flickr.com/4026/4542237255_86c180acac.jpg" border="0" alt="20" /></a>
+
+如果一条推内有很多用户的话，会出现“回复全部”的按钮：
+
+<a title="21" href="http://www.flickr.com/photos/42183992@N05/4542872334/"><img src="http://ac4.farm3.static.flickr.com/4063/4542872334_ac35eb713d.jpg" border="0" alt="21" /></a>
+
+在发推的时候，用户名会从你的好友中筛选，提示：
+
+<a title="22" href="http://www.flickr.com/photos/42183992@N05/4542872488/"><img src="http://ac4.farm3.static.flickr.com/4013/4542872488_592247d277.jpg" border="0" alt="22" /></a>
+
+标签也会自动完成，但是我不知道是从哪些推里面提出来的。
+
+<a title="23" href="http://www.flickr.com/photos/42183992@N05/4542239281/"><img src="http://ac4.farm3.static.flickr.com/2720/4542239281_750d74cdbe.jpg" border="0" alt="23" /></a>
+
+点那个图片的按钮，可以选择上传图片到多个网站。
+
+<a title="24" href="http://www.flickr.com/photos/42183992@N05/4542872766/"><img src="http://ac4.farm3.static.flickr.com/4020/4542872766_9d8e521beb.jpg" border="0" alt="24" /></a>
+
+点发推框上的地球，可以插入地理信息：
+
+<a title="25" href="http://www.flickr.com/photos/42183992@N05/4542239633/"><img src="http://ac4.farm3.static.flickr.com/4003/4542239633_ef3c9da604.jpg" border="0" alt="25" /></a>
+<h4 style="background-color: grey; color: white;">好友管理</h4>
+在右面板可以直接添加好友：
+
+<a title="26" href="http://www.flickr.com/photos/42183992@N05/4542239803/"><img src="http://ac4.farm3.static.flickr.com/4009/4542239803_194fe6bc0a.jpg" border="0" alt="26" /></a>
+
+在左面板点击某位用户的ID之后，可以看到他的档案，在这里你可以选择关注或者不关注，以及Twitter好友列表设置
+
+<a title="27" href="http://www.flickr.com/photos/42183992@N05/4542873336/"><img src="http://ac4.farm3.static.flickr.com/4068/4542873336_aeb9687a48.jpg" border="0" alt="27" /></a>
+<h4 style="background-color: grey; color: white;">设置选项</h4>
+头像启动的意思是Mixero失去焦点就自动变为头像模式。
+
+<a title="28" href="http://www.flickr.com/photos/42183992@N05/4542873484/"><img src="http://ac4.farm3.static.flickr.com/4030/4542873484_6f51885416.jpg" border="0" alt="28" /></a>
+
+<a title="29" href="http://www.flickr.com/photos/42183992@N05/4542873610/"><img src="http://ac4.farm3.static.flickr.com/2685/4542873610_a13e73926c.jpg" border="0" alt="29" /></a>
+
+<a title="30" href="http://www.flickr.com/photos/42183992@N05/4542873728/"><img src="http://ac4.farm3.static.flickr.com/4027/4542873728_4490551768.jpg" border="0" alt="30" /></a>
+
+支持API
+
+<a title="31" href="http://www.flickr.com/photos/42183992@N05/4542873820/"><img src="http://ac4.farm3.static.flickr.com/4043/4542873820_d8aba23317.jpg" border="0" alt="31" /></a>
+
+可以设置全局过滤：
+
+<a title="32" href="http://www.flickr.com/photos/42183992@N05/4542240559/"><img src="http://ac4.farm3.static.flickr.com/4039/4542240559_e88692cd0a.jpg" border="0" alt="32" /></a>
+
+<a title="33" href="http://www.flickr.com/photos/42183992@N05/4542874050/"><img src="http://ac4.farm3.static.flickr.com/4023/4542874050_48729c93c8.jpg" border="0" alt="33" /></a>
+
+可以管理多个Twitter帐号，并且还能管理facebook帐号
+
+<a title="34" href="http://www.flickr.com/photos/42183992@N05/4542874140/"><img src="http://ac4.farm3.static.flickr.com/2301/4542874140_d2196ee426.jpg" border="0" alt="34" /></a>
+
+同步的意思是将本地列表和Twitter好友列表同步
+
+<a title="35" href="http://www.flickr.com/photos/42183992@N05/4542240867/"><img src="http://ac4.farm3.static.flickr.com/4027/4542240867_8339e1a942.jpg" border="0" alt="35" /></a>
+
+原来Twitter只能有20个列表
+
+<a title="36" href="http://www.flickr.com/photos/42183992@N05/4542874382/"><img src="http://ac4.farm3.static.flickr.com/4014/4542874382_b0c5eca91b.jpg" border="0" alt="36" /></a>
+
+有三种主题可选，不过我还是觉得默认的Blue比较好看。
+
+<a title="37" href="http://www.flickr.com/photos/42183992@N05/4542241121/"><img src="http://ac4.farm3.static.flickr.com/4036/4542241121_e0616f9c06.jpg" border="0" alt="37" /></a>
+<h4 style="background-color: grey; color: white;">总结</h4>
+OK，介绍完了Mixero的功能和基本用法，有没有惊讶于他的强大呢？<strong>强大是有代价的，Mixero的内存占用非常之大，一般是在150M左右</strong>，所以内存小的用户不大推荐用这个。
+
+希望大家能够享受推特～

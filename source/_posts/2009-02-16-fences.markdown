@@ -1,0 +1,36 @@
+---
+layout: post
+title: '整理桌面，提高效率——推荐Fences'
+date: 2009-2-16
+wordpress-id: fences
+comments: true
+---
+<p>在《<a href="http://www.productivelife.cn/concentration.html">如何保持注意力集中</a>》里面，Helen写到</p>
+<blockquote><p>1.<strong>干净的桌面是前提。</strong>分散你注意力的东西包括书桌上抬头就能看到的小镜子，有特殊意义的玩具熊；随时可能跳出的邮件提醒。等等。</p>
+</blockquote>
+<p>另外，如果桌面的图标比较凌乱的话，你要找到自己想要的东西还是挺难的，比如下面这个桌面，怎么找到一个程序并运行呢？</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20081122-1029211.png"><img title="2008-11-22_102921" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="351" alt="2008-11-22_102921" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20081122-102921-thumb1.png" width="484" border="0" /></a> </p>
+<p>对于程序和快捷方式，可以看看<a href="http://paliyuhui.spaces.live.com/Blog/cns!FF9896078AA722DE!881.entry" target="_blank">清爽整洁的桌面</a>和<a title="http://laoyang.yo2.cn/articles/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a715%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8.html" href="http://laoyang.yo2.cn/articles/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a715%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8.html">[日常软件使用技巧]15.快速启动</a></p>
+<p>对于工作中需要的文档素材以及从网上下载的文件，有时候我们习惯性的放在桌面上（比如我会把日志需要的图片和截屏放在桌面，以后插入的时候比较方便），但是这也会让桌面变得凌乱。</p>
+<p>网上的聪明人，提出了一个叫EZ Access Desktops的桌面，可以在<a title="http://antbag.com/desktops" href="http://antbag.com/desktops">http://antbag.com/desktops</a>下载</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/ez-access-300x2401.jpg"><img title="ez_access_300x240" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="244" alt="ez_access_300x240" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/ez-access-300x240-thumb1.jpg" width="304" border="0" /></a> </p>
+<p>其实这很简单，就是一个六色的壁纸而已，达到分类的效果。然后上面的Apps等都是用图像处理软件写上去的。缺点很明显，如果某个分类的图标过多了就会超出色块的范围，看起来比较滑稽。</p>
+<p>前几天，小众软件等推荐了Fences这个软件，试用了一下，下载在<a href="http://www.stardock.com/products/fences/downloads.asp">这里</a>(需要.net 2.0以上)</p>
+<p>确实比上面这种方法要好得多了：</p>
+<ol>
+<li>可以自定义分类大小和分类名称 </li>
+<li>会自动排列每个分类中的图标 </li>
+<li>分类中有滚动条，当鼠标移动到上面的时候才会出现 </li>
+<li>双击桌面隐藏图标 </li>
+</ol>
+<p>比如我的桌面：</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image1.png"><img title="image" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="292" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image-thumb.png" width="484" border="0" /></a> </p>
+<p>每一个分类叫做一个Fence，你可以直接拖动文件到各个Fence里面，会自动排列。如果Fence里文件比较多，超出范围的的会自动隐藏起来，鼠标移动过去，滚动条就会出现，这样你也不用担心不够装了~</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image2.png"><img title="image" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="217" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image-thumb1.png" width="259" border="0" /></a> </p>
+<p>新建一个Fence只需要右键在桌面上拖动出一个矩形即可，桌面右击后会有快捷菜单，以便对Fence拖动，重设大小，删除，重命名等操作：</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image3.png"><img title="image" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="195" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image-thumb2.png" width="277" border="0" /></a> </p>
+<p>双击桌面就可以隐藏图标，如果有不想隐藏的Fence，右击勾选Exclude。。。。选项即可。</p>
+<p>如果Lock Fences选项被选中，那不能对Fence作重设大小和移动操作。</p>
+<p>在Edit Fences里面，能操作的不多，就是改变颜色啥的</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image4.png"><img title="image" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="380" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/image-thumb3.png" width="484" border="0" /></a> </p>
+<p>如果你觉得合适就下载使用吧~</p>

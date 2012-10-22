@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'Firefox上快速发推的扩展QuickTui'
+date: 2010-5-2
+wordpress-id: quicktui
+comments: true
+---
+顾名思义，就是一个在浏览网页的时候能快速发推扩展，支持API。
+
+扩展地址在 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/85787">https://addons.mozilla.org/zh-CN/firefox/addon/85787</a>
+
+用法很简单，现在设置里面设置推特帐户，快捷键和缩短地址（可选择多种短网址服务），前缀和后缀。
+
+<img src="http://ac4.farm5.static.flickr.com/4023/4569643685_a826c17748_o.png" alt="" width="480" />
+
+选中文字后按快捷键出窗口，可以选择是否包括选定内容（右下角的S），标题（T）和网址（URL）
+
+<img src="http://ac4.farm5.static.flickr.com/4007/4570283036_2cfd8be772_o.png" alt="" width="480" />
+
+google reader里用，URL链接到的是真实网址。
+
+<img src="http://ac4.farm5.static.flickr.com/4019/4570283838_87bd5ae12f_o.png" alt="" width="480" />
+
+用这个扩展之后很容易从那些没有”分享到推特“按钮的网页分享到推特（这句话很别扭）。虽然google reader note-feedburner-twitter也是可以的，但是feedburner我这每用都延时很长，不知为啥。

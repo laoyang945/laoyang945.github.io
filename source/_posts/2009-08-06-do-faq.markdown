@@ -1,0 +1,8 @@
+---
+layout: post
+title: '回答之前有关Directory Opus的几个问题'
+date: 2009-8-6
+wordpress-id: do-faq
+comments: true
+---
+<p>读者在前面7次的有关Directory Opus的介绍后提出不少问题，和水木上的一些平实的问题汇总起来一起回答：</p>  <p>&#160;</p>  <p><strong><font color="#ff8000">可不可以只有一个Directory Opus窗口？</font></strong></p>  <p>当然可以，如下图设置就好，这样打开新的文件夹就是在DOpus的标签中打开。</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/08/20090806-111639.png"><img title="2009-08-06_111639" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="340" alt="2009-08-06_111639" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/08/20090806-111639-thumb.png" width="484" border="0" /></a> </p>  <p><strong><font color="#ff8040">怎么样才能不显示隐藏文件？</font></strong></p>  <p>如下图这样设置就好，这样隐藏的文件和文件夹就不显示了</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/08/20090806-112036.png"><img title="2009-08-06_112036" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="516" alt="2009-08-06_112036" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/08/20090806-112036-thumb.png" width="484" border="0" /></a> </p>  <p><strong><font color="#ff8040">文件名/文件夹名出现~号，长文件名不显示？</font></strong></p>  <p>换一个DO版本吧……</p>  <p><font color="#ff8040"><strong>DO能转换为绿色版/便携版么？</strong></font></p>  <p>我没有尝试过，不过相对于TC，绿化DO比较难，它毕竟是写了不少东西在%userdata%和注册表里面。不过官方在也有出售便携版的许可。</p>  <p><font color="#ff8040"><strong>DO相比TC有什么优势？</strong></font></p>  <p>不知道，用TC就好好用吧~，另外最近xbeta在组织TC的团购，有兴趣的可以加入，详见<a href="http://xbeta.info/tccn-3.htm">http://xbeta.info/tccn-3.htm</a></p>

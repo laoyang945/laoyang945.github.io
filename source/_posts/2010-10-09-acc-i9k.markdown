@@ -1,0 +1,28 @@
+---
+layout: post
+title: '加速你的i9000'
+date: 2010-10-9
+wordpress-id: acc-i9k
+comments: true
+---
+拿到i9000之后我发现感觉不到1G CPU的威力：输入法切换慢，摄像头启动慢，时不时各种软件都在lag，还给我来一来触摸屏没有反应，似乎还不如原来的黑莓8800或者palm650来得爽快。
+
+经过一段时间的了解，在mobile01上发现原来是这样：
+<blockquote>i9000的硬體其實很棒，一切會卡頓的原因只出在I/O，因為檔案格式的不同(RFS)，官方說是為了穩定而犧牲I/O讀寫效能，眾多跑分軟體Benchmark等等....，所有項目都快，就只慢在讀寫</blockquote>
+那如何解决这个问题呢？<!--more-->有两种方案：
+<ol>
+	<li>“卡三爽”：卡三爽就是由Mobile01上面K大发表的一个 " 讓I9000改善 I/O 讀取效率的一個過程步驟 "，要开启卡三爽必须先获得机器的根用户权限（root），而且比较囧的是，卡三爽只对安装卡三爽之前的软件有效，也就是说，你得先把常用软件都安装好，然后再进行卡三爽。</li>
+	<li>Voodoo：另一种改善I/O读取效率的方法，这也是我使用的，不需要root，也没有说只对之前的软件有效。下面着重讲讲如何使用Voodoo</li>
+</ol>
+<h4>Voodoo安装方法</h4>
+首先，下载<a href="http://www.uudisc.com/user/laoyang945/file/3594592" target="_blank">Voodoo的安装包</a>，解压后将update.zip文件夹放到手机16G闪存的根目录下。
+
+关机，等待10秒
+
+按向上音量键+Home+电源键开机，进入恢复模式，用音量键选择update.zip文件即可，然后等待至重启。重启之后你会发现手机搜搜的，反应非常快。最好再搭配Auto Memory Manager 或 Autokiller，及时清理掉无用进程和服务，让你的i9000不会堆积太多的后台程序。
+<h4>没法三键进入恢复模式？</h4>
+有的机器没法用三键进入恢复模式，那也好办，下载<a href="http://www.uudisc.com/user/laoyang945/file/3594580" target="_blank">这个adb安装包</a>，解压至c:\adb（其实放在没有中文或空格的目录底下就好）
+
+手机上进入手机设定-应用程序-开发-选中USB调试，用USB联机线连上电脑。在命令行（运行-cmd）里面cd 到adb文件夹，然后adb devices，显示i9000序列号证明通讯无误，再adb reboot recovery进入恢复模式就好
+<h4>Voodoo的关闭方法</h4>
+在手机里voodoo文件夹里面建立一个叫做“disable lagfix”的文件夹然后重启即可

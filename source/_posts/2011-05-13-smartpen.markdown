@@ -1,0 +1,66 @@
+---
+layout: post
+title: 'SmartPen，下一代的笔记工具？'
+date: 2011-5-13
+wordpress-id: smartpen
+comments: true
+---
+今天收到evernote的邮件，说是“Study Smater with Evernote Partners and Tools”，里面提到一种叫做smartpen的电子笔，Evernote介绍说，这个smartpen可以
+<ul>
+	<li>Save handwritten notes to Evernote</li>
+	<li>Record audio from lectures and meetings</li>
+	<li> Search through your notes from any device</li>
+	<li> Keep all your notes and research in one place</li>
+</ul>
+应该是一种类似电子记事笔之类的东西吧。
+
+点进去这个smartpen的主页 <a href="http://www.livescribe.com/en-us" target="_blank">http://www.livescribe.com/en-us/</a>，网站标题很有霸气，叫做Never Miss A word，下面有几个视频连接，分别介绍这个Echo smartpen，它的用法以及不同行业的人使用后的新的体会
+
+<img class="picasa" src="https://lh5.googleusercontent.com/_W7vzKfSkTVE/TczlS_lhmQI/AAAAAAAAFo8/UKgVVsvyaxY/s400/2011-05-13_160056.png" alt="" />
+<!--more-->从产品介绍可以看到，这支笔可以和电脑连接，有一个OLED的显示屏，可以录音和放音，还有一定的存储空间。
+
+<img class="picasa" src="https://lh4.googleusercontent.com/_W7vzKfSkTVE/TczlGHqLHRI/AAAAAAAAFo4/V_6ANyTrFa4/s400/2011-05-13_152408.png" alt="" />
+
+只看那个Introduction视频，你可能觉得这个笔在任何笔记本上都可以使用。
+
+<img class="picasa" src="https://lh4.googleusercontent.com/_W7vzKfSkTVE/TczlFzzU_CI/AAAAAAAAFow/n4BHekTlkQQ/s400/2011-05-13_152450.png" alt="" />
+
+其实使用的时候必须要和专用的笔记本配合，笔记本每一页下面有可以控制这个笔的几个按钮。比如用笔尖按record就开始录制，包括录音和录制笔记
+
+我猜想笔记本纸面上有一些可以定位的信息，这样才可以实现对笔记的录制
+
+<img class="picasa" src="https://lh5.googleusercontent.com/_W7vzKfSkTVE/TczlFyyViHI/AAAAAAAAFo0/p4Hd_Ai1KKw/s400/2011-05-13_152513.png" alt="" />
+
+连上电脑后，笔记和录音（包括时间信息）可以上传到他的livesribe desktop软件里面，还可以对笔记进行搜索：
+
+<img class="picasa" src="https://lh3.googleusercontent.com/_W7vzKfSkTVE/TczlFps0mzI/AAAAAAAAFos/Qfzf8VyTXLs/s400/2011-05-13_152529.png" alt="" />
+
+<img class="picasa" src="https://lh3.googleusercontent.com/_W7vzKfSkTVE/TczlFacdXdI/AAAAAAAAFok/1j8_pIKWQ2w/s400/2011-05-13_152537.png" alt="" />
+
+同时，可以把一个笔记，包括对应的录音，打包成为一个flash（叫做pencasts)，上传到它的网站，这个flash会按照时间显示这个笔记的生成过程，以及播放对应的录音。也就是说，像老师的板书一样。
+
+<img class="picasa" src="https://lh6.googleusercontent.com/_W7vzKfSkTVE/TczlFgurtXI/AAAAAAAAFoo/TrlEw_IaPtg/s400/2011-05-13_152655.png" alt="" />
+
+上面这几个功能，都很大众化，真正的杀手锏是这个玩意还支持扩展，已经有几个有趣的应用（好像不免费）
+
+字典，实时翻译，实时发音，哪里不会点哪里，妈妈再也不用担心我的学习！
+
+<img class="picasa" src="https://lh4.googleusercontent.com/_W7vzKfSkTVE/TczlFC7XFJI/AAAAAAAAFoc/yE0e-dbQNUs/s400/2011-05-13_152853.png" alt="" />
+
+用笔点击英文单词，笔就会念对应的西班牙语单词，甚至还可以直接句子翻译
+
+<img class="picasa" src="https://lh6.googleusercontent.com/_W7vzKfSkTVE/TczlFFUV9wI/AAAAAAAAFoY/Yl2R5HlXkUs/s400/2011-05-13_152902.png" alt="" />
+
+在笔记本上可以用笔弹钢琴：用笔点对应的琴键，笔就会发出对应的乐声
+
+<img class="picasa" src="https://lh6.googleusercontent.com/_W7vzKfSkTVE/TczlE0AuF5I/AAAAAAAAFoU/HPGzygEEBLo/s400/2011-05-13_152950.png" alt="" />
+
+当然要用笔弹吉他也是可以的。
+
+<img class="picasa" src="https://lh3.googleusercontent.com/_W7vzKfSkTVE/TczlFD_Cs5I/AAAAAAAAFog/BbAgdbkv7jI/s400/2011-05-13_152958.png" alt="" />
+
+smartpen在Amazon上的售价是$122(4G)，然后那个本子$17.84四本，不算便宜。
+
+这会是笔记产品的未来么？就像当年那个<a href="http://www.ted.com/talks/lang/eng/pranav_mistry_the_thrilling_potential_of_sixthsense_technology.html" target="_blank">MIT媒体实验室的印度哥们做的第六感装置</a>一样，从一个新的角度去实现实体世界和数码世界之间的联系。
+
+P.S.最近忙考试，博客没怎么更新，攒了不少话题，现在开始写，争取每周能有一两篇。
