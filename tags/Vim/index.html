@@ -113,6 +113,72 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-vimwiki" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/vimwiki/" class="article-date">
+  <time datetime="2017-07-18T03:31:09.000Z" itemprop="datePublished">Jul 18 2017</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/vimwiki/">vimwiki配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>能开始使用的话，需要以下几个插件</p>
+<ul>
+<li>Plugin ‘vimwiki/vimwiki’</li>
+<li>Plugin ‘mattn/calendar-vim’</li>
+</ul>
+<p>其中日历插件是用来显示日记的</p>
+<p>如果需要实时预览markdown的话，还需要安装</p>
+<ul>
+<li>Plugin ‘suan/vim-instant-markdown’</li>
+</ul>
+<p>另外，之前的snipmate有冲突，使用以下几个</p>
+<ul>
+<li>Plugin ‘MarcWeber/vim-addon-mw-utils’</li>
+<li>Plugin ‘tomtom/tlib_vim’</li>
+<li>Plugin ‘garbas/vim-snipmate’</li>
+</ul>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:vimwiki_list = [&#123;&apos;path&apos;: &apos;~/Dropbox/vimwiki/&apos;,</div><div class="line">&apos;ext&apos;: &apos;.markdown&apos;, &apos;syntax&apos;: &apos;markdown&apos;&#125;]</div></pre></td></tr></table></figure>
+<p>这一个设置项做了三件事，一是制定vimwiki的根目录，二是把vimwiki的后缀改成了markdown，三是使用markdown语法而不是维基语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">map &lt;A-Space&gt; &lt;Plug&gt;VimwikiToggleListItem</div><div class="line">let g:vimwiki_table_mappings = 0</div><div class="line">let g:vimwiki_global_ext = 0</div></pre></td></tr></table></figure>
+<p>这三个设置的意义分别是使用Alt+Space来开关待办任务的状态，关闭在插入表格时的Tab键映射, 最后一个的意思是只在根目录下面把markdown识别为vimwiki格式，在其他地方还是使用vim自己的markdown处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:instant_markdown_autostart = 0	&quot;disable autostart</div><div class="line">map &lt;leader&gt;md :InstantMarkdownPreview&lt;CR&gt;</div></pre></td></tr></table></figure>
+<p>这两项是instand-markdown的设置，不自动开启，并且把映射键位改成<code>&lt;Leader&gt;md</code></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>基本上把帮助文件看一遍就知道了</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/gotbletu/shownotes/blob/master/vimwiki.md" target="_blank" rel="external">https://github.com/gotbletu/shownotes/blob/master/vimwiki.md</a></p>
+<p><a href="https://github.com/vimwiki/vimwiki/issues/95" target="_blank" rel="external">https://github.com/vimwiki/vimwiki/issues/95</a></p>
+<p><a href="https://github.com/carlhuda/janus/issues/479" target="_blank" rel="external">https://github.com/carlhuda/janus/issues/479</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/vimwiki/" data-id="cj591znlu007gegnxa3lkeli0" class="article-share-link">Share</a>
+      
+        <a href="http://blog.yesmryang.net/vimwiki/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-pathogen-vim-latex" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/pathogen-vim-latex/" class="article-date">
@@ -146,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/pathogen-vim-latex/" data-id="cj591hwtf006rkgnxxssk16k0" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/pathogen-vim-latex/" data-id="cj591znlg006regnxf3wqtxl0" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/pathogen-vim-latex/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -191,7 +257,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/pathogen-snipmate-windows/" data-id="cj591hwt4006gkgnx6xizlfwl" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/pathogen-snipmate-windows/" data-id="cj591znl9006gegnxqlfiuyji" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/pathogen-snipmate-windows/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -253,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/vimflowy/" data-id="cj591hwt3006ekgnxfzmbxm48" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/vimflowy/" data-id="cj591znl7006begnxblokrrtl" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/vimflowy/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -301,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/markdown-latex/" data-id="cj591hwso005nkgnxh9ljjn6e" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/markdown-latex/" data-id="cj591znkk005negnxl414lh2w" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/markdown-latex/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -345,7 +411,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/latex-gvim-multiple-compile/" data-id="cj591hwsh005ckgnxoh3p09hu" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/latex-gvim-multiple-compile/" data-id="cj591znkb005cegnxppvctoux" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/latex-gvim-multiple-compile/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -411,7 +477,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/latex-gvim-sumatrapdf-setting/" data-id="cj591hwsg005bkgnx0gsos6vb" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/latex-gvim-sumatrapdf-setting/" data-id="cj591znka005begnxo9lima5h" class="article-share-link">Share</a>
       
         <a href="http://blog.yesmryang.net/latex-gvim-sumatrapdf-setting/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -432,9 +498,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 

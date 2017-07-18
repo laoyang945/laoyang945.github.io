@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: mac | 大家都叫我老杨</title>
+  <title>Tag: Mac | 大家都叫我老杨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="大家都叫我老杨">
-<meta property="og:url" content="http://blog.yesmryang.net/tags/mac/index.html">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/Mac/index.html">
 <meta property="og:site_name" content="大家都叫我老杨">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大家都叫我老杨">
@@ -113,10 +113,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-change-icon-of-user-dic" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-rime-kaomoji" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/change-icon-of-user-dic/" class="article-date">
-  <time datetime="2012-11-15T06:26:00.000Z" itemprop="datePublished">Nov 15 2012</time>
+    <a href="/rime-kaomoji/" class="article-date">
+  <time datetime="2013-01-19T07:07:54.000Z" itemprop="datePublished">Jan 19 2013</time>
 </a>
     
   </div>
@@ -127,7 +127,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/change-icon-of-user-dic/">Mac用户文件夹移动后恢复默认图标</a>
+      <a class="article-title" href="/rime-kaomoji/">鼠须管里使用颜文字</a>
     </h1>
   
 
@@ -135,23 +135,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>很多人把MBP里面的光驱拆掉换成SSD+HDD的搭配，然后把个人文件夹中的一部分，比如音乐或者视频，放到HDD里面去，然后用软链接链回来。这样做的问题就是，这些文件夹没有特定的图标了。</p>
-<p>如果想要把图标找回来，其实也挺简单，只需要在<code>/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources</code>下找到对应的icns文件，打开icns文件并复制其中某个分辨率的图标图像，然后在文件夹上右键选择<code>Get Info</code>，在新窗口点一下左上角的图标，然后粘贴即可。</p>
-<p>有一个挺好使的免费软件Candybar（最近才免费的），可以替换系统图标，但是我并不是想替换系统默认的图标只是要使用默认图标而已。</p>
-<p>至于侧边栏的图标，找了一圈没有什么好的方法，只有用XtraFinder开启彩色模式才能显示文件夹的图标。</p>
-<p>最终的效果</p>
-<p><img src="http://ww4.sinaimg.cn/large/640a227egw1dyvqqshc69g.gif" width="500"></p>
-<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dyvqqzv0pkg.gif"></p>
+        <p>综合参考官方文档和<a href="https://gist.github.com/3848421" target="_blank" rel="external">这个教程</a>。鼠须管里使用颜文字步骤如下，设置目录为<code>~/Library/Rime</code></p>
+<h3 id="新增一个输入法"><a href="#新增一个输入法" class="headerlink" title="新增一个输入法"></a>新增一个输入法</h3><p>在<code>default.custom.yaml</code>里面添加patch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line"> schema_list:</div><div class="line">  - schema: kaomoji</div></pre></td></tr></table></figure>
+<h3 id="编辑颜文字输入法"><a href="#编辑颜文字输入法" class="headerlink" title="编辑颜文字输入法"></a>编辑颜文字输入法</h3><p>新建<code>kaomoji.schema.yaml</code>文件，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">schema:</div><div class="line">  schema_id: kaomoji</div><div class="line">  name: kaomoji</div><div class="line"></div><div class="line">engine:</div><div class="line">  processors:</div><div class="line">    - key_binder</div><div class="line">    - speller</div><div class="line">    - selector</div><div class="line">    - navigator</div><div class="line">    - express_editor</div><div class="line">  segmentors:</div><div class="line">    - abc_segmentor</div><div class="line">    - fallback_segmentor</div><div class="line">  translators:</div><div class="line">    - r10n_translator</div><div class="line">  filters:</div><div class="line">    - uniquifier</div><div class="line"></div><div class="line">translator:</div><div class="line">  dictionary: kaomoji</div><div class="line">  spelling_hints: 1</div><div class="line"></div><div class="line">key_binder:</div><div class="line">  import_preset: default</div><div class="line"></div><div class="line">speller:</div><div class="line">  alphabet: zyxwvutsrqponmlkjihgfedcba</div><div class="line">  delimiter: &quot; ;&apos;&quot;</div><div class="line">  algebra:</div><div class="line">    - &quot;derive/^.+$/all/&quot;</div></pre></td></tr></table></figure>
+<h3 id="编辑词库"><a href="#编辑词库" class="headerlink" title="编辑词库"></a>编辑词库</h3><p>新建<code>kaomoji.dict.yaml</code>文件，建立颜文字词库，文件格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">name: kaomoji</div><div class="line">version: &quot;0.1&quot;</div><div class="line">sort: origin</div><div class="line"></div><div class="line">颜文字1[TAB键]输入码1</div><div class="line">颜文字2[TAB键]输入码2</div></pre></td></tr></table></figure>
+<p>例如</p>
+<pre><code>d=====(￣▽￣*)b [顶!]    ding
+</code></pre><h3 id="在当前输入法中使用颜文字"><a href="#在当前输入法中使用颜文字" class="headerlink" title="在当前输入法中使用颜文字"></a>在当前输入法中使用颜文字</h3><p>修改你输入法的<code>*.schema.custom.yaml</code>文件，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema/dependencies:</div><div class="line">    - kaomoji</div><div class="line">  abc_segmentor/extra_tags:</div><div class="line">    - reverse_lookup</div><div class="line">  reverse_lookup:</div><div class="line">    dictionary: kaomoji</div><div class="line">    enable_completion: false</div><div class="line">    prefix: &quot;`&quot;</div><div class="line">    tips: &quot;[颜文字]&quot;</div></pre></td></tr></table></figure>
+<h3 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h3><p>重新部署鼠须管即可生效</p>
+<p>注意此时文件夹内应该多出来<code>kaomoji.table.bin</code>, <code>kaomoji.reverse.bin</code>及<code>kaomoji.prism.bin</code>三个文件</p>
+<p>截图</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e0ywvjg9ysg.gif" width="500"></p>
+<h3 id="颜文字整理下载"><a href="#颜文字整理下载" class="headerlink" title="颜文字整理下载"></a>颜文字整理下载</h3><ul>
+<li><a href="https://github.com/hitigon/meow-emoji-rime" target="_blank" rel="external">https://github.com/hitigon/meow-emoji-rime</a></li>
+<li><a href="https://gist.github.com/3848421" target="_blank" rel="external">https://gist.github.com/3848421</a></li>
+<li><a href="http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt" target="_blank" rel="external">http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt</a> 请删除里面包括…的颜文字行，会导致编译错误</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.yesmryang.net/change-icon-of-user-dic/" data-id="cj591hwt10069kgnx2xqp97f6" class="article-share-link">分享到</a>
+      <a data-url="http://blog.yesmryang.net/rime-kaomoji/" data-id="cj591znlb006jegnx75dpncn9" class="article-share-link">Share</a>
       
-        <a href="http://blog.yesmryang.net/change-icon-of-user-dic/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://blog.yesmryang.net/rime-kaomoji/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rime/">Rime</a></li></ul>
 
     </footer>
   </div>
@@ -167,66 +180,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 老杨<br>
-      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
-      .
-      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-<script>
-  var disqus_shortname = 'mystaticblog';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//go.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-  </div>
-</body>
-</html>de id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
