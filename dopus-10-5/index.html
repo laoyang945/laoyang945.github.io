@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>DOpus 10.5 更新日志 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译 Windows 8已官方支持Windows 8，以下问题已解决  双击文件启动的只是桌面程序，而不是Metro程序 双击未知格式文件不再打开同步中心 打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效 「复制文件路径」功能正常  原生支持MTP设备本版本开始原生支持MTP（M">
+<meta name="keywords" content="DOpus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOpus 10.5 更新日志">
+<meta property="og:url" content="http://blog.yesmryang.net/dopus-10-5/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译 Windows 8已官方支持Windows 8，以下问题已解决  双击文件启动的只是桌面程序，而不是Metro程序 双击未知格式文件不再打开同步中心 打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效 「复制文件路径」功能正常  原生支持MTP设备本版本开始原生支持MTP（M">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/640a227egw1e1if0rwkm7g.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e1if0ysnimg.gif">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/640a227egw1e1if1381lng.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e1if17onisg.gif">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/640a227egw1e1if1fmw9kg.gif">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/640a227egw1e1if1k8dajg.gif">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/640a227egw1e1if8vv3wtg.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e1if1otz9wg.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e1ifdghttug.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e1if1ufpl2g.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e1if36d30cg.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e1if3znul4g.gif">
+<meta property="og:updated_time" content="2013-12-31T08:33:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DOpus 10.5 更新日志">
+<meta name="twitter:description" content="2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译 Windows 8已官方支持Windows 8，以下问题已解决  双击文件启动的只是桌面程序，而不是Metro程序 双击未知格式文件不再打开同步中心 打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效 「复制文件路径」功能正常  原生支持MTP设备本版本开始原生支持MTP（M">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-dopus-10-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dopus-10-5/" class="article-date">
+  <time datetime="2013-02-05T03:09:34.000Z" itemprop="datePublished">Feb 5 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      DOpus 10.5 更新日志
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译</p>
+<h1 id="Windows-8"><a href="#Windows-8" class="headerlink" title="Windows 8"></a>Windows 8</h1><p>已官方支持Windows 8，以下问题已解决</p>
+<ul>
+<li>双击文件启动的只是桌面程序，而不是Metro程序</li>
+<li>双击未知格式文件不再打开同步中心</li>
+<li>打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效</li>
+<li>「复制文件路径」功能正常</li>
+</ul>
+<h1 id="原生支持MTP设备"><a href="#原生支持MTP设备" class="headerlink" title="原生支持MTP设备"></a>原生支持MTP设备</h1><p>本版本开始原生支持MTP（Media Transfer Protocol）设备，MTP设备在DOpus里面以mtp://语法打开，现在在「计算机」里面可以看到已经连接的MTP设备并双击可以打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif" width="500"></p>
+<h1 id="标签群组可分别设置左右栏"><a href="#标签群组可分别设置左右栏" class="headerlink" title="标签群组可分别设置左右栏"></a>标签群组可分别设置左右栏</h1><p>现在标签群组里面新增一个选项「特定边框」（Specific Sides，这里中文译得不好）可以制定组中的标签是在左栏还是右栏打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0rwkm7g.gif" width="500"></p>
+<p>当勾选这一选项后，其左边的按钮可以用来将标签从左边移动到右边或者反过来</p>
+<p>标签栏的右键菜单新增「Save Both Sides，保存两者」（中文还是没译好）命令，可以将目前打开的标签按照分栏保存成标签群组。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if0ysnimg.gif" width="500"></p>
+<h1 id="标签组管理"><a href="#标签组管理" class="headerlink" title="标签组管理"></a>标签组管理</h1><p>「首选项-文件夹标签-标签群组」中可以用文件夹来管理，只需要点击「新建文件夹」按钮并拖拽。 另外也新增一个「标记为隐藏」按钮。一旦一个标签群组被标记为隐藏，它就不会出现在标签栏右键菜单中。</p>
+<h1 id="可链接标签"><a href="#可链接标签" class="headerlink" title="可链接标签"></a>可链接标签</h1><p>在双栏视图中，可以将左右的标签页链接起来，点击已链接标签中的一个，在另一栏会自动跳到和它链接的那个标签。同时最多设置8对链接标签页。已链接标签会用不同颜色标识，该颜色可在首选项中修改。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1381lng.gif" width="500"></p>
+<p>已链接标签可选择为「Slave Tab, 附属模式」。一旦设置为附属模式，该标签的内容会和它的链接标签保持一致。附属模式的标签会变成斜体。附属模式的设置和取消在标签栏的右键菜单中。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if17onisg.gif" width="500"></p>
+<p>首选项-文件夹标签-标签群组的编辑中也可以设置链接标签</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1fmw9kg.gif" width="500"></p>
+<p>链接标签的快捷键：</p>
+<ul>
+<li>Ctrl+点击：设置/取消到当前标签的链接</li>
+<li>Ctrl+Shift+点击：设置/取消到当前标签的附属模式链接</li>
+<li>Shift+点击：在另一栏中不跳转到链接的标签</li>
+</ul>
+<h1 id="列表窗样式使用标签群组"><a href="#列表窗样式使用标签群组" class="headerlink" title="列表窗样式使用标签群组"></a>列表窗样式使用标签群组</h1><p>在列表窗样式中，之前是可以分别定义左右栏的标签，现在该功能用标签群组代替。</p>
+<h1 id="标签外观改进"><a href="#标签外观改进" class="headerlink" title="标签外观改进"></a>标签外观改进</h1><p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if1k8dajg.gif"><br><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if8vv3wtg.gif"></p>
+<h1 id="标签栏改进"><a href="#标签栏改进" class="headerlink" title="标签栏改进"></a>标签栏改进</h1><ul>
+<li>「首选项-文件夹标签」新增外观页</li>
+<li>「首选项-文件夹标签-选项」，新增「点击列表窗关闭按钮时只关闭活动标签」（而不是关闭整个列表窗），「显示新标签按钮」「在当前标签旁打开新标签」以及「当标签减少时显示菜单」</li>
+<li>把一个标签拖到桌面可以打开一个新的列表窗</li>
+<li>直到鼠标按键释放才激活标签（就是你拖动标签的时候不会马上切换过去）</li>
+<li>鼠标中键可以关闭标签（就是按滚轮），双击标签也可以（需要在「首选项-文件夹标签-选项」中设置）</li>
+<li>「首选项-文件夹树-选择事件」新增「切换至现有标签」选项，选中后在文件夹树里面点击一个已经在标签中打开的文件夹的时候会切换到该标签，而不是在当前标签打开这个文件夹。</li>
+</ul>
+<h1 id="即时查找可以切换标签"><a href="#即时查找可以切换标签" class="headerlink" title="即时查找可以切换标签"></a>即时查找可以切换标签</h1><p>快捷键是「@」，可以在「首选项-列表窗-即时查找」中修改<br>在使用即时查找切换标签时，会弹出符合描述的标签列表，匹配的是路径和标签标题</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1otz9wg.gif" width="500"></p>
+<h1 id="文件夹树高亮当前文件夹路径"><a href="#文件夹树高亮当前文件夹路径" class="headerlink" title="文件夹树高亮当前文件夹路径"></a>文件夹树高亮当前文件夹路径</h1><p>在「首选项-文件夹树-高亮显示所选文件夹的路径」中设置。勾选「高亮显示当前所有打开的标签」后非活动标签的高亮颜色较淡</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1ifdghttug.gif"><br><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1ufpl2g.gif"></p>
+<h1 id="群组栏"><a href="#群组栏" class="headerlink" title="群组栏"></a>群组栏</h1><p>当文件以群组方式显示时，可以显示一个群组栏，在「首选项-文件夹-文件夹显示-当文件被分组时自动添加‘群组’栏」，群组栏的颜色和宽度可在首选项中设置。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if36d30cg.gif"><br><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if3znul4g.gif"></p>
+<h1 id="Ctrl-滚轮可以调整字体和缩略图大小"><a href="#Ctrl-滚轮可以调整字体和缩略图大小" class="headerlink" title="Ctrl+滚轮可以调整字体和缩略图大小"></a>Ctrl+滚轮可以调整字体和缩略图大小</h1><ul>
+<li>在缩略图中，可以调整缩略图尺寸</li>
+<li>在详细信息或者加强模式视图中，可以调整字体大小</li>
+</ul>
+<h1 id="列表窗可以自定义标题"><a href="#列表窗可以自定义标题" class="headerlink" title="列表窗可以自定义标题"></a>列表窗可以自定义标题</h1><p>在「首选项-显示-选项」中，可以自定义列表窗标题栏，其中可以用到几个特殊控制字</p>
+<ul>
+<li>%P 当前文件夹完整路径</li>
+<li>%N 当前文件夹名</li>
+<li>%R 当前文件夹根目录</li>
+<li>%D 当前目标文件夹完整路径</li>
+<li>%M 当前目标文件夹名</li>
+<li>%L 当前列表窗布局名</li>
+<li>%T 最初标题</li>
+</ul>
+<p>%P，%N和%R还可以在给标签命名的时候使用</p>
+<h1 id="其他改进和bug-fix"><a href="#其他改进和bug-fix" class="headerlink" title="其他改进和bug fix"></a>其他改进和bug fix</h1><p>（略）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dopus-10-5/" data-id="cj591hwtd006mkgnxygfo5oi3" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dopus-10-5/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/listary-everything-do/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Listary——给DOpus和Everything搭个桥
+        
+      </div>
+    </a>
+  
+  
+    <a href="/shadowsocks-nodejs-obfsproxy-aws/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">在AWS上搭建shadowsocks-nodejs环境并搭配obfsproxy使用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/dopus-10-5/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

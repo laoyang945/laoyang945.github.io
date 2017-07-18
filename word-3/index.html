@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Word长文排版中的自动化问题[3] | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;#160;&amp;#160; 在[2]里面介绍了目录和参考文献的做法。这一次我们说说其他的自动编号问题。    &amp;#160;&amp;#160;&amp;#160; 按照清华的要求，论文的第一级标题格式形如“第1章”，第二级是“1.1”，第三级是“1.1.1”。那么我们必须设置一个多级编号来满足这个层次上的要求。     &amp;#160;&amp;#160;&amp;#160; 但是我们必须让这个多级编号和“标题1”，“标题2”，“标题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Word长文排版中的自动化问题[3]">
+<meta property="og:url" content="http://blog.yesmryang.net/word-3/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="&amp;#160;&amp;#160; 在[2]里面介绍了目录和参考文献的做法。这一次我们说说其他的自动编号问题。    &amp;#160;&amp;#160;&amp;#160; 按照清华的要求，论文的第一级标题格式形如“第1章”，第二级是“1.1”，第三级是“1.1.1”。那么我们必须设置一个多级编号来满足这个层次上的要求。     &amp;#160;&amp;#160;&amp;#160; 但是我们必须让这个多级编号和“标题1”，“标题2”，“标题">
+<meta property="og:image" content="http://blufiles.storage.msn.com/y1prxgQ8a81etJWEPmUjOvbXxqsoqGlfiGC1q_kZ-VCO8MxwkGNZKfrnV3qfcOumOB2TKBtL9OolIfRTGE47AXXsQ?PARTNER=WRITER">
+<meta property="og:updated_time" content="2013-01-09T03:57:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Word长文排版中的自动化问题[3]">
+<meta name="twitter:description" content="&amp;#160;&amp;#160; 在[2]里面介绍了目录和参考文献的做法。这一次我们说说其他的自动编号问题。    &amp;#160;&amp;#160;&amp;#160; 按照清华的要求，论文的第一级标题格式形如“第1章”，第二级是“1.1”，第三级是“1.1.1”。那么我们必须设置一个多级编号来满足这个层次上的要求。     &amp;#160;&amp;#160;&amp;#160; 但是我们必须让这个多级编号和“标题1”，“标题2”，“标题">
+<meta name="twitter:image" content="http://blufiles.storage.msn.com/y1prxgQ8a81etJWEPmUjOvbXxqsoqGlfiGC1q_kZ-VCO8MxwkGNZKfrnV3qfcOumOB2TKBtL9OolIfRTGE47AXXsQ?PARTNER=WRITER">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-word-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/word-3/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Word长文排版中的自动化问题[3]
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div>&#160;&#160; 在[2]里面介绍了目录和参考文献的做法。这一次我们说说其他的自动编号问题。    <br>&#160;&#160;&#160; 按照清华的要求，论文的第一级标题格式形如“第1章”，第二级是“1.1”，第三级是“1.1.1”。那么我们必须设置一个多级编号来满足这个层次上的要求。     <br>&#160;&#160;&#160; 但是我们必须让这个多级编号和“标题1”，“标题2”，“标题3”的样式链接起来，这样我们才能在目录中抓出来，在我们之后的写作中也不至于出现混乱编号等现象。     <br>&#160;&#160;&#160; 具体的操作是这样：在多级列表中，点选“定义新多级列表”，然后在编号格式里面将第一级改为“第1章”，注意里面的1应该是有灰色底纹的。然后点击下面的“更多”，在右边新出现的几个选项中，将多级列表的第一级和“标题1”样式链接。同时选择在库中的级别为1。     <br>&#160;&#160;&#160; 依次类推，将2级和3级列表和“标题2”“标题3”的样式链接，库中的级别分别为2和3.缩进都按照论文要求设为无。     <br>&#160;&#160;&#160; 好了，我们做一个样例，在刚才的文档里面输入如截图中的文字。然后分别设置“这是第一章”和“这是第二章”为标题1，然后下面文字分别设为标题2和标题3的样式，看到没有？已经自动编号了。以后你只要是个标题x的样式，就会按照顺序编号，不会和你正文中的多级编号混淆。&#160; <p>&#160;&#160;&#160; 然后我们用一下对图表题注的自动编号功能。在文章中插入一个图片，然后右击图片，选择“插入题注”，看看标签有什么，如果没有“图”或者“表”的话就新建一个。取消“题注中不包括标签”，在“编号”选项中勾选“包含章节号”，这样出来的图或者表的题注就是“图1-1”（章节起始样式设为标题1）或者“图1.1-1”（章节起始样式设为标题2）。&#160; </p>    <p>&#160;&#160;&#160; 如果论文中有图的话，需要插入一个图目录，如果有表的话，需要插入一个表目录。直接在“引用”-“题注”-“插入图表目录”，这个时候会给你选择是对那个标签出目录，如果选图的话就把所有用“图”这个标签的“东西”名字及其所在位置抓成目录。&#160; </p>    <p>&#160;&#160;&#160; 在引用图表的时候，依然选择用“交叉引用”这个功能来对题注进行引用，引用类型选择“图”，引用类型为“只有标签和编号”。 </p>    <p>&#160;&#160;&#160; 最后，讲一个小技巧，有时候我们喜欢在页眉上加入比如“第1章 文献综述”等字样，难道你是手动输入的吗？你只需要编辑页眉，然后选择“插入”-“文档部件”-“域”，然后选styleRef域命令，样式名为标题1，勾选“插入段落编号”就可以了。      <br>&#160;&#160; <br>&#160;&#160;&#160; 最后所有的效果都在截图里面。我做这个排版总共没有超过5分钟。 </p>    <p>&#160;<a href="http://blufiles.storage.msn.com/y1pjLm8Vxifs6wm_xn4_q8xETdBWBoQHVD1133FUq22WbJoTlzN9lXZOL05mxtaYog7?PARTNER=WRITER" target="_blank" rel="external"><img title="A944587322691CHR" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="331" alt="A944587322691CHR" src="http://blufiles.storage.msn.com/y1prxgQ8a81etJWEPmUjOvbXxqsoqGlfiGC1q_kZ-VCO8MxwkGNZKfrnV3qfcOumOB2TKBtL9OolIfRTGE47AXXsQ?PARTNER=WRITER" width="404" border="0"></a> </p>    <p>&#160;&#160;&#160; OK，你看是不是长文的排版其实很容易呢？三讲的内容加起来，估计你在写文章前只需30分钟做一点小小的设置，就能把文章排得很漂亮。花一点时间学习一下不也是挺好的吗？</p> </div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/word-3/" data-id="cj591hwm6000skgnxq8807847" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/word-3/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/chandler-get-started/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          时间管理软件Chandler使用介绍[1]
+        
+      </div>
+    </a>
+  
+  
+    <a href="/word-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Word长文排版中的自动化问题[2]</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/word-3/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

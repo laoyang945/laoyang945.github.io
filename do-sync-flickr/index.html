@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Directory Opus同步本地和Flickr图片 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这篇文章算是回答原来一个读者的问题。其实方法在DO的帮助里面是有的，不过可能大家都懒的看，再加上是英文。就更没人去读了。  下面举例在DO中将E:\Pics\Capture里面的图片和Flickr同步：  1.参数选项-照片分享-Flickr    2.在帐号那里点添加（话说应该是帐号还是账号？）    3.程序会带你跳转到flickr的认证页面     4.点右边那个继续之后，再点授权    5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Directory Opus同步本地和Flickr图片">
+<meta property="og:url" content="http://blog.yesmryang.net/do-sync-flickr/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="这篇文章算是回答原来一个读者的问题。其实方法在DO的帮助里面是有的，不过可能大家都懒的看，再加上是英文。就更没人去读了。  下面举例在DO中将E:\Pics\Capture里面的图片和Flickr同步：  1.参数选项-照片分享-Flickr    2.在帐号那里点添加（话说应该是帐号还是账号？）    3.程序会带你跳转到flickr的认证页面     4.点右边那个继续之后，再点授权    5">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4011/4526758295_261a879194.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4018/4527387086_748fabb4b2.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4012/4527387338_2eeddd77d5.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4023/4526759235_2afafc6114.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4003/4526759419_013c31ede3.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4003/4527388186_3d96fe721e.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4036/4527388390_2ab56dddb7.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4034/4527388554_ba7f66291a.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4065/4527388918_91870f390f.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4046/4527389524_fe7854dd60.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4029/4527443544_67fda68dc1.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4064/4526761123_56a7bf4317.jpg">
+<meta property="og:image" content="http://ac4.farm3.static.flickr.com/4018/4526761353_1a6460d9ec.jpg">
+<meta property="og:updated_time" content="2013-01-09T03:58:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Directory Opus同步本地和Flickr图片">
+<meta name="twitter:description" content="这篇文章算是回答原来一个读者的问题。其实方法在DO的帮助里面是有的，不过可能大家都懒的看，再加上是英文。就更没人去读了。  下面举例在DO中将E:\Pics\Capture里面的图片和Flickr同步：  1.参数选项-照片分享-Flickr    2.在帐号那里点添加（话说应该是帐号还是账号？）    3.程序会带你跳转到flickr的认证页面     4.点右边那个继续之后，再点授权    5">
+<meta name="twitter:image" content="http://ac4.farm3.static.flickr.com/4011/4526758295_261a879194.jpg">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-do-sync-flickr" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-sync-flickr/" class="article-date">
+  <time datetime="2010-04-16T16:00:00.000Z" itemprop="datePublished">Apr 17 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Directory Opus同步本地和Flickr图片
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章算是回答原来一个读者的问题。其实方法在DO的帮助里面是有的，不过可能大家都懒的看，再加上是英文。就更没人去读了。</p>  <p>下面举例在DO中将E:\Pics\Capture里面的图片和Flickr同步：</p>  <p>1.参数选项-照片分享-Flickr</p>  <p><a title="2010-04-17_102144" href="http://www.flickr.com/photos/42183992@N05/4526758295/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102144" src="http://ac4.farm3.static.flickr.com/4011/4526758295_261a879194.jpg"></a></p>  <p>2.在帐号那里点添加（话说应该是帐号还是账号？）</p>  <p><a title="2010-04-17_102155" href="http://www.flickr.com/photos/42183992@N05/4527387086/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102155" src="http://ac4.farm3.static.flickr.com/4018/4527387086_748fabb4b2.jpg"></a></p>  <p>3.程序会带你跳转到flickr的认证页面</p>  <p><a title="2010-04-17_102304" href="http://www.flickr.com/photos/42183992@N05/4527387338/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102304" src="http://ac4.farm3.static.flickr.com/4012/4527387338_2eeddd77d5.jpg"></a> </p>  <p>4.点右边那个继续之后，再点授权</p>  <p><a title="2010-04-17_102322" href="http://www.flickr.com/photos/42183992@N05/4526759235/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102322" src="http://ac4.farm3.static.flickr.com/4023/4526759235_2afafc6114.jpg"></a></p>  <p>5.授权完成</p>  <p>&#160;</p>  <p><a title="2010-04-17_102330" href="http://www.flickr.com/photos/42183992@N05/4526759419/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102330" src="http://ac4.farm3.static.flickr.com/4003/4526759419_013c31ede3.jpg"></a></p>  <p>6.点DO里面的授权完成</p>  <p><a title="2010-04-17_102344" href="http://www.flickr.com/photos/42183992@N05/4527388186/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102344" src="http://ac4.farm3.static.flickr.com/4003/4527388186_3d96fe721e.jpg"></a></p>  <p><a title="2010-04-17_102352" href="http://www.flickr.com/photos/42183992@N05/4527388390/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102352" src="http://ac4.farm3.static.flickr.com/4036/4527388390_2ab56dddb7.jpg"></a></p>  <p>7.DO会分配给你一个文件收集区作为上传的虚拟文件夹，而那个默认文件夹是用来下载flickr上的照片的。</p>  <p><a title="2010-04-17_102428" href="http://www.flickr.com/photos/42183992@N05/4527388554/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102428" src="http://ac4.farm3.static.flickr.com/4034/4527388554_ba7f66291a.jpg"></a></p>  <p>8.可以看到文件收集区里面多了一个Flickr照片，下面有上图设置里面对应的名字</p>  <p><a title="2010-04-17_102653" href="http://www.flickr.com/photos/42183992@N05/4527388918/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102653" src="http://ac4.farm3.static.flickr.com/4065/4527388918_91870f390f.jpg"></a></p>  <p>9.将E:\PIC\CAPTURE拖到这个文件夹收集区里面，会有一个对话框问你是成为成员还是子收集区，此时选择子收集区。</p>  <p><a title="2010-04-17_102835" href="http://www.flickr.com/photos/42183992@N05/4527389524/" target="_blank" rel="external"><img border="0" alt="2010-04-17_102835" src="http://ac4.farm3.static.flickr.com/4046/4527389524_fe7854dd60.jpg"></a></p>  <p>10.然后在laoyang945收集区上点右键选择“和Flickr同步”就能同步了，只要把图片发送到这个收集区及其子收集区里面就能同步到Flickr上。</p>  <p><a title="2010-04-17_111449" href="http://www.flickr.com/photos/42183992@N05/4527443544/" target="_blank" rel="external"><img border="0" alt="2010-04-17_111449" src="http://ac4.farm3.static.flickr.com/4029/4527443544_67fda68dc1.jpg"></a></p>  <p><a title="2010-04-17_103010" href="http://www.flickr.com/photos/42183992@N05/4526761123/" target="_blank" rel="external"><img border="0" alt="2010-04-17_103010" src="http://ac4.farm3.static.flickr.com/4064/4526761123_56a7bf4317.jpg"></a></p>  <p><a title="2010-04-17_103020" href="http://www.flickr.com/photos/42183992@N05/4526761353/" target="_blank" rel="external"><img border="0" alt="2010-04-17_103020" src="http://ac4.farm3.static.flickr.com/4018/4526761353_1a6460d9ec.jpg"></a>&#160;</p>  <p>11.可以自动吗？我也在想这个问题，肯定可以在工具栏上加一个按钮开始同步的，但是怎么自动做这个事情估计需要研究一下。</p>  <p>另外，DO的9.5版本已经有XX版，解决了Win7下9.1版不能显示回收站和控制面板的问题。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-sync-flickr/" data-id="cj591hwpp003qkgnx7n4bmd9q" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-sync-flickr/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/welcome/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          欢迎来到我的博客
+        
+      </div>
+    </a>
+  
+  
+    <a href="/kb-controlopera/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用键盘操控浏览器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/do-sync-flickr/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

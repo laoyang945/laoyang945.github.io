@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>鼠标一族的资源管理器Directory Opus介绍[5] | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="老同学从美国回来了，这两天晚上玩得比较晚，早上起得也完，没有更新日志，抱歉抱歉~  昨天yibie和我讨论有关win7的时候发给我看了一个文档，说的是有关“库”（Library）在文件管理中的作用。在Vista和Win7里面都实现了对文件的标签管理，可以很方便的对文件进行分类和排序  其实如果不想升级到Vista或者Win7的话，今天就介绍DO的两个功能：文件收集区+内容类型，很方便的实现类似的效">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鼠标一族的资源管理器Directory Opus介绍[5]">
+<meta property="og:url" content="http://blog.yesmryang.net/do-5/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="老同学从美国回来了，这两天晚上玩得比较晚，早上起得也完，没有更新日志，抱歉抱歉~  昨天yibie和我讨论有关win7的时候发给我看了一个文档，说的是有关“库”（Library）在文件管理中的作用。在Vista和Win7里面都实现了对文件的标签管理，可以很方便的对文件进行分类和排序  其实如果不想升级到Vista或者Win7的话，今天就介绍DO的两个功能：文件收集区+内容类型，很方便的实现类似的效">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100716-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100936-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101111-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101329-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101505-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102322-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102516-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103101-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102940-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103302-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104742-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104914-thumb.png">
+<meta property="og:updated_time" content="2013-01-09T03:57:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="鼠标一族的资源管理器Directory Opus介绍[5]">
+<meta name="twitter:description" content="老同学从美国回来了，这两天晚上玩得比较晚，早上起得也完，没有更新日志，抱歉抱歉~  昨天yibie和我讨论有关win7的时候发给我看了一个文档，说的是有关“库”（Library）在文件管理中的作用。在Vista和Win7里面都实现了对文件的标签管理，可以很方便的对文件进行分类和排序  其实如果不想升级到Vista或者Win7的话，今天就介绍DO的两个功能：文件收集区+内容类型，很方便的实现类似的效">
+<meta name="twitter:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100716-thumb.png">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-do-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-5/" class="article-date">
+  <time datetime="2009-07-18T16:00:00.000Z" itemprop="datePublished">Jul 19 2009</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      鼠标一族的资源管理器Directory Opus介绍[5]
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>老同学从美国回来了，这两天晚上玩得比较晚，早上起得也完，没有更新日志，抱歉抱歉~</em></p>  <p>昨天<a href="http://www.gtdstudy.com/" target="_blank">yibie</a>和我讨论有关win7的时候发给我看了一个文档，说的是有关“库”（Library）在文件管理中的作用。在Vista和Win7里面都实现了对文件的标签管理，可以很方便的对文件进行分类和排序</p>  <p>其实如果不想升级到Vista或者Win7的话，今天就介绍DO的两个功能：文件收集区+内容类型，很方便的实现类似的效果</p>  <p>【文件收集区】</p>  <p>文件收集区绝对是DO的杀手级应用了。其实说起来也挺简单的，文件收集区正如我们音乐文件的播放列表一样，是一个一个文件（夹）的列表，从而能够很方便的对不同路径下的文件做管理，和“库”的概念有异曲同工之妙。</p>  <p>如何进入文件收集区呢？有几种做法：</p>  <p>1.转到-文件收集区</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100716.png" target="_blank" rel="external"><img title="2009-07-19_100716" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="301" alt="2009-07-19_100716" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100716-thumb.png" width="484" border="0"></a> </p>  <p>2.设置后在桌面可见：</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100936.png" target="_blank" rel="external"><img title="2009-07-19_100936" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="340" alt="2009-07-19_100936" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-100936-thumb.png" width="484" border="0"></a> </p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101111.png" target="_blank" rel="external"><img title="2009-07-19_101111" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="366" alt="2009-07-19_101111" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101111-thumb.png" width="484" border="0"></a> </p>  <p>在点击收集区，可以看到里面已经有列表了：</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101329.png" target="_blank" rel="external"><img title="2009-07-19_101329" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="364" alt="2009-07-19_101329" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101329-thumb.png" width="484" border="0"></a> </p>  <p>右键空白处可以新建“收集”，可以单独也可以批量新建</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101505.png" target="_blank" rel="external"><img title="2009-07-19_101505" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="197" alt="2009-07-19_101505" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-101505-thumb.png" width="355" border="0"></a> </p>  <p>在“收集”里面，可以放置不同文件夹下面的各种文件，只需要把文件拖到收集区里面就好。</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102322.png" target="_blank" rel="external"><img title="2009-07-19_102322" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="418" alt="2009-07-19_102322" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102322-thumb.png" width="484" border="0"></a> </p>  <p>鼠标右键-发送到，也出现了收集区，方便快速收集：</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102516.png" target="_blank" rel="external"><img title="2009-07-19_102516" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="418" alt="2009-07-19_102516" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102516-thumb.png" width="484" border="0"></a> </p>  <p>这里所谓的“放置”指的是有一个链接指向原文件。使用收集区并不会让文件出现多个副本。</p>  <p>在收集区可以很方便的定位到文件夹，只需要在文件上右击-打开包含文件夹即可</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103101.png" target="_blank" rel="external"><img title="2009-07-19_103101" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="418" alt="2009-07-19_103101" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103101-thumb.png" width="484" border="0"></a> </p>  <p>从收集区删除文件也很简单，右击文件选择从收集区删除</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102940.png" target="_blank" rel="external"><img title="2009-07-19_102940" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="418" alt="2009-07-19_102940" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-102940-thumb.png" width="484" border="0"></a> </p>  <p>或者在删除按钮上点右键：（按钮复用真的很方便）</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103302.png" target="_blank" rel="external"><img title="2009-07-19_103302" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="418" alt="2009-07-19_103302" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-103302-thumb.png" width="484" border="0"></a></p>  <p>通过介绍，其实很容易就能想到“文件收集区”可以作为一个对文档添加标签（tag）管理的功能，实现起来相当的方便。同时，DO的搜索结果也能输出为文件收集区：</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104742.png" target="_blank" rel="external"><img title="2009-07-19_104742" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="330" alt="2009-07-19_104742" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104742-thumb.png" width="484" border="0"></a> </p>  <p></p>  <p></p>  <p>点“查找”之后，文件收集区就会多出一个叫做“查找结果”的收集区了。以后可以重命名这个收集区，以便使用</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104914.png" target="_blank" rel="external"><img title="2009-07-19_104914" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="474" alt="2009-07-19_104914" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/07/20090719-104914-thumb.png" width="484" border="0"></a> </p>  <p>关于“内容类型”的内容，明天再介绍吧~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-5/" data-id="cj591hwo0002bkgnx5427o68r" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-5/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/do-6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          鼠标一族的资源管理器Directory Opus介绍[6]
+        
+      </div>
+    </a>
+  
+  
+    <a href="/why-call-point-guard/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">篮球：为什么控球后卫叫做Point Guard？</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/do-5/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

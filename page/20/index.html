@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/page/20/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-chandler-get-started" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/chandler-get-started/" class="article-date">
+  <time datetime="2008-11-25T16:00:00.000Z" itemprop="datePublished">Nov 26 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/chandler-get-started/">时间管理软件Chandler使用介绍[1]</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>Chandler是一个符合GTD思想的时间管理软件，它不但集成了日程管理和任务管理，还有邮件处理功能。另外，它还可以有网络同步功能，使你在任何地方都可以使用。软件的目标是很远大的，它要做Outlook杀手。这一篇日志将教会你Chandler的基本使用
+
+1.下载、安装及汉化
+
+在&lt;a href=&quot;http://cid-1d3a12f9809b6d8e.skydrive.live.com/self.aspx/%e8%bd%af%e4%bb%b6/Chandler1.0.2.rar&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;可以下载已经汉化好的1.0.2版本
+
+如果想自己汉化的话，看看&lt;a href=&quot;http://code.google.com/p/chandlercn/wiki/Chandler_FAQ?ts=1230771330&amp;amp;updated=Chandler_FAQ&quot; target=&quot;_blank&quot;&gt;http://code.google.com/p/chandlercn/wiki/Chandler_FAQ?ts=1230771330&amp;amp;updated=Chandler_FAQ&lt;/a&gt;，这样能在使用中对不满意的词条进行修改
+
+2.基本概念(参考Chandler Get Started Guide）
+
+Chandler里面基本的信息单元是“条目”-item，依照条目的属性不同，分为“便条note”，“加星便条starred note”和“事件event”三类。三类间可以互相转换。可以通过邮件发送条目
+
+比条目高一级的是“分类”，分类和条目是多对多的关系。由于条目的属性不同，分类可以有三种视图，分别是“所有条目”“加星标的”“日程表”，其中日程表只显示有时间属性的事件。
+
+每一个条目有三个状态：NOW LATER DONE。正如字面的意思。当事件未开始的时候，自己会标为LATER，开始了之后自动标记为NOW
+
+3.界面介绍
+
+运行d:\Chandler\chandler.exe，就可以启动Chandler了，第一次启动会比较慢，请耐心等待。完成启动过程后，界面如下图所示：
+</code></pre><p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-210546.png" target="_blank" rel="external"><img border="0" width="504" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-210546-thumb.png" alt="2008-11-26_210546" height="364" style="display: inline; border: 0px" title="2008-11-26_210546"></a></p>
+<pre><code>我们从左到右的介绍一遍：
+
+分类栏中，有默认的四个系统分类——“Dashboard””In””Out”和“垃圾箱”，其中Dashboard我觉得对应的是GTD中收件箱的概念，Dashboard中不能使用日程表视图，你在快捷输入栏或者条目-新建中所创建的所有条目都会进入Dashboard分类里面。或许可以翻译为“工作篮”。In和Out分别是对应邮件的收件箱和发件箱。
+</code></pre><p>你也可以建立自己的分类，就像上图中的工作、家庭、娱乐和US节日一样，方法是在分类栏内右击后选择新分类或者工具栏中的分类-新建。</p>
+<pre><code>日历就是日历啦，没什么好介绍的，可以
+
+在条目列表里面，可以看到当前分类里面的条目。
+
+在条目详情里面，可以看到当前选定条目的详情
+
+在视图选择里面，可以选择针对当前分类的视图类型，在快捷输入栏里面，可以快速新建一个条目。
+
+快捷输入栏右边的“清理”(我觉得译为整理比较好)，可以迅速帮你把条目列表中的条目按照其状态整理好。
+
+4.开始使用
+
+下面我们为了使用的方便，将默认存在的条目全部删除掉。方法是选中Dashboard后，在条目列表里按Ctrl+A，然后Del。Ooops，它会提示你“US 节日是只读的/仅供查看的”,不能删除。你可以先把其他的删除掉。然后在US节日上点右键，然后选择“退订”就可以删除了，现在你的Chandler应该是这样：
+</code></pre><p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214057.png" target="_blank" rel="external"><img border="0" width="504" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214057-thumb.png" alt="2008-11-26_214057" height="364" style="display: inline; border: 0px" title="2008-11-26_214057"></a></p>
+<p>接下来，我们在快捷输入栏（就是有创建新便条）的那一栏输入一个事项，比如“买《像艺术家一样思考》”，回车后应该是像下图一样：</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214421.png" target="_blank" rel="external"><img border="0" width="504" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214421-thumb.png" alt="2008-11-26_214421" height="348" style="display: inline; border: 0px" title="2008-11-26_214421"></a></p>
+<p>在右边的详情栏里面，可以进行的操作有：</p>
+<p>1.写一些备注：比如图中的“听说这是一本不错的书”<br>2.加星标，点<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214640.png" target="_blank" rel="external"><img border="0" width="29" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214640-thumb.png" alt="2008-11-26_214640" height="30" style="display: inline; border: 0px" title="2008-11-26_214640"></a> 可以加星标<br>3.发送，点<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214647.png" target="_blank" rel="external"><img border="0" width="33" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214647-thumb.png" alt="2008-11-26_214647" height="28" style="display: inline; border: 0px" title="2008-11-26_214647"></a> 可以用电子邮件发送当前条目（电子邮件账户配置在下一篇文章）<br>4.安排时间，点<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214700.png" target="_blank" rel="external"><img border="0" width="26" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214700-thumb.png" alt="2008-11-26_214700" height="33" style="display: inline; border: 0px" title="2008-11-26_214700"></a>可以对这个条目安排时间<br>5.转换状态，如图的状态是NOW，通过点击NOW可以在三种状态中转换。</p>
+<p>下面我点 <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-2147001.png" target="_blank" rel="external"><img border="0" width="26" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-214700-thumb1.png" alt="2008-11-26_214700" height="33" style="display: inline; border: 0px" title="2008-11-26_214700"></a>来为买书安排时间</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215208.png" target="_blank" rel="external"><img border="0" width="279" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215208-thumb.png" alt="2008-11-26_215208" height="455" style="display: inline; border: 0px" title="2008-11-26_215208"></a></p>
+<p>到时候Chandler就会在11-28的11：45跳出来提醒我了~</p>
+<p>下面我们新建一个分类，叫做Amazon，在工具栏的“分类”项下可以对分类做设置，其中，不在Dashboard里面显示的意思是分类及其下包括的条目不在Dashboard里面显示。我们把颜色设置一下：</p>
+<p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215538.png" target="_blank" rel="external"><img border="0" width="271" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215538-thumb.png" alt="2008-11-26_215538" height="314" style="display: inline; border: 0px" title="2008-11-26_215538"></a></p>
+<pre><code>然后我们可以把刚才新建的那个“买《》”的条目拖到Amazon的分类里面去，然后选择日程表视图，可以看到，我们刚才的那个条目已经出现在日程表里面了。同时，日程表是覆盖显示的，也就是说当你选择多个分类时，各分类中的条目可以同时显示在日程表里面。
+</code></pre><p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215934.png" target="_blank" rel="external"><img border="0" width="504" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-215934-thumb.png" alt="2008-11-26_215934" height="321" style="display: inline; border: 0px" title="2008-11-26_215934"></a></p>
+<p>  <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-220539.png" target="_blank" rel="external"><img border="0" width="244" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20081126-220539-thumb.png" alt="2008-11-26_220539" height="208" style="display: inline; border: 0px" title="2008-11-26_220539"></a> 分别是娱乐和Amazon中的条目=========================以上是内容===========================</p>
+<p>   在汉化的过程中，难免有错误，希望大家在使用的时候指正~</p>
+<pre><code>欢迎到&lt;a href=&quot;http://code.google.com/p/chandlercn/&quot;&gt;http://code.google.com/p/chandlercn/&lt;/a&gt;提交问题
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/chandler-get-started/" data-id="cj591hwm7000tkgnxsts1l9tm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/chandler-get-started/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-word-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/word-3/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/word-3/">Word长文排版中的自动化问题[3]</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div>&#160;&#160; 在[2]里面介绍了目录和参考文献的做法。这一次我们说说其他的自动编号问题。    <br>&#160;&#160;&#160; 按照清华的要求，论文的第一级标题格式形如“第1章”，第二级是“1.1”，第三级是“1.1.1”。那么我们必须设置一个多级编号来满足这个层次上的要求。     <br>&#160;&#160;&#160; 但是我们必须让这个多级编号和“标题1”，“标题2”，“标题3”的样式链接起来，这样我们才能在目录中抓出来，在我们之后的写作中也不至于出现混乱编号等现象。     <br>&#160;&#160;&#160; 具体的操作是这样：在多级列表中，点选“定义新多级列表”，然后在编号格式里面将第一级改为“第1章”，注意里面的1应该是有灰色底纹的。然后点击下面的“更多”，在右边新出现的几个选项中，将多级列表的第一级和“标题1”样式链接。同时选择在库中的级别为1。     <br>&#160;&#160;&#160; 依次类推，将2级和3级列表和“标题2”“标题3”的样式链接，库中的级别分别为2和3.缩进都按照论文要求设为无。     <br>&#160;&#160;&#160; 好了，我们做一个样例，在刚才的文档里面输入如截图中的文字。然后分别设置“这是第一章”和“这是第二章”为标题1，然后下面文字分别设为标题2和标题3的样式，看到没有？已经自动编号了。以后你只要是个标题x的样式，就会按照顺序编号，不会和你正文中的多级编号混淆。&#160; <p>&#160;&#160;&#160; 然后我们用一下对图表题注的自动编号功能。在文章中插入一个图片，然后右击图片，选择“插入题注”，看看标签有什么，如果没有“图”或者“表”的话就新建一个。取消“题注中不包括标签”，在“编号”选项中勾选“包含章节号”，这样出来的图或者表的题注就是“图1-1”（章节起始样式设为标题1）或者“图1.1-1”（章节起始样式设为标题2）。&#160; </p>    <p>&#160;&#160;&#160; 如果论文中有图的话，需要插入一个图目录，如果有表的话，需要插入一个表目录。直接在“引用”-“题注”-“插入图表目录”，这个时候会给你选择是对那个标签出目录，如果选图的话就把所有用“图”这个标签的“东西”名字及其所在位置抓成目录。&#160; </p>    <p>&#160;&#160;&#160; 在引用图表的时候，依然选择用“交叉引用”这个功能来对题注进行引用，引用类型选择“图”，引用类型为“只有标签和编号”。 </p>    <p>&#160;&#160;&#160; 最后，讲一个小技巧，有时候我们喜欢在页眉上加入比如“第1章 文献综述”等字样，难道你是手动输入的吗？你只需要编辑页眉，然后选择“插入”-“文档部件”-“域”，然后选styleRef域命令，样式名为标题1，勾选“插入段落编号”就可以了。      <br>&#160;&#160; <br>&#160;&#160;&#160; 最后所有的效果都在截图里面。我做这个排版总共没有超过5分钟。 </p>    <p>&#160;<a href="http://blufiles.storage.msn.com/y1pjLm8Vxifs6wm_xn4_q8xETdBWBoQHVD1133FUq22WbJoTlzN9lXZOL05mxtaYog7?PARTNER=WRITER" target="_blank" rel="external"><img title="A944587322691CHR" style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="331" alt="A944587322691CHR" src="http://blufiles.storage.msn.com/y1prxgQ8a81etJWEPmUjOvbXxqsoqGlfiGC1q_kZ-VCO8MxwkGNZKfrnV3qfcOumOB2TKBtL9OolIfRTGE47AXXsQ?PARTNER=WRITER" width="404" border="0"></a> </p>    <p>&#160;&#160;&#160; OK，你看是不是长文的排版其实很容易呢？三讲的内容加起来，估计你在写文章前只需30分钟做一点小小的设置，就能把文章排得很漂亮。花一点时间学习一下不也是挺好的吗？</p> </div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/word-3/" data-id="cj591hwm6000skgnxq8807847" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/word-3/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-word-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/word-2/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/word-2/">Word长文排版中的自动化问题[2]</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在[1]中我们已经初步提到了Word中样式的概念,在最后的一段我留个一个探索题，就是把生成的二级目录的缩进去掉。不知道有谁完成了没有或者已经做好了？   <br>  <br>&#160; 怎么样把生成的二级目录的缩进去掉？其实很简单，你在样式编辑器里面（怎么样进入样式编辑器？），编辑“目录2”这个样式，去掉左下角“格式”–“段落”中的左缩进，然后确定。咦？为什么目录的样子没有改变？这是因为目录相当于是一段公式（学名叫做域代码），要经过重新计算才会改变内容。你这个时候按ctrl+a，全选文本，然后再按F9刷新域代码，看看目录是不是已经OK了。以后要是我们的文档结构发生变化了，但是目录是不会马上就发生变化的，同样需要F9一下。   <br>  <br>&#160; 这里要介绍一下样式的“继承”，在你编辑样式的时候，会看到一个项目是“样式基准”，样式基准的意思是你当前的样式是基于什么样式继承来的，当前样式会包括所有“样式基准”的内容。比如你“正文”是宋体4号字，那所有样式基准为正文的样式都会默认字体是宋体4号，如果修改了再以修改的来替代宋体4号。   <br>&#160;&#160;&#160; <br>&#160; 知道了样式的继承，那就会想到，如果一个样式继承自“标题1”，那就会出现在目录的顶级，如果一个样式继承自“标题2”，那它就会出现在目录的第二级，依次类推。因此，我们论文中出现的“致谢”、“参考文献”、“附录A”、“附录B”这几个的标题完全可以用一个继承自“标题1”的样式来处理。他们不必带有编号，但是会出现在目录里面。   <br>  <br>&#160; 其实，在插入目录的时候，点击“选项”，可以看到一个基于样式的目录抓取规则，如果你都是默认设置的话，他会把标题1抓为第一级目录，标题2抓为第二级，你完全可以自定义这个抓取规则。   <br>  <br>&#160; 到这里我们已经会修改样式和定制目录，长文排版中的基础问题已经解决。下面我们按照清华大学的本科毕业论文要求，“目录从第1章开始，每章标题用黑体小四号字，行间距为20pt，行前空6pt，行后空0pt。其它级节标题用宋体小四字，行间距为20pt”。将目录1-3的样式进行修改。   <br>  <br>&#160; 接下来回答[1]中的第二个问题，就是怎么样做参考文献和对参考文献的引用。现在主流的有两种方法，一是利用尾注，二是直接用一个编号项。我个人倾向于后一种，因为用尾注的话你得多操作两步：1.删除尾注分隔符及扩展分隔符，2.修改尾注编号的样式。这两种操作的步骤都比较多。所以不推荐用尾注来做。   <br>  <br>&#160; 那怎么样来做参考文献呢？首先你大致把你的参考文献列表列出来，然后在每一条前面增加一个形如[x]的自动编号项，并且按照学校要求，设定为“宋体五号/Times New Roman 10.5pt，固定行距17pt，段前后间距3pt”的样式（你可以取个名字，叫做参考文献正文）。接下来，在要引用的地方，点击“引用”选项卡“题注”中的“交叉引用”，引用类型选择“编号项”，引用内容选择“段落编号”，然后点“插入”就可以在当前光标所在位置插入对那一篇文献的引用了，即使那篇文献的编号有所改变，引用的编号也会跟着改变的。   <br>  <br>&#160; 现在做好了参考文献列表及其引用，但是你发现没有，这和我们想要的还差了一点，有时候我们希望对参考文献的引用是上标的形式。这个问题比较好解决，其实由于你是从前往后写的，你可以插入一个改一个（快捷键是ctrl+=），或者你把所有的引用都插入了再修改。但是，你对参考文献的引用默认的是正文样式，怎么样批量修改呢？   <br>  <br>&#160; 这里可以使用Word自身提供的查找-替换功能。我们点开“查找-替换”图标或者按ctrl+H，点“更多”，勾选“使用通配符”,然后查找内容为“[[0-9]{1,}]”,并且点左下角的“格式”-“样式”，在弹出的窗口中选“正文”。然后点一下替换框，但是不要输入东西，点左下角“格式”-“字体”，设为上标。然后点击“全部替换”就OK了。至于为什么这么操作，可以看一下Word帮助中的“使用通配符”。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/word-2/" data-id="cj591hwm5000rkgnxrmy6v86d" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/word-2/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-word-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/word-1/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/word-1/">Word长文排版中的自动化问题[1]</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div>首先，要对标题做一下解释，什么是题目中所指的“长文”？    <br>&#160;&#160;&#160; 在这里，“长文”是指：有排版格式要求，有目录、注解、引用等补充内容，超过15页的文档。     <br>&#160;&#160;&#160; 为什么只针对15页以上的文档？因为15页以下的你完全可以手动进行修改，不需要很多的自动化操作也可以完成，即使可能会累一点。     <br>&#160;&#160;&#160; 明白了长文的意思，那自然就知道在用word排版中需要自动化的是什么，包括但不限于以下内容：     <br>&#160;&#160;&#160; 1.总目录/图表目录：目录每一项的名称和页码     <br>&#160;&#160;&#160; 2.对注解、参考文献的引用：比如你写了“参见[10]”,但是你在[10]之前又插入了一篇文献，这时候的[10]应该自动变为[11]。如果你的[10]是手动写上去的，那恭喜你，你得从[10]开始把所有的引用都得改一遍     <br>&#160;&#160;&#160; 3.章节编号：第一节后面自动编为第二节，如果在第一节和第二节之间插入一个新节，那刚才的第二节能自动变成第三节。&#160;&#160; <br>&#160;&#160;&#160; 4.图表题注：图表题注就是形如“图2.3”的跟在图周围的一个文本。一个题注，如果放在第二章，就应该是图2.x，如果放在第3章就应该是图3.x，在同一章内，那个x应该是自动编号的。     <br>&#160;&#160;&#160; 5.对图表题注的引用也应该是自动化的，比如文档中有“如图2.4所示”，如果图2.4变为图2.6，那这句话也要自动变成“如图2.6所示”     <br>&#160;&#160;&#160; 6.其他所有需要自动编号和引用自动编号的地方     <p>&#160;&#160;&#160; 那么怎么样实现如上所述的自动化操作呢？      <br>&#160;&#160;&#160; 首先，你得明白什么是“样式”。       <br>&#160;&#160;&#160; 所谓Word中的样式，是指一类“格式”的集合，比如宋体三号加粗、段前1行段后0.5行，行高20磅，这些每一项都是一个格式：字体格式，段落格式，编号格式等。如果我们将这些所有的格式组合起来，就形成了一个“样式”。你可以在word自带的样式编辑器里面对样式进行新建、修改和删除。如果你已经有了一个样式，叫做“题目”，它代表的是“宋体三号加粗居中、段前1行段后0.5行，行高20磅”。那你把这个样式赋予任何文字，那这些文字就会是“宋体三号加粗居中、段前1行段后0.5行，行高20磅”的格式。 </p>    <p>&#160;&#160;&#160; Word2007里面，对样式的处理在“开始”选项卡的中间偏右，你可以点那个向下的箭头看到目前文档里面显示的样式有多少，在每一个样式上点右键，可以对样式进行修改，或者选中所有使用当前样式的问题。点一下下面三个按钮中最右边的一个，就可以打开“样式管理器”。      <br>&#160;&#160;&#160;&#160; <br>&#160;&#160;&#160; 可能有人会以为，样式只是给我们带来一个快速的格式复制操作，和格式刷的用法其实差不多。但是如果你了解word对文档的结构分布，那就不会有这种想法了。       <br>&#160;&#160;&#160; <br>&#160;&#160;&#160; 在一个新建的空白文档中，自然有“标题1”“标题2”“标题3”三种样式，当你打开样式管理器，你还会发现从标题4到标题9，目录1到目录9的样式，叫做“题注”的样式等等。不过后面这些样式在你不用的时候会隐藏起来。       <br>&#160;&#160;&#160; <br>&#160;&#160;&#160; 在Word中，有“标题1”这个样式的文字是文档结构中的最高级，依次类推，“标题2”对应的就是次高级……，具有“标题”样式的文字在左边会有一个小小的实心黑色方形，不用紧张。而“正文”样式的文档是不会出现在文档的结构里面。 </p>    <p>&#160;&#160;&#160; 同理，“目录1”则是目录里面最高层的文字的样式，“目录2”是目录里面次高层的文字，而“题注”“脚注”“尾注”就是对应的题注、脚注、尾注的格式总和。 </p>    <p>&#160;&#160;&#160; 看到这里，你或许明白了自动化的第1点，目录/图表目录的内容，就是把具有“标题x”（x=1～9）的对应的文字及其页码从文档中“抓”出来，形成一个目录。目录文字按照“目录x”(x=1～9)的样式来呈现。 </p>    <p>&#160; </p>    <p>&#160;&#160;&#160; 在Word2007里面，在“引用”选项卡的最左边，点击“目录”下拉菜单，点“插入目录”就可以在当前光标的位置生成一个目录了。 </p>    <p>&#160;&#160;&#160; 你现在可以试试，先写几行字，比如“第一章”“1.1”“1.2”“第二章”“2.1”等，然后分别赋予它们标题1和标题2的样式，再在当前光标所在的地方插入一个目录。就是这么简单！ </p>    <p>&#160;&#160;&#160; 好了，第1次就写到这里，内容也不要搞得太多。如果你想练习一下，可以想想怎么样把刚才生成的目录中的缩进去掉。这算是明天内容的一个预习吧。</p> </div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/word-1/" data-id="cj591hwm3000qkgnx7ot1uh5y" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/word-1/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-thoughts-after-sharing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/thoughts-after-sharing/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/thoughts-after-sharing/">2008-11-10协会分享后记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 昨天晚上，我在协会做了一下个人分享，内容是有关个人感悟和office软件的一些使用技巧，前半部分没有什么问题，我觉得讲得还是挺顺溜的，后半部分得好好反思一下。</p>  <p>&#160;&#160;&#160; 1.Word部分逻辑不够清楚，讲得比较零碎，没有针对一个具体任务来讲，所以大家可能觉得有一点跟不上了，下次可能集中到一点上，比如专门讲一下论文排版的技巧啥的。Outlook和邮件合并还可以，毕竟有一个例子在里面</p>  <p>&#160;&#160;&#160; 2.语速还是快，这我一直都改不掉。</p>  <p>&#160;&#160;&#160; 3.坐的位置不对，我背对投影就座，看不到屏幕上字体到底是不是合适，我的操作是不是太快。应该在切换的时候把笔记本的屏幕关掉。</p>  <p>&#160;&#160;&#160; 4.埋头操作，没有注意听众的反馈</p>  <p>&#160;&#160;&#160; 再加油吧~我其实挺喜欢做分享和培训的，把自己知道的教给别人，使别人能够感觉有收获有提高，也是件蛮不错的事情嘞。</p>  <p>&#160;&#160;&#160; 因此，我的下一篇日志应该是《Word论文排版中的自动化》，希望整理之后集中的内容能对大家有帮助。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/thoughts-after-sharing/" data-id="cj591hwm1000pkgnxtp326bxu" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/thoughts-after-sharing/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-msn-at-work" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/msn-at-work/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/msn-at-work/">在工作的时候怎么聊MSN？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 前几天和Tony聊，他很郁闷，公司里IT把MSN和QQ的端口都封掉了，连Meebo也没法上。而且没有办法在公司的电脑上装任何的软件，注册表也不能修改。想聊MSN都不可以，我后来搜了一下，想出一个办法，可以解决MSN端口被封的问题。所谓魔高一尺，道高一丈~</p>  <p>&#160;&#160;&#160; 说起来这个办法也是没有什么技术含量的，就是用Gtalk和你的MSN绑定，之后你就可以开着Gmail，利用Gmail本身的聊天功能来和你的MSN好友交谈了。你可以选择用Gmail来存档MSN聊天的所有内容，以后搜索起来也比较方便，但是请千万不要在聊天中泄露任何个人私密的资料哦，Gtalk被破掉的事情是经常发生的。</p>  <p>&#160;&#160;&#160; </p>  <p>&#160;&#160;&#160; 请用非公司的电脑完成以下绑定步骤：</p>  <p>&#160;&#160;&#160; 1.在<a title="http://psi-im.org/download" href="http://psi-im.org/download" target="_blank" rel="external">http://psi-im.org/download</a>根据你的操作系统版本下载psi</p>  <p>&#160;&#160;&#160; 2.安装psi之后，运行之，在帐户设置里面填写你Gmail的用户名和密码</p>  <p>&#160;&#160;&#160; 3.将psi的状态切换为在线，然后点击主菜单中的“service discovery”或者对应的中文名字，在地址栏里面输入bgmn.net或者jabbernet.dk，然后点击浏览。在出现的MSN服务器上右键，点击“注册”。</p>  <p>&#160;&#160;&#160; 4.填写MSN用户名和密码，完成绑定。</p>  <p>&#160;&#160;&#160; 5.关掉psi，打开gtalk或者gmail。在Gmail里面打开聊天功能，然后你就能看到有很多人请求加你为好友了，这都是你MSN里面的好友。他们的用户名都是将原来的@换成%，然后后面加上@服务器（bgmn.net/jabbernet.dk)。abc@hotmail.com就会变成abc%hotmail.com@msn.jabbernet.dk。</p>  <p>&#160;&#160;&#160; 6.以后在GTalk中可以直接添加MSN好友，方法是将MSN帐号中的@用%替换后, 在Gtalk中添加[MSN帐号]@[服务器地址]即可，比如MSN地址是 abc@hotmail.com，可以直接在GTalk中添加 abc%hotmail.com@msn.bgmn.net 为好友，即可与 abc@hotmail.com 聊天。</p>  <p>&#160;&#160;&#160; 7.最好是在Gtalk里面管理你的好友，在Gmail里面只用聊天就好。</p>  <p>&#160;&#160;&#160; 哇哈哈，所有人都以为你是在处理邮件的时候，你却是在MSN~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/msn-at-work/" data-id="cj591hwly000okgnxs2b7h7ye" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/msn-at-work/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-15" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-15/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-15/">[日常软件使用技巧]15.快速启动</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 快速启动有什么用？就是能快速的启动你想要的程序？有多快？我也不知道……总之比IE8的“提速55毫秒”要快</p>  <p>&#160;&#160;&#160; 我现在没有用软件来做快速启动，就是用系统本身使用的win+r来做，我按win+r之后，输入o回车就是opera启动，w就是word，excel就是excel，tw就是theworld，tm就是tm，msn就是msn。呵呵，还是挺方便的。</p>  <p>&#160;&#160;&#160; 具体实现就是你先把所有的快捷方式放到一个文件夹，然后把名字改好，比如o啊w的，然后把这个文件夹的路径加入系统的path路径里面（方法是在我的电脑上点右键-属性-高级-环境变量，双击path），以后win+r就可以直接输入你定义的快捷方式了。</p>  <p>&#160;&#160;&#160; 这个方法还可以实现切换ip等功能，具体的请查阅一下netstat命令。</p>  <p>&#160;&#160;&#160; 当然，如果你自己会写批处理或者会用autohotkey等软件，win+r能实现的功能就更多了。</p>  <p>&#160;&#160;&#160; 快速启动可以使用launchy或者其他别的很多功能的软件，有的可以在桌面点滚轮就出现快捷菜单，有的可以人性化的搜索你所有的可执行程序或者加入一些很贴心的功能，怎么用好就看你自己的了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-15/" data-id="cj591hwlx000nkgnxxbx4aavi" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-15/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-14" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-14/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-14/">[日常软件使用技巧]14.Word和Excel的一些技巧</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 鉴于前几篇有一点长，这次来一篇短的。而且因为都是小技巧，所以看起来会比较轻松。</p>  <p>&#160;&#160;&#160; 1.输入希腊字母</p>  <p>&#160;&#160;&#160; <font face="Symbol">a b d p </font>难道你是用插入符号来做的吗？不用，只需要把字体设为Symbol然后试一试哪个字母对应的是你要的就可以了</p>  <p>&#160;&#160;&#160; 2.对齐</p>  <p>&#160;&#160;&#160; 要么用无框线表格对齐要么用tab键，千万不要用空格来对齐</p>  <p>&#160;&#160;&#160; 3.搜索特定的字符串</p>  <p>&#160;&#160;&#160; 这个很难了，就像昨天说的，要是想把手机号13XXXXXXXXX改为形如13XX-XXX-XXXX的怎么改？或者你要搜索文中的IP地址，或者一些其他的内容模糊但是形式规律的东西，怎么搞？</p>  <p>&#160;&#160;&#160; 用word搜索中的通配符，具体用法在用的时候可以查看word的帮助，绝对是很强大的</p>  <p>&#160;&#160;&#160; 4.长文档的排版规则</p>  <p>&#160;&#160;&#160; 一定要把内容和格式的编排分开。具体一点，最好先做一个空文档，然后按照文档的要求设置各种样式（不知道什么是样式的请留言），同时把多级目录编排和样式关联。然后再进行录入工作，这样在后期的排版修改成本基本为0.</p>  <p>&#160;&#160;&#160; 5.页码编排+新一页总是从右边（左边）开始</p>  <p>&#160;&#160;&#160; 要实现不同的页码混排，一定要插入分节符。然后取消页码中的链接到前一节</p>  <p>&#160;&#160;&#160; 分节符有连续、下一页、奇数页、偶数页四种。其中最后两种的意思是下一节一定从奇数（偶数）页开始，也就是实现了章节末尾的空页。</p>  <p>&#160;&#160;&#160; 6.Excel的输入方法</p>  <p>&#160;&#160;&#160; 假设是一个正常的表格，请你输入第一项之后按tab键，然后就输入第二项，到最后一项的时候按回车，这时候就定位到第一项了，不要用鼠标点来点去，效率不高</p>  <p>&#160;&#160;&#160; 假如有重复内容，比如年级、性别这种，你可以按alt+下，然后放开alt键选择内容。免得重复输入（当然，如果仅仅是男女的话，直接输入还要快）</p>  <p>&#160;&#160;&#160; 7.Excel的格式</p>  <p>&#160;&#160;&#160; 请试试在一个单元格里面输入2008-09-28之后，让它自己变成“2008年9月28日 星期日”。</p>  <p>&#160;&#160;&#160; 8.大表怎么分解为小表</p>  <p>&#160;&#160;&#160; 请用好筛选功能</p>  <p>&#160;&#160;&#160; 9.怎么用Excel做插值算法</p>  <p>&#160;&#160;&#160; 这个很复杂，但是不难。假设你Excel里面已经有了AB两列（已排序），现在已知一个A列的数D，，要求出对应的B列中插值出来的数。先插入一列C，C的内容就是行号1，2，3……。然后用函数INDIRECT(ADDRESS(LOOKUP(D,A:A,C:C),1))就可以取得D对应的A列中的比D小的那一个值，INDIRECT(ADDRESS(LOOKUP(D,A:A,C:C)+1,1))就可以取得D对应的A列中的比D大的那一个值，后面的插值相信不用我讲了吧。至于函数的参数是什么意思，LookUP的三个参数分别是要查找的值，要查找的范围和对应返回的范围，Address的参数是列和行号。</p>  <p>&#160;&#160;&#160; 就这么多，以后想起再补遗</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-14/" data-id="cj591hwlw000mkgnxyhb09roy" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-14/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-13" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-13/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-13/">[日常软件使用技巧]13.折腾你的通讯录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; Part0：关于通讯录的一点感悟</p>  <p>&#160;&#160;&#160; 关于通讯录的重要意义，感兴趣的可以看一下<a href="http://blog.sina.com.cn/s/blog_59105b6b0100a791.html" target="_blank">黄金通讯录十招 打通人脉任督二脉</a>。</p>  <p>&#160;&#160;&#160; 说到通讯录，一般来说我们都会有两个，一个是手机上的，一个是电脑或者是网络上的。前者主要包含的是电话信息，后者一般是包含邮件信息。其实我们是可以把这两种通讯录合并起来的，减少我们在人脉管理上消耗的时间。</p>  <p>&#160;&#160;&#160; 为啥要这么说呢，如果你的通讯录是统一的，那即使你不小心把手机弄掉或者电脑坏了，还有另一个可以作为备份。如果若干份通讯录能够自动同步的话，那你只用维护一个通讯录就好，相对的，消耗的精力反而可能会少很多。一个著名的华人成功学讲师就讲过：“复杂的事情简单做，简单的事情重复做”是走向成功的一条相当快的路径。</p>  <p>&#160;&#160;&#160; 一般怎么做呢？我建议只在一个地方新增通讯录条目，或者在电脑，或者在手机，这样做可以实现在各个地方显示的一致性。如果你既在手机上新增联系人，又在电脑上，那可能会出现在两个地方有显示奇怪的现象，比如我的手机，给联系人添加生日信息后就会在日历里面加一个“<strong>的birthday”，但是在outlook里面添加呢，是“</strong>的生日”。那要是我两边都加，然后同步的话，里面的显示就会乱七八糟，一会是birthday，一会是生日，有碍观瞻啊。所以呢，最好新增联系人就在一个，如果暂时不方便可以先用便签功能记录一下。</p>  <p>&#160;&#160;&#160; Part1：怎么做一个单一的通讯录</p>  <p>&#160;&#160;&#160; 可以用同步的方法：现在主流的手机都有和outlook或者outlook express同步通讯录的功能，可以拿来使用。诺基亚的还提供和thunderbird同步联系人的功能，这点比较贴心。</p>  <p>&#160;&#160;&#160; 但是，问题来了，并不是所有的人都用outlook或者outlook express来做电脑端的联系人管理的，很大部分的人用的是foxmail，thunderbird，beckey！，thebat，甚至dreammail和koomail（我原来还用过opera写邮件）。也有的直接在网络上管理，比如gmail或者yahoo，网易等。这些形形色色的邮件管理系统怎么样能实现和手机的同步呢？</p>  <p>&#160;&#160;&#160; 一般来说，用csv格式的文件作为中转，就能搞定各种邮件系统中的联系人备份或者说同步问题。csv的意思是“逗号分隔的值（comma separated value）”，也就是说，一条联系人的信息在csv文件里面是这样存储的：</p>  <blockquote>   <p>张三,张,三,12345678909,zhangsan@zhangsan.com,0123-11113333,……</p> </blockquote>  <p>&#160;&#160;&#160; 依次是全名、姓、名、手机、邮件、座机等值。这样看起来，csv文件确实是很容易理解的，自己写也是挺简单的，关键在于表头怎么写。</p>  <p>&#160;&#160;&#160; 按照我的实验，用中文写的表头完全可以在中文系统甚至英文系统中被识别出来。如果你是要新建一个csv文件的话，可以用这些字段做表头：姓名，姓，名，中间名，移动电话，商务电话，住宅电话，住宅电话 2，电子邮件地址，生日。一般我们用到的就是这些个。</p>  <p>&#160;&#160;&#160; 新建csv文件的步骤是：新建一个纯文本文件（txt），然后在里面一次输入表头，并用英文的双引号括起来，并用英文的逗号分开（其实也无所谓，你最后一次查找替换就可以了）。形如a ”姓名”,&quot;电子邮件地址“，然后回车。</p>  <p>&#160;&#160;&#160; 按照表头的顺序，依次填入对应的信息，如 “猪头”,“zhutou@gmail.com”这样。最后保存为csv格式（直接改扩展名也行）就可以了。这一份csv文件就能直接导入foxmail，gmail，outlook等各大邮件处理系统了。成为你的单一通讯录的开始。以后只需要隔几天将手机与outlook或者oe同步一次，再导出一个csv文件，就可以达到备份的效果。并且现在很多邮件处理系统很人性化的，如果你导入的人名字和已有的一样，它能将两条信息自动合并。而且就算不能，你全删了再导入也是很快的。</p>  <p>&#160;&#160;&#160; Part2：会遇到的问题</p>  <p>&#160;&#160;&#160; 那看了上面Part1的说明，你知道了csv是一种大家都接受的关于联系人描述的文件格式。</p>  <p>&#160;&#160;&#160; 你是不是会有一个问题，社团内经常用excel文档来做通讯录，那excel的电子文档能不能直接转成csv呢？当然是可以的，因为csv只是一个文本文件，所以excel，word都可以打开的。这也给我们修改csv的内容带来很大的方便。你可以直接将通讯录的表头经过修改，然后删除掉不需要的列，再另存为csv文件就ok了。</p>  <p>&#160;&#160;&#160; 但是用excel会有一个问题，如果用excel对其他程序导出的csv文件直接编辑的话，可能会对已经存在的csv中的电话号码做科学计数法的处理，或者去除区号前面的0。你保存之后再打开，估计电话号码就会变成13800000000，三位有效数字。这个问题的处理方法是先用word打开这个csv文件，然后查找，勾选使用通配符，查找&quot;([0-9]{5,})&quot;，（如果csv文件中每一项都是有引号的，查找中就包含前后引号，如果没有引号，查找内容就不包含引号，但是5改为11）。这个查找项的意思是：“请找到那些用引号括起来的5位以上的数字”（5位是考虑到有内线，如果没有引号，针对手机的话，就得直接找11位以上的数字了，因为有些是以86开头的），然后替换为###\1，意思是替换为###后面跟上查找到的内容。这样你的手机号在excel看来就是一个文本，不再会做科学计数法的处理了。最后处理完再删除掉就好。</p>  <p>&#160;&#160;&#160; 如果你是用的excel来新建一个csv，只用把手机对应那一行的格式设为文本就可以了。这个方法主要的用途是在给联系人增添拼音缩写的时候，避免自动化程序让手机号丢失。</p>  <p>&#160;&#160;&#160; 这样的话，不管你是怎么处理csv，问题都不大。</p>  <p>&#160;&#160;&#160; 最后，如果你的excel文档中的联系人不是那么需要你添加到通讯录中，不妨试试邮件合并。链接在<a href="http://linchangyang.spaces.live.com/blog/cns!6FCDA80E41592C52!811.entry" target="_blank">这里</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-13/" data-id="cj591hwlv000lkgnxz6ftvon9" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-13/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-chandler" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/chandler/" class="article-date">
+  <time datetime="2008-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/chandler/">推荐时间管理软件Chandler+汉化手记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div>   <p>&#160;&#160;&#160; Chandler是定位于Outlook Killer的一个个人信息管理(Personal Information Management)软件，但是在诞生的过程中遇到不少波折。因为定位比较高（开源、跨操作系统、网络同步等），想法比较多，所以系统开发起来还是挺困难，幸好的是，软件还是做出来了。其中的艰辛可查阅《梦断代码》一书。      <br>&#160;&#160;&#160; 它整合了邮件、日程和任务的功能（你没有看错，没有联系人管理……），是一个基于GTD思想的软件，而且正是由于结合了GTD的思想，它才可以和Outlook抗衡。       <br>&#160;&#160;&#160; 大概学期初就知道了这个软件，但是一是用Outlook习惯了，二是软件仍然是英文版的，虽然使用起来没什么影响，但心中还是不爽——特别是他的wiki还有帮助都是英文的。       <br>&#160;&#160;&#160; </p>    <p>&#160;&#160;&#160; 后来，yibie在in the morning上召集人来做软件的汉化工作，我一看到就报名了，现在我们团队已经完成了所有所有术语的翻译（总共用2天），释放出了Alpha4版的中文化语言包，正在解决繁体简体的共存问题和通过再修正一些翻译提高中文用户的体验。      <br>&#160;&#160;&#160; 在团队里面大家配合得挺好，虽然大家的英语和计算机水平高低不齐，但是都对项目本身挺有热情的，在积极完成自己的翻译任务时，还针对一些术语的准确翻译展开了热烈的讨论，其中对item和collection这两个词的讨论最为热烈。这种热情挺让人感动的。       <br>&#160;&#160;&#160; 加入这个项目组，另外一个让我惊讶的是居然里面有两个人有订阅我的space，还知道我最近在写word的长文排版，真是太出乎我的意外了，呵呵。第一次进qq群的时候，有一个还说“这不就是老杨吗”。当时的感觉真的挺美妙的。在web2.0的时代，不仅网络内容本身是聚合的，发布网络内容的人其实也是聚合的，对某个主题感兴趣，关注得较多的人一定能找到自己的组织，发现和自己类似的人。       <br>&#160;&#160;&#160; 好了，感慨也发完了，下面说说Chandler的使用       <br>&#160;&#160;&#160; 首先，在<a href="http://chandlerproject.org/" target="_blank" rel="external"><font color="#3b5888">http://chandlerproject.org/</font></a>上面下载最新的Chandler。我已经把windows版的上传到<a href="ftp://dme2.3322.org/Monthly/Chandler1.0.2" target="_blank" rel="external"><font color="#3b5888">ftp://dme2.3322.org/Monthly/Chandler1.0.2</font></a>下面       <br>&#160;&#160;&#160; 安装后，下载<a href="http://chandler.googlecode.com/svn/trunk/Chandler-zh.po" target="_blank" rel="external"><font color="#3b5888">http://chandler.googlecode.com/svn/trunk/Chandler-zh.po</font></a>和<a href="http://chandler.googlecode.com/svn/trunk/Chandler" target="_blank" rel="external"><font color="#3b5888">http://chandler.googlecode.com/svn/trunk/Chandler</font></a>-中文.bat       <br>&#160;&#160;&#160; 把刚下载的两个文件放到你Chandler的安装目录下，然后运行这个bat文件       <br>之后你运行Chandler就是中文的了，如果对中文化有什么建议和意见，可以到<a href="http://groups.google.com/group/chandlerproject" target="_blank" rel="external"><font color="#3b5888">http://groups.google.com/group/chandlerproject</font></a>或者<a href="http://code.google.com/p/chandler/issues/list" target="_blank" rel="external"><font color="#3b5888">http://code.google.com/p/chandler/issues/list</font></a>去提交。 </p>    <p>&#160;&#160; </p>    <p>&#160;&#160;&#160; 附：一些文章      <br>Chandler 1-2-3 <a href="http://blog.sina.com.cn/s/blog_59105b6b0100b3ar.html" target="_blank" rel="external"><font color="#3b5888">http://blog.sina.com.cn/s/blog_59105b6b0100b3ar.html</font></a>       <br>Chandler、GTD及梦断代码 <a href="http://blog.sina.com.cn/s/blog_59105b6b0100bfo1.html" target="_blank" rel="external"><font color="#3b5888">http://blog.sina.com.cn/s/blog_59105b6b0100bfo1.html</font></a>       <br>“Chandler中文化”项目近况 <a href="http://www.gtdstudy.com/?p=487" target="_blank" rel="external"><font color="#3b5888">http://www.gtdstudy.com/?p=487</font></a>       <br>Chandler汉化项目小记 <a href="http://thefifthguide.blogbus.com/logs/31661525.html" target="_blank" rel="external"><font color="#3b5888">http://thefifthguide.blogbus.com/logs/31661525.html</font></a> </p>    <p>后面两篇还提到老杨我了~呵呵</p> </div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/chandler/" data-id="cj591hwlu000kkgnxswt2ncx5" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/chandler/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/19/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/page/21/">21</a><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/21/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

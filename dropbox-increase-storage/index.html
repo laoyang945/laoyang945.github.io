@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Dropbox增容方法总结 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.完成dropbox主页里面的get started里面的5个任务，增加250MB 2.在https://www.dropbox.com/free 上完成和facebook/twitter的连接任务，增加768MB 3.邀请好友，每邀请一个好友可以增加250MB的容量，上限是8GB（32位），如果你找不到这么多好友的话，不妨试试虚拟机。（我见过的最NB的发放邀请的方法是在水木上发一篇帖子，题目是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dropbox增容方法总结">
+<meta property="og:url" content="http://blog.yesmryang.net/dropbox-increase-storage/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="1.完成dropbox主页里面的get started里面的5个任务，增加250MB 2.在https://www.dropbox.com/free 上完成和facebook/twitter的连接任务，增加768MB 3.邀请好友，每邀请一个好友可以增加250MB的容量，上限是8GB（32位），如果你找不到这么多好友的话，不妨试试虚拟机。（我见过的最NB的发放邀请的方法是在水木上发一篇帖子，题目是">
+<meta property="og:updated_time" content="2013-01-09T03:58:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dropbox增容方法总结">
+<meta name="twitter:description" content="1.完成dropbox主页里面的get started里面的5个任务，增加250MB 2.在https://www.dropbox.com/free 上完成和facebook/twitter的连接任务，增加768MB 3.邀请好友，每邀请一个好友可以增加250MB的容量，上限是8GB（32位），如果你找不到这么多好友的话，不妨试试虚拟机。（我见过的最NB的发放邀请的方法是在水木上发一篇帖子，题目是">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-dropbox-increase-storage" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dropbox-increase-storage/" class="article-date">
+  <time datetime="2011-01-15T16:00:00.000Z" itemprop="datePublished">Jan 16 2011</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Dropbox增容方法总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.完成dropbox主页里面的get started里面的5个任务，增加250MB</p>
+<p>2.在<a title="https://www.dropbox.com/free" href="https://www.dropbox.com/free" target="_blank" rel="external">https://www.dropbox.com/free</a> 上完成和facebook/twitter的连接任务，增加768MB</p>
+<p>3.邀请好友，每邀请一个好友可以增加250MB的容量，上限是8GB（32位），如果你找不到这么多好友的话，不妨试试虚拟机。（我见过的最NB的发放邀请的方法是在水木上发一篇帖子，题目是“发放Google网盘内测邀请”，无数小白中招，当然我也回复邀请了几个……）</p>
+<p>4.如果你有一个edu邮箱的话（有些edu邮箱可以免费申请），在<a title="https://www.dropbox.com/edu" href="https://www.dropbox.com/edu" target="_blank" rel="external">https://www.dropbox.com/edu</a> 提交你的edu邮箱验证，你的邀请容量就可以翻倍，也就是每邀请一个好友增加500MB的容量，上限变为16G（32位）。这一条和上一条没有时间先后的限制，先做哪个都可以</p>
+<p>5.最近Dropbox在搞活动，完成一系列任务就可以增容1G。</p>
+<p>活动攻略（来自<a title="http://www.fatwallet.com/forums/hot-deals/1066357/" href="http://www.fatwallet.com/forums/hot-deals/1066357/" target="_blank" rel="external">http://www.fatwallet.com/forums/hot-deals/1066357/</a>）：<a id="more"></a></p>
+<p><strong>Step 1</strong><br>访问 <a href="https://www.dropbox.com/dropquest2011" target="_blank" rel="external">https://www.dropbox.com/dropquest2011</a> 开始参加活动<br><strong>Step 2</strong><br>访问 <a href="https://www.dropbox.com/dropquest2011/D" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/D</a><br>5305404/18681 = 284<br><strong>Step 3</strong><br>访问 <a href="http://forums.dropbox.com/topic.php?id=284" target="_blank" rel="external">http://forums.dropbox.com/topic.php?id=284</a><br><strong>Step 4</strong><br><a href="http://dl.dropbox.com/u/211024/Step4.zip" target="_blank" rel="external"><span style="color: #212121;">下载 </span>http://dl.dropbox.com/u/211024/Step4.zip</a><br><strong>Step 5</strong><br>上一步的解压密码为huskies<br><strong>Step 6</strong><br><a href="http://www.dropbox.com/dropquest2011/r" target="_blank" rel="external"><span style="color: #212121;">完成 </span>http://www.dropbox.com/dropquest2011/r</a> 给出的九宫格拼图<br>完成方法可以观看<a href="http://www.fatwallet.com/redirect/bounce.php?afsrc=1&amp;mid=15622757&amp;url=http://www.youtube.com/watch?v=byekJxaGgfQ" target="_blank" rel="external">这个视频</a>.<br><strong>Step 7</strong><br><a href="http://www.dropbox.com/dropquest2011/0" target="_blank" rel="external"><span style="color: #212121;">完成拼图后跳转到 </span>http://www.dropbox.com/dropquest2011/0</a><br>输入 33739 后提交<br><strong>Step 8</strong><br><a href="https://www.dropbox.com/dropquest2011/p" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/p</a></p>
+<p><strong>Step 9</strong><br>访问他们的博客<a href="http://blog.dropbox.com/" target="_blank" rel="external">http://blog.dropbox.com/</a>，看到第一副图墙上的字没有？<br><strong>Step 10</strong><br><a href="https://www.dropbox.com/dropquest2011/b" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/b</a><br>解这个数独，答案是：<br>OWIREDFSA<br>DEFAWSIOR<br>RSAOIFWED<br>EIDFRASWO<br>FAOISWDRE<br>SRWEDOAIF<br>IOSDFREAW<br>WFRSAEODI<br>ADEWOIRFS<br><strong>Step 11</strong><br><a href="https://www.dropbox.com/dropquest2011/o" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/o</a><br><strong>Step 12</strong><br>访问自己的dropbox主页，上面有一个链接，写着”it’s not hunt”的，点进去<br><strong>Step 13</strong><br>跳转到 <a href="https://www.dropbox.com/dropquest2011/x" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/x</a><br><strong>Step 14</strong><br>访问 <a href="http://forums.dropbox.com/topic.php?page=18&amp;id=18#post-9110" target="_blank" rel="external">http://forums.dropbox.com/topic.php?page=18&amp;id=18#post-9110</a><br><strong>Step 15</strong><br>访问 <a href="http://blog.dropbox.com/?p=18" target="_blank" rel="external">http://blog.dropbox.com/?p=18</a><br>点击  katana-ya 这个链接<br><strong>Step 16</strong><br>下载 <a href="http://dl.dropbox.com/u/211024/Step16.zip" target="_blank" rel="external">http://dl.dropbox.com/u/211024/Step16.zip</a><br><strong>Step 17</strong><br>访问 <a href="https://www.dropbox.com/dropquest2011/h" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/h</a><br>答案是 BAFF1E<br><strong>Step 18</strong><br>跳转到 <a href="https://www.dropbox.com/dropquest2011/e" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/e</a><br>答案是 Drew Houston<br><strong>Step 19</strong><br><a href="https://www.dropbox.com/dropquest2011/a" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/a</a><br><strong>Step 20</strong><br>访问 <a href="http://www.dropbox.com/help/206" target="_blank" rel="external">http://www.dropbox.com/help/206</a> ，得到一个下载链接<br><strong>Step 21</strong><br><a href="http://dl.dropbox.com/u/211024/Step21.zip" target="_blank" rel="external">http://dl.dropbox.com/u/211024/Step21.zip</a><br>新建一个名为1F75CC的文件夹分享给 <a href="mailto:dropquest@dropbox.com" target="_blank" rel="external">dropquest@dropbox.com</a><br><strong>Step 22</strong><br>访问 <a href="https://www.dropbox.com/votebox/3712/frozen-yogurt" target="_blank" rel="external">https://www.dropbox.com/votebox/3712/frozen-yogurt</a><br><strong>Step 23</strong><br>访问 <a href="https://www.dropbox.com/about" target="_blank" rel="external">https://www.dropbox.com/about</a><br><strong>Step 24</strong><br>点击 Rian Hunter<br><strong>Step 25</strong><br>下载 <a href="http://dl.dropbox.com/u/211024/rainbowshell.zip" target="_blank" rel="external">http://dl.dropbox.com/u/211024/rainbowshell.zip</a><br><strong>Step 26</strong><br>下载文件中有下一步提示<br><strong>Step 27</strong><br><a href="https://www.dropbox.com/dropquest2011/t" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/t</a><br>答案是 badcabbage<br><strong>Step 28</strong><br><a href="https://www.dropbox.com/dropquest2011/s" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/s</a><br>答案是1133471056<br><strong>Step 29</strong><br><a href="https://www.dropbox.com/dropquest2011/U" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/U</a><br>答案是 Dr0pbox heaRts U<br><strong>Step 30</strong><br><a href="https://www.dropbox.com/dropquest2011/finish_line" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/finish_line</a><br>到此游戏结束，你获得了1G的额外容量，可以到<a href="https://www.dropbox.com/dropquest2011/wall_of_fame" target="_blank" rel="external">https://www.dropbox.com/dropquest2011/wall_of_fame</a> 去看看别人完成的时间。</p>
+<p>如果上面5种方法你都完成了，那一共免费的空间有20G，应该够用了吧？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dropbox-increase-storage/" data-id="cj591hwrx004mkgnx6t0im0e1" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dropbox-increase-storage/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/dropquest-in-60s/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          60秒完成dropbox的增容任务
+        
+      </div>
+    </a>
+  
+  
+    <a href="/firefox-extension-in-use/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">我现在还在用的Firefox扩展</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/dropbox-increase-storage/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

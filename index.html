@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-vimwiki" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/vimwiki/" class="article-date">
+  <time datetime="2017-07-18T03:31:09.000Z" itemprop="datePublished">Jul 18 2017</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/vimwiki/">vimwiki配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>能开始使用的话，需要以下几个插件</p>
+<ul>
+<li>Plugin ‘vimwiki/vimwiki’</li>
+<li>Plugin ‘mattn/calendar-vim’</li>
+</ul>
+<p>其中日历插件是用来显示日记的</p>
+<p>如果需要实时预览markdown的话，还需要安装</p>
+<ul>
+<li>Plugin ‘suan/vim-instant-markdown’</li>
+</ul>
+<p>另外，之前的snipmate有冲突，使用以下几个</p>
+<ul>
+<li>Plugin ‘MarcWeber/vim-addon-mw-utils’</li>
+<li>Plugin ‘tomtom/tlib_vim’</li>
+<li>Plugin ‘garbas/vim-snipmate’</li>
+</ul>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:vimwiki_list = [&#123;&apos;path&apos;: &apos;~/Dropbox/vimwiki/&apos;,</div><div class="line">&apos;ext&apos;: &apos;.markdown&apos;, &apos;syntax&apos;: &apos;markdown&apos;&#125;]</div></pre></td></tr></table></figure>
+<p>这一个设置项做了三件事，一是制定vimwiki的根目录，二是把vimwiki的后缀改成了markdown，三是使用markdown语法而不是维基语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">map &lt;A-Space&gt; &lt;Plug&gt;VimwikiToggleListItem</div><div class="line">let g:vimwiki_table_mappings = 0</div><div class="line">let g:vimwiki_global_ext = 0</div></pre></td></tr></table></figure>
+<p>这三个设置的意义分别是使用Alt+Space来开关待办任务的状态，关闭在插入表格时的Tab键映射, 最后一个的意思是只在根目录下面把markdown识别为vimwiki格式，在其他地方还是使用vim自己的markdown处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:instant_markdown_autostart = 0	&quot;disable autostart</div><div class="line">map &lt;leader&gt;md :InstantMarkdownPreview&lt;CR&gt;</div></pre></td></tr></table></figure>
+<p>这两项是instand-markdown的设置，不自动开启，并且把映射键位改成<code>&lt;Leader&gt;md</code></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>基本上把帮助文件看一遍就知道了</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/gotbletu/shownotes/blob/master/vimwiki.md" target="_blank" rel="external">https://github.com/gotbletu/shownotes/blob/master/vimwiki.md</a></p>
+<p><a href="https://github.com/vimwiki/vimwiki/issues/95" target="_blank" rel="external">https://github.com/vimwiki/vimwiki/issues/95</a></p>
+<p><a href="https://github.com/carlhuda/janus/issues/479" target="_blank" rel="external">https://github.com/carlhuda/janus/issues/479</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/vimwiki/" data-id="cj591hwtr007ekgnxdkprz3e9" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/vimwiki/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-save-display-settings" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-save-display-settings/" class="article-date">
+  <time datetime="2015-03-11T09:39:28.000Z" itemprop="datePublished">Mar 11 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-save-display-settings/">DOpus三大问：如何保存显示格式设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常有朋友在群里面问：</p>
+<blockquote>
+<p>上次我把这个文件夹设置成这个样子，怎么下次我一打开我的设置就没了？</p>
+</blockquote>
+<p>这里我解释一下</p>
+<blockquote>
+<p>你对文件显示栏的操作（添加/删除列、排序、分组）等，如果你不保存的话，其范围仅限于当前标签页</p>
+</blockquote>
+<p>也就是说，只要当前标签页关闭，你对当前文件夹显示所作的修改都作废，通通恢复到默认的设置。</p>
+<p>DOpus的逻辑是这样的：如果你没有特定指明哪个文件夹需要特殊对待，那么我就用默认的形式来给你显示，这样的话我需要记的东西比较少，占用的系统资源也不高。</p>
+<p>那么，我们如何来保存对文件显示栏的修改呢？这就需要使用文件夹选项了。我用一个例子来说明如何操作。如下左图，我增加了「文件总数」一栏，并且按照最后修改时间反序排列。</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1eq36jsxqo4j20ho0itjy1.jpg" width="500"></p>
+<p>但是如果我新打开一个标签页，还是同样的路径，显示的样式又回到了默认，只剩名称、大小、类型、修改时间及属性五列，按名称正序，如下右图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36jwqm9jj20ho0itgr9.jpg" width="500"></p>
+<p>如果我要为这个文件夹保存我设定的显示格式，那么就需要点击菜单栏中的「文件夹-文件夹选项」，然后选择「保存当前文件夹格式」右边的「保存-仅此文件夹」，如下图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1eq36k0ypyqj20kv0ipq8j.jpg" width="500"></p>
+<p>之后再一次打开这个文件夹，不管在什么标签里面，就会使用你保存过的显示格式了，如下图。如果需要清除已经保存的格式，也请在文件夹选项中选择「清除-仅此文件夹」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36k57gj5j20ho0itn40.jpg" width="500"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-save-display-settings/" data-id="cj591hwtt007gkgnxb3y01xbt" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-save-display-settings/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-one-window" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-one-window/" class="article-date">
+  <time datetime="2015-03-11T09:39:28.000Z" itemprop="datePublished">Mar 11 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-one-window/">DOpus三大问：如何单窗口运行</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常有朋友在群里面问，如何才能让DOpus只打开一个窗口（单实例），下面先说说哪些情况可以设置单窗口</p>
+<ul>
+<li>如果用桌面快捷方式、任务栏中键和Win+Shift+E来启动DOpus，不管你如何设置，都不可能是单窗口</li>
+<li>剩下的双击桌面空白区域、双击系统托盘、打开常规文件夹以及Win+E启动DOpus，可以设置单窗口模式</li>
+</ul>
+<p>设置方法如下三图：</p>
+<p>「选项-DOpus启动-从任务栏图标-在任务栏图标上双击」里，选择「激活最近活动的窗口(若无,则打开窗口)」</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227ejw1eq1xet2580j20k30du413.jpg " width="500"></p>
+<p>「选项-DOpus启动-从桌面-在桌面上双击」里，选择「激活最近活动的窗口(若无,则打开默认窗口)」</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227ejw1eq1xeuiznbj20k30dugo6.jpg " width="500"></p>
+<p>「选项-DOpus 启动-资源管理器替代」中，勾选「在新标签中打开外部文件夹」和「在打开一个新窗口时打开默认窗口的所有标签」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227ejw1eq1xewmjsjj20k30duq6z.jpg " width="500"></p>
+<p>当你按照上面的设置做了之后，自然DOpus就是单窗口运行的了，除非你使用快捷方式、任务栏中键和Win+Shift+E叫DOpus再打开一个窗口</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-one-window/" data-id="cj591hwtq007ckgnxel2t5hga" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-one-window/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-wumao-tweet" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/wumao-tweet/" class="article-date">
+  <time datetime="2014-09-12T03:50:06.000Z" itemprop="datePublished">Sep 12 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/wumao-tweet/">「新五毛」的推文分析</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>通过对「新五毛」的账户信息以及关注情况，大概了解其规模和社交网络情况，平均来说他们的发推量不高，因此我直接抓取了这<strong>2581</strong>个账户的<strong>54737</strong>条推文（包括转推）来分析，看看能不能得到一些有趣的结果。</p>
+<p>在推文分析之前，有一个有趣的结论可以和大家分享，在这2581个「新五毛」账户中，有接近<strong>1200</strong> 个昵称能在<strong>搜狐微博</strong>里面100%匹配，不知道是同一家营销公司在管理，或者是用爬虫抓出来的。查看了一下，匹配到的搜狐微博用户多数停用已经很久了。这个发现要感谢 @<a href="https://www.twitter.com/Arctosia" target="_blank" rel="external">Arctosia</a>。</p>
+<h3 id="推文时间分布"><a href="#推文时间分布" class="headerlink" title="推文时间分布"></a>推文时间分布</h3><p>首先看了下每日推文发送时间，看不出什么规律。再看推文的按月分布，如下图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9uwgikipg21kw0r1afr.gif" width="500"></p>
+<p>有三个明显的时间高峰，大概是3月初，6月初和9月初。考虑到推文有两种情况：鸡汤和五毛，所以将不同类别的推文分开统计，红色表示五毛推文，绿色表示鸡汤推文，我们可以得到如下直方图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9uxl5g93g21kw0zo771.gif" width="500"></p>
+<p>从这幅图我们大概可以看出，「新五毛」攻击最活跃的时候就是在6月初，之后只是保持一个大致稳定的发推频率，但是鸡汤推文的数目在9月之后显著的增加了。</p>
+<p>可以列一个推数前十名的统计数据，对比之后就更明显了：</p>
+<p>五毛推日期 数量 鸡汤推日期 数量 </p>
+<hr>
+<p>6-4           4726 9-1               4161<br>6-1           2127 9-2               3695<br>6-3           2051 9-7               3085<br>3-8           1415 9-3               2248<br>3-9        1375 9-9               2221<br>5-21       833  9-5        2111<br>5-20       617  9-4        2083<br>6-23       430  9-8        2070<br>7-22       422  6-12       1939</p>
+        
+          <p class="article-more-link">
+            <a href="/wumao-tweet/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/wumao-tweet/" data-id="cj591hwto0079kgnxoy4lob25" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/wumao-tweet/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/">R</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/twitter/">twitter</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-wumao-twitter" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/wumao-twitter/" class="article-date">
+  <time datetime="2014-09-09T13:07:11.000Z" itemprop="datePublished">Sep 9 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/wumao-twitter/">推特上有多少「新五毛」？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大家都知道，相对于微博来说，推特上不存在言论管制，但是这种事情怎么可以让他发生呢？那还不天下大乱？随时随地都要关心你的组织当然得把伟大的光芒投射到这一片「法外之地」，于是从很久以前开始，组织就会弄很多帐号来关心大家的思想动态。当然，有的负责听，有的负责说。不过之前的手段都很粗糙，特别是顶着一个蛋头，说一些连微博上的五毛都不好意思说的话，广大推友们迅速就能识别，要么拉黑要么举报，很快的这些帐号就消失了，也不知道组织设立这些帐号的成本有多大。当然，另一方面，如果只是以发推数目来计算工作量，而不是以「舆论导向」的结果来算的话，我觉得这些帐号还是完成任务了的。</p>
+<p>很长一段时间都没有被这样的五毛帐号（我称之为「老五毛」）骚扰了，突然前几天，我发了一条</p>
+<blockquote>
+<p>中纪委给老外解释”四风”:都是”胖子”干坏事：形式主义：一个干部模样的胖子被公章、文件包围；官僚主义：还是那个胖子坐在高椅上，另外一个瘦瘦的群众模样的人可怜地站在下面仰望他；享乐主义：胖子躺进酒杯里，脸喝得红扑扑；奢靡之风：摆满大餐的桌前，胖子大吃大喝——习总：尼玛</p>
+</blockquote>
+<p>过会在推上突然就遭到了围攻，如下图：</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1ek6j00uxung20ga0d73zn.gif" width="500"></p>
+        
+          <p class="article-more-link">
+            <a href="/wumao-twitter/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/wumao-twitter/" data-id="cj591hwtn0077kgnx2qjxzc1h" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/wumao-twitter/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/">R</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/twitter/">twitter</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rstudio-mac-knitr" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/rstudio-mac-knitr/" class="article-date">
+  <time datetime="2014-08-28T09:02:01.000Z" itemprop="datePublished">Aug 28 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/rstudio-mac-knitr/">RStudio使用Knitr遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近正在读<a href="http://adv-r.had.co.nz/" target="_blank" rel="external">Advanced R</a>这本书，作者非常慷慨的的在github上提供了书的源代码，正好我就学习一下怎么样用Rmarkdown来记笔记。</p>
+<p>我的Windows台式机和MBP上都有RStudio，但是两者都不是装好了knitr包就能用的，其中遇到了好几个奇怪的问题，就在这里记录一下</p>
+<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>Windows 上面安装的是texlive 2013版本，平时使用的时候没什么问题，但是knitr编译pdf始终显示<code>article.cls&#39; not found</code>, 我干脆重新安装了一个texlive 2014，然后升级RStudio以及和knitr相关的包到最新版本。问题就这么解决了。</p>
+<h1 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h1><p>Mac上的texlive版本就是2014，不知道为什么RStudio总是提示<code>&#39;TeX installation not detected&#39;</code>, 在RStudio的网站支持里面相关问题只有<a href="https://support.rstudio.com/hc/communities/public/questions/201410073-pdflatex-error-on-OSX" target="_blank" rel="external">这篇</a>提供了一个解决方法，就是在<code>/usr/bin</code>里面建立三个符号链接</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/texbin/pdflatex /usr/bin/pdflatex</div><div class="line">sudo ln -s /usr/texbin/xdvipdfmx /usr/bin/xdvipdfmx</div><div class="line">sudo ln -s /usr/texbin/xelatex /usr/bin/xelatex</div></pre></td></tr></table></figure>
+<p>然后RStudio就能检测到TeX，于是能编译出PDF文件了，不过怎么弄中文我还没明白。</p>
+<p>说来也怪，明明我的PATH里面就有<code>/usr/textbin/</code>，但是RStudio死活找不到这几个命令的位置。</p>
+<p>另外，OSX默认长按某键的默认是出现声调变体，在RStudio的vim模式里面，这会导致默认英文输入法里面长按j/k无法上下移动游标，解决方法是在终端里面输入（注意大小写）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write -g ApplePressAndHoldEnabled -bool false</div></pre></td></tr></table></figure>
+<p>然后重启即可。</p>
+<p>knitr真是一个强大的包，慢慢琢磨怎么用吧</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/rstudio-mac-knitr/" data-id="cj591hwtm0074kgnxi5mv75qm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/rstudio-mac-knitr/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/">R</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-kpw" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/kpw/" class="article-date">
+  <time datetime="2014-08-25T14:40:53.000Z" itemprop="datePublished">Aug 25 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/kpw/">KPW：左右你的左右</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前段时间美国亚马逊金盒促销，官方翻新版的KPW2叫价85美元，看看自己都已经成为战斗成色的K4，想想换一个倒是也不错，于是马上下单，差不多两周之后通过转运到了手上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/b4824a3fgw1ejpal2juscj20sg0izdjm.jpg" width="500"><br>到手之后，发现机身上有几道划痕，虽然知道依照亚马逊一向的好服务，换一个「外表全新」的应该没啥问题，但是又要寄回又得转运（寄回去还非得用UPS或者DHL），这样一个月估计就过去了，再说也不影响阅读，于是开了在线客服抱怨了一通了事。</p>
+<p>另一个和客服有关的事情是，这个版本是带美国亚马逊促销广告的，但是我在上面用中国亚马逊的账号，这些广告用不上，点了也没法买。搜了搜有没有什么去广告的办法，也就三个字「找客服」，于是又一次打开在线客服聊天窗口，给客服说了说情况，他很爽快的说「行」，然后广告就没了……</p>
+<p>使用两个星期后，个人感觉，尽管内容上可以购买中文书方便不少，但是操作上体反而不如有实体键的K4。</p>
+<p>首先是上下翻页，本人拇指较短，且习惯用左手握持Kindle，这样要稍微用力一点才方便点到那个右边那个下翻页的区域。用右手倒是下翻页没有什么问题，就是上翻页变得更为困难。难道最后要我双手拿着看书么？</p>
+<p>另一个容易误操作的地方是如果电子书整页好几段都是超链接（确实遇到这样的），上下翻页很容易就被误认为是点击链接——打开浏览器，之后需要点击屏幕上的「后退」才能返回刚才阅读的页面，问题是再次上下翻页还是有很大概率变成发生误触事件。</p>
+<p>第三个是，现在上一章/下一章的操作也更麻烦，要先从屏幕下方往上划一下，弹出一个类似预览的窗口再点击左右的导航按钮，K4因为有实体键反而方便许多。</p>
+<p>当然，热门标记和X-Ray功能还是很不错滴，字典功能也比K4方便不少，哪里不会点哪里，再加上生词本简直就是英语复习的利器。至于背景灯，我用得很少，基本上读书的地方都比较明亮。而且KPW终于支持手机分享出来的热点网络了。</p>
+<p>要是K4能在中国亚马逊上买书多好！ </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/kpw/" data-id="cj591hwtm0073kgnxxqn78mme" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/kpw/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/3C/">3C</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-remaining-readers" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/remaining-readers/" class="article-date">
+  <time datetime="2014-08-03T13:32:06.000Z" itemprop="datePublished">Aug 3 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/remaining-readers/">现在还有多少读者？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不知道现在这个博客还有多少读者，从feedly的订阅来看，大概刚刚超过1000人。另外随着微信微博的冲击，GReader的关闭，估计本来有的阅读RSS的习惯也在慢慢减退（我自己就是这样），十天半个月不看一眼，好像生活也没什么影响。</p>
+<p>既然不读，那也懒得写。最近两年确实写得太少了，说好的DOpus的完整教程迟迟没有写完，平时灵光一现，想讲的话在Twitter就已经讲完，铺陈一篇很长的文章实在是需要勇气。不过还好的是，写博客不是写连载小说，不像起点那些作者，更新不够快的话就没有月票，直接影响了收入。</p>
+<p>如果你还在读我的博客的话，方便留言让我知道一下吗？这样我写作的动力说不定就会被点燃了。干脆就把DOpus的使用小技巧，一则一则的发出来好了。</p>
+<p>谢谢你的阅读。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/remaining-readers/" data-id="cj591hwtk0070kgnxv3vs1pog" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/remaining-readers/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-dopus-flatview-depth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dopus-flatview-depth/" class="article-date">
+  <time datetime="2014-08-01T07:06:50.000Z" itemprop="datePublished">Aug 1 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/dopus-flatview-depth/">在DOpus中实现指定层级的平面查看</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天DOpus中文讨论群里「昨日依然」问了个问题，说是他将工作文档按天归类，如下图，怎样才能「把里面的文件都显示出来呢？平面显示会将所有的文件都显示出来，我只要一级就可以，因为每天的文件夹里面都有子文件夹，全部都显示出来就太乱了。」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eix5kfz0cnj20980fmabw.jpg"></p>
+<p>实际上在DOpus的官网上也有人问这个问题，不过官方表示「平面显示」暂时无法指定显示深度，但是提供了一种替代的思路，就是用「查找」功能里面的过滤器来实现「显示文件夹中到指定深度」功能。下面我就介绍下这个方法。</p>
+        
+          <p class="article-more-link">
+            <a href="/dopus-flatview-depth/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dopus-flatview-depth/" data-id="cj591hwtk006ykgnx58e6tyww" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dopus-flatview-depth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-you-hear-the-people-sing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-you-hear-the-people-sing/" class="article-date">
+  <time datetime="2014-04-22T08:50:58.000Z" itemprop="datePublished">Apr 22 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-you-hear-the-people-sing/">Do you hear the people sing诸多中文翻译</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h2><p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! </p>
+<p>Will you join in our crusade?/Who will be strong and stand with me? /Beyond the barricade/Is there a world you long to see?</p>
+<p>Then join in the fight/That will give you the right to be free! </p>
+<p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes!</p>
+<p>Will you give all you can give/So that our banner may advance/Some will fall and some will live/Will you stand up and take your chance?/The blood of the martyrs/Will water the meadows of France! </p>
+<p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! </p>
+        
+          <p class="article-more-link">
+            <a href="/do-you-hear-the-people-sing/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-you-hear-the-people-sing/" data-id="cj591hwti006vkgnxec4v9hie" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-you-hear-the-people-sing/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English-learning/">English learning</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

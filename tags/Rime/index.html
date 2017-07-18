@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Rime | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/Rime/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-rime-kaomoji" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/rime-kaomoji/" class="article-date">
+  <time datetime="2013-01-19T07:07:54.000Z" itemprop="datePublished">Jan 19 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/rime-kaomoji/">鼠须管里使用颜文字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>综合参考官方文档和<a href="https://gist.github.com/3848421" target="_blank" rel="external">这个教程</a>。鼠须管里使用颜文字步骤如下，设置目录为<code>~/Library/Rime</code></p>
+<h3 id="新增一个输入法"><a href="#新增一个输入法" class="headerlink" title="新增一个输入法"></a>新增一个输入法</h3><p>在<code>default.custom.yaml</code>里面添加patch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line"> schema_list:</div><div class="line">  - schema: kaomoji</div></pre></td></tr></table></figure>
+<h3 id="编辑颜文字输入法"><a href="#编辑颜文字输入法" class="headerlink" title="编辑颜文字输入法"></a>编辑颜文字输入法</h3><p>新建<code>kaomoji.schema.yaml</code>文件，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">schema:</div><div class="line">  schema_id: kaomoji</div><div class="line">  name: kaomoji</div><div class="line"></div><div class="line">engine:</div><div class="line">  processors:</div><div class="line">    - key_binder</div><div class="line">    - speller</div><div class="line">    - selector</div><div class="line">    - navigator</div><div class="line">    - express_editor</div><div class="line">  segmentors:</div><div class="line">    - abc_segmentor</div><div class="line">    - fallback_segmentor</div><div class="line">  translators:</div><div class="line">    - r10n_translator</div><div class="line">  filters:</div><div class="line">    - uniquifier</div><div class="line"></div><div class="line">translator:</div><div class="line">  dictionary: kaomoji</div><div class="line">  spelling_hints: 1</div><div class="line"></div><div class="line">key_binder:</div><div class="line">  import_preset: default</div><div class="line"></div><div class="line">speller:</div><div class="line">  alphabet: zyxwvutsrqponmlkjihgfedcba</div><div class="line">  delimiter: &quot; ;&apos;&quot;</div><div class="line">  algebra:</div><div class="line">    - &quot;derive/^.+$/all/&quot;</div></pre></td></tr></table></figure>
+<h3 id="编辑词库"><a href="#编辑词库" class="headerlink" title="编辑词库"></a>编辑词库</h3><p>新建<code>kaomoji.dict.yaml</code>文件，建立颜文字词库，文件格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">name: kaomoji</div><div class="line">version: &quot;0.1&quot;</div><div class="line">sort: origin</div><div class="line"></div><div class="line">颜文字1[TAB键]输入码1</div><div class="line">颜文字2[TAB键]输入码2</div></pre></td></tr></table></figure>
+<p>例如</p>
+<pre><code>d=====(￣▽￣*)b [顶!]    ding
+</code></pre><h3 id="在当前输入法中使用颜文字"><a href="#在当前输入法中使用颜文字" class="headerlink" title="在当前输入法中使用颜文字"></a>在当前输入法中使用颜文字</h3><p>修改你输入法的<code>*.schema.custom.yaml</code>文件，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema/dependencies:</div><div class="line">    - kaomoji</div><div class="line">  abc_segmentor/extra_tags:</div><div class="line">    - reverse_lookup</div><div class="line">  reverse_lookup:</div><div class="line">    dictionary: kaomoji</div><div class="line">    enable_completion: false</div><div class="line">    prefix: &quot;`&quot;</div><div class="line">    tips: &quot;[颜文字]&quot;</div></pre></td></tr></table></figure>
+<h3 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h3><p>重新部署鼠须管即可生效</p>
+<p>注意此时文件夹内应该多出来<code>kaomoji.table.bin</code>, <code>kaomoji.reverse.bin</code>及<code>kaomoji.prism.bin</code>三个文件</p>
+<p>截图</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e0ywvjg9ysg.gif" width="500"></p>
+<h3 id="颜文字整理下载"><a href="#颜文字整理下载" class="headerlink" title="颜文字整理下载"></a>颜文字整理下载</h3><ul>
+<li><a href="https://github.com/hitigon/meow-emoji-rime" target="_blank" rel="external">https://github.com/hitigon/meow-emoji-rime</a></li>
+<li><a href="https://gist.github.com/3848421" target="_blank" rel="external">https://gist.github.com/3848421</a></li>
+<li><a href="http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt" target="_blank" rel="external">http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt</a> 请删除里面包括…的颜文字行，会导致编译错误</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/rime-kaomoji/" data-id="cj591hwtb006jkgnxds9s3x84" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/rime-kaomoji/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rime/">Rime</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rime-setting" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/rime-setting/" class="article-date">
+  <time datetime="2012-10-22T03:13:00.000Z" itemprop="datePublished">Oct 22 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/rime-setting/">中州韵（小狼毫，鼠须管）输入法设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大概半年之前就看到有人推荐这个号称是神级的输入法，当时试了试，响应快速，对正体字的支持较好（不会出现一对多的问题），不仅是一个输入法这么简单，可以说是一个输入法的框架。但是就是因为其本身支持的东西较多，造成了文档的冗长，设置的麻烦，当时还对gVIm有那么一点点的的不兼容。所以我还是没有继续用这个输入法，老老实实的使用我的谷歌拼音。</p>
+<p>但是现在我换新电脑了，2012的MacBook Pro，也没有谷歌拼音可以用，我也不想用那些国内的搜狗百度啥的，又捡起来了鼠须管输入法，发现其实经过一番简单的设置，也是可以用得很顺手的，下面我总结一下设置方法(鼠须管0.9.11)</p>
+<p>##设置目录</p>
+<ul>
+<li><p>Windows下是<code>%APPDATA%\Rime</code>，也可以在任务栏图标里面右键-用户文件夹</p>
+</li>
+<li><p>Mac下是<code>~/Library/Rime</code>，也可以在任务栏图标里面右键-Settings</p>
+</li>
+</ul>
+<p>##外观设置</p>
+<p>新建或修改设置目录里面的<code>weasel.custom.yaml</code>（Windows)或<code>squirrel.custom.yaml</code> (Mac)，内容是（注意缩进和冒号后面的空格）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  &quot;style/color_scheme&quot;: luna </div><div class="line">  &quot;style/font_point&quot;: 18</div></pre></td></tr></table></figure>
+<p>其中color_scheme的选择有</p>
+<ul>
+<li>碧水 - aqua</li>
+<li>青天 - azure</li>
+<li>明月 - luna</li>
+<li>墨池 - ink</li>
+<li>孤寺 - lost_temple</li>
+<li>暗堂 - dark_temple</li>
+<li>星際爭霸 - starcraft    </li>
+</ul>
+<p>然后保存，右击任务栏上鼠须管的图标，选择Deploy或者重新部署即可</p>
+<p>##双拼设置<br>在设置目录里面新建或编辑 <code>default.custom.yaml</code> 文件，内容是（注意缩进和冒号后面的空格）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema_list:</div><div class="line">    -schema: double_pinyin_mspy</div></pre></td></tr></table></figure></p>
+<p>当然你也可以选择其他的双拼方案，如double_pinyin_abc，double_pinyin_flypy，double_pinyin分别对应智能ABC、小鹤和自然码的双拼方案。</p>
+<p>保存文件之后，右击任务栏上鼠须管的图标，选择Deploy或者重新部署即可</p>
+<p>##双拼默认简体<br>原作者是台湾人，所以默认是正体字输出，但是其实这个框架也提供了简体字的输出方式，只需要在设置目录里新建或者编辑<code>double_pinyin_mspy.custom.yaml</code>这个文件，如果你用的是其他双拼方案就把文件名作对应修改。文件内容增加（注意缩进和冒号后面的空格）    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  switches:                  </div><div class="line">    - name: ascii_mode</div><div class="line">      reset: 0               </div><div class="line">      states: [ 中文, 西文 ] </div><div class="line">    - name: full_shape       </div><div class="line">      states: [ 半角, 全角 ]  </div><div class="line">    - name: simplification</div><div class="line">      reset: 1                </div><div class="line">      states: [ 漢字, 汉字 ]</div></pre></td></tr></table></figure>
+<p>保存后重新部署鼠须管即可</p>
+<p>##双拼模糊拼音<br>同样是修改<code>double_pinyin_mspy.custom.yaml</code>这个文件，将以下内容附到后面即可，保持speller/algebra和上面的switch对齐：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">&quot;speller/algebra&quot;:</div><div class="line">  - erase/^xx$/</div><div class="line">  - derive/^([zcs])h/$1/ </div><div class="line">  - derive/^([zcs])([^h])/$1h$2/ </div><div class="line">  - derive/^n/l/ </div><div class="line">  - derive/^l/n/ </div><div class="line">  - derive/^([bpmf])eng$/$1ong/ </div><div class="line">  - derive/([ei])n$/$1ng/ </div><div class="line">  - derive/([ei])ng$/$1n/ </div><div class="line">  - derive/^([jqxy])u$/$1v/</div><div class="line">  - derive/^([aoe].*)$/o$1/</div><div class="line">  - xform/^([ae])(.*)$/$1$1$2/</div><div class="line">  - xform/iu$/Q/</div><div class="line">  - xform/[iu]a$/W/</div><div class="line">  - xform/er$|[uv]an$/R/</div><div class="line">  - xform/[uv]e$/T/</div><div class="line">  - xform/v$|uai$/Y/</div><div class="line">  - xform/^sh/U/</div><div class="line">  - xform/^ch/I/</div><div class="line">  - xform/^zh/V/</div><div class="line">  - xform/uo$/O/</div><div class="line">  - xform/[uv]n$/P/</div><div class="line">  - xform/i?ong$/S/</div><div class="line">  - xform/[iu]ang$/D/</div><div class="line">  - xform/(.)en$/$1F/</div><div class="line">  - xform/(.)eng$/$1G/</div><div class="line">  - xform/(.)ang$/$1H/</div><div class="line">  - xform/ian$/M/</div><div class="line">  - xform/(.)an$/$1J/</div><div class="line">  - xform/iao$/C/</div><div class="line">  - xform/(.)ao$/$1K/</div><div class="line">  - xform/(.)ai$/$1L/</div><div class="line">  - xform/(.)ei$/$1Z/</div><div class="line">  - xform/ie$/X/</div><div class="line">  - xform/ui$/V/</div><div class="line">  - derive/T$/V/</div><div class="line">  - xform/(.)ou$/$1B/</div><div class="line">  - xform/in$/N/</div><div class="line">  - xform/ing$/;/</div><div class="line">  - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/</div></pre></td></tr></table></figure>
+<p>保存后，重新部署即可。</p>
+<p>##词库导入</p>
+<p>下载某位仁兄导出的搜狗词库 <a href="http://cl.ly/033g2x3k2J05" target="_blank" rel="external">http://cl.ly/033g2x3k2J05</a> 后解压得到sogou.txt文件，</p>
+<p>Windows下右键选择用户词典管理，选择『导入文本码表』功能，将sogou.txt导入你的用户词典</p>
+<p>Mac下下载<a href="http://code.google.com/p/rimeime/downloads/detail?name=rime_dict_manager_0.9.2_osx.zip" target="_blank" rel="external">用户词典管理工具</a>并把rime_dict_manager解压到~/Library/Rime，执行如下命令 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ~/Library/Rime</div><div class="line">killall Squirrel</div><div class="line">./rime_dict_manager --import luna_pinyin 路径/sogou.txt</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/rime-setting/" data-id="cj591hwsy0065kgnx9s8i6x8h" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/rime-setting/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rime/">Rime</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

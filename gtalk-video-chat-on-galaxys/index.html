@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>三星i9000实现gtalk视频/语音聊天 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Android 2.3.4发布估计最大的亮点就是实现了手机上面的Gtalk视频聊天了，但是，现在官方升级到2.3.4的就只有亲儿子NEXUS S。广大其他手机用户纷纷表示愤慨，于是在XDA上有这么一个39页的帖子在讨论如何将NEXUS S上面的google talk提取出来，让其他型号的也能用上。 这个替代方法的关键就在于下载正确的Google Apps包。不能下载http://goo-insid">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三星i9000实现gtalk视频&#x2F;语音聊天">
+<meta property="og:url" content="http://blog.yesmryang.net/gtalk-video-chat-on-galaxys/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="Android 2.3.4发布估计最大的亮点就是实现了手机上面的Gtalk视频聊天了，但是，现在官方升级到2.3.4的就只有亲儿子NEXUS S。广大其他手机用户纷纷表示愤慨，于是在XDA上有这么一个39页的帖子在讨论如何将NEXUS S上面的google talk提取出来，让其他型号的也能用上。 这个替代方法的关键就在于下载正确的Google Apps包。不能下载http://goo-insid">
+<meta property="og:updated_time" content="2013-01-09T03:58:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="三星i9000实现gtalk视频&#x2F;语音聊天">
+<meta name="twitter:description" content="Android 2.3.4发布估计最大的亮点就是实现了手机上面的Gtalk视频聊天了，但是，现在官方升级到2.3.4的就只有亲儿子NEXUS S。广大其他手机用户纷纷表示愤慨，于是在XDA上有这么一个39页的帖子在讨论如何将NEXUS S上面的google talk提取出来，让其他型号的也能用上。 这个替代方法的关键就在于下载正确的Google Apps包。不能下载http://goo-insid">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gtalk-video-chat-on-galaxys" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/gtalk-video-chat-on-galaxys/" class="article-date">
+  <time datetime="2011-05-15T16:00:00.000Z" itemprop="datePublished">May 16 2011</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      三星i9000实现gtalk视频/语音聊天
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Android 2.3.4发布估计最大的亮点就是实现了手机上面的Gtalk视频聊天了，但是，现在官方升级到2.3.4的就只有亲儿子NEXUS S。广大其他手机用户纷纷表示愤慨，于是在XDA上有这么<a href="http://forum.xda-developers.com/showthread.php?t=1056793" target="_blank" rel="external">一个39页的帖子</a>在讨论如何将NEXUS S上面的google talk提取出来，让其他型号的也能用上。</p>
+<p>这个替代方法的关键就在于下载正确的Google Apps包。不能下载<a href="http://goo-inside.me/gapps/里提供的（他的gtalk在关闭对话的时候有bug，大小也不对），也不能只用1.3M的Talk.apk去替换已经有的talk.apk。必须将整个googleserviceframework以及相关文件都添加并替换。" target="_blank" rel="external">http://goo-inside.me/gapps/里提供的（他的gtalk在关闭对话的时候有bug，大小也不对），也不能只用1.3M的Talk.apk去替换已经有的talk.apk。必须将整个googleserviceframework以及相关文件都添加并替换。</a></p>
+<p>完全文件打包在这里：<a href="http://freakshare.com/files/blgrh5us/gapps-gb-20110503-signed.zip.html" target="_blank">http://freakshare.com/files/blgrh5us/gapps-gb-20110503-signed.zip.html</a></p>
+<p>你也可以试试这个（xda上另一个人给的，我没试）：<a href="http://www.mediafire.com/?92475r3frlncg29" target="_blank">http://www.mediafire.com/?92475r3frlncg29</a></p>
+<p>下载后放在SD卡上，进入恢复模式安装即可</p>
+<p>如果你是用的CM7最新版本，那么恭喜你，刷了这个包之后你的Google Talk就可以双向视频/音频聊天了（所谓双向，是指能从电脑呼叫手机、也能从手机呼叫电脑），而且用的是前置摄像头</p>
+<p>如果你用的是LIDROID的2.4，双向聊天是可以的，但是采用的是后置摄像头</p>
+<p>Juwe的ROM也是只能用后置摄像头</p>
+<p>DarkyRom没有测试，欢迎留言分享测试结果</p>
+<p>使用效果：语音很流畅（缺点是从扬声器出声、最好用耳机），视频也可以，我和大连的 @coolcfan还有我澳大利亚的同学测试了都不卡。不过分辨率是惨点……</p>
+<p>另外，关于最近访问Gmail的问题，似乎用hosts文件将www.google.com，webcache.googleusercontent.com，www.google.com.hk和mail.google.com都指向北京谷歌公司的IP203.208.39.22即可暂时解决。</p>
+<p>注：</p>
+<p>goo-inside.me的解释如下：</p>
+<p><strong>So what’s up with the 2.3.4 GApps?</strong></p>
+<p>This is a tricky one. The problem here is that Google, unlike what they’ve done for every previous update to the G1, Nexus One, Nexus S, etc., decided to compile the Talk2.apk and libtalk_jni.so to be compatible only with the neon board, and ARM v7 (aka, the Nexus S), rather than every board, the<br>actual Gingerbread API’s, and ARM v6 and Tegra as well. So here’s where this leaves us:</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/gtalk-video-chat-on-galaxys/" data-id="cj591hws3004ukgnxx5k3srrn" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/gtalk-video-chat-on-galaxys/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/directory-opus-10/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Directory Opus 10，新变化？
+        
+      </div>
+    </a>
+  
+  
+    <a href="/smartpen/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SmartPen，下一代的笔记工具？</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/gtalk-video-chat-on-galaxys/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

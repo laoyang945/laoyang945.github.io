@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/page/22/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-daily-soft-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-5/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-5/">[日常软件使用技巧]5.同步！同步！！</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; Part0:什么是同步？&#160;&#160;&#160; </p>  <p>&#160;&#160;&#160; 概括来讲，就是有两个数据源，最初它们的数据都是一样的。若一个数据源的数据经过添加、修改、删除等操作发生了改变（或者两个数据源的数据都发生了改变），那么为了使两个数据源的数据保持一致，即让一个数据源数据的改变反映到另一个上，就必须进行一个让两个数据源的数据保持一致的操作，这个操作就叫“同步”。同步操作结束之后，两个设备上的数据就完全一致了，处于“同步”状态。</p>  <p>&#160;&#160;&#160; 举例说明，在电脑的Outlook里面存储了很多联系人，另外在手机里面也存储了很多联系人，那么如何使Outlook里面的联系人和手机里面的联系人保持一致呢？这时候就可以通过“同步”来实现这个目的。此处由于电脑相对手机来说，计算功能和处理功能强大，所以同步过程中电脑做的工作要比手机多得多，包括比较分析数据等。</p>  <p>&#160;&#160;&#160; 在平时的工作和学习中，我们一般需要同步的是被称为个人信息管理器（PIM-Personal Information Manager，也就是传说中的四大-联系人、便签、日程表、任务），还有在邮件处理上我们可以实现客户端（如Outlook、Thunderbird）和网络端的同步。在下面的文章中，主要说的是以outlook为中心的同步（因为一般手机只提供和outlook和NOTES同步PIM的功能，NOTES用的人又太少）。</p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/u14663241156782192fm0gp24.jpg" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="196" alt="u=1466324115,6782192&amp;fm=0&amp;gp=24" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/u14663241156782192fm0gp24-thumb.jpg" width="244" border="0"></a></p>  <p>&#160;&#160;&#160; Part1：同步有什么好处 </p>  <ol>   <li>联系人：要是你的手机不小心弄丢了，之前没有做过同步或者备份的话手机联系人得一个一个的输入，还得问别人要手机，简直是一种折磨。另外要是你收到一个的是一个word或者excel的联系人名单，你需要一个个用手机输入吗？ </li>    <li>日程表和待办事项：用手机提醒总是要好一些吧？毕竟你不可能一直带着电脑并且打开outlook等着。但是如果要在手机上设置……又是一个大工程。同时回到第一点，丢了怎么办？     <br>另外，你还可以通过一些软件把Google/Live Calendar上的东西同步到你的电脑上（这时候说下载也可以），如果你再能和手机同步，那不是很惬意的一件事情吗？想想你手机的日程表里面有所有学校讲座信息和各公司招聘会投递简历的截止日期等会是什么样子。 </li>    <li>资料收集：平时在路上有什么点子、马上可以用手机记下来，回来传到电脑上，处理起来轻松又如意。 </li>    <li>邮件：如果你不是用网页版的邮箱，那你电脑里面客户端的已发送邮件肯定和网页版的不一样，这咋办？你知道自己回过哪一封吗？如果你几台电脑都会在收信，咋办？</li> </ol>  <p>&#160;&#160; Part2：怎么同步</p>  <ol>   <li>手机和电脑：一般来说，手机会自带一个同步软件，能和电脑上的Outlook同步。这里我觉得诺基亚的PC套件是相当不错的。我现在用的黑莓的桌面管理器也还不错 </li>    <li>Google Calendar和电脑：官方的是Google Calendar Sync，但是只能同步你的主日历，也就是说你朋友的或者其他人的你没法同步，可以同步多个日历的有OggSync和SyncMyCal，都是免费的，可以双向也可以单向同步。 </li>    <li>Google和手机：goosync，这个我没有试用过，不过按他自己的广告是可以和Google同步日历和联系人的。需要gprs流量，或者你直接用手机的浏览器（一定要是自带的）访问<a href="http://m.google.com" target="_blank" rel="external">http://m.google.com</a>试试。 </li>    <li>邮件同步：使用IMAP的技术而不是POP，但是目前我看支持IMAP的除了公司内的邮件系统只有Gmail和清华的邮箱，至于怎么设置，见相关帮助文件，其实很容易的。</li> </ol>  <p>&#160;&#160; Part3：一些常用的日历资源</p>  <p><img style="margin: 0px 0px 0px 25px" alt="" src="http://calendar.google.com/googlecalendar/images/calendar_sm2_en.gif" align="left"> </p>  <p>&#160;&#160; 清华讲座：<a href="http://www.google.com/calendar/ical/campusinfo.newsmth%40gmail.com/public/basic.ics" target="_blank" rel="external">http://www.google.com/calendar/ical/campusinfo.newsmth%40gmail.com/public/basic.ics</a></p>  <p>&#160;&#160; 北大讲座：<a href="http://www.google.com/calendar/ical/k2g66u3rsn7u819bledgnecgo0%40group.calendar.google.com/public/basic.ics" target="_blank" rel="external">http://www.google.com/calendar/ical/k2g66u3rsn7u819bledgnecgo0%40group.calendar.google.com/public/basic.ics</a></p>  <p>&#160;&#160; 其他讲座：<a href="http://www.google.com/calendar/ical/0m6hj73j40t3pel0esf8gh6qe4%40group.calendar.google.com/public/basic.ics" target="_blank" rel="external">http://www.google.com/calendar/ical/0m6hj73j40t3pel0esf8gh6qe4%40group.calendar.google.com/public/basic.ics</a></p>  <p>&#160;&#160;&#160; 未名JOB版的日历（春节之后停止更新，不知道以后会不会继续）<a href="http://www.google.com/calendar/ical/0m6hj73j40t3pel0esf8gh6qe4%40group.calendar.google.com/public/basic.ics" target="_blank" rel="external">http://www.google.com/calendar/ical/0m6hj73j40t3pel0esf8gh6qe4%40group.calendar.google.com/public/basic.ics</a></p>  <p>&#160;&#160;&#160; 上面这几个链接可以直接作为网络日历在Outlook里面导入的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-5/" data-id="cj591hwlg0009kgnxp1agqm33" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-5/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-4/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-4/">[日常软件使用技巧]4.Gmail的一些补遗</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 第三讲主要讲了Gmail中的标签以及使用标签+过滤器来实现自动分拣。现在想想还有一些内容需要补充的。</p>  <p>&#160;&#160;&#160; 1.使Gmail成为你的邮件中心：很简单，在设置-帐户-从其他帐户获得邮件-添加其他邮件帐户，后面的如同你设置OUTLOOK一样。这里要注意，11月16日之后注册的网易邮箱是不能用POP来收信的。然后建一个标签和一个过滤器，使发送到你刚建立帐户的邮件贴上某个标签。</p>  <p>&#160;&#160;&#160; 2.Gmail不能访问了怎么办？请 5 分钟内不要访问 Google 的任何网站，然后用<a href="https://mail.google.com" target="_blank" rel="external">https://mail.google.com</a>访问。</p>  <p>&#160;&#160;&#160; 3.通过手机访问：用手机的浏览器，进入<a href="http://m.gmail.com" target="_blank" rel="external">http://m.gmail.com</a></p>  <p>&#160;&#160;&#160; 4.语音信箱：用Gtalk和离线联系人语音，你所说的内容会被保存在对方的Gmail里面（未验证）</p>  <p>&#160;&#160;&#160; 5.用快捷键：在设置-常规-键盘快捷键里面启用键盘快捷键就可以。至于哪些快捷键，启用之后按一下？试试</p>  <p>&#160;&#160;&#160; P.S. 最近毕设在赶进度，所以更新可能慢一点，大家海涵。下一讲的的标题是“同步！同步”，大家猜会是哪些内容呢？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-4/" data-id="cj591hwlf0008kgnxafdi7284" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-4/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-3/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-3/">[日常软件使用技巧]3.贴上标签，自动分拣-邮件及Gmail</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p><p>&#160;&#160;&#160; 上个星期洗澡的时候，忽然发现自己把澡卡弄掉了。找了自己装洗澡东西的袋子、又在水房里里外外看了好几遍，还是没有找到。要是我像同学哪样，在澡卡上贴一个小的标签，写上230B XXX，那说不定就有好心人给我送过来，即使到了楼长那里也好找回来不是？</p>  <p>&#160;&#160;&#160; Part1：自动分拣</p>  <p>&#160;&#160;&#160; 我们平常处理大量邮件的时候，怎么样快速定位和分类，达到快速处理的目的呢？如果你只<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image2.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="114" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb2.png" width="134" align="right" border="0"></a> 依靠搜索一个功能的话，有时候是不明智的，因为：你可能记得的是意思，而不是具体的字句；你或许可以搜索发件人，但是如果这人和你的联系邮件有很多，包括不同的内容，那你得在搜索内容中再搜索一遍；建立快捷的搜索需要计算机建立索引，这需要一定的时间；附件内容不一定能搜到。</p>  <p>&#160;&#160;&#160; 我推荐的是在收到邮件的时候自动分拣，贴上标签。给自己一个合适的地方，在自己想到的时候及时提醒。</p>  <p>&#160;&#160;&#160; 举个例子，比如大家或许都有把新水或者旧水的好文F到自己邮箱，保存下来或者再仔细看看的习惯。但是当你这种文章积少成多的时候，管理就成了个问题。我的方法是在Outlook（Microsoft Outlook，不是Outlook Express）中设置一个文件夹，只要是从水木转来的文章就自动放到这个文件夹里面。那我的“收件箱”的邮件就会减少，一些要立即处理的邮件一眼就能看到，这些属于参考资料类的邮件就不会和我其他工作或者学习的邮件混在一起，而且要批量看的时候也比较容易。</p>  <p>&#160;&#160;&#160; 你想把所有和淘宝支付宝卓越当当相关的邮件放到一起，或者把订阅的电子杂志放到一起，或者把某人发来的邮件放到一起，应用自动分拣功能都能实现。（如果你仅仅是要把几个邮箱的邮件分开，那在帐 户设置的时候弄就好了）</p>  <p>&#160;&#160;&#160; <font color="#800080"><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image3.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="139" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb3.png" width="94" align="left" border="0"></a></font>在Outlook里面，自动分拣是通过“规则”这个功能来实现的，点击工具-规则和通知，就能看到怎么设置。首先是设置规则指向的文件夹，一般是你的收件箱，其次设定规则本身，里面内容自己看看也就能弄明白，比如我有一个！Intern文件夹（为啥要加一个！，因为加了之后文件夹就在所有文件夹的最上面了，当然你加@#$%^&amp;都是可以的），是水木Intern版的转文，那规则就是：    <br>&#160;&#160;&#160; <font color="#800080">规则应用时间：邮件到达后     <br>&#160;&#160;&#160; 正文中包含：信区:Intern并且在本机      <br>&#160;&#160;&#160; 将它移动到！Intern文件夹中</font></p>  <p>&#160;&#160;&#160; 同时规则还可以设置例外，这个具体的设置自己看一看也就可以了，相信大家很容易就能把自己的邮件自动分类好。要对已有的邮件处理，就点一下“立即运行规则”。</p>  <p>&#160;&#160;&#160; 这里有个Tips，如果你规定自己在某时看某封邮件，右键拖拽邮件到“日历”或者“任务”里面就可以，设定一个提醒时间，ok。</p>  <p>&#160;&#160;&#160; 如果你不用MS Outlook，没有问题。其他的邮件处理工具，不管是基于客户端的还是基于网页的，都会提供这个功能。在Outlook Express里面是叫邮件规则，Thunderbird、Foxmail和163、Yahoo！、Gmail里面都是叫过滤器(Filter)。过滤规则相对Outlook来说要少一些。</p>  <p>&#160;&#160;&#160; 怎么样，看到自己的收件箱瞬间清空的感觉是不是很好？</p>  <p>&#160;&#160;&#160; Part2：标签和Gmail </p>  <p>&#160;&#160;&#160; 大家在现在很多的博客站和比如豆瓣这样的网站上，一定很熟悉了标签的操作。</p>  <p>&#160;&#160;&#160; 在Web2.0的现在，“标签”是一个很重要的概念，类似于关键词。之所以说标签是web2.0的独特代表，是因为web1.0采用的是传统的来源于图书馆的分类方法，那是一种庞大而复杂的分类法。 <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image4.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="99" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb4.png" width="141" align="right" border="0"></a></p>  <p>&#160;&#160;&#160; 传统的图书馆分类法，比较讲究尽可能把一本书归到某一个特定的分类下，因为有书的上架问题，如果遇到有一本书属于交叉学科的，也尽可能采用所谓的“最大用途法则”，迫不得已，才在其他分类里面有所体现。中国图书分类原则中的22大类应该说基本上没有交叉这一说。 </p>  <p>&#160;&#160;&#160; 因此，用标签分类是一个比用文件夹更好的方法，因为你可以有交叉。在Google Reader里面也可以对每一篇文章来贴标签，比如&quot;Music”，&quot;Interesting”这样的标签，一篇文章既可以是有关音乐的又是有趣的，如果你用传统的文件夹分类法，就达不到这个效果了。</p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image5.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="63" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb5.png" width="147" border="0"></a> </p>  <p>&#160;&#160;&#160; 下面我们来看看在Gmail中怎么使用标签来方便我们的邮件处理。（一般标签用的是Tag，但是Gmail用Label，无所谓）</p>  <ul>   <li>Inbox(收件箱)本来就是一个标签（Label），如果你把Inbox标签去掉，那这封信不会从你的邮箱中消失，只是不显示在“收件箱”栏目中了，在“所有邮件”和搜索中还是能找到。快速去掉Inbox标签的方法就是点击“存档(Archive)”。通过存档操作，你的收件箱起码可以减少一半的邮件，那些已经完成的项目，让它们不要影响你处理邮件的注意力，在需要的时候能找到就好。 </li>    <li>你以为你注册了Gmail，你就只有一个Gmail邮箱了吗？错了，完全错了，你有无穷无尽个邮箱，只要你想得到。为什么这么说呢，你可以试试。比如你的邮箱是<a href="mailto:abc@gmail.com" target="_blank" rel="external">abc@gmail.com</a>,你在Gmail里面写一封信给<a href="mailto:abc+def@gmail.com" target="_blank" rel="external">abc+def@gmail.com</a>看看，写完你自己马上就能收到了，加号后面是什么都可以。呵呵，是不是很神奇啊？因此，你完全可以留给不同的人不同的组织不同的事情不同的邮箱。可以开动脑筋讨论一下 </li>    <li>因此呢，你可以用标签+过滤器+地址的方法来自动分拣你的邮件。比如你在水木上，要转寄一篇文章，直接发到<a href="mailto:abc+newsmth@gmail.com" target="_blank" rel="external">abc+newsmth@gmail.com</a>，然后在Gmail里面新建一个标签newsmth，新建一个过滤器，过滤器的内容是把发到<a href="mailto:abc+newsmth@gmail.com" target="_blank" rel="external">abc+newsmth@gmail.com</a>的邮件标上newsmth，并且跳过收件箱。这样，你每次转寄的文章都可以在newsmth标签<p></p>
+</li></ul>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-3/" data-id="cj591hwlb0007kgnxeq11ssbg" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-3/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-2/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-2/">[日常软件使用技巧]2.这是什么意思？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 第一讲说的是RSS的使用，重点是让站点把内容“推”到你指定的地方。第二讲我们讲的是“拉”，也就是主动寻找、搜索的技巧。</p>  <p>&#160;&#160;&#160; Part1：Google<a href="http://www.google.cn/" target="_blank" rel="external"><img height="59" alt="返回 Google 主页" src="http://www.google.cn/images/google_sm.gif" width="143" border="0"></a></p>  <p>&#160;&#160;&#160; 平时大家用得比较多的是Google，Google的搜索技巧有哪些呢？&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </p>  <ol>   <li>对结果的逻辑操作：空格就是“与”操作，大写的OR 表示“或”操作，英文减号“-”就是“非”的操作，在或和非的时候连接的关键字不要用空格分开。比如你要搜索包括清华但是不包括北大的页面，就要输入“清华 -北大”而不是“清华 - 北大” </li>    <li>避免服务器分词，用引号“”来包括要搜索的完整关键词。比如如果直接搜清华大学学生职业发展协会，会有这样一条      <h4><a href="http://www.job.sjtu.edu.cn/scda/announce.aspx?id=58" target="_blank" rel="external">上海交通大学学生职业发展协会</a></h4>      <p>来自北京大学，清华大学，中国人民大学…… </p>      <p>这个不是我们想要的。如果加上引号，搜索“清华大学学生职业发展协会”，那就只会搜到清华的了。 </p>   </li>    <li>搜索近义词（只适用于英文搜索）：在要搜索的关键词前面添加“~”，比如你要搜索elder的同义词，只用搜索~elder就可以得到诸如senior或者aged这些词。如果你只想看到同义词，怎么办？输入~elder -elder就好。 </li>    <li>限定关键词出现的地方：比如说你想搜索只是标题含有“日常软件”的网页，那你可以这样搜索：intitle:日常软件，如果有多个关键字，就使用allintitle：关键字1，关键字2……。遗憾的是，这个和第2条是冲突的，他不支持用引号完整搜索。相似的用法有(all)intext,(all)inurl,(all)inarchor </li>    <li>进行站内搜索。用site来限定。比如你要搜索5q上的“功夫之王”的内容，只要搜索 “功夫之王” site:5qzone.net就可以了。这个功能比有些网站的站内搜索还要好用。但是注意site限制的是以你的关键字结尾的网站，所以最好不要加www。 </li>    <li>搜索某种类型的文件：用filetype来限定 </li>    <li>搜索定义：用define来，比如你想知道什么是AJAX，搜索define:AJAX即可。但是感谢伟大的GFW，我们没法看维基的内容。（知道什么是GFW吗？搜索define:GFW) </li>    <li>可以使用*来作为通配符</li> </ol>  <p>&#160;&#160;&#160; Part2:Alert<a href="http://www.google.com/alerts?hl=zh-CN&amp;gl=" target="_blank" rel="external"><img height="59" alt="Google Alerts" src="http://www.google.com/alerts/logo.gif?hl=zh-CN&amp;gl=" width="143" border="0"></a></p>  <p>&#160;&#160;&#160; 另外，如果你经常搜索一个内容，比如火箭队的战绩。可以试试Google快讯(Google Alert)，它是监督你的某个搜索内容，一旦有新的就会通过邮件提醒你，使你不用老去搜。联想能力强的同学，肯定就想到了space和qq空间都使用的是类似的技术，只不过他们是在对应的即时通讯软件里面提醒你。自然的，你可以去某人的space上，点击工具-订阅通知，可以管理通知的方式。</p>  <p>&#160;&#160;&#160; 如果上过了科技文献检索，就会知道也可以通过Alert的这种技术来监视某个检索结果的最新进展，也就是说，你比如这次搜索出30篇文章，并且点击了Alert，设定自己的信箱之后。当这个数据库有第31篇文章满足你的搜索条件的时候，系统就会自动发信告诉你，这对博士们比较有用吧。我记得EI和SCI都是可以的，待验证。</p>  <p>&#160;&#160;&#160; Part3:Wiki<a href="http://images.google.cn/imgres?imgurl=http://blogoehlert.typepad.com/photos/uncategorized/350pxnohatlogoxibigtextdeutsch.png&amp;imgrefurl=http://www.fqyy.org/autumn/%3Fp%3D4%26date%3D2006-08&amp;h=429&amp;w=350&amp;sz=117&amp;hl=zh-CN&amp;start=1&amp;um=1&amp;tbnid=24pf7x0yGYKB1M:&amp;tbnh=126&amp;tbnw=103&amp;prev=/images%3Fq%3DWiki%26ndsp%3D20%26um%3D1%26complete%3D1%26hl%3Dzh-CN%26newwindow%3D1%26client%3Daff-cs-worldbrowser%26hs%3D2u8%26sa%3DN" target="_blank" rel="external"><img height="126" src="http://tbn0.google.cn/images?q=tbn:24pf7x0yGYKB1M:" width="103"></a></p>  <p>&#160;&#160;&#160; 教育网怎么访问wiki？不用特别的技巧，只用打开<a title="http://www.seariki.com/" href="http://www.seariki.com/" target="_blank" rel="external">http://www.seariki.com/</a>，输入关键词，之后点击“快照”就可以查看了。遗憾的是不能编辑只能查看。</p>  <p>&#160;&#160;&#160; Part4：微软学生</p>  <p>&#160;&#160;&#160; <img height="263" alt="hero_temp1_student.jpg" src="http://img.verycd.com/posts/0707/post-338429-1185080331.jpg" width="480"></p>  <p>&#160;&#160;&#160; 微软大百科全书2008版，组件包括 Encarta Dictionaries、Encarta Kids 2008、Microsoft Math、Learning Essentials for Students 以及 Microsoft Student with Encarta Premium 2008 DVD 五个部分。其中，Encarta Dictionaries 为英文词典，Encarta Kids 2008 是主要为儿童启蒙教育设计的一套百科全书，包括动物、历史、艺术、科学、认知游戏等部分，Learning Essentials for Students 结合 Microsoft Office 程序为学生提供了许多领域的专业模板，为学生的论文设计等方面提供题材，Microsoft Math 是一款相当专业的计算器，能够处理相当复杂的科学计算，Microsoft Student with Encarta Premium 2008 DVD 将以上所有的组件整合为一体。</p>  <p>&#160;&#160;&#160; Encarta多媒体百科全书是微软90年代开始出版的著名电子版大百科全书，虽然内容的权威性方面可能尚不及Britannica著名；但是凭借微软的强大实力，Encarta提供了目前电子版百科全书所能具有的最丰富的互动体验、多媒体信息与新颖的学习与使用方式。今年的2008版Encarta包含了6万多篇文章，2万5千多幅照片与插图，800多段视频及互动短片，3千多段音乐及其他音频内容；其所附的互动电子地图包含了一百八十多万个地名。 </p>  <p>&#160;&#160;&#160; 我也在探索中。校内的同学可以在<a href="ftp://166.111.27.5/" target="_blank" rel="external">ftp://166.111.27.5/</a>下找到2008版，校外的教育网的同学可以在哈工大的ftp上下载。</p>  <p>&#160;&#160;&#160; 后记：我觉得和搜索结合得最好的浏览器是Opera，它的“建立搜索”的功能简直无敌，可以对所有的搜索引擎建立一个右键快捷方式。我现在看到谁推荐说一本书比较好，马上右键一选，在清华图书馆的题名中搜索，比图书馆搞的那个工具栏要好用得多。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-2/" data-id="cj591hwl20006kgnxmyxviihz" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-2/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-11" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-11/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-11/">[日常软件使用技巧]11.记住你浏览过的东西</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p><p>&#160;&#160;&#160; 在这个系列的第一讲贴出来的时候，就有人问道：“还有个贪心的问题，比如这样的好文，可以用什么样的方法管理呢？假设我收藏得比较多同时随着时间增长，还在不断增加的情况下”。这一篇就来回答这个问题。</p>  <p>&#160;&#160;&#160; 我们在平时浏览网络的时候，经常会通过不同的渠道获取一些有趣的消息或者有用的文章，比如BBS，SNS，门户网站，Blog，IM或者好友转发的邮件等。把这些感兴趣的或者有趣的内容保存下来，整合到一起，便于自己以后的查阅，这确实是可以提高我们效率的一个事情。如果不把资讯整合的话，想象一下要是你要看的东西分散在数十个网站上或者隐藏于数千的聊天记录之中，你要怎么样才能搜索到呢？</p>  <p>&#160;&#160;&#160; 解决方案如下所列：</p>  <p>&#160;&#160;&#160; 1.在线笔记本：快速上手的Google Notes</p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image38.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="44" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb38.png" width="129" border="0"></a>如果你上网时间的90%都是打开浏览器的，又没有固定使用的电脑，那Google的笔记本服务是比较适合你的，依靠Google强大的搜索功能，你很快就能在自己摘抄的片段中找到自己想要的。</p>  <p>&#160;&#160;&#160; 访问<a title="http://www.google.com/notebook" href="http://www.google.com/notebook" target="_blank" rel="external">http://www.google.com/notebook</a>，可以看到最上面是搜索栏，左边为笔记本列表和标签列表，右边是写笔记的编辑框。</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image39.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="344" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb39.png" width="585" border="0"></a> </p>  <p>&#160;&#160;&#160;&#160; Google笔记本的结构是笔记本-段落（小节）-笔记。点击左边的导航栏之后，可以快速定位到笔记的段落上，同时在右边也能看到笔记本中的段落结构，笔记的编辑支持直接键入或者复制-粘贴。粘贴的时候即使是图片也没有问题。</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image40.png" target="_blank" rel="external"></a><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image41.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="299" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb40.png" width="222" border="0"></a><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="393" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb41.png" width="348" border="0">&#160; </p>  <p>&#160;&#160;&#160; 三级分类法是我们比较熟悉的图书馆分类法，但是Google仍然提供了标签功能，使我们能更快的根据内容来找到关心的笔记内容。标签的好处在于对内容没有印象（不好搜索）或者笔记内容不太好归类到某个笔记本或者段落的话，提供了一个快捷的解决方案，而且正如名字所示，标签是多对多的，形成的是网络结构而不是树形结构。</p>  <p>&#160;&#160;&#160; Google笔记本能够让用户对笔记做出注释，这一点我没想到有什么特别的作用。估计是要和笔记的共享功能（多人可以共同编辑一个笔记本）联合起来才比较好。</p>  <p>&#160; 另外，Google笔记本支持把一个笔记本中的笔记导出为Google文档或者Html文件，导出为Google文档之后，也就可以以Word\RTF\TXT\PDF方式下载到本机了。这对整理一些成系列的资讯来说也是挺方便的。</p>  <p>&#160;&#160;&#160; 安装了Google 的工具栏第五版，就能在浏览器（IE/FF）中使用Google笔记本的插件了，就像下面这幅图</p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image42.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="305" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb42.png" width="585" border="0"></a> </p>  <p>&#160;&#160;&#160; 2.离线笔记本：EVERNOTE还是OneNote？</p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image43.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="78" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb43.png" width="244" border="0"></a> vs<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image44.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="93" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb44.png" width="244" border="0"></a> </p>  <p>&#160;&#160;&#160; 我们不是时时都能上网的，而且有的人不一定都是开浏览器。那这个时候一款离线的笔记本更适合你。有两个比较好的离线笔记本适合这样的用户，那就是EVERNOTE和OneNote。</p>  <p>&#160;&#160;&#160; 下面这个表格对两者作了对比：</p>  <table cellspacing="0" cellpadding="2" width="580" border="1"><tbody>     <tr>       <td valign="top" width="112">&#160;</td>        <td valign="top" width="216">&#160;&#160;&#160;&#160; EVERNOTE</td>        <td valign="top" width="250">&#160;&#160;&#160;&#160;&#160;&#160; OneNote&#160; </td>     </tr>      <tr>       <td valign="top" width="112">收费吗？</td>        <td valign="top" width="216">免费</td>        <td valign="top" width="250">收费(￥699/3)，但是……</td>     </tr>      <tr>       <td valign="top" width="112">快捷键加入笔记</td>        <td valign="top" width="216">支持</td>        <td valign="top" width="250">支持</td>     </tr>      <tr>       <td valign="top" width="112">网络同步</td>        <td valign="top" width="216">3.0以后支持</td>        <td valign="top" width="250">？</td>     </tr>      <tr>       <td valign="top" width="112">协同编辑</td>        <td valign="top" width="216">？</td>        <td valign="top" width="250">支持</td>     </tr>      <tr>       <td valign="top" width="112">搜索性</td>        <td valign="top" width="216">Google桌面搜索</td>        <td valign="top" width="250">Windows桌面搜索</td>     </tr>      <tr>       <td valign="top" width="112">手机版本</td>        <td valign="top" width="216">WM手机支持</td>        <td valign="top" width="250">WM手机支持</td>     </tr>      <tr>       <td valign="top" width="112">浏览器支持</td>        <td valign="top" width="216">支持IE\FF\OUTLOOK</td>        <td valign="top" width="250">支持IE\FF\OUTLOOK</td>     </tr>      <tr>       <td valign="top" width="112">截屏</td>        <td valign="top" width="216">支持</td>        <td valign="top" width="250">支持</td>     </tr>      <tr>       <td valign="top" width="112">用邮件发布笔记</td>        <td valign="top" width="216">支持</td>        <td valign="top" width="250">不支持</td>     </tr>      <tr>       <td valign="top" width="112">结构</td>        <td valign="top" width="216">标签+分类</td>        <td valign="top" width="250">分类</td>     </tr>      <tr>       <td valign="top" width="112">手写识别</td>        <td valign="top" width="216">支持</td>        <td valign="top" width="250">支持</td>     </tr>   </tbody></table>  <p>&#160;&#160;&#160; 表格中标？的是我没有钻研过的功能，也不知道能不能</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-11/" data-id="cj591hwkz0005kgnxfcoxyodq" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-11/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-12" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-12/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-12/">[日常软件使用技巧]12.我最喜爱的浏览器--Opera</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p><p>&#160;&#160;&#160; 原来翻译过一篇文章<a href="http://soft.deepin.org/read.php?tid=492361" target="_blank">《三大浏览器，同一个敌人》</a>，大概内容是在推荐这三个浏览器（Opera，Firefox，Safari）的时候，不要彼此打压和攻讦，得互相支持。因为目标都是统一的：打败IE，创造更好的网络浏览标准。所以今天我推荐Opera的时候不会说其他的浏览器不好，我推荐Opera只是因为我更喜欢Opera。 </p>  <p>&#160;&#160;&#160; 缘起 </p>  <p>&#160;&#160;&#160; 忘记自己是从什么时候开始用Opera的了，只记得使用的第一个版本好像是8.5，还是yumumiao修改的版本，那个时候myopera还没有封，或者说我们伟大的长城还没有修好。 </p>  <p>&#160;&#160;&#160; 下载下来只是作为尝鲜使用，自己的主浏览器还是Maxthon。直到自己在家里面的老爷机上作了下比较，才发现原来这个大O是这么的快。 </p>  <p>&#160;&#160;&#160; 事情是这样的，当时稀里糊涂在一个小说网站做版主，每天的任务就是把当天更新的小说（多是图片版）贴到版块内，这个小说网站是架在校内的，所以在学校的时候上传图片很快，但是回到家，上传的速度就不行了。贴图的时候，Maxthon和Firefox都会造成机器死机，只有Opera能顺利的完成上传的任务，从那个时候开始，我的主浏览器就变成了Opera。 </p>  <p>&#160;&#160;&#160; 宣传 </p>  <p>&#160;&#160;&#160; Opera一开始的口号是“世界上最快的浏览器”，后来不再强调这一口号，但是其内核程序的命名无疑显示了团队的野心，9.50版本的内核名称为Kestrel，意为“红隼”，而下一代浏览器的内核叫做Peregrinus（游隼，被认为是冲刺速度最快的动物），都强调了Opera快的特质。其实我觉得网络浏览的速度不只限于浏览器，带宽也很重要，这种比较起码在中国是没有什么意思的。反而Opera占用资源比较少，以及比较安全，这个口号拿来宣传可能更好，比如深度的Opera专区的口号就是“『Opera-更快更安全的浏览器』”。 </p>  <p>&#160;&#160;&#160; 另外，手机上opera的浏览器绝对是霸主。 </p>  <p>&#160;&#160;&#160; 特点 </p>  <p>&#160;&#160;&#160; 1.快：测试结果可以看<a href="http://news.newhua.com/news1/evaluation/2007/911/07911134047GB9KJ4E36JG7FGKI4DG4.html" target="_blank">这里</a> </p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/kestrel-468x123.jpg" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="127" alt="kestrel_468x123" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/kestrel-468x123-thumb.jpg" width="472" border="0"></a> </p>  <p>&#160;&#160;&#160; <img src="http://news.newhua.com/Files/Remoteupfile/2007-9/11/631141.jpg"> </p>  <p>&#160;&#160;&#160; <img src="http://news.newhua.com/Files/Remoteupfile/2007-9/11/631145.jpg"> </p>  <p>&#160;&#160;&#160; <img src="http://news.newhua.com/Files/Remoteupfile/2007-9/11/631153.jpg"> </p>  <p>&#160;&#160;&#160; 2.节省资源：120个标签页也不会死机 </p>  <p>&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/165-364352-e0272934c955fd1.jpg" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="364" alt="165_364352_e0272934c955fd1" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/165-364352-e0272934c955fd1-thumb.jpg" width="484" border="0"></a> </p>  <p>&#160;&#160;&#160; 3.贴心的功能（以9.5为例） </p>  <ul>   <ul>     <li>内容搜索：只要你浏览过的网页，都能在地址栏里面搜到。不只是搜索网址和标题，内容也一样可以搜到。你可以看看<a href="http://soft.deepin.org/read.php?tid=686182&amp;keyword=" target="_blank">这篇文章</a> </li>      <li>网络同步：收藏夹、笔记和快速拨号都能通过网络同步 </li>      <li>快速拨号+网址昵称：经常访问的网址可以通过鼠标一点就进入，或者只用在地址栏输入一个代号。</li>   </ul> </ul>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a href="http://blufiles.storage.live.com/y1pMf6OsN-sMlApQFNupQspjPn7AWefpslU9YycH8Xnoe4IpDPeKrKPFlSoNAts6audpoL1xuLnaN4" target="_blank"><img style="width: 382px; height: 223px" height="148" alt="2008-08-06_093729" src="http://blufiles.storage.live.com/y1pMf6OsN-sMlApQFNupQspjPn7AWefpslU9YycH8Xnoe4IpDPeKrKPFlSoNAts6audpoL1xuLnaN4" width="280"></a><a></a> </p>  <ul>   <ul>     <li>创建搜索：只要能搜索的地方，都可以创建右键和系统搜索的功能。比如你可以创建一个豆瓣的搜索，以后遇到一个书名，直接右键可以打开豆瓣的搜索结果。</li>   </ul> </ul>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20080806-094109.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="308" alt="2008-08-06_094109" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20080806-094109-thumb.png" width="394" border="0"></a> </p>  <p><a href="http://blufiles.storage.live.com/y1pAkI3mTsvOrAPxebNjKxpXHNvpfcsChqAD2knPhYqDmy4bCbNQJ5eLPKc9yWSi5aCpJtCTuH3w94" target="_blank"><img height="244" alt="2008-08-06_094246" src="http://blufiles.storage.live.com/y1pAkI3mTsvOrAPxebNjKxpXHNvpfcsChqAD2knPhYqDmy4bCbNQJ5eLPKc9yWSi5aCpJtCTuH3w94" width="391"></a><a></a> </p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a></a></p>  <ul>   <ul>     <li>快捷的鼠标手势：特别是直接用鼠标左右翻页，这一个比较适合经常上网看小说的人。 </li>      <li>恢复关闭的页面：这个功能很人性化，更人性化的是恢复了关闭的页面之后还能后退。 </li>      <li>会话功能：有没有这样的时候，开了一堆的页面还没来得及看，就要关机离开了。这个时候Opera能把这一堆页面保存为一个会话，在你方便的时候再打开浏览即可。同时可以对各个会话作管理 </li>      <li>强大的广告过滤：比较一下这幅两图</li>   </ul> </ul>  <p><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="569" alt="2008-08-06_094431" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20080806-094431-thumb.png" width="601" border="0">&#160; </p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20080806-094515.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="402" alt="2008-08-06_094515" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/20080806-094515-thumb.png" width="612" border="0"></a> </p>  <p><a></a></p>  <p><a></a></p>  <ul>   <ul>     <li>适合宽度：使你的浏览器没有水平方向的滚动栏 </li>      <li>自带的邮件客户端 </li>      <li>自带的RSS阅读器 </li>      <li>自带的笔记管理软件（但是不能实现图文混合摘录） </li>      <li>可以直接访问WAP网站，和手机的效果是一样的。</li>   </ul> </ul>  <p>&#160;&#160;&#160; Opera使用技巧 </p>  <ul>   <ul>     <li>字体忽高忽低？首选项-高级-字体中，把Tahoma改为一种中文字体，如果字体名字前面有@的话，字是横过来的，可以试试 </li>      <li>新版Gmail不能用？访问<a title="http://mail.google.com/mail/?nocheckbrowser#inbox" href="http://mail.google.com/mail/?nocheckbrowser#inbox" target="_blank" rel="external">http://mail.google.com/mail/?nocheckbrowser#inbox</a>吧，不知道Google怎么这么不喜欢Opera </li>      <li>如果页面排版有问题的话（lqqm.net），可以试试右键-编辑站点首选项-网络-屏蔽为IE </li>      <li>想要用迅雷下载的话，可以安一个oGet，迅雷暂时对9.5的支持不好 </li>      <li>下载的文件名是乱码？在首选项-高级-<p></p>
+</li></ul></ul>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-12/" data-id="cj591hwky0004kgnxv3gq2wob" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-12/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-coffee" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/coffee/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/coffee/">我奋斗了18年不是为了和你一起喝咖啡（外一篇）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p><p>出处不可考</p>  <p>&#160;&#160;&#160; 3年前，麦子的一篇《我奋斗了18年才和你坐在一起喝咖啡》引起多少共鸣，一个农家子弟经过18年的奋斗，才取得和大都会里的同龄人平起平坐的权利，一代人的真实写照。然而，3年过去，我恍然发觉，他言之过早。18年又如何？再丰盛的年华叠加，我仍不能和你坐在一起喝咖啡。 </p>  <p> 那年我25，无数个夙兴夜寐，换来一个硕士学位，额上的抬头纹分外明显，脚下却半步也不敢停歇。如果不想让户口打回原籍，子子孙孙无穷匮，得赶紧地找份留京工作。你呢？你不着急，魔兽世界和红色警报？早玩腻了！你野心勃勃地筹划着“创业创业”。当时李彦宏、陈天桥、周云帆，牛人们还没有横空出世，百度、Google、完美时空更是遥远的名词，可青春所向披靡不可一世，你在校园里建起配送网站，大张旗鼓地招兵买马，大小媒体的记者蜂拥而至。334寝室很快在全楼名噪一时，小姑娘们从天南地北寄来粉粉的信纸，仰慕地写道：“从报上得知你的精彩故事……”得空，爬上楼顶吹吹风，你眉飞色舞地转向我，以照顾自己人的口气说，兄弟，一起发财如何？ </p>  <p> 好呀，可惜，我不能。创业于你，是可进可退可攻可守的棋，启动资金有三姑六眷帮忙筹集，就算铩羽而归，父母那三室一厅、温暖的灶台也永不落空。失败于我，意味着覆水难收一败涂地，每年夏天，为了节省三五百块钱的机器钱，爹娘要扛着腰肌劳损在大日头下收割5亩农田。我穿着借来的西服完成了第一次面试，戴着借来的手表与心爱的女孩进行了第一次约会。当你拿到了第一笔投资兴奋地报告全班时，我冷静地穿越大半个北京城，去做最后一份家教。没错，“这活儿技术含量忒低”，但在第一个月工资下发前，我租来的立锥之地与口粮全靠它维持。 </p>  <p> 不多久，互联网就遭遇了寒流，你也对创业意兴阑珊，进了家国有性质的通信公司，我被一家外企聘用。坐井观天的我，竟傻傻地以为扳回了一局。明面上的工资，我比你超出一截，税后8000，出差住5星级宾馆，一年带薪休假10天。玩命一样地投入工作，坚信几年后也有个童话般的结尾，“和公主过上幸福的生活”。 </p>  <p> 好景不长，很快，我明白了为什么大家说白领是句骂人的话。写字楼的套餐，标价35，几乎没人搭理它。午餐时间，最抢手的是各层拐角处的微波炉，“白领”们端着带来的便当，排起了长长的队伍。后来，物业允许快餐公司入住，又出现了“千人排队等丽华”的盛况。这些月入近万的人士节约到抠门的程度。一位同事，10块钱的感冒药都找保险公司理赔；另一位，在脏乱差的火车站耗上3个小时，为的是18：00后返程能多得150元的晚餐补助。 </p>  <p> 这幕幕喜剧未能令我发笑，我读得懂，每个数字后都凝结着加班加点与忍气吞声；俯首帖耳被老板盘剥，为的是一平米一平米构筑起自己的小窝。白手起家的过程艰辛而漫长，整整3年，我没休过一次长假没吃过一回鸭脖子；听到“华为25岁员工胡新宇过劳死”的新闻，也半点儿不觉得惊讶，以血汗、青春换银子的现象在这个行业太普遍了。下次，当你在上地看见一群人穿着西装革履拎着IBM笔记本奋力挤上4毛钱的公交车，千万别奇怪，我们就是一群IT民工。 </p>  <p> 惟一让人欣慰的是，我们离理想中的目标一步步靠近。 </p>  <p> 突如其来地，你的喜讯从天而降：邀请大家周末去新居暖暖房。怎么可能？你竟比我快？可豁亮的100多平方米、红苹果家具、37寸液晶大彩电无可质疑地摆在眼前。你轻描淡写地说，老头子给了10万，她家里也给了10万，老催着我们结婚……回家的路上，女朋友郁郁不说话，她和我一样，来自无名的山城。我揽过她的肩膀，鼓励她也是鼓励自己，没关系，我们拿时间换空间。 </p>  <p> 蜜月你在香港过的，轻而易举地花掉了半年的工资，回来说，意思不大，不像TVB电视里拍的那样美轮美奂；我的婚礼，在家乡的土路、乡亲的围观中巡游，在低矮昏暗的老房子里拜了天地，在寒冷的土炕上与爱人相拥入眠。幸运的是，多年后黯淡的图景化作妻子博客里光芒四射的图画，她回味：“有爱的地方，就有天堂。” </p>  <p> 我们都想给深爱的女孩以天堂，天堂的含义却迥然不同。你的老婆当上了全职太太，每天用电驴下载《老友记》和《越狱》；我也想这么来着，老婆不同意，你养我，谁养我爸妈？不忍心让你一个人养7个人。当你的女孩敷着倩碧面膜舒服地翘起脚，我的女孩却在人海中顽强地搏杀。 </p>  <p> 两个人赚钱的速度快得多。到2004年年底，我们也攒到了人生中第一个10万，谁知中国的楼市在此时被魔鬼唤醒，海啸般狂飙突进，摧毁一切渺小虚弱的个体。2005年3月，首付还够买西四环的郦城，到7月，只能去南城扫楼了。我们的积蓄本来能买90平方米的两居来着，9月中旬，仅仅过去2个月，只够买80多平。 </p>  <p> 没学过经济学原理？没关系。生活生动地阐释了什么叫资产泡沫与流动性泛滥。这时专家跳出来发言了，“北京房价应该降30％，上海房价应该降40％。”要不，再等等？我险些栖身于温吞的空方阵营，是你站出来指点迷津：赶快买，房价还会涨。买房的消息传回老家，爹娘一个劲儿地唏嘘：抵得上俺们忙活半年。在他们看来，7500元一平方米是不可思议的天价。3年后的2008，师弟们纷纷感叹，你赚大发了，四环内均价1万4，已无楼可买。 </p>  <p> 几天前，我看见了水木上一句留言，颇为感慨：“工作5年还没买房真活该，2003年正是楼市低迷与萧条之时。等到今天，踏空的不仅是黄金楼市，更是整个人生。” </p>  <p> 真要感谢你，在我不知理财为何物之时，你早早地告诉我什么叫消费什么叫投资。 </p>  <p> 并非所有人都拥有前瞻的眼光和投资的观念。许多和我一样来自小地方、只知埋头苦干的兄弟们，太过关注脚下的麦田，以至于错过一片璀璨的星空。你的理论是，赚钱是为了花，只有在流通中才能增值，买到喜爱的商品，让生活心旷神怡。而我的农民兄弟——这里特指是出身农家毕业后留在大城市的兄弟，习惯于把人民币紧紧地捏在手中。存折数字的增长让他们痴迷。该买房时，他们在租房；该还贷时，他们宁可忍受7％的贷款利率，也要存上5年的定期。辛苦赚来的银子在等待中缩水贬值。他们往往在房价的巅峰处，无可奈何地接下最后一棒；也曾天真地许愿，赚够100万就回家买房。可等到那一天真的到来，老家的房价，二线、三线城市甚至乡镇的都已疯长。 </p>  <p> 这便是我和你的最大差别，根深蒂固的分歧、不可逾越的鸿沟也在于此。我曾经以为，学位、薪水、公司名气一样了，我们的人生便一样了。事实上，差别不体现在显而易见的符号上，而是体现在世世代代的传承里，体现在血液里，体现在头脑中。18年的积累，家庭出身、生活方式、财务观念，造就了那样一个你，也造就了这样一个我，造就了你的疏狂佻达与我的保守持重。当我还清贷款时，你买了第二套住房；上证指数6000点，当我好容易试水成为股民，你清仓离场，转投金市；我每月寄1000元回去，承担起赡养父母的责任，你笑嘻嘻地说，养老，我不啃老就不错了；当我思考着要不要</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/coffee/" data-id="cj591hwkx0003kgnxxhip5d6w" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/coffee/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-better-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/better-note/" class="article-date">
+  <time datetime="2008-11-23T16:00:00.000Z" itemprop="datePublished">Nov 24 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/better-note/">[日常软件使用技巧]10.如何更好的做笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 这一篇只是我个人的一些想法，如果大家有什么不同的意见可以讨论。</p>  <p>&#160;&#160;&#160; 这里的笔记，指的的是包括读书笔记、会议笔记以及课堂笔记等的记录文档。它的内容应该是逻辑上有联系、有层次的（相对第二部分摘要来说），并且应该满足以下几条：</p>  <ul>   <li>可以重现原始内容的结构 </li>    <li>可以全文搜索 </li>    <li>方便的格式转换和输出 </li>    <li>操作方便</li> </ul>  <p>&#160;&#160;&#160; 满足这些点的，我推荐用MindManager（下称MM）。可以在<a href="http://www.mindmanager.net.cn" target="_blank" rel="external">www.mindmanager.net.cn</a>上下载安装文件、汉化包和注册机。（如果不喜欢破解软件的可以尝试一下Xmind和FreeMind两个软件，都是免费软件，但是我都没用过，欢迎对这两个软件做出介绍）</p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/mindmanagerpro.gif" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="171" alt="MindManager-Pro" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/mindmanagerpro-thumb.gif" width="244" border="0"></a> </p>  <p>&#160;&#160; 现在MM已经出到MM7，和office2007的界面和操作都比较类似，所以上手不是很困难。按照软件提供的教程就能很快的熟练使用软件。</p>  <p>&#160;&#160;&#160; 软件的设计是基于“思维导图”（MindMap)的思想，文档结构呈现树状放射性。这和我这几天正在看的《金字塔原理》的想法挺一致的。</p>  <p>&#160;&#160;&#160; 具体的来说，一个文件包含并且只包含一个“中心论点”，作为顶级的结构，然后在下面可以有若干的“支持论点”作为第二层的结构，然后有第三层、第四层论点等等。每一层次都可以展开和折叠，给查阅的时候提供了方便。</p>  <p>&#160;&#160;&#160; 它支持把论点（不管哪个层次）导出到Outlook作为任务，这样可以很方便的实现项目的分解，并且支持Outlook2007的分类功能。</p>  <p>&#160;&#160;&#160; 另外，它的全屏模式和头脑风暴的功能比较适合一个小组在头脑风暴会议中使用。</p>  <p>&#160;&#160;&#160; 操作上，如果你填写了一个论点，按回车就是添加一个同层次的论点，按Insert键就是增加一个子论点，按Backspace键就是回到上一层的父论点，一般来说只用这几个键就可以了。</p>  <p>&#160;&#160;&#160; 内容输入之后，你还可以通过边框、填充、连接线的类型等，来美化一下你做出来的笔记。像下面这幅图：</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image32.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="234" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb32.png" width="516" border="0"></a> </p>  <p>&#160;&#160;&#160; 它不但可以拿来作笔记、也可以拿来写提纲，做工作计划等。因为结构比较符合思维习惯，所以你会越用越喜欢。</p>  <p>&#160;&#160;&#160; 下面给几个例子</p>  <p>&#160;&#160;&#160;&#160; 读书笔记</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image33.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="283" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb33.png" width="568" border="0"></a> </p>  <p>&#160;&#160;&#160; 读书笔记+任务</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image34.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="377" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb34.png" width="526" border="0"></a> </p>  <p>&#160;&#160;&#160; 会议记录</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image35.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="320" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb35.png" width="515" border="0"></a> </p>  <p>项目管理</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image36.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="569" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb36.png" width="384" border="0"></a> </p>  <p>写作提纲</p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image37.png" target="_blank" rel="external"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="449" alt="image" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb37.png" width="576" border="0"></a> </p>  <p>&#160;&#160;&#160; MM文件完成之后，你可以选择直接转换为word格式，这样在word文档里面就直接生成论点对应的多级编号。</p>  <p>&#160;&#160;&#160; 最后，讲一下怎么对MM的内容进行全文搜索，首先，你要有一个桌面搜索引擎，我用的是微软的桌面搜索。然后下载一个MM的ifilter，就能让微软桌面搜索对MM文件进行索引，之后就能在桌面搜索中直接搜索到你MM文件中的内容。</p>  <p>&#160;&#160;&#160; 大家可以自己发掘一下这个软件的用途，到时候可以一起交流。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/better-note/" data-id="cj591hwkv0002kgnxdec1afn1" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/better-note/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-new-series-start" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/new-series-start/" class="article-date">
+  <time datetime="2008-11-22T16:00:00.000Z" itemprop="datePublished">Nov 23 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/new-series-start/">准备写一个系列：日常软件使用技巧</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#160;&#160;&#160; 为什么要写这个系列？因为很多人，比如Halley和Eric，都经常问我一些关于日常软件的使用方法或者怎样用软件提高自己的工作效率啥的。不少的内容我都要说好几遍，所以我干脆写一个系列好了。再加上最近想整理水木办公软件版面的精华区，估计又有不少的新鲜东西能弄出来。</p>  <p>&#160;&#160;&#160; 各位好友有什么需求或者不明白的话，尽管留言，我会及时回复及时研究的。</p>  <p>&#160;&#160;&#160; 系列的内容应该包括浏览器、电子邮件（包括Gmail）、文件管理、日程管理、笔记软件、文档处理及管理软件的使用技巧。中间会给一些技术名词的简要讲解和一些常用的资源。</p>  <p>&#160;&#160;&#160; 我尽量使内容比较新，当然肯定有各位已经知道的。希望知道的也不要嘲笑，也不要说toooooooooold之类的话，毕竟还是有相当多的人不懂。就像Halley说的：“我不知道Tab键可以切换到下一个输入框也不要紧，因为我周围的人都不知道。”</p>  <p>&#160;&#160;&#160; 如果大家有一些更好的解决方案，欢迎讨论。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/new-series-start/" data-id="cj591hwkt0001kgnxxmikrnx8" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/new-series-start/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-daily-soft-1-rss" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daily-soft-1-rss/" class="article-date">
+  <time datetime="2008-11-22T16:00:00.000Z" itemprop="datePublished">Nov 23 2008</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/daily-soft-1-rss/">[日常软件使用技巧]1.如何订阅自己感兴趣的内容？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>第一讲讲RSS订阅，比较基本，知道的可以跳过
+
+现在不管是名人还是我们这种小人物，都喜欢在自己的博客或者空间上写东西或者到别人的博客上去看看。这是Web2.0带给我们的好处，每个人都是信息的编写者，也是信息的接受者。网络世界的首页不再是原来门户网站时期“编辑的选择”，而是“网民的选择”。换一句话说，我们可以用别人的智慧来帮自己在海量信息中做出选择，可以看到无数的思想，何乐而不为呢？
+</code></pre><p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/0705ok1.gif" target="_blank" rel="external"><img border="0" align="right" width="604" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/0705ok-thumb1.gif" alt="0705ok" height="454" style="display: inline; margin-left: 0px; margin-right: 0px; border: 0px" title="0705ok"></a></p>
+<pre><code>在这种情况下，自己搜索是挺累的，大家可能都会有在Google或者百度上花费半天但是什么有用的信息都没有获得的情况。拿我原来在图书馆做网络应用开发来说，对技术问题，一般百度或者Google到的都是问题本身，很少有解决的，反而如果你指定在著名的Java博客站（比如&lt;a href=&quot;http://www.blogjava.net&quot;&gt;www.blogjava.net&lt;/a&gt;)就能找到解决方案，并且能发现有不少人和你做的东西相似。你想观察这个人的进度，这时候怎么办？
+
+或者另一种情况，你很关注某些人的博客或者空间（比如说我的^_^)，但是上网的时候一个一个点开还是挺费劲的，而且有的人还没有更新，让你白花时间了。这个时候有没有什么好的解决方案呢？
+
+&lt;font size=&quot;2&quot;&gt;解决方案就是上图中的&lt;font color=&quot;#ff0000&quot;&gt;RSS，&lt;/font&gt;&lt;/font&gt;&lt;font size=&quot;2&quot; color=&quot;#ff0000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;RSS简单的来说就是一个“推”的技术。它把源网站中的内容按照一定的规则“推”到目标中去。不需要你再去源网站找，只用把RSS收集起来一起看就好。&lt;/font&gt;&lt;/font&gt;
+</code></pre><p><a title="2" name="2"></a>==============RSS可以干什么=====================</p>
+<p>1.订阅BLOG(你可以订阅你工作中所需的技术文章；也可以订阅与你有共同爱好的作者的Blog，总之，你对什么感兴趣你就可以订什么)<br>2.订阅新闻(无论是奇闻怪事、明星消息、体坛风云，只要你想知道的，都可以订阅)<br>你再也不用一个网站一个网站，一个网页一个网页去逛了。只要这将你需要的内容订阅在一个RSS阅读器中，这些内容就会自动出现你的阅读器里，你也不必为了一个急切想知道的消息而不断的刷新网页，因为一旦有了更新，RSS阅读器就会自己通知你.</p>
+<p>======================================== ====</p>
+<font size="2" color="#000000">    因此，我们需要的找到<font color="#ff0000">RSS链接</font>和一个合适的<font color="#ff0000">RSS阅读器</font></font>
+
+<font size="2" color="#000000">    问题1：怎样找到RSS链接（或者说叫feed）？</font>
+
+<font size="2" color="#000000">    凡是有“订阅”，“订阅到XX”或者有<img width="36" src="http://image2.sina.com.cn/home/ddt/images/rss/rss.gif" height="14">，<img width="36" src="http://image2.sina.com.cn/home/ddt/images/rss/xml.gif" height="14">，<a href="http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss" target="_blank" rel="external"><img src="http://cn3.sclive.net/00.0.0000.0000/Web/images/synd.gif" alt="订阅 RSS 源"></a>等图标的就是RSS链接的地址，点击链接之后复制这个地址，就可以添加到你的RSS阅读器中了。</font>
+
+<font size="2" color="#000000">    问题2：哪有RSS阅读器？</font>
+
+<font size="2" color="#000000">    阅读器无所不在</font>
+
+<font size="2" color="#000000">    客户端版的：Foxmail，Outlook，IE7，Opera里面都内置了RSS的阅读器功能</font>
+
+<font size="2" color="#000000">    网页版的：Google Reader， Yahoo！和QQ邮箱中集成了feed阅读，网易有道阅读，还有著名的抓虾和鲜果。</font>
+
+<font size="2" color="#000000">    问题3：怎么使用？</font>
+
+<font size="2" color="#000000">    假如你想订阅我的“日常软件使用技巧”（当然，我也欢迎你订阅我空间的所有内容），碰巧你又有一个Gmail邮箱的话。那你可以选择Google Reader。其他的邮箱使用这找找自己的邮件提供商对应的服务。</font>
+
+<font size="2" color="#000000">    首先，你能在我的空间右侧看到</font>
+
+<font size="2" color="#000000">    <a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image.png" target="_blank" rel="external"><img border="0" width="169" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb.png" alt="image" height="184" style="border-width: 0px"></a></font>
+
+<font size="2" color="#000000">    然后顺理成章理所当然的，你点击一下日常软件使用技巧旁边的 <a href="http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss" target="_blank" rel="external"><img src="http://cn3.sclive.net/00.0.0000.0000/Web/images/synd.gif" alt="订阅 RSS 源"></a>，接下来会跳到<a href="http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss" title="http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss" target="_blank" rel="external">http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss</a>，或者<a href="http://linchangyang.spaces.live.com/category/" title="http://linchangyang.spaces.live.com/category/%e6%97%a5%e5%b8%b8%e8%bd%af%e4%bb%b6%e4%bd%bf%e7%94%a8%e6%8a%80%e5%b7%a7/feed.rss" target="_blank" rel="external">http://linchangyang.spaces.live.com/category/日常软件使用技巧/feed.rss</a>，复制这个地址，然后进入<a href="http://www.google.com/reader/view" target="_blank" rel="external">http://www.google.com/reader/view</a>，输入你的Gmail用户名和密码，在左边能看到<a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image1.png" target="_blank" rel="external"><img border="0" width="135" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2008/11/image-thumb1.png" alt="image" height="29" style="border-width: 0px"></a> ，然后点击这个超链接，在弹出的窗口中输入刚才复制的RSS地址，点击“添加”，大功告成。</font>
+
+<font size="2" color="#000000">    至于各个阅读器的使用和功能，都差不多，选一个自己用着方便的就好。具体的添加RSS的方法，自己琢磨一下，再有问题的留言问问。顺便说一句，QQ邮箱中的feed阅读器可以看你的好友的QQ空间更新，这个很人性化。有一些RSS的源网站不提供全文输出，比较恶心。</font>
+
+<font size="2" color="#000000">    问题4：能推荐一些好的RSS资源吗？</font>
+
+<font size="2" color="#000000">    新闻类：<a href="http://www.my1510.cn" target="_blank" rel="external">www.my1510.cn</a> 非常好的网站，是闾丘露薇他们做的，目的是全民记者。里面可以订阅的东西太多，我推荐1510报童，1510推荐和1510首页三个，作为新闻和评论类的订阅内容。</font>
+
+<p><font size="2" color="#000000">    THUBT：</font><a href="http://www.cool-video.com/thubt.xml" target="_blank" rel="external">http://www.cool-video.com/thubt.xml</a>（这就是RSS地址），清华的BT站点，有热门美剧和娱乐节目的种子，校内下载非常快</p>
+<pre><code>水木社区：水木社区（&lt;a href=&quot;http://www.newsmth.net&quot;&gt;www.newsmth.net&lt;/a&gt;）的所有版面的文摘区(g)和保留区(m)都是有RSS输出的，地址分别为&lt;a href=&quot;http://www.newsmth.net/rss.php?g&quot;&gt;http://www.newsmth.net/rss.php?g&lt;/a&gt;版面名和&lt;a href=&quot;http://www.newsmth.net/rss.php?m&quot;&gt;http://www.newsmth.net/rss.php?m&lt;/a&gt;版面名，比如NetResource版的两个RSS就是&lt;a href=&quot;http://www.newsmth.net/rss.php?gNetResources&quot;&gt;http://www.newsmth.net/rss.php?&lt;font color=&quot;#333333&quot;&gt;g&lt;/font&gt;NetResources&lt;/a&gt;和&lt;a href=&quot;http://www.newsmth.net/rss.php?mNetResources&quot;&gt;http://www.newsmth.net/rss.php?mNetResources&lt;/a&gt;。要相信水木的版主是非常负责的，他们标记g和m确实真是有帮助的信息，比如网络资源版和校内信息版。
+
+twhsi：&lt;a href=&quot;http://blog.sina.com.cn/rss/twhsi.xml&quot;&gt;http://blog.sina.com.cn/rss/twhsi.xml&lt;/a&gt;，一个台湾时间管理培训师的blog。
+
+Gmail：其实我觉得这没什么用，看了我的第二讲你就会觉得这真没什么用了。http://用户名:密码@gmail.google.com/gmail/feed/atom
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/daily-soft-1-rss/" data-id="cj591hwko0000kgnxbux0ceiu" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/daily-soft-1-rss/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/21/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

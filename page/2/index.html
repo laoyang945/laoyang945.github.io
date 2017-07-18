@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/page/2/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-civ5-research-overflow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/civ5-research-overflow/" class="article-date">
+  <time datetime="2014-01-06T07:45:35.000Z" itemprop="datePublished">Jan 6 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/civ5-research-overflow/">文明5科研溢出打法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近很是喜欢打《文明5》这个游戏，这个游戏的本质就是计算，对内政外交军事科技方方面面进行计算，在给定的约束下用各种资源和放大器(政策，宗教，意识形态，文明特性)来最大化输出(魅力，兵力，科技，同盟)，尽可能快的获取对应的胜利。</p>
+<p>既然是计算，免不了要知道各种计算规则，有些玩家为了更好的了解规则去读公开的代码，于是发现了各种可利用的算法漏洞。</p>
+<p>比如自主政策左二的移民生产时间减半以及虔信开门的大小庙时间减半，被大家发现减半不是成本减半，而是锤子翻倍，由此诞生了溢出锤微操和拆庙微操。不过这两种处理时可以理解的，溢出值都是有上限的，也不会累加到再下一轮。</p>
+<p>前段时间更有人发现了科技值的溢出方法，在这个方法里，溢出值是无限的。我认为这是一个bug，因为同一个科技贬值计算了两次。</p>
+<p>#科技贬值</p>
+<p>在文明5里面，一个科技，如果其他已遇见的玩家已经研究完成了，它需要的点数就比没人研究好的时候要少，8人标准图上，这个折算系数最多是1.2625，也就是七个玩家都完成了，就你没完成，那你需要的科技点数就是百科中显示点数的的1/1.2625≈79%.</p>
+<p>#外籍学者提案</p>
+<p>在世界议会里面，还能有一个提案叫做scholar resident，说明是「已被发现的科技，研究加速20%」，也就是说只要有人研究过，那折算系数最多变为1.515，而此时研究该科技的花费变成百科上写的66%.</p>
+<p>#科研溢出</p>
+<p>如果每回合的科研收益大于这个回合研究科技需要的点数，那么科研点数会溢出。</p>
+<p>但是溢出并不是按1：1溢出的，而是看这个回合研究的科技有没有贬值。这个地方我估计文明的想法是「在贬值的科技上投入的科研点数要折算成未贬值的科研点数」，于是<strong>溢出的点数乘以科研贬值的折算系数，并且累计到下一个回合</strong>，具体的计算公式如下</p>
+<pre><code>本回合溢出=max{上回合溢出×折算系数+本回合科研点数-科技实际成本,0}
+</code></pre><p>和0比较是因为如果上回合的折算溢出加上回合科研点数也研究不完当前科技的话，下一个回合的溢出就是0了。这也是我觉得不合理的地方，因为在科技实际成本里面已经计算过了科技贬值，但是在溢出的时候又要算一遍。但是平时溢出不会太多，至少不会超过你的回合科研点数。如果你是按步就班的进行科研，那么基本上你感觉不到溢出，因为科技成本是相当高的。</p>
+<p>#滚雪球</p>
+<p>但是，如果你留了不少远古科技还没有研究的话，比如青铜（单城标图，就你没研究的话，成本是40），回合科研是100，上一回合刚好研究完成溢出了99，把这个溢出用去研究青铜，一个回合就研究好，下一轮的溢出是多少？按照上面的公式计算的话，下一轮的溢出是209。那如果再把这209的溢出投入到建筑构造学（成本80）的话，再下一轮的溢出就是337了，如果你铁器（80）也没研究的话，再来一次溢出就是531了。这样你研究好了三个科技，溢出不但没有变成0，反而翻了5倍，变成了531，是你三个回合科研点数总和的两倍不到。</p>
+<p>如果你第一个回合的溢出是899呢？三个科技后溢出变成2243，是你三个回合科研点数总和的7倍还多！如果有10个科技都是1.515的折算系数，那么走完这10个科技，你的溢出值将是41287，是你十个回合科研点数总和的40倍。</p>
+<p>所以，到这里，你该知道怎样利用这个溢出来滚雪球了吧：</p>
+<ul>
+<li>压上线或者下线科技不研究，最大化折算系数</li>
+<li>在某科技研究好之后，烧一个大科学家，获得8倍的回合科研点数的溢出</li>
+<li>选择远古科技，依次秒掉被压的科技，溢出值以1.5为底的指数上升</li>
+</ul>
+<p>所以爱因斯坦说「<strong>复利是宇宙间最伟大的力量</strong>」</p>
+<p>#秒掉未来科技？</p>
+<p>那在启蒙时期烧一个大科的话，可以秒掉未来科技吗？答案是可以。</p>
+<p>我们先看看从各个时期开始到飞船所有科技研究完所需要的科研点数（表格没有考虑科研的惩罚，如果是单城应该再乘以1.05，双城乘以1.10，以此类推）：</p>
+<table> <tbody> <tr> <th style="border-bottom:2px solid; min-width:100px"> 初始时期 </th> <th style="border-bottom:2px solid; min-width:100px"> 所需点数 </th> </tr> <tr><td>文艺1</td><td>178915</td></tr> <tr><td>文艺2</td><td>174625</td></tr> <tr><td>工业1</td><td>168300</td></tr> <tr><td>工业2</td><td>157740</td></tr> <tr><td>现代1</td><td>147400</td></tr> <tr><td>现代2</td><td>130350</td></tr> <tr><td>原子1</td><td>112310</td></tr> <tr><td>原子2</td><td>89870</td></tr> <tr><td>信息1</td><td>61710</td></tr> <tr><td>信息2</td><td>19360</td></tr> </tbody> </table>
+
+
+<p>有18万左右的溢出值，是有可能秒掉所有飞船科技的。但是溢出值并不是可以无限指数上升，它的的上限是214748。这个数据说和2的31次方减1有关。超过了这个上限，呵呵，你的溢出值就变成负数了，这样面板就会显示你完成一个研究需要上千回合。</p>
+<p>如果你想用这个方法放飞船的话，一定要选择好秒科技的路径，不要让溢出值超过上限。适当的秒一些电脑没有研究过的科技来减少溢出值，最好到18万左右，而且接下来所有科技电脑都没研究过（这个通过成本可以看出来），接下来就是纯消耗，不会再有复利了。</p>
+<p>这里还要注意，为了避免溢出超过上限，可以利用牛津大学和理性关门来秒掉一些关键的科技，减少连乘的次数。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/civ5-research-overflow/" data-id="cj591hwth006tkgnxeq40vclm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/civ5-research-overflow/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Game/">Game</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pathogen-vim-latex" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/pathogen-vim-latex/" class="article-date">
+  <time datetime="2013-12-31T08:14:52.000Z" itemprop="datePublished">Dec 31 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/pathogen-vim-latex/">Windows下vim-LaTeX和Pathogen的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久都没有写博客了，不知道还有人看不。</p>
+<p>很久以前，升级vim插件里的vim-LaTeX，突然发现Windows下无法编译任何的tex文件，反复报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">Error detected while processing function Tex_RunLaTeX:</div><div class="line">line 7:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E15: Invalid expression: s:target</div><div class="line">line 10:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 12:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_GetVarValue(&apos;Tex_FormatDependency\_&apos;.s:target) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_GetVarValue(&apos;Tex_FormatDependency_&apos;.s:target) != &apos;&apos;</div><div class="line">line 21:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 25:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">line 51:</div><div class="line">E121: Undefined variable: initTarget</div><div class="line">E15: Invalid expression: initTarget</div></pre></td></tr></table></figure>
+<p>然后也报错没有TCLevel这个命令，但是我在OSX下用是好的，所以就没管，只是没有在Windows下写TeX而已。</p>
+<p>昨天才发现是这样的，不知道从哪个版本开始，vim-latex套件里面多了一个compiler文件夹，里面有一个tex.vim文件，按照官方的说法，这个文件夹应该是拷贝到你的vimfiles里面的。照理说pathogen应该是可以管理的，问题就在于Windows下，Vim的安装文件夹/compiler里面也有一个tex.vim，不知道是调用先后顺序还是怎样，Windows不会载入vim-latex里面的这个tex.vim，而是载入Vim自带的那个，所以……</p>
+<p>解决方法就很简单了，把自带的那个tex.vim删了就行，一切变得正常</p>
+<p>祝大家新年快乐！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/pathogen-vim-latex/" data-id="cj591hwtf006rkgnxxssk16k0" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/pathogen-vim-latex/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-listary-everything-do" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/listary-everything-do/" class="article-date">
+  <time datetime="2013-03-27T03:17:02.000Z" itemprop="datePublished">Mar 27 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/listary-everything-do/">Listary——给DOpus和Everything搭个桥</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的<a href="http://blog.yesmryang.net/do-everything/">解决方法</a>，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了强大的文件管理工具链。</p>
+<ul>
+<li>Listary beta版下载地址 <a href="http://www.listary.com/download/beta/ListaryBeta1180.exe" target="_blank" rel="external">http://www.listary.com/download/beta/ListaryBeta1180.exe</a></li>
+<li>Directory Opus beta版下载地址 <a href="http://blog.dopus.com/2013/03/directory-opus-10505-beta.html" target="_blank" rel="external">http://blog.dopus.com/2013/03/directory-opus-10505-beta.html</a></li>
+</ul>
+<h1 id="Listary设置"><a href="#Listary设置" class="headerlink" title="Listary设置"></a>Listary设置</h1><p>安装好之后，我做的设置是：</p>
+<ul>
+<li>搜索-磁盘搜索中，使用Everything</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置里面，Directory Opus关闭「查找你键入的内容」（Find-As-You-Type）选项，这样是为了不和DOpus自己的Find-As-You-Type功能冲突</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e346i4842eg.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置-Desktop，关闭「鼠标在空白区域弹出Listary快捷菜单」，以免和DOpus的双击唤出冲突。</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e346ib00rjg.gif" width="500"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="从桌面搜索"><a href="#从桌面搜索" class="headerlink" title="从桌面搜索"></a>从桌面搜索</h2><p>只要焦点在桌面，只要开始输入就是在桌面内查找你输入的内容</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e3478o3f2eg.gif" width="500"></p>
+<p>以「&gt;」开始的搜索则是全局搜索</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e3478w1pw4g.gif" width="500"></p>
+<h2 id="在DOpus里搜索"><a href="#在DOpus里搜索" class="headerlink" title="在DOpus里搜索"></a>在DOpus里搜索</h2><p>按Win+s或者鼠标中键，打开Listary工具栏，同样，在当前路径下查找你输入的内容，如果输入以「&gt;」开头，则是全局搜索</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347bscrqug.gif" width="500"></p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347c351kjg.gif" width="500"></p>
+<h2 id="在文件打开菜单中"><a href="#在文件打开菜单中" class="headerlink" title="在文件打开菜单中"></a>在文件打开菜单中</h2><p>比如在Gmail里面点击「添加附件」，在「打开文件」对话框下面就会有Listary的工具栏，在这里输入的任何内容都是搜索，用「&gt;」开头的都是全局搜索，如果焦点不在Listary上的话，按Win+s聚焦到Listary的对话框上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e347956gjwg.gif" width="500"></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>Listary支持搜索的时候用拼音首字母查询，弥补了DOpus的不足，不过如果你使用的是Everything的引擎，则全局搜索的时候就没法用拼音首字母了。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e34d1qo4z0g.gif" width="500"></p>
+<p>Listary和TC可以更好的集成使用，就是在上述「打开文件」对话框中按Win+o可以打开一个TC标签，然后在此TC标签中进行操作，选中文件后再按Win+o，选中文件的路径就通过TC传给Listary然后传给「打开文件」的对话框了，这样在「打开文件」也可以使用TC进行操作。详见<a href="http://xbeta.info/tc-listary.htm" target="_blank" rel="external">Listary+TC: 提高效率，取代传统低效的”打开/保存”对话框 | 善用佳软</a>。然而现在对DOpus还没有Win+o支持，不过作者说这已经在他的开发计划之内了。</p>
+<p>另外，Listary Pro现在正在以50人民币的优惠价进行销售，我本身这个软件用得不多，Pro版的介绍和购买详情也请移步善用佳软大哥的文章<a href="http://xbeta.info/listary4.htm" target="_blank" rel="external">Listary:搜索增强软件，新版v4发布(赠Pro许可+优惠销售) | 善用佳软</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/listary-everything-do/" data-id="cj591hwte006pkgnxzs1ge6s9" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/listary-everything-do/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-dopus-10-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dopus-10-5/" class="article-date">
+  <time datetime="2013-02-05T03:09:34.000Z" itemprop="datePublished">Feb 5 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/dopus-10-5/">DOpus 10.5 更新日志</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译</p>
+<h1 id="Windows-8"><a href="#Windows-8" class="headerlink" title="Windows 8"></a>Windows 8</h1><p>已官方支持Windows 8，以下问题已解决</p>
+<ul>
+<li>双击文件启动的只是桌面程序，而不是Metro程序</li>
+<li>双击未知格式文件不再打开同步中心</li>
+<li>打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效</li>
+<li>「复制文件路径」功能正常</li>
+</ul>
+<h1 id="原生支持MTP设备"><a href="#原生支持MTP设备" class="headerlink" title="原生支持MTP设备"></a>原生支持MTP设备</h1><p>本版本开始原生支持MTP（Media Transfer Protocol）设备，MTP设备在DOpus里面以mtp://语法打开，现在在「计算机」里面可以看到已经连接的MTP设备并双击可以打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif" width="500"></p>
+<h1 id="标签群组可分别设置左右栏"><a href="#标签群组可分别设置左右栏" class="headerlink" title="标签群组可分别设置左右栏"></a>标签群组可分别设置左右栏</h1><p>现在标签群组里面新增一个选项「特定边框」（Specific Sides，这里中文译得不好）可以制定组中的标签是在左栏还是右栏打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0rwkm7g.gif" width="500"></p>
+<p>当勾选这一选项后，其左边的按钮可以用来将标签从左边移动到右边或者反过来</p>
+<p>标签栏的右键菜单新增「Save Both Sides，保存两者」（中文还是没译好）命令，可以将目前打开的标签按照分栏保存成标签群组。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if0ysnimg.gif" width="500"></p>
+<h1 id="标签组管理"><a href="#标签组管理" class="headerlink" title="标签组管理"></a>标签组管理</h1><p>「首选项-文件夹标签-标签群组」中可以用文件夹来管理，只需要点击「新建文件夹」按钮并拖拽。 另外也新增一个「标记为隐藏」按钮。一旦一个标签群组被标记为隐藏，它就不会出现在标签栏右键菜单中。</p>
+<h1 id="可链接标签"><a href="#可链接标签" class="headerlink" title="可链接标签"></a>可链接标签</h1><p>在双栏视图中，可以将左右的标签页链接起来，点击已链接标签中的一个，在另一栏会自动跳到和它链接的那个标签。同时最多设置8对链接标签页。已链接标签会用不同颜色标识，该颜色可在首选项中修改。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1381lng.gif" width="500"></p>
+<p>已链接标签可选择为「Slave Tab, 附属模式」。一旦设置为附属模式，该标签的内容会和它的链接标签保持一致。附属模式的标签会变成斜体。附属模式的设置和取消在标签栏的右键菜单中。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if17onisg.gif" width="500"></p>
+<p>首选项-文件夹标签-标签群组的编辑中也可以设置链接标签</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1fmw9kg.gif" width="500"></p>
+<p>链接标签的快捷键：</p>
+<ul>
+<li>Ctrl+点击：设置/取消到当前标签的链接</li>
+<li>Ctrl+Shift+点击：设置/取消到当前标签的附属模式链接</li>
+<li>Shift+点击：在另一栏中不跳转到链接的标签</li>
+</ul>
+<h1 id="列表窗样式使用标签群组"><a href="#列表窗样式使用标签群组" class="headerlink" title="列表窗样式使用标签群组"></a>列表窗样式使用标签群组</h1><p>在列表窗样式中，之前是可以分别定义左右栏的标签，现在该功能用标签群组代替。</p>
+<h1 id="标签外观改进"><a href="#标签外观改进" class="headerlink" title="标签外观改进"></a>标签外观改进</h1><p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if1k8dajg.gif"><br><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if8vv3wtg.gif"></p>
+<h1 id="标签栏改进"><a href="#标签栏改进" class="headerlink" title="标签栏改进"></a>标签栏改进</h1><ul>
+<li>「首选项-文件夹标签」新增外观页</li>
+<li>「首选项-文件夹标签-选项」，新增「点击列表窗关闭按钮时只关闭活动标签」（而不是关闭整个列表窗），「显示新标签按钮」「在当前标签旁打开新标签」以及「当标签减少时显示菜单」</li>
+<li>把一个标签拖到桌面可以打开一个新的列表窗</li>
+<li>直到鼠标按键释放才激活标签（就是你拖动标签的时候不会马上切换过去）</li>
+<li>鼠标中键可以关闭标签（就是按滚轮），双击标签也可以（需要在「首选项-文件夹标签-选项」中设置）</li>
+<li>「首选项-文件夹树-选择事件」新增「切换至现有标签」选项，选中后在文件夹树里面点击一个已经在标签中打开的文件夹的时候会切换到该标签，而不是在当前标签打开这个文件夹。</li>
+</ul>
+<h1 id="即时查找可以切换标签"><a href="#即时查找可以切换标签" class="headerlink" title="即时查找可以切换标签"></a>即时查找可以切换标签</h1><p>快捷键是「@」，可以在「首选项-列表窗-即时查找」中修改<br>在使用即时查找切换标签时，会弹出符合描述的标签列表，匹配的是路径和标签标题</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1otz9wg.gif" width="500"></p>
+<h1 id="文件夹树高亮当前文件夹路径"><a href="#文件夹树高亮当前文件夹路径" class="headerlink" title="文件夹树高亮当前文件夹路径"></a>文件夹树高亮当前文件夹路径</h1><p>在「首选项-文件夹树-高亮显示所选文件夹的路径」中设置。勾选「高亮显示当前所有打开的标签」后非活动标签的高亮颜色较淡</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1ifdghttug.gif"><br><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1ufpl2g.gif"></p>
+<h1 id="群组栏"><a href="#群组栏" class="headerlink" title="群组栏"></a>群组栏</h1><p>当文件以群组方式显示时，可以显示一个群组栏，在「首选项-文件夹-文件夹显示-当文件被分组时自动添加‘群组’栏」，群组栏的颜色和宽度可在首选项中设置。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if36d30cg.gif"><br><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if3znul4g.gif"></p>
+<h1 id="Ctrl-滚轮可以调整字体和缩略图大小"><a href="#Ctrl-滚轮可以调整字体和缩略图大小" class="headerlink" title="Ctrl+滚轮可以调整字体和缩略图大小"></a>Ctrl+滚轮可以调整字体和缩略图大小</h1><ul>
+<li>在缩略图中，可以调整缩略图尺寸</li>
+<li>在详细信息或者加强模式视图中，可以调整字体大小</li>
+</ul>
+<h1 id="列表窗可以自定义标题"><a href="#列表窗可以自定义标题" class="headerlink" title="列表窗可以自定义标题"></a>列表窗可以自定义标题</h1><p>在「首选项-显示-选项」中，可以自定义列表窗标题栏，其中可以用到几个特殊控制字</p>
+<ul>
+<li>%P 当前文件夹完整路径</li>
+<li>%N 当前文件夹名</li>
+<li>%R 当前文件夹根目录</li>
+<li>%D 当前目标文件夹完整路径</li>
+<li>%M 当前目标文件夹名</li>
+<li>%L 当前列表窗布局名</li>
+<li>%T 最初标题</li>
+</ul>
+<p>%P，%N和%R还可以在给标签命名的时候使用</p>
+<h1 id="其他改进和bug-fix"><a href="#其他改进和bug-fix" class="headerlink" title="其他改进和bug fix"></a>其他改进和bug fix</h1><p>（略）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dopus-10-5/" data-id="cj591hwtd006mkgnxygfo5oi3" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dopus-10-5/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-shadowsocks-nodejs-obfsproxy-aws" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/shadowsocks-nodejs-obfsproxy-aws/" class="article-date">
+  <time datetime="2013-01-20T13:56:17.000Z" itemprop="datePublished">Jan 20 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/shadowsocks-nodejs-obfsproxy-aws/">在AWS上搭建shadowsocks-nodejs环境并搭配obfsproxy使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文作者为<a href="https://twitter.com/unclepulp" target="_blank" rel="external">unclepulp</a>，感谢赐稿</p>
+<p>本文服务端为Amazon Linux AMI 2012.09（32bit），客户端为Windows7。</p>
+<p>Amazon AWS的注册、EC2的开通（电话验证如不成功，可用Google voice验证）以及实例的启用请参考<a href="http://yinhm.appspot.com/2010/10/amazon-ec2-micro-instance-and-tunnel-guide" target="_blank" rel="external">Amazon AWS 漫游指南</a>。</p>
+<p>首先使用PuTTY登录EC2，然后输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo su</div></pre></td></tr></table></figure></p>
+<p>为避免部署的过程中出现网络中断的情况，可使用<code>screen</code>命令创建一个会话（<code>screen</code>命令的使用请参考<a href="http://www.vpser.net/manage/screen.html" target="_blank" rel="external">SSH远程会话管理工具 - screen使用教程</a>）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">screen -S nodejs</div></pre></td></tr></table></figure></p>
+<p>接着更新一下系统：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum update</div></pre></td></tr></table></figure></p>
+<h2 id="部署服务端"><a href="#部署服务端" class="headerlink" title="部署服务端"></a>部署服务端</h2><h3 id="部署shadowsocks-nodejs"><a href="#部署shadowsocks-nodejs" class="headerlink" title="部署shadowsocks-nodejs"></a>部署shadowsocks-nodejs</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mkdir tmp</div><div class="line">cd tmp</div><div class="line">yum install git</div><div class="line">git clone https://github.com/clowwindy/shadowsocks-nodejs.git</div><div class="line">cd shadowsocks-nodejs</div><div class="line">vi config.json</div></pre></td></tr></table></figure>
+<p>按<code>i</code>开始修改，修改<code>server_port</code>（如12345）和<code>password</code>。修改好后按<code>ESC</code>，然后输入 <code>:wq</code> 保存退出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ..</div><div class="line">mkdir /var/shadowsocks</div><div class="line">cp shadowsocks-nodejs/ /var/shadowsocks -r</div></pre></td></tr></table></figure></p>
+<h3 id="安装并部署nodejs"><a href="#安装并部署nodejs" class="headerlink" title="安装并部署nodejs"></a>安装并部署nodejs</h3><p>nodejs最新版可以在<a href="http://nodejs.org/download/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">wget http://nodejs.org/dist/v0.8.18/node-v0.8.18-linux-x86.tar.gz</div><div class="line">tar zfvx node-v0.8.18-linux-x86.tar.gz</div><div class="line">cp node-v0.8.18-linux-x86/bin/node /usr/bin/</div><div class="line">echo &quot;(node /var/shadowsocks/server.js &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div></pre></td></tr></table></figure></p>
+<h3 id="部署obfsproxy"><a href="#部署obfsproxy" class="headerlink" title="部署obfsproxy"></a>部署obfsproxy</h3><h4 id="安装obfsproxy支持环境"><a href="#安装obfsproxy支持环境" class="headerlink" title="安装obfsproxy支持环境"></a>安装obfsproxy支持环境</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install autoconf automake gcc make openssl-devel pkgconfig</div></pre></td></tr></table></figure>
+<h4 id="安装libevent2"><a href="#安装libevent2" class="headerlink" title="安装libevent2"></a>安装libevent2</h4><p>libevent2最新版本可在<a href="http://libevent.org/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz</div><div class="line">tar zfvx libevent-2.0.21-stable.tar.gz</div><div class="line">cd libevent-2.0.21-stable</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cd ..</div></pre></td></tr></table></figure></p>
+<h4 id="安装并配置obfsproxy"><a href="#安装并配置obfsproxy" class="headerlink" title="安装并配置obfsproxy"></a>安装并配置obfsproxy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">git clone https://git.torproject.org/obfsproxy.git</div><div class="line">cd obfsproxy</div><div class="line">export libevent_CFLAGS=-I/usr/local/include</div><div class="line">export libevent_LIBS=&quot;-L/usr/local/lib -levent&quot;</div><div class="line">export LD_LIBRARY_PATH=/usr/local/lib/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cp /usr/local/lib/libevent-2.0.so.5 /usr/lib/</div><div class="line">cd ..</div><div class="line">echo &quot;(/usr/local/bin/obfsproxy obfs2 --dest=127.0.0.1:12345 server 0.0.0.0:54321 &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div><div class="line">iptables -A INPUT -p tcp --dport 54321 -j ACCEPT</div><div class="line">yum install policycoreutils</div><div class="line">service iptables save</div><div class="line">service iptables restart</div><div class="line">exit</div><div class="line">exit</div><div class="line">exit</div></pre></td></tr></table></figure>
+<p>此处端口12345为shadowsocks-nodejs的<code>server_port</code>，54321为obfsproxy 负责接收和发送混杂数据的端口。</p>
+<p>然后请参考<a href="http://yinhm.appspot.com/2010/11/amazon-ec2-tunnel-guide-part-three-vpn" target="_blank" rel="external">Amazon AWS 漫游指南三：VPN</a>一文里的防火墙设置，并将12345和54321两个端口添加一下，添加好后重启实例。</p>
+<hr>
+<h2 id="部署客户端"><a href="#部署客户端" class="headerlink" title="部署客户端"></a>部署客户端</h2><ol>
+<li><p>从<a href="https://www.torproject.org/projects/obfsproxy.html.en" target="_blank" rel="external">tor官网</a>下载含Obfsproxy的Tor包，此包是自解压包，将解压后得到的APP目录中的所有文件拷贝到一个合适的目录，如D:\nodejs</p>
+</li>
+<li><p>从<a href="http://nodejs.org/download/" target="_blank" rel="external">nodejs官网</a>下载node Windows包，下载得到node.exe直接拷贝到D:\nodejs</p>
+</li>
+<li><p>访问<a href="https://github.com/clowwindy/shadowsocks-nodejs" target="_blank" rel="external">shadowsocks-nodejs</a>项目主页，点击界面中的zip，下载得到一个zip包，解压后将shadowsocks-nodejs-master目录中的所有文件全部拷贝至D:\nodejs</p>
+</li>
+<li><p>编辑config.json，将<code>password</code>修改为之前制定的密码，其它无需修改。</p>
+</li>
+<li><p>在D:\nodejs目录中新建一个文件，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">START node.exe local.js</div><div class="line">START obfsproxy obfs2 –dest=111.111.111.111:54321 client 127.0.0.1:8388</div><div class="line">EXIT</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中111.111.111.111为服务器IP地址，例如，如果Amazon EC2实例的public dns为ec2-111-111-111-111.us-west-1.compute.amazonaws.com，那么，此处的IP就填111.111.111.111。然后将文件保存为批处理文件，后缀为<code>bat</code>。</p>
+<ol>
+<li>双击该批处理文件，并将浏览器的代理设置为SOCKS5 127.0.0.1:1080 即可。</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="http://sae.chenshaoju.com/?p=14" target="_blank" rel="external">如何使用obfsproxy搭配shadowsocks-nodejs安全高效的访问互联网</a></li>
+<li><a href="http://lordong.me/wp/post/1448.html" target="_blank" rel="external">自建obfsproxy的速度还不错</a></li>
+<li><a href="https://gist.github.com/1802068" target="_blank" rel="external">Tor with obfsproxy on Amazon’s AMI</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/" data-id="cj591hwtc006lkgnxn65tukrm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GFW/">GFW</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rime-kaomoji" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/rime-kaomoji/" class="article-date">
+  <time datetime="2013-01-19T07:07:54.000Z" itemprop="datePublished">Jan 19 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/rime-kaomoji/">鼠须管里使用颜文字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>综合参考官方文档和<a href="https://gist.github.com/3848421" target="_blank" rel="external">这个教程</a>。鼠须管里使用颜文字步骤如下，设置目录为<code>~/Library/Rime</code></p>
+<h3 id="新增一个输入法"><a href="#新增一个输入法" class="headerlink" title="新增一个输入法"></a>新增一个输入法</h3><p>在<code>default.custom.yaml</code>里面添加patch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line"> schema_list:</div><div class="line">  - schema: kaomoji</div></pre></td></tr></table></figure>
+<h3 id="编辑颜文字输入法"><a href="#编辑颜文字输入法" class="headerlink" title="编辑颜文字输入法"></a>编辑颜文字输入法</h3><p>新建<code>kaomoji.schema.yaml</code>文件，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">schema:</div><div class="line">  schema_id: kaomoji</div><div class="line">  name: kaomoji</div><div class="line"></div><div class="line">engine:</div><div class="line">  processors:</div><div class="line">    - key_binder</div><div class="line">    - speller</div><div class="line">    - selector</div><div class="line">    - navigator</div><div class="line">    - express_editor</div><div class="line">  segmentors:</div><div class="line">    - abc_segmentor</div><div class="line">    - fallback_segmentor</div><div class="line">  translators:</div><div class="line">    - r10n_translator</div><div class="line">  filters:</div><div class="line">    - uniquifier</div><div class="line"></div><div class="line">translator:</div><div class="line">  dictionary: kaomoji</div><div class="line">  spelling_hints: 1</div><div class="line"></div><div class="line">key_binder:</div><div class="line">  import_preset: default</div><div class="line"></div><div class="line">speller:</div><div class="line">  alphabet: zyxwvutsrqponmlkjihgfedcba</div><div class="line">  delimiter: &quot; ;&apos;&quot;</div><div class="line">  algebra:</div><div class="line">    - &quot;derive/^.+$/all/&quot;</div></pre></td></tr></table></figure>
+<h3 id="编辑词库"><a href="#编辑词库" class="headerlink" title="编辑词库"></a>编辑词库</h3><p>新建<code>kaomoji.dict.yaml</code>文件，建立颜文字词库，文件格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">name: kaomoji</div><div class="line">version: &quot;0.1&quot;</div><div class="line">sort: origin</div><div class="line"></div><div class="line">颜文字1[TAB键]输入码1</div><div class="line">颜文字2[TAB键]输入码2</div></pre></td></tr></table></figure>
+<p>例如</p>
+<pre><code>d=====(￣▽￣*)b [顶!]    ding
+</code></pre><h3 id="在当前输入法中使用颜文字"><a href="#在当前输入法中使用颜文字" class="headerlink" title="在当前输入法中使用颜文字"></a>在当前输入法中使用颜文字</h3><p>修改你输入法的<code>*.schema.custom.yaml</code>文件，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema/dependencies:</div><div class="line">    - kaomoji</div><div class="line">  abc_segmentor/extra_tags:</div><div class="line">    - reverse_lookup</div><div class="line">  reverse_lookup:</div><div class="line">    dictionary: kaomoji</div><div class="line">    enable_completion: false</div><div class="line">    prefix: &quot;`&quot;</div><div class="line">    tips: &quot;[颜文字]&quot;</div></pre></td></tr></table></figure>
+<h3 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h3><p>重新部署鼠须管即可生效</p>
+<p>注意此时文件夹内应该多出来<code>kaomoji.table.bin</code>, <code>kaomoji.reverse.bin</code>及<code>kaomoji.prism.bin</code>三个文件</p>
+<p>截图</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e0ywvjg9ysg.gif" width="500"></p>
+<h3 id="颜文字整理下载"><a href="#颜文字整理下载" class="headerlink" title="颜文字整理下载"></a>颜文字整理下载</h3><ul>
+<li><a href="https://github.com/hitigon/meow-emoji-rime" target="_blank" rel="external">https://github.com/hitigon/meow-emoji-rime</a></li>
+<li><a href="https://gist.github.com/3848421" target="_blank" rel="external">https://gist.github.com/3848421</a></li>
+<li><a href="http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt" target="_blank" rel="external">http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt</a> 请删除里面包括…的颜文字行，会导致编译错误</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/rime-kaomoji/" data-id="cj591hwtb006jkgnxds9s3x84" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/rime-kaomoji/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rime/">Rime</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pathogen-snipmate-windows" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/pathogen-snipmate-windows/" class="article-date">
+  <time datetime="2013-01-15T08:49:19.000Z" itemprop="datePublished">Jan 15 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/pathogen-snipmate-windows/">Snipmate在Windows下和pathogen的兼容问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在Windows台式机上写LaTeX的时候忽然发现怎么Snipmate不好使了，Tab键都要被按烂了居然还不能补全，但是OSX上用又是好的。</p>
+<p>Google了各种关键字，都没有能直接解决问题的。StackOverflow和superuser上的问题更多的是关于如何载入自定义的代码段。</p>
+<p>后来把Snipmate直接拷贝到Vim的安装文件夹下面，改名vimfiles，发现是可以用的，再结合googlecode上的一个issue，发现是snipmate/after这个文件夹pathogen没有载入，估计是不符合vim插件的通常结构。</p>
+<p>于是解决方法很简单了，在.vimrc文件中加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set runtime+=~/.vim/bundle/snipmate/after</div></pre></td></tr></table></figure></p>
+<p>因为我环境变量里面有$HOME，所以就可以用~来代替个人文件夹了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/pathogen-snipmate-windows/" data-id="cj591hwt4006gkgnx6xizlfwl" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/pathogen-snipmate-windows/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vimflowy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/vimflowy/" class="article-date">
+  <time datetime="2012-12-13T07:19:00.000Z" itemprop="datePublished">Dec 13 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/vimflowy/">vimflowy: workflowy的vim实现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在很早一篇<a href="http://blog.yesmryang.net/gtd-as-twittering/">《像发微博一样做GTD》</a>里面，我提到可以在Vim里面实现workflowy的功能。经过参考 Vimoutliner 和 VimOrganizer，我自己做了一个vim插件，可以实现workflowy的大部分功能。同时因为是基于纯文本的，随便扔一个网盘就可以同步了，移动设备上也可以方便的查看。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li>大纲列表，用缩进表示层级，TAB键可以切换展开/折叠</li>
+<li>#和@关键字高亮和过滤</li>
+<li>标记完成功能</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>项目主页在 <a href="http://www.github.com/laoyang945/vimflowy" target="_blank" rel="external">http://www.github.com/laoyang945/vimflowy</a></p>
+<p>安装只需要把文件拷贝到pathogen设定的插件目录即可</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>用vim打开后缀为otl的文本文件后，插件就自动加载了。使用方法和workflowy基本相同，都是使用缩进来标记大纲层次，用冒号或者分号来标记补充内容。由于是基于vim的，对快捷键的支持当然是必须的</p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>[normal],,N(N=0~9): 所有条目展开到第N级，当N=0的时候表示全部展开</li>
+<li>[normal],,dn: 标记当前节点及其所有子节点完成，并附加完成时间</li>
+<li>[normal]zs: 显示所有含有光标下单词的条目（不包括补充内容）</li>
+<li>[normal]zn: 和,,0的效果一样</li>
+<li>[normal &amp; insert],,d: 插入日期</li>
+<li>[normal &amp; insert],,t: 插入时间</li>
+</ul>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p>大纲，折叠，关键字和标记完成</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gk9zh4g.gif" width="500"></p>
+<p>文本过滤</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gdvk7ng.gif" width="500"></p>
+<p>欢迎各位Vimer和GTDer使用并提出意见和建议。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/vimflowy/" data-id="cj591hwt3006ekgnxfzmbxm48" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/vimflowy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GTD/">GTD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-zotero-dropbox-sync" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zotero-dropbox-sync/" class="article-date">
+  <time datetime="2012-12-12T10:16:00.000Z" itemprop="datePublished">Dec 12 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zotero-dropbox-sync/">用Dropbox（或者其他网盘）同步Zotero需要注意的事项</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不知道像我一样有两台电脑，又是zotero的忠实粉丝的人多不多。这种情况下就需要保持两台电脑上zotero数据的同步，免得在台式机上添加的文献后来在笔记本上看不了。</p>
+<p>但是如果你只是简单的在zotero的设置-高级选项里面将zotero的文件夹放到dropbox（或者其他网盘）里面的话，你可能会遇到一个很大的问题：zotero.sqlite文件，就是zotero的数据库文件里面的数据会不完整，或者你发现在zotoro的数据文件夹里面有一堆的conflict文件，如果你的zotero.sqlite文件有数十兆的话，二三十个冲突文件就能有快1G的容量了。</p>
+<p>这个问题的原因是，zotero.sqlite在打开的时候会被zotero锁定，此时Dropbox就认为这个文件已经有了修改，经过<strong>二进制对比</strong>，Dropbox会把修改部分上传并同步。如果两台电脑同时打开zotero/firefox的话，Dropbox会认为两边都是在更新这个文件，于是他会把对应修改的<strong>二进制文件</strong>合并到一块去，如果不能合并到一块去的话就生成冲突文件，在这个过程中很有可能就造成数据库文件的损坏（回想一下数据库课程里面是怎么说的）。因为这个原因，我一直避免同时打开两台电脑上的firefox。</p>
+<p>昨天稍微研究了一下，这个问题还是挺容易解决的。其实只需要让zotero自己提供的网络同步功能同步<strong>数据库文件</strong>即可，然后存储在zotero里面的附件文件夹用符号链接的方式放到Dropbox目录里就可以了，这样把数据库和外部附件分开，以免Dropbox去处理zotero.sqlite。</p>
+<p>具体的操作就是先把Zotero从Dropbox里面移出并在Firefox里面设置好，然后在Mac终端里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s Zotero目录/storage Dropbox目录/zotero/storage</div></pre></td></tr></table></figure></p>
+<p>或者在Windows下，打开命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mklink /D Zotero目录/storage Dropbox目录/zotero/storage</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/zotero-dropbox-sync/" data-id="cj591hwt2006bkgnxx87mnjbv" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/zotero-dropbox-sync/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dropbox/">Dropbox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Zotero/">Zotero</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-change-icon-of-user-dic" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/change-icon-of-user-dic/" class="article-date">
+  <time datetime="2012-11-15T06:26:00.000Z" itemprop="datePublished">Nov 15 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/change-icon-of-user-dic/">Mac用户文件夹移动后恢复默认图标</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很多人把MBP里面的光驱拆掉换成SSD+HDD的搭配，然后把个人文件夹中的一部分，比如音乐或者视频，放到HDD里面去，然后用软链接链回来。这样做的问题就是，这些文件夹没有特定的图标了。</p>
+<p>如果想要把图标找回来，其实也挺简单，只需要在<code>/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources</code>下找到对应的icns文件，打开icns文件并复制其中某个分辨率的图标图像，然后在文件夹上右键选择<code>Get Info</code>，在新窗口点一下左上角的图标，然后粘贴即可。</p>
+<p>有一个挺好使的免费软件Candybar（最近才免费的），可以替换系统图标，但是我并不是想替换系统默认的图标只是要使用默认图标而已。</p>
+<p>至于侧边栏的图标，找了一圈没有什么好的方法，只有用XtraFinder开启彩色模式才能显示文件夹的图标。</p>
+<p>最终的效果</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1dyvqqshc69g.gif" width="500"></p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dyvqqzv0pkg.gif"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/change-icon-of-user-dic/" data-id="cj591hwt10069kgnx2xqp97f6" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/change-icon-of-user-dic/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

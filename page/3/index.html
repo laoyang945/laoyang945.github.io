@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/page/3/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-do-everything" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-everything/" class="article-date">
+  <time datetime="2012-10-23T06:00:00.000Z" itemprop="datePublished">Oct 23 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-everything/">Directory Opus和Everything共同使用设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有很多人在DO技术讨论群里面问这个问题，我索性整理出来</p>
+<p>##用Dopus中打开Everything搜索结果</p>
+<p>很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">open_folder_path_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;$parent(%1)&quot; NewTab)</div><div class="line">open_folder_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;%1&quot; NewTab)</div></pre></td></tr></table></figure></p>
+<p>##在Dopus中添加Everything按钮</p>
+<p>下载<a href="http://resource.dopus.com/download/file.php?id=5570&amp;sid=44caa6d03101d4eb44cb4b81bc50e4d1" target="_blank" rel="external">这个文件</a>，将压缩包内所有文件解压到Everything的安装路径</p>
+<p>复制以下代码(如果你的Everything安装路径不同请稍作修改）<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">separate</span>=<span class="string">"yes"</span> <span class="attr">type</span>=<span class="string">"three_button"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Dialog)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Specified Keyword(s)<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;dlgstring&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Clipboard)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Current Clipboard Text<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;clip&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">backcol</span>=<span class="string">"none"</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">textcol</span>=<span class="string">"none"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Program)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Starts / Brings Everything to Front<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>cd Everything路径<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\Everything.exe<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dy54nw7pgej.jpg" width="500"></p>
+<p>如上图，在Dopus菜单栏上右键-自定义（customize），再在菜单栏上右键选粘贴（paste），你就会看到一个叫做Everything的按钮出现在你的菜单栏上。其功能为：</p>
+<ul>
+<li><p>左键点击：用Everything搜索文件</p>
+</li>
+<li><p>右键点击：用Everything搜索剪贴板内容</p>
+</li>
+<li><p>中键点击：打开Everything窗口</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-everything/" data-id="cj591hwsz0067kgnxbc8wk8yb" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-everything/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rime-setting" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/rime-setting/" class="article-date">
+  <time datetime="2012-10-22T03:13:00.000Z" itemprop="datePublished">Oct 22 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/rime-setting/">中州韵（小狼毫，鼠须管）输入法设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大概半年之前就看到有人推荐这个号称是神级的输入法，当时试了试，响应快速，对正体字的支持较好（不会出现一对多的问题），不仅是一个输入法这么简单，可以说是一个输入法的框架。但是就是因为其本身支持的东西较多，造成了文档的冗长，设置的麻烦，当时还对gVIm有那么一点点的的不兼容。所以我还是没有继续用这个输入法，老老实实的使用我的谷歌拼音。</p>
+<p>但是现在我换新电脑了，2012的MacBook Pro，也没有谷歌拼音可以用，我也不想用那些国内的搜狗百度啥的，又捡起来了鼠须管输入法，发现其实经过一番简单的设置，也是可以用得很顺手的，下面我总结一下设置方法(鼠须管0.9.11)</p>
+<p>##设置目录</p>
+<ul>
+<li><p>Windows下是<code>%APPDATA%\Rime</code>，也可以在任务栏图标里面右键-用户文件夹</p>
+</li>
+<li><p>Mac下是<code>~/Library/Rime</code>，也可以在任务栏图标里面右键-Settings</p>
+</li>
+</ul>
+<p>##外观设置</p>
+<p>新建或修改设置目录里面的<code>weasel.custom.yaml</code>（Windows)或<code>squirrel.custom.yaml</code> (Mac)，内容是（注意缩进和冒号后面的空格）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  &quot;style/color_scheme&quot;: luna </div><div class="line">  &quot;style/font_point&quot;: 18</div></pre></td></tr></table></figure>
+<p>其中color_scheme的选择有</p>
+<ul>
+<li>碧水 - aqua</li>
+<li>青天 - azure</li>
+<li>明月 - luna</li>
+<li>墨池 - ink</li>
+<li>孤寺 - lost_temple</li>
+<li>暗堂 - dark_temple</li>
+<li>星際爭霸 - starcraft    </li>
+</ul>
+<p>然后保存，右击任务栏上鼠须管的图标，选择Deploy或者重新部署即可</p>
+<p>##双拼设置<br>在设置目录里面新建或编辑 <code>default.custom.yaml</code> 文件，内容是（注意缩进和冒号后面的空格）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema_list:</div><div class="line">    -schema: double_pinyin_mspy</div></pre></td></tr></table></figure></p>
+<p>当然你也可以选择其他的双拼方案，如double_pinyin_abc，double_pinyin_flypy，double_pinyin分别对应智能ABC、小鹤和自然码的双拼方案。</p>
+<p>保存文件之后，右击任务栏上鼠须管的图标，选择Deploy或者重新部署即可</p>
+<p>##双拼默认简体<br>原作者是台湾人，所以默认是正体字输出，但是其实这个框架也提供了简体字的输出方式，只需要在设置目录里新建或者编辑<code>double_pinyin_mspy.custom.yaml</code>这个文件，如果你用的是其他双拼方案就把文件名作对应修改。文件内容增加（注意缩进和冒号后面的空格）    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  switches:                  </div><div class="line">    - name: ascii_mode</div><div class="line">      reset: 0               </div><div class="line">      states: [ 中文, 西文 ] </div><div class="line">    - name: full_shape       </div><div class="line">      states: [ 半角, 全角 ]  </div><div class="line">    - name: simplification</div><div class="line">      reset: 1                </div><div class="line">      states: [ 漢字, 汉字 ]</div></pre></td></tr></table></figure>
+<p>保存后重新部署鼠须管即可</p>
+<p>##双拼模糊拼音<br>同样是修改<code>double_pinyin_mspy.custom.yaml</code>这个文件，将以下内容附到后面即可，保持speller/algebra和上面的switch对齐：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">&quot;speller/algebra&quot;:</div><div class="line">  - erase/^xx$/</div><div class="line">  - derive/^([zcs])h/$1/ </div><div class="line">  - derive/^([zcs])([^h])/$1h$2/ </div><div class="line">  - derive/^n/l/ </div><div class="line">  - derive/^l/n/ </div><div class="line">  - derive/^([bpmf])eng$/$1ong/ </div><div class="line">  - derive/([ei])n$/$1ng/ </div><div class="line">  - derive/([ei])ng$/$1n/ </div><div class="line">  - derive/^([jqxy])u$/$1v/</div><div class="line">  - derive/^([aoe].*)$/o$1/</div><div class="line">  - xform/^([ae])(.*)$/$1$1$2/</div><div class="line">  - xform/iu$/Q/</div><div class="line">  - xform/[iu]a$/W/</div><div class="line">  - xform/er$|[uv]an$/R/</div><div class="line">  - xform/[uv]e$/T/</div><div class="line">  - xform/v$|uai$/Y/</div><div class="line">  - xform/^sh/U/</div><div class="line">  - xform/^ch/I/</div><div class="line">  - xform/^zh/V/</div><div class="line">  - xform/uo$/O/</div><div class="line">  - xform/[uv]n$/P/</div><div class="line">  - xform/i?ong$/S/</div><div class="line">  - xform/[iu]ang$/D/</div><div class="line">  - xform/(.)en$/$1F/</div><div class="line">  - xform/(.)eng$/$1G/</div><div class="line">  - xform/(.)ang$/$1H/</div><div class="line">  - xform/ian$/M/</div><div class="line">  - xform/(.)an$/$1J/</div><div class="line">  - xform/iao$/C/</div><div class="line">  - xform/(.)ao$/$1K/</div><div class="line">  - xform/(.)ai$/$1L/</div><div class="line">  - xform/(.)ei$/$1Z/</div><div class="line">  - xform/ie$/X/</div><div class="line">  - xform/ui$/V/</div><div class="line">  - derive/T$/V/</div><div class="line">  - xform/(.)ou$/$1B/</div><div class="line">  - xform/in$/N/</div><div class="line">  - xform/ing$/;/</div><div class="line">  - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/</div></pre></td></tr></table></figure>
+<p>保存后，重新部署即可。</p>
+<p>##词库导入</p>
+<p>下载某位仁兄导出的搜狗词库 <a href="http://cl.ly/033g2x3k2J05" target="_blank" rel="external">http://cl.ly/033g2x3k2J05</a> 后解压得到sogou.txt文件，</p>
+<p>Windows下右键选择用户词典管理，选择『导入文本码表』功能，将sogou.txt导入你的用户词典</p>
+<p>Mac下下载<a href="http://code.google.com/p/rimeime/downloads/detail?name=rime_dict_manager_0.9.2_osx.zip" target="_blank" rel="external">用户词典管理工具</a>并把rime_dict_manager解压到~/Library/Rime，执行如下命令 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ~/Library/Rime</div><div class="line">killall Squirrel</div><div class="line">./rime_dict_manager --import luna_pinyin 路径/sogou.txt</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/rime-setting/" data-id="cj591hwsy0065kgnx9s8i6x8h" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/rime-setting/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rime/">Rime</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-whitesmoke" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/whitesmoke/" class="article-date">
+  <time datetime="2012-10-21T07:40:00.000Z" itemprop="datePublished">Oct 21 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/whitesmoke/">[团购]英文写作润色软件Whitesmoke</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##团购详情</p>
+<ul>
+<li><p>团购时间：2012年10月21日9点至11月16日零点</p>
+</li>
+<li><p>团购人数：25人起团</p>
+</li>
+<li><p>软件主页：<a href="www.whitesmoke.com]">www.whitesmoke.com</a></p>
+</li>
+<li><p>运行平台：Windows 2000/NT/XP/Vista/Win7, Mac OS</p>
+</li>
+<li><p>软件原价：2012版一年授权$79.95，2012版终身授权$139.95，VIP版（终身升级）$299.95</p>
+</li>
+<li><p>团购价格：2012版一年授权￥135，2012版终身授权225，VIP版（终身升级）￥435</p>
+</li>
+<li><p>购买链接：[<a href="http://item.taobao.com/item.htm?id=16228129137" target="_blank" rel="external">一年授权</a>][<a href="http://item.taobao.com/item.htm?id=16228137537" target="_blank" rel="external">终身授权</a>][<a href="http://meal.taobao.com/mealDetail.htm?meal_id=23364163&amp;seller_id=646264063" target="_blank" rel="external">VIP</a>]</p>
+</li>
+<li><p>官方授权文件：<a href="http://img04.taobaocdn.com/imgextra/i4/646264063/T2l6BvXn8NXXXXXXXX_!!646264063.jpg" target="_blank" rel="external">请点击</a></p>
+</li>
+</ul>
+<p>##软件介绍</p>
+<p>Whitesmoke是一个英语写作语法检查/润色的软件，它自己号称是most comprehensive grammar checker in the world today。Top 10 Reviews评选它是<a href="http://writing-enhancement-software-review.toptenreviews.com/" target="_blank" rel="external">#1 Best Writing Software</a>，它也是这一份榜单里面除了Microsoft Word之外的唯一支持Mac的写作软件。它比Word强的地方除了校对功能更强之外（大家都知道Word的校对是咋回事），还提供了写作润色，同义词提示等特色功能。</p>
+<p>我们看看它的功能是怎样的（以下以WIndows7下试用版为例，因为它原价真的太贵了，买不起……）</p>
+<p>安装完毕之后，Whitesmoke的图标会出现在右下角的任务栏里，双击它就可以启动，在Writer标签栏下，我们粘贴一段英文试试：</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/640a227egw1dy2y2g88yvj.jpg" width="500"></p>
+<p>点击『checkText』就会对文本进行拼写/语法/风格的检查，在结果里面，红色表示拼写错误，绿色表示有语法问题，蓝色表示风格上可以改进：</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y2iyujpj.jpg" width="500"></p>
+<p>软件发现我的extreme和special都拼错了，同时它认为一个who没用对，一个boarding schools语法有问题。还有两个风格问题，一个是可以用更简洁的no doubt，另一个是两个different重复了。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/640a227egw1dy2y2lnedzj.jpg" width="500"></p>
+<p>点击标记处的『More』可以看到修改建议:</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/640a227egw1dy2y2ohquzj.jpg" width="500"></p>
+<p>也有为什么它认为是错了的解释（但是我认为没错啊）</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/640a227egw1dy2y2r9dpkj.jpg" width="500"></p>
+<p>当我把boarding schools改为单数后，它还是提示有问题，哦，原来还需要加定冠词/不定冠词</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y2twd0xj.jpg" width="500"></p>
+<p>在风格的重复检查上，提供了许多可以替换的单词，比如different它提供了unusual, distinctive, unlike等选择。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/640a227egw1dy2y2wbn8yj.jpg" width="500"></p>
+<p>任何单词右键都会有一个同义词提示，你可以通过这一功能在写作的时候适当的进行同义词替换</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y30kaxjj.jpg" width="500"></p>
+<p>在右键的润色菜单里面，软件会给一些和选中词经常搭配使用的词。比如我选中的solution，就提示一些经常和它搭配的形容词如effective/complete等。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y337z2jj.jpg" width="500"></p>
+<p>在你检查修改完所有文本后，点击『Apply Changes』就会把最终文本用记事本打开。（如果是在应用程序如Word/Outlook里面用F2启动的Whitesmoke，Apply Changes后会把最终文本返回该应用程序）</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/640a227egw1dy2y36is3uj.jpg" width="500"></p>
+<p>也可以在浏览器中使用，比如我在Gmail里面写一封邮件的时候，按F2就会启动Whitesmoke对邮件进行语法检查, Apply Changes后会回到浏览器</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y37n6rvj.jpg" width="500"></p>
+<p><img src="http://ww1.sinaimg.cn/mw690/640a227egw1dy2y39js9xj.jpg" width="500"></p>
+<p>软件还自带一个翻译功能，可以翻译多国语言</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/640a227egw1dy2y3bbzthj.jpg" width="500"></p>
+<p>另外，它还自带了很多的模板，可以在应用文写作的时候作参考和改写。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/640a227egw1dy2y3dkg5pj.jpg" width="500"></p>
+<h2 id="适合用户"><a href="#适合用户" class="headerlink" title="适合用户"></a>适合用户</h2><ul>
+<li><p>留学生，及准备留学文书学生</p>
+</li>
+<li><p>准备雅思/托福考试考生</p>
+</li>
+<li><p>科研人员</p>
+</li>
+<li><p>国际贸易</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/whitesmoke/" data-id="cj591hwsw0063kgnxp44o5o5a" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/whitesmoke/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gtd-as-twittering" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/gtd-as-twittering/" class="article-date">
+  <time datetime="2012-07-21T09:32:00.000Z" itemprop="datePublished">Jul 21 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/gtd-as-twittering/">Workflowy：像发微博一样做GTD</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>时隔好久我又开始说一说GTD的事情，这个时间管理方法的思路很简单，收集-加工-组织-执行-回顾。</p>
+<ul>
+<li><p>收集：用一个统一的收件箱来存放你的各种杂事，可以是一个实物的收件箱，记事簿或者是电子化的收件箱，并且尽量每天都通过加工来清空你的收件箱。</p>
+</li>
+<li><p>加工：杂事可以分几类：项目，任务，备忘和愿景。超过两分钟或者需要多步骤才能完成的任务叫做项目。备忘是在你需要的时候能找到的东西，不需要采取行动，愿景是你短时间做不了的事情。对于项目，加工时列出下一步的行动。这样，你需要维护四个列表：项目，下一步行动，参考和愿景。</p>
+</li>
+<li><p>组织： 按照场合组织你的下一步行动列表，这样你在同样的场合就可以批量执行任务了，这样的效率会比在不同的场合间切换要高。有一些行动有特定的时间属性（比如周日出席的婚礼），那就放到日程表里面去。这样，你还需要维护一个日程表。有些行动你需要委派别人，这样你得维护一个等待列表。所以，现在你有：项目，下一步行动，参考，愿景，日程和等待六个列表。</p>
+</li>
+<li><p>执行：按照场合执行任务，其中可以参考诸如『番茄工作法』，『吃掉那只青蛙法』等等。</p>
+</li>
+<li><p>回顾：每周回顾你的项目、愿景和等待这三个列表，看是不是列表上的内容可以转到你的收件箱里面去，从而转换为下一步行动。</p>
+</li>
+</ul>
+<p>对GTD的介绍就到这里。GTD的好处不必多说，若干年前一个用这个方法的同学就告诉我『GTD让我不忘事』——其实时间管理的本质就是减轻你无端的压力而已。</p>
+<p>但是GTD这整套方法的流程或者说操作本身可以说是比较繁琐的（因此有一些简化的版本），特别是在加工和组织上，一个行动往往会有两个维度以上的属性，比如场合以及所属的项目（或者还包括截止时间），那在我们进行收集的时候如果采取分别填写的方式，那就会在使用工具上花费不不要的时间和精力，并且同时需要维护六个列表，负担不能说不小。</p>
+<p>直到我发现了<a href="http://www.workflowy.com" target="_blank" rel="external">Workflowy</a>, 其整合了树状的项目管理功能以及简洁高效的输入功能，在使用Workflowy的过程中我发现，其实GTD时间管理的流程完全可以像发微博那样进行</p>
+<p>从Workflowy的介绍视频（<a href="http://v.youku.com/v_show/id_XMjIwMTE4ODcy.html" target="_blank" rel="external">Youku</a>|<a href="http://www.youtube.com/watch?v=CSmbnaPZVHE" target="_blank" rel="external">Youtube</a>）里可以看出Workflowy的特点是：</p>
+<ul>
+<li><p>一个简单的大纲式软件（outliner web application)</p>
+</li>
+<li><p>用缩进距离表示节点从属关系</p>
+</li>
+<li><p>通过设置当前节点以及展开/收缩节点，方便查看节点概览和节点详情</p>
+</li>
+<li><p>子节点是有序的，通过拖拽可以调整</p>
+</li>
+<li><p>支持快捷键操作</p>
+</li>
+<li><p>移动设备访问方便，不需要特别的App，浏览器直接访问网站就可以</p>
+</li>
+</ul>
+<p>那<strong>为何我认为使用Workflowy来做时间管理会像发微博一样方便</strong>呢？重点就是他的标签功能：Workflowy支持用#和@开头的标签链接（可惜不支持中文），正如微博里面使用的这两个符号一样。而且在其搜索功能中还可以对这两个符号标签自动补全。这一功能大大的简化了GTD流程中的加工和组织工作，于是我们可以这样使用：</p>
+<ul>
+<li><p>用树形列表管理收件箱、项目及愿景</p>
+</li>
+<li><p>用#标签管理场合，比如 #mail，#家，#google，#淘宝 等</p>
+</li>
+<li><p>用@来管理等待列表，比如 @boss，@honey等，正如你发微博那样</p>
+</li>
+</ul>
+<p>这样来使用Workflowy，你的列表就是下图这个样子</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1dv9a65twfaj.jpg" width="500"></p>
+<p>当你点击或者搜索关键字（快捷键Esc）的时候，Workflowy就会给你动态的生成一个『场合』列表</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1dv9cdpjap6j.jpg" width="500"></p>
+<p>这样你就不需要手动的去维护这个场合内的『下一步行动』列表了。同理，你可以用#today标签来表示需要今天需要做的事项，达到在执行的时候迅速查看的效果。</p>
+<p>现在返过来看看这一GTD系统的实现，其实就是一个『关键字搜索+大纲列表』的功能，其实不需要在线应用也能完成，现成的大纲列表软件应该都是能胜任这一任务的。作为键盘操作控，我初步用Vim实现了这一要求，将在下一篇日志里面介绍给大家。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/gtd-as-twittering/" data-id="cj591hwsu005zkgnxppygtwl2" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/gtd-as-twittering/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GTD/">GTD</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-group-buy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-group-buy/" class="article-date">
+  <time datetime="2012-06-17T12:46:00.000Z" itemprop="datePublished">Jun 17 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-group-buy/">Directory Opus中文版团购开始，只要人民币一百七十元</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>2012 Directory Opus中文版团购</strong></p>
+<ul>
+<li><p>团购时间：2012年6月18日 9:00到2012年6月30日24:00</p>
+</li>
+<li><p>团购人数：100名截团 </p>
+</li>
+<li><p>软件主页：<a href="http://www.gpsoft.com.au/" target="_blank" rel="external">http://www.gpsoft.com.au/</a></p>
+</li>
+<li><p>软件原价：85澳元（545人民币）</p>
+</li>
+<li><p>团购价格：标准版人民币一百七十元；专业版（包括SFTP功能和USB便携版本）人民币二百四十元</p>
+</li>
+<li><p>团购链接：<a href="http://item.taobao.com/item.htm?id=18045932169" target="_blank" rel="external">标准版</a>  <a href="http://meal.taobao.com/mealDetail.htm?seller_id=646264063&amp;meal_id=16408761" target="_blank" rel="external">专业版</a></p>
+</li>
+<li><p>团购说明：团购的授权码<strong>仅适用于中文版</strong>，中文版下载链接【<a href="http://www.gpsoft.com.au/files/Opus10/DOpusInstall-Chinese.exe" target="_blank" rel="external">32位</a>】【<a href="http://www.gpsoft.com.au/files/Opus10/DOpusInstall64-Chinese.exe" target="_blank" rel="external">64位</a>】。一个授权码可以激活一台台式机+一台笔记本（和国际版的一样）</p>
+</li>
+<li><p>官方授权文件</p>
+</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1du1in8cz6lj.jpg" width="500"></p>
+<p><strong>Directory Opus简介</strong></p>
+<p>Directory Opus是Windows下一款功能强大（官方用词是Ultimate）的文件管理器软件，其特色是『易用，定制，高效，兼容』，在各大文件管理软件评测中和Total Commander的得分都不相上下甚至略有超过。其功能特点包括：</p>
+<ul>
+<li><p>支持Windows7的库文件管理，Windows Desktop Search以及Jumplist列表功能</p>
+</li>
+<li><p>单双栏文件+文件夹树管理，可定制的视图样式</p>
+</li>
+<li><p>标签式浏览</p>
+</li>
+<li><p>内置的预览面板，可以预览各种图片(jpg,png,gif,raw)和常用文档(office, pdf)</p>
+</li>
+<li><p>内置图片格式/尺寸转换</p>
+</li>
+<li><p>查看和编辑元信息（MP3，Exif等）</p>
+</li>
+<li><p>文件排序/分组/筛选/搜索功能强大（有插件支持Everything）</p>
+</li>
+<li><p>文件/文件夹着色</p>
+</li>
+<li><p>批量文件重命名，支持正则表达式，支持用元信息重命名</p>
+</li>
+<li><p>内置FTP客户端，常见压缩文件支持（7z,zip,rar）</p>
+</li>
+<li><p>内置的同步，查找重复文件功能</p>
+</li>
+<li><p>文件操作队列处理，避免高并发的IO请求 </p>
+</li>
+</ul>
+<p>各种截图请移步 <a href="http://www.gpsoft.com.au/program/screenshots.html" target="_blank" rel="external">http://www.gpsoft.com.au/program/screenshots.html</a></p>
+<p><strong>个人感悟</strong></p>
+<p>善用佳软大哥<a href="http://xbeta.info/best-freeware-file-manager.htm" target="_blank" rel="external">曾说过</a>“同样收费的 Directory Opus(简称DO) 不比TC差，甚至更强”。我自己大概从2007年在XP时代就开始用这一软件管理自己电脑上的各种文件一直到现在的Win7，经过些许的配置之后越用越顺手，从当时的8点几一直用到现在10。一开始没用TC就是因为TC的界面实在是用不习惯，而DO的更『像』Windows本身的资源管理器一些，一开始上手比较方便。后来陆陆续续的也以《鼠标一族的资源管理器Directory Opus介绍》为题写了一些使用心得在博客上，收到的反响还蛮不错的。一开始用的是某位高人做的破解版，毕业之后有工资了，而且觉得破解的升级客服什么比较麻烦，就直接去官网买了一个授权。</p>
+<p>相比Total Commander，Directory Opus在中文用户中的知名度小了很多很多，这一方面是因为其官方一直没有中文版本，另一方面有影响力的铁杆粉丝比较少，最重要的还是在于其昂贵的价格，85澳元合人民币545元一个授权的价格，相对TC的团购价150元，让人望而却步，把很多潜在的用户排除在了外面。现在子清和GP Soft联络，让他们推出较为便宜的中文版，还参与了软件的翻译工作。对Directory Opus及其中文用户是一件非常有意义的事情。希望能有更多的用户使用正版软件，支持开发者，让他们能够开发出更好用的产品。 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-group-buy/" data-id="cj591hwst005xkgnxywh17gmg" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-group-buy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vimperator-evernote" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/vimperator-evernote/" class="article-date">
+  <time datetime="2012-05-31T06:17:00.000Z" itemprop="datePublished">May 31 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/vimperator-evernote/">Vimperator配合Evernote进行一键悦读及收集</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Vimperator是一个极其好用的Firefox扩展，让你对浏览器的操作完全的Vim化，所有的按键都用上。我原来也写过好几篇介绍它的文章。</p>
+<p>今天要介绍的就是在Vimperator下如何一键能够把当前网页用Evernote的Clearly（悦读）进行重新排版，以及如何一键把浏览器中的各种内容发送到Evernote。首先你得安装对应的Firefox扩展，地址在<a href="https://addons.mozilla.org/en-US/firefox/addon/clearly/" target="_blank" rel="external">这里</a>和<a href="https://addons.mozilla.org/en-US/firefox/addon/evernote-web-clipper/" target="_blank" rel="external">这里</a></p>
+<p>首先，只用Clearly转换的命令是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:js __readable_by_evernote.readable_by_evernote__menu__call(buffer.URL)</div></pre></td></tr></table></figure></p>
+<p>用Clearly转换并存储到Evernote的命令是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:js __readable_by_evernote.__readable_by_evernote__launch(true)</div></pre></td></tr></table></figure></p>
+<p>把选中内容发送到Evernote的命令有好几个：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">evernote_doAction( document.popupNode, &apos;CLIP_ACTION_FULL_PAGE&apos; );</div><div class="line">evernote_doAction( document.popupNode, &apos;CLIP_ACTION_IMAGE&apos; );</div><div class="line">evernote_doAction( document.popupNode, &apos;CLIP_ACTION_SELECTION&apos; );</div><div class="line">evernote_doAction( document.popupNode, &apos;CLIP_ACTION_URL&apos; );</div><div class="line">evernote_doAction( document.popupNode, &apos;NEW_NOTE_ACTION&apos; );</div></pre></td></tr></table></figure></p>
+<p>大家分别试试就知道每一个的用处，但我觉得第三个clip_action_selection应该是最常用的吧。</p>
+<p>我还录了一小段视频，可以看看使用的效果，地址在<a href="http://www.youtube.com/watch?v=rknrtX2gL0Q" target="_blank" rel="external">这里</a></p>
+<p><a href="http://d.hatena.ne.jp/cd01/20120505/1336201859" target="_blank" rel="external">参考</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/vimperator-evernote/" data-id="cj591hwsv0062kgnxbm14h3ey" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/vimperator-evernote/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Evernote/">Evernote</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vimperator/">Vimperator</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-supermemo-mobile-converter" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/supermemo-mobile-converter/" class="article-date">
+  <time datetime="2012-03-04T06:20:00.000Z" itemprop="datePublished">Mar 4 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/supermemo-mobile-converter/">Supermemo iPhone版课程生成脚本</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>老婆要从头开始准备考雅思了，我先找了一本李笑来的《<a href="http://www.lixiaolai.com/archives/8079.html" target="_blank" rel="external">新托福iBT词汇分类突破</a>》（感谢作者自己提供<a href="http://www.lixiaolai.com/archives/11089.html" target="_blank" rel="external">PDF版本下载</a>）来给她背单词，里面的插画十分有爱。学习的劲头也被点燃了，我现在每次回家都看见她在看这本单词书（怎么和我电脑屏幕总是桌面一个感觉）。</p>
+<p>但是准备过这种考试的都知道，背单词主要是在重复，一开始能记住基本是没用的，而且是有策略的重复，一次记不住单词的意思不要紧，先往前走，把能记住的记住了，记不住的反复记。原来我自己准备GRE的时候自己是弄了一个时间表，哪一天背哪几个新的单词表，复习哪几个旧的都列在上面，严格按照这个时间表来进行，最后效果也比较满意。</p>
+<p>我一直在订阅舍得的博客，里面介绍了不少supermemo的用法。于是我就想用supermemo辅助我老婆的记单词任务。简单搜索了一下，发现supermemo有iOS的版本，还是免费的，正好家里面也有iPad和iPod Touch可以直接使用。原来我安卓上的那个Anki记忆软件在App Store里面要24.99美金，于是放弃了。</p>
+<p>下载之后发现Supermemo iPhone版之所以是免费的，因为他里面的很多课程都需要用户购买。不过他也提供了自定义课程的功能。可以直接把你需要的问题/答案写在一个特定格式的文本文件里，上传到设备进行学习。那于是我就在想怎么能把李笑来这本书里面的单词做成一个课程，甚至把任意的单词表生成课程。</p>
+<p>在<a href="http://github.com/tikiet/sm_iphone_qa_generator" target="_blank" rel="external">这个项目</a>的启发下，我自己也写了一个Python脚本，能够把utf-8编码并用tab键分开的的txt文档转换为supermemo可以导入的格式。项目链接在<a href="http://github.com/laoyang945/supermemo-mobile-converter" target="_blank" rel="external">这里</a>，这还是我第一次用github发布自己的代码。</p>
+<p>使用方法,运行即可,会要求输入源文件路径及各列编号:</p>
+<p><img src="https://lh6.googleusercontent.com/-_qYA21fdGB4/T1MKDpH8PHI/AAAAAAAAbJc/qYS6IyN-tTg/2012-03-04%25252014%25252018%25252013.png" width="500"></p>
+<p>源文件必须要用Tab分隔，音标暂时只能处理金山词霸的：</p>
+<p><img src="https://lh5.googleusercontent.com/-3uxYo6zD8LY/T1MKDgPndtI/AAAAAAAAbJk/08b7N86DQDA/2012-03-04%25252014%25252018%25252038.png" width="500"></p>
+<p>输出文件内容:</p>
+<p><img src="https://lh4.googleusercontent.com/-s-TxAUPjhd4/T1MKDp-qLCI/AAAAAAAAbJg/MXHCsBnMaoY/2012-03-04%25252014%25252018%25252048.png" width="500"></p>
+<p>iOS设备效果：</p>
+<p><img src="https://lh6.googleusercontent.com/-qE6IPfRHROE/T1MLEtkYq9I/AAAAAAAAbJ0/lVWrO1e-i40/%2525E7%252585%2525A7%2525E7%252589%252587.PNG" width="500"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/supermemo-mobile-converter/" data-id="cj591hwss005vkgnx4ujo7xan" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/supermemo-mobile-converter/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English-learning/">English learning</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-upgrade-ios5-on-xp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/upgrade-ios5-on-xp/" class="article-date">
+  <time datetime="2012-02-26T15:26:00.000Z" itemprop="datePublished">Feb 26 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/upgrade-ios5-on-xp/">在精简版的XP下升级iOS需要注意的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这次寒假回家帮姐姐把她的3GS（32GB）从3.x升级到5.0.1，一路可以说是历尽辛苦，前后刷机历时大概是整整三天。为什么这么久呢？</p>
+<p>家里面网速比较慢，只有1M的网速，下载固件（2遍）以及新版的iTunes就花了不少时间，这一项大概花了有大半天。</p>
+<p>备份屡次失败，一次是因为备份的时候看了短信，一次是因为硬盘的空间不够。我现在觉得硬盘分很多个区是一种比较傻的思路。这样又是小半天……</p>
+<p>真正刷机，大概刷了有十遍……前面失败的几次iTunes报1601/1602/1604各种错误的都有，然后手机直接黑屏，我那个汗啊，到处去查这几个错误是咋回事，在<a href="http://itools.hk/cms/?p=282" target="_blank" rel="external">这个帖子</a>里第一眼看到：</p>
+<blockquote>
+<p>1600，及附近（1601，1602）错误，1600错误是指的硬件错误，比如说USB，USB线，手机插口的数据传输可能不通，也可以尝试一下把防火墙关闭。<br>还有可能是因为固件不正常导致。如果你刷的是自刷固件，那么刷回官方固件可能会解决1600.</p>
+</blockquote>
+<p>查了一下<a href="http://support.apple.com/kb/TS3694#error1601" target="_blank" rel="external">苹果自己的技术支持</a>，也是这么说。</p>
+<p>反正家里面苹果的线不少，换了一根，把防火墙关了再继续刷，但是依然是反复报错，也是照样黑屏，后来用那个红雪把iPhone恢复到刷机前的状态才让我稍微冷静了点，开始认真的找问题在哪里。后来发现上面那个贴子我没看完，在下面对1601/1604错误有补充</p>
+<blockquote>
+<p>服务里找到 Terminal Services，Messenger，Telnet，设置为启动</p>
+</blockquote>
+<p>看到这里我大概知道问题在哪里了，经检查，三个服务都是处于停止状态，terminal services和telnet都是可以启动的，messenger不行，在网上搜了一下解决方案，应该是精简版XP把对应的文件修改了，下了一个dll文件并修改了注册表，重启系统后刷机就顺利完成了。</p>
+<p>我自己的设备一直都是在Windows 7下面升级的，从来没有遇到过这些问题，一开始就没往系统的问题上想。刷好后觉得这些精简版的操作系统还是有风险的，说不定精简掉的啥系统模块就是将来哪天你需要的，到时候完全没有头绪的话估计麻烦还不小，只有重新装系统咯。另一方面，我觉得苹果也是很奇怪，明明依靠于这些服务来进行设备升级，报错的时候也不提示一下，反而报一个十万八千里之外的硬件错误，对用户完全就是一个误导。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/upgrade-ios5-on-xp/" data-id="cj591hwsr005skgnx8b7iqixh" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/upgrade-ios5-on-xp/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apple/">Apple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows/">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iTunes/">iTunes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-windows-octopress-python" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/windows-octopress-python/" class="article-date">
+  <time datetime="2012-02-24T07:07:00.000Z" itemprop="datePublished">Feb 24 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/windows-octopress-python/">Windows下使用Octopress嵌入Python代码的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前一篇日志其实蛮想测试一下Octopress的代码嵌入及下载功能，但是按照Octopress的文档说明，用 `{% include_code %}`  命令出来的居然是一个错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Liquid error: No such file or directory - python -c “import sys; print sys.executable”</div></pre></td></tr></table></figure>
+<p>让我百思不得其解。只好先把代码显示先改为文件下载。</p>
+<p>问题会出在哪里呢？我在ruby-taiwan论坛和twitter上都问了，没有人回答我。我只好自己来找bug。其实也不是很难，在Octopress的support就有人提出了这个问题，原来是因为<strong>pythonexec.rb这个文件不支持windows</strong>，你可以打开他的代码看看，里面只有判断是不是mac和unix的操作系统，根本就没有有关windows的一行代码。这是说用ruby的人没有用windows的么？</p>
+<p>解决方法，下载<a href="http://blog.yesmryang.net/downloads/code/pythonexec.rb">这个文件</a>，代替ruby目录\lib\ruby\gems\1.9.1\gems\rubypython-0.5.1\lib\rubypython下的同名文件就好。荣誉归于<a href="https://bitbucket.org/raineszm/rubypython/src/848617d844ff/lib/rubypython/pythonexec.rb" target="_blank" rel="external">raineszm</a></p>
+<p>另外，Octopress的开发者imathis新开了一个<a href="https://github.com/imathis/octopress/wiki/List-Of-Octopress-Themes" target="_blank" rel="external">网页</a>，介绍可用于Octopress的主题，有几个还是挺不错的,我现在在用的就是里面的slash。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/windows-octopress-python/" data-id="cj591hwsq005qkgnxenyjryjc" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/windows-octopress-python/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Octopress/">Octopress</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows/">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-picasa-batch-url" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/picasa-batch-url/" class="article-date">
+  <time datetime="2012-02-19T02:31:00.000Z" itemprop="datePublished">Feb 19 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/picasa-batch-url/">获取Picasa相册中所有图片真实地址的脚本</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用了新的域名，新的博客架构，还是在发愁图床用哪个。图床和博客分开主要是为了以后万一搬家比较方便。看了一圈发觉还是picasa不错，我本来就是Gmail的付费扩容用户，容量就有20G，而且picasa可以用https访问，在Google Reader或者Gmail里面查看图片也不会报错。</p>
+<p>但是picasa就是获取真实图片地址比较麻烦，不管是手动右键还是在右边的link里面做选择。于是自己尝试写了一个python脚本，用于获取公开相册下的各图片地址</p>
+<p>使用方法，双击运行输入相册地址（最好是https，因为http的ggpht.com被墙），然后在脚本路径下就会有一个url.txt文件，里面每一行就是一幅图片的地址了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/picasa-batch-url/" data-id="cj591hwsp005okgnxa1hqztde" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/picasa-batch-url/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

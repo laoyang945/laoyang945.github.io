@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Wordpress更改博客地址及backupify备份工具使用 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="原来我的博客地址是http://laoyang.info/blog，这也是wordpress的安装地址，现在修改到了http://laoyang.info。操作其实很简单：     在博客后台，设置-通用里面像下图一样设置一下：       &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;     然后将/blog/index.php拷贝到根目录下，将r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wordpress更改博客地址及backupify备份工具使用">
+<meta property="og:url" content="http://blog.yesmryang.net/wordpress-migration/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="原来我的博客地址是http://laoyang.info/blog，这也是wordpress的安装地址，现在修改到了http://laoyang.info。操作其实很简单：     在博客后台，设置-通用里面像下图一样设置一下：       &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;     然后将/blog/index.php拷贝到根目录下，将r">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb1.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb2.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb3.png">
+<meta property="og:updated_time" content="2013-01-09T03:58:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wordpress更改博客地址及backupify备份工具使用">
+<meta name="twitter:description" content="原来我的博客地址是http://laoyang.info/blog，这也是wordpress的安装地址，现在修改到了http://laoyang.info。操作其实很简单：     在博客后台，设置-通用里面像下图一样设置一下：       &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;  &amp;#160;     然后将/blog/index.php拷贝到根目录下，将r">
+<meta name="twitter:image" content="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb.png">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-wordpress-migration" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/wordpress-migration/" class="article-date">
+  <time datetime="2010-03-06T16:00:00.000Z" itemprop="datePublished">Mar 7 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Wordpress更改博客地址及backupify备份工具使用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>原来我的博客地址是<a href="http://laoyang.info/blog" target="_blank" rel="external">http://laoyang.info/blog</a>，这也是wordpress的安装地址，现在修改到了<a href="http://laoyang.info" target="_blank" rel="external">http://laoyang.info</a>。操作其实很简单：</p>  <ul>   <li>在博客后台，设置-通用里面像下图一样设置一下： </li> </ul>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="left" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb.png" width="484" height="142"></a> </p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <ul>   <li>然后将/blog/index.php拷贝到根目录下，将require(‘./wp-blog-header.php’)改为require(‘./blog/wp-blog-header.php’)即可 </li> </ul>  <p>另外，在<a href="http://laoyang.info/?p=47251" target="_blank">上一篇日志</a>里面提到了<a href="http://www.backupify.com/" target="_blank">Backupify</a>这个很有用的服务网站，可以方便的帮助你备份wordpress以及其他一系列的网络服务，包括Flickr，Twitter等，并且即将推出对Youtube, xmarks, rssfeed和Tumblr的支持。注册之后有2G的免费空间供你使用。</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image1.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb1.png" width="452" height="580"></a> </p>  <p>拿Backupify备份wordpress更为简单，先在网站注册，然后下载<a href="http://www.backupify.com/tools/wordpress/wp-backupify-1.0.5.zip" target="_blank">这个插件</a>后，将其上传到你的wordpress里面，启用。这个时候后台就会有Backupify的图标出现了：</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image2.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb2.png" width="228" height="226"></a> </p>  <p>点击之后在主窗口里面就会有三项选择，第一次使用的话只需要点Login-initialize 就OK</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image3.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb3.png" width="436" height="258"></a> </p>  <p></p>  <p></p>  <p>好了，以后Backupify就会自动在后台帮你备份wordpress的全部内容，包括文件和数据库，找到备份文件只需要登录进Backupify后点“Archives”就可以看到。另外需要注意的是，要谨慎使用上图中的Full Backup now的命令，因为这个备份的文件同样是放在wordpress的安装目录下，在下次备份的时候会把上次备份的文件再打包进去，造成备份文件越来越大。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/wordpress-migration/" data-id="cj591hwp0003ckgnx6cutnq2l" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/wordpress-migration/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/books/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          那些改变我的书
+        
+      </div>
+    </a>
+  
+  
+    <a href="/host-to-godaddy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">主机转移到Godaddy</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/wordpress-migration/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

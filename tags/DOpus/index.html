@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: DOpus | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/DOpus/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-do-one-window" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-one-window/" class="article-date">
+  <time datetime="2015-03-11T09:39:28.000Z" itemprop="datePublished">Mar 11 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-one-window/">DOpus三大问：如何单窗口运行</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常有朋友在群里面问，如何才能让DOpus只打开一个窗口（单实例），下面先说说哪些情况可以设置单窗口</p>
+<ul>
+<li>如果用桌面快捷方式、任务栏中键和Win+Shift+E来启动DOpus，不管你如何设置，都不可能是单窗口</li>
+<li>剩下的双击桌面空白区域、双击系统托盘、打开常规文件夹以及Win+E启动DOpus，可以设置单窗口模式</li>
+</ul>
+<p>设置方法如下三图：</p>
+<p>「选项-DOpus启动-从任务栏图标-在任务栏图标上双击」里，选择「激活最近活动的窗口(若无,则打开窗口)」</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227ejw1eq1xet2580j20k30du413.jpg " width="500"></p>
+<p>「选项-DOpus启动-从桌面-在桌面上双击」里，选择「激活最近活动的窗口(若无,则打开默认窗口)」</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227ejw1eq1xeuiznbj20k30dugo6.jpg " width="500"></p>
+<p>「选项-DOpus 启动-资源管理器替代」中，勾选「在新标签中打开外部文件夹」和「在打开一个新窗口时打开默认窗口的所有标签」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227ejw1eq1xewmjsjj20k30duq6z.jpg " width="500"></p>
+<p>当你按照上面的设置做了之后，自然DOpus就是单窗口运行的了，除非你使用快捷方式、任务栏中键和Win+Shift+E叫DOpus再打开一个窗口</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-one-window/" data-id="cj591hwtq007ckgnxel2t5hga" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-one-window/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-save-display-settings" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-save-display-settings/" class="article-date">
+  <time datetime="2015-03-11T09:39:28.000Z" itemprop="datePublished">Mar 11 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-save-display-settings/">DOpus三大问：如何保存显示格式设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常有朋友在群里面问：</p>
+<blockquote>
+<p>上次我把这个文件夹设置成这个样子，怎么下次我一打开我的设置就没了？</p>
+</blockquote>
+<p>这里我解释一下</p>
+<blockquote>
+<p>你对文件显示栏的操作（添加/删除列、排序、分组）等，如果你不保存的话，其范围仅限于当前标签页</p>
+</blockquote>
+<p>也就是说，只要当前标签页关闭，你对当前文件夹显示所作的修改都作废，通通恢复到默认的设置。</p>
+<p>DOpus的逻辑是这样的：如果你没有特定指明哪个文件夹需要特殊对待，那么我就用默认的形式来给你显示，这样的话我需要记的东西比较少，占用的系统资源也不高。</p>
+<p>那么，我们如何来保存对文件显示栏的修改呢？这就需要使用文件夹选项了。我用一个例子来说明如何操作。如下左图，我增加了「文件总数」一栏，并且按照最后修改时间反序排列。</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1eq36jsxqo4j20ho0itjy1.jpg" width="500"></p>
+<p>但是如果我新打开一个标签页，还是同样的路径，显示的样式又回到了默认，只剩名称、大小、类型、修改时间及属性五列，按名称正序，如下右图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36jwqm9jj20ho0itgr9.jpg" width="500"></p>
+<p>如果我要为这个文件夹保存我设定的显示格式，那么就需要点击菜单栏中的「文件夹-文件夹选项」，然后选择「保存当前文件夹格式」右边的「保存-仅此文件夹」，如下图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1eq36k0ypyqj20kv0ipq8j.jpg" width="500"></p>
+<p>之后再一次打开这个文件夹，不管在什么标签里面，就会使用你保存过的显示格式了，如下图。如果需要清除已经保存的格式，也请在文件夹选项中选择「清除-仅此文件夹」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36k57gj5j20ho0itn40.jpg" width="500"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-save-display-settings/" data-id="cj591hwtt007gkgnxb3y01xbt" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-save-display-settings/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-dopus-flatview-depth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dopus-flatview-depth/" class="article-date">
+  <time datetime="2014-08-01T07:06:50.000Z" itemprop="datePublished">Aug 1 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/dopus-flatview-depth/">在DOpus中实现指定层级的平面查看</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天DOpus中文讨论群里「昨日依然」问了个问题，说是他将工作文档按天归类，如下图，怎样才能「把里面的文件都显示出来呢？平面显示会将所有的文件都显示出来，我只要一级就可以，因为每天的文件夹里面都有子文件夹，全部都显示出来就太乱了。」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eix5kfz0cnj20980fmabw.jpg"></p>
+<p>实际上在DOpus的官网上也有人问这个问题，不过官方表示「平面显示」暂时无法指定显示深度，但是提供了一种替代的思路，就是用「查找」功能里面的过滤器来实现「显示文件夹中到指定深度」功能。下面我就介绍下这个方法。</p>
+        
+          <p class="article-more-link">
+            <a href="/dopus-flatview-depth/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dopus-flatview-depth/" data-id="cj591hwtk006ykgnx58e6tyww" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dopus-flatview-depth/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-listary-everything-do" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/listary-everything-do/" class="article-date">
+  <time datetime="2013-03-27T03:17:02.000Z" itemprop="datePublished">Mar 27 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/listary-everything-do/">Listary——给DOpus和Everything搭个桥</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的<a href="http://blog.yesmryang.net/do-everything/">解决方法</a>，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了强大的文件管理工具链。</p>
+<ul>
+<li>Listary beta版下载地址 <a href="http://www.listary.com/download/beta/ListaryBeta1180.exe" target="_blank" rel="external">http://www.listary.com/download/beta/ListaryBeta1180.exe</a></li>
+<li>Directory Opus beta版下载地址 <a href="http://blog.dopus.com/2013/03/directory-opus-10505-beta.html" target="_blank" rel="external">http://blog.dopus.com/2013/03/directory-opus-10505-beta.html</a></li>
+</ul>
+<h1 id="Listary设置"><a href="#Listary设置" class="headerlink" title="Listary设置"></a>Listary设置</h1><p>安装好之后，我做的设置是：</p>
+<ul>
+<li>搜索-磁盘搜索中，使用Everything</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置里面，Directory Opus关闭「查找你键入的内容」（Find-As-You-Type）选项，这样是为了不和DOpus自己的Find-As-You-Type功能冲突</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e346i4842eg.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置-Desktop，关闭「鼠标在空白区域弹出Listary快捷菜单」，以免和DOpus的双击唤出冲突。</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e346ib00rjg.gif" width="500"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="从桌面搜索"><a href="#从桌面搜索" class="headerlink" title="从桌面搜索"></a>从桌面搜索</h2><p>只要焦点在桌面，只要开始输入就是在桌面内查找你输入的内容</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e3478o3f2eg.gif" width="500"></p>
+<p>以「&gt;」开始的搜索则是全局搜索</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e3478w1pw4g.gif" width="500"></p>
+<h2 id="在DOpus里搜索"><a href="#在DOpus里搜索" class="headerlink" title="在DOpus里搜索"></a>在DOpus里搜索</h2><p>按Win+s或者鼠标中键，打开Listary工具栏，同样，在当前路径下查找你输入的内容，如果输入以「&gt;」开头，则是全局搜索</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347bscrqug.gif" width="500"></p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347c351kjg.gif" width="500"></p>
+<h2 id="在文件打开菜单中"><a href="#在文件打开菜单中" class="headerlink" title="在文件打开菜单中"></a>在文件打开菜单中</h2><p>比如在Gmail里面点击「添加附件」，在「打开文件」对话框下面就会有Listary的工具栏，在这里输入的任何内容都是搜索，用「&gt;」开头的都是全局搜索，如果焦点不在Listary上的话，按Win+s聚焦到Listary的对话框上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e347956gjwg.gif" width="500"></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>Listary支持搜索的时候用拼音首字母查询，弥补了DOpus的不足，不过如果你使用的是Everything的引擎，则全局搜索的时候就没法用拼音首字母了。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e34d1qo4z0g.gif" width="500"></p>
+<p>Listary和TC可以更好的集成使用，就是在上述「打开文件」对话框中按Win+o可以打开一个TC标签，然后在此TC标签中进行操作，选中文件后再按Win+o，选中文件的路径就通过TC传给Listary然后传给「打开文件」的对话框了，这样在「打开文件」也可以使用TC进行操作。详见<a href="http://xbeta.info/tc-listary.htm" target="_blank" rel="external">Listary+TC: 提高效率，取代传统低效的”打开/保存”对话框 | 善用佳软</a>。然而现在对DOpus还没有Win+o支持，不过作者说这已经在他的开发计划之内了。</p>
+<p>另外，Listary Pro现在正在以50人民币的优惠价进行销售，我本身这个软件用得不多，Pro版的介绍和购买详情也请移步善用佳软大哥的文章<a href="http://xbeta.info/listary4.htm" target="_blank" rel="external">Listary:搜索增强软件，新版v4发布(赠Pro许可+优惠销售) | 善用佳软</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/listary-everything-do/" data-id="cj591hwte006pkgnxzs1ge6s9" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/listary-everything-do/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-dopus-10-5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dopus-10-5/" class="article-date">
+  <time datetime="2013-02-05T03:09:34.000Z" itemprop="datePublished">Feb 5 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/dopus-10-5/">DOpus 10.5 更新日志</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译</p>
+<h1 id="Windows-8"><a href="#Windows-8" class="headerlink" title="Windows 8"></a>Windows 8</h1><p>已官方支持Windows 8，以下问题已解决</p>
+<ul>
+<li>双击文件启动的只是桌面程序，而不是Metro程序</li>
+<li>双击未知格式文件不再打开同步中心</li>
+<li>打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效</li>
+<li>「复制文件路径」功能正常</li>
+</ul>
+<h1 id="原生支持MTP设备"><a href="#原生支持MTP设备" class="headerlink" title="原生支持MTP设备"></a>原生支持MTP设备</h1><p>本版本开始原生支持MTP（Media Transfer Protocol）设备，MTP设备在DOpus里面以mtp://语法打开，现在在「计算机」里面可以看到已经连接的MTP设备并双击可以打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif" width="500"></p>
+<h1 id="标签群组可分别设置左右栏"><a href="#标签群组可分别设置左右栏" class="headerlink" title="标签群组可分别设置左右栏"></a>标签群组可分别设置左右栏</h1><p>现在标签群组里面新增一个选项「特定边框」（Specific Sides，这里中文译得不好）可以制定组中的标签是在左栏还是右栏打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0rwkm7g.gif" width="500"></p>
+<p>当勾选这一选项后，其左边的按钮可以用来将标签从左边移动到右边或者反过来</p>
+<p>标签栏的右键菜单新增「Save Both Sides，保存两者」（中文还是没译好）命令，可以将目前打开的标签按照分栏保存成标签群组。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if0ysnimg.gif" width="500"></p>
+<h1 id="标签组管理"><a href="#标签组管理" class="headerlink" title="标签组管理"></a>标签组管理</h1><p>「首选项-文件夹标签-标签群组」中可以用文件夹来管理，只需要点击「新建文件夹」按钮并拖拽。 另外也新增一个「标记为隐藏」按钮。一旦一个标签群组被标记为隐藏，它就不会出现在标签栏右键菜单中。</p>
+<h1 id="可链接标签"><a href="#可链接标签" class="headerlink" title="可链接标签"></a>可链接标签</h1><p>在双栏视图中，可以将左右的标签页链接起来，点击已链接标签中的一个，在另一栏会自动跳到和它链接的那个标签。同时最多设置8对链接标签页。已链接标签会用不同颜色标识，该颜色可在首选项中修改。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1381lng.gif" width="500"></p>
+<p>已链接标签可选择为「Slave Tab, 附属模式」。一旦设置为附属模式，该标签的内容会和它的链接标签保持一致。附属模式的标签会变成斜体。附属模式的设置和取消在标签栏的右键菜单中。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if17onisg.gif" width="500"></p>
+<p>首选项-文件夹标签-标签群组的编辑中也可以设置链接标签</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1fmw9kg.gif" width="500"></p>
+<p>链接标签的快捷键：</p>
+<ul>
+<li>Ctrl+点击：设置/取消到当前标签的链接</li>
+<li>Ctrl+Shift+点击：设置/取消到当前标签的附属模式链接</li>
+<li>Shift+点击：在另一栏中不跳转到链接的标签</li>
+</ul>
+<h1 id="列表窗样式使用标签群组"><a href="#列表窗样式使用标签群组" class="headerlink" title="列表窗样式使用标签群组"></a>列表窗样式使用标签群组</h1><p>在列表窗样式中，之前是可以分别定义左右栏的标签，现在该功能用标签群组代替。</p>
+<h1 id="标签外观改进"><a href="#标签外观改进" class="headerlink" title="标签外观改进"></a>标签外观改进</h1><p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if1k8dajg.gif"><br><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if8vv3wtg.gif"></p>
+<h1 id="标签栏改进"><a href="#标签栏改进" class="headerlink" title="标签栏改进"></a>标签栏改进</h1><ul>
+<li>「首选项-文件夹标签」新增外观页</li>
+<li>「首选项-文件夹标签-选项」，新增「点击列表窗关闭按钮时只关闭活动标签」（而不是关闭整个列表窗），「显示新标签按钮」「在当前标签旁打开新标签」以及「当标签减少时显示菜单」</li>
+<li>把一个标签拖到桌面可以打开一个新的列表窗</li>
+<li>直到鼠标按键释放才激活标签（就是你拖动标签的时候不会马上切换过去）</li>
+<li>鼠标中键可以关闭标签（就是按滚轮），双击标签也可以（需要在「首选项-文件夹标签-选项」中设置）</li>
+<li>「首选项-文件夹树-选择事件」新增「切换至现有标签」选项，选中后在文件夹树里面点击一个已经在标签中打开的文件夹的时候会切换到该标签，而不是在当前标签打开这个文件夹。</li>
+</ul>
+<h1 id="即时查找可以切换标签"><a href="#即时查找可以切换标签" class="headerlink" title="即时查找可以切换标签"></a>即时查找可以切换标签</h1><p>快捷键是「@」，可以在「首选项-列表窗-即时查找」中修改<br>在使用即时查找切换标签时，会弹出符合描述的标签列表，匹配的是路径和标签标题</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1otz9wg.gif" width="500"></p>
+<h1 id="文件夹树高亮当前文件夹路径"><a href="#文件夹树高亮当前文件夹路径" class="headerlink" title="文件夹树高亮当前文件夹路径"></a>文件夹树高亮当前文件夹路径</h1><p>在「首选项-文件夹树-高亮显示所选文件夹的路径」中设置。勾选「高亮显示当前所有打开的标签」后非活动标签的高亮颜色较淡</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1ifdghttug.gif"><br><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1ufpl2g.gif"></p>
+<h1 id="群组栏"><a href="#群组栏" class="headerlink" title="群组栏"></a>群组栏</h1><p>当文件以群组方式显示时，可以显示一个群组栏，在「首选项-文件夹-文件夹显示-当文件被分组时自动添加‘群组’栏」，群组栏的颜色和宽度可在首选项中设置。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if36d30cg.gif"><br><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if3znul4g.gif"></p>
+<h1 id="Ctrl-滚轮可以调整字体和缩略图大小"><a href="#Ctrl-滚轮可以调整字体和缩略图大小" class="headerlink" title="Ctrl+滚轮可以调整字体和缩略图大小"></a>Ctrl+滚轮可以调整字体和缩略图大小</h1><ul>
+<li>在缩略图中，可以调整缩略图尺寸</li>
+<li>在详细信息或者加强模式视图中，可以调整字体大小</li>
+</ul>
+<h1 id="列表窗可以自定义标题"><a href="#列表窗可以自定义标题" class="headerlink" title="列表窗可以自定义标题"></a>列表窗可以自定义标题</h1><p>在「首选项-显示-选项」中，可以自定义列表窗标题栏，其中可以用到几个特殊控制字</p>
+<ul>
+<li>%P 当前文件夹完整路径</li>
+<li>%N 当前文件夹名</li>
+<li>%R 当前文件夹根目录</li>
+<li>%D 当前目标文件夹完整路径</li>
+<li>%M 当前目标文件夹名</li>
+<li>%L 当前列表窗布局名</li>
+<li>%T 最初标题</li>
+</ul>
+<p>%P，%N和%R还可以在给标签命名的时候使用</p>
+<h1 id="其他改进和bug-fix"><a href="#其他改进和bug-fix" class="headerlink" title="其他改进和bug fix"></a>其他改进和bug fix</h1><p>（略）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dopus-10-5/" data-id="cj591hwtd006mkgnxygfo5oi3" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dopus-10-5/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-everything" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-everything/" class="article-date">
+  <time datetime="2012-10-23T06:00:00.000Z" itemprop="datePublished">Oct 23 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-everything/">Directory Opus和Everything共同使用设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有很多人在DO技术讨论群里面问这个问题，我索性整理出来</p>
+<p>##用Dopus中打开Everything搜索结果</p>
+<p>很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">open_folder_path_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;$parent(%1)&quot; NewTab)</div><div class="line">open_folder_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;%1&quot; NewTab)</div></pre></td></tr></table></figure></p>
+<p>##在Dopus中添加Everything按钮</p>
+<p>下载<a href="http://resource.dopus.com/download/file.php?id=5570&amp;sid=44caa6d03101d4eb44cb4b81bc50e4d1" target="_blank" rel="external">这个文件</a>，将压缩包内所有文件解压到Everything的安装路径</p>
+<p>复制以下代码(如果你的Everything安装路径不同请稍作修改）<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">separate</span>=<span class="string">"yes"</span> <span class="attr">type</span>=<span class="string">"three_button"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Dialog)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Specified Keyword(s)<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;dlgstring&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Clipboard)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Current Clipboard Text<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;clip&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">backcol</span>=<span class="string">"none"</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">textcol</span>=<span class="string">"none"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Program)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Starts / Brings Everything to Front<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>cd Everything路径<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\Everything.exe<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dy54nw7pgej.jpg" width="500"></p>
+<p>如上图，在Dopus菜单栏上右键-自定义（customize），再在菜单栏上右键选粘贴（paste），你就会看到一个叫做Everything的按钮出现在你的菜单栏上。其功能为：</p>
+<ul>
+<li><p>左键点击：用Everything搜索文件</p>
+</li>
+<li><p>右键点击：用Everything搜索剪贴板内容</p>
+</li>
+<li><p>中键点击：打开Everything窗口</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-everything/" data-id="cj591hwsz0067kgnxbc8wk8yb" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-everything/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-do-group-buy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-group-buy/" class="article-date">
+  <time datetime="2012-06-17T12:46:00.000Z" itemprop="datePublished">Jun 17 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/do-group-buy/">Directory Opus中文版团购开始，只要人民币一百七十元</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>2012 Directory Opus中文版团购</strong></p>
+<ul>
+<li><p>团购时间：2012年6月18日 9:00到2012年6月30日24:00</p>
+</li>
+<li><p>团购人数：100名截团 </p>
+</li>
+<li><p>软件主页：<a href="http://www.gpsoft.com.au/" target="_blank" rel="external">http://www.gpsoft.com.au/</a></p>
+</li>
+<li><p>软件原价：85澳元（545人民币）</p>
+</li>
+<li><p>团购价格：标准版人民币一百七十元；专业版（包括SFTP功能和USB便携版本）人民币二百四十元</p>
+</li>
+<li><p>团购链接：<a href="http://item.taobao.com/item.htm?id=18045932169" target="_blank" rel="external">标准版</a>  <a href="http://meal.taobao.com/mealDetail.htm?seller_id=646264063&amp;meal_id=16408761" target="_blank" rel="external">专业版</a></p>
+</li>
+<li><p>团购说明：团购的授权码<strong>仅适用于中文版</strong>，中文版下载链接【<a href="http://www.gpsoft.com.au/files/Opus10/DOpusInstall-Chinese.exe" target="_blank" rel="external">32位</a>】【<a href="http://www.gpsoft.com.au/files/Opus10/DOpusInstall64-Chinese.exe" target="_blank" rel="external">64位</a>】。一个授权码可以激活一台台式机+一台笔记本（和国际版的一样）</p>
+</li>
+<li><p>官方授权文件</p>
+</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1du1in8cz6lj.jpg" width="500"></p>
+<p><strong>Directory Opus简介</strong></p>
+<p>Directory Opus是Windows下一款功能强大（官方用词是Ultimate）的文件管理器软件，其特色是『易用，定制，高效，兼容』，在各大文件管理软件评测中和Total Commander的得分都不相上下甚至略有超过。其功能特点包括：</p>
+<ul>
+<li><p>支持Windows7的库文件管理，Windows Desktop Search以及Jumplist列表功能</p>
+</li>
+<li><p>单双栏文件+文件夹树管理，可定制的视图样式</p>
+</li>
+<li><p>标签式浏览</p>
+</li>
+<li><p>内置的预览面板，可以预览各种图片(jpg,png,gif,raw)和常用文档(office, pdf)</p>
+</li>
+<li><p>内置图片格式/尺寸转换</p>
+</li>
+<li><p>查看和编辑元信息（MP3，Exif等）</p>
+</li>
+<li><p>文件排序/分组/筛选/搜索功能强大（有插件支持Everything）</p>
+</li>
+<li><p>文件/文件夹着色</p>
+</li>
+<li><p>批量文件重命名，支持正则表达式，支持用元信息重命名</p>
+</li>
+<li><p>内置FTP客户端，常见压缩文件支持（7z,zip,rar）</p>
+</li>
+<li><p>内置的同步，查找重复文件功能</p>
+</li>
+<li><p>文件操作队列处理，避免高并发的IO请求 </p>
+</li>
+</ul>
+<p>各种截图请移步 <a href="http://www.gpsoft.com.au/program/screenshots.html" target="_blank" rel="external">http://www.gpsoft.com.au/program/screenshots.html</a></p>
+<p><strong>个人感悟</strong></p>
+<p>善用佳软大哥<a href="http://xbeta.info/best-freeware-file-manager.htm" target="_blank" rel="external">曾说过</a>“同样收费的 Directory Opus(简称DO) 不比TC差，甚至更强”。我自己大概从2007年在XP时代就开始用这一软件管理自己电脑上的各种文件一直到现在的Win7，经过些许的配置之后越用越顺手，从当时的8点几一直用到现在10。一开始没用TC就是因为TC的界面实在是用不习惯，而DO的更『像』Windows本身的资源管理器一些，一开始上手比较方便。后来陆陆续续的也以《鼠标一族的资源管理器Directory Opus介绍》为题写了一些使用心得在博客上，收到的反响还蛮不错的。一开始用的是某位高人做的破解版，毕业之后有工资了，而且觉得破解的升级客服什么比较麻烦，就直接去官网买了一个授权。</p>
+<p>相比Total Commander，Directory Opus在中文用户中的知名度小了很多很多，这一方面是因为其官方一直没有中文版本，另一方面有影响力的铁杆粉丝比较少，最重要的还是在于其昂贵的价格，85澳元合人民币545元一个授权的价格，相对TC的团购价150元，让人望而却步，把很多潜在的用户排除在了外面。现在子清和GP Soft联络，让他们推出较为便宜的中文版，还参与了软件的翻译工作。对Directory Opus及其中文用户是一件非常有意义的事情。希望能有更多的用户使用正版软件，支持开发者，让他们能够开发出更好用的产品。 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-group-buy/" data-id="cj591hwst005xkgnxywh17gmg" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-group-buy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

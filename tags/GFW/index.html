@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: GFW | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/GFW/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-shadowsocks-nodejs-obfsproxy-aws" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/shadowsocks-nodejs-obfsproxy-aws/" class="article-date">
+  <time datetime="2013-01-20T13:56:17.000Z" itemprop="datePublished">Jan 20 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/shadowsocks-nodejs-obfsproxy-aws/">在AWS上搭建shadowsocks-nodejs环境并搭配obfsproxy使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文作者为<a href="https://twitter.com/unclepulp" target="_blank" rel="external">unclepulp</a>，感谢赐稿</p>
+<p>本文服务端为Amazon Linux AMI 2012.09（32bit），客户端为Windows7。</p>
+<p>Amazon AWS的注册、EC2的开通（电话验证如不成功，可用Google voice验证）以及实例的启用请参考<a href="http://yinhm.appspot.com/2010/10/amazon-ec2-micro-instance-and-tunnel-guide" target="_blank" rel="external">Amazon AWS 漫游指南</a>。</p>
+<p>首先使用PuTTY登录EC2，然后输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo su</div></pre></td></tr></table></figure></p>
+<p>为避免部署的过程中出现网络中断的情况，可使用<code>screen</code>命令创建一个会话（<code>screen</code>命令的使用请参考<a href="http://www.vpser.net/manage/screen.html" target="_blank" rel="external">SSH远程会话管理工具 - screen使用教程</a>）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">screen -S nodejs</div></pre></td></tr></table></figure></p>
+<p>接着更新一下系统：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum update</div></pre></td></tr></table></figure></p>
+<h2 id="部署服务端"><a href="#部署服务端" class="headerlink" title="部署服务端"></a>部署服务端</h2><h3 id="部署shadowsocks-nodejs"><a href="#部署shadowsocks-nodejs" class="headerlink" title="部署shadowsocks-nodejs"></a>部署shadowsocks-nodejs</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mkdir tmp</div><div class="line">cd tmp</div><div class="line">yum install git</div><div class="line">git clone https://github.com/clowwindy/shadowsocks-nodejs.git</div><div class="line">cd shadowsocks-nodejs</div><div class="line">vi config.json</div></pre></td></tr></table></figure>
+<p>按<code>i</code>开始修改，修改<code>server_port</code>（如12345）和<code>password</code>。修改好后按<code>ESC</code>，然后输入 <code>:wq</code> 保存退出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ..</div><div class="line">mkdir /var/shadowsocks</div><div class="line">cp shadowsocks-nodejs/ /var/shadowsocks -r</div></pre></td></tr></table></figure></p>
+<h3 id="安装并部署nodejs"><a href="#安装并部署nodejs" class="headerlink" title="安装并部署nodejs"></a>安装并部署nodejs</h3><p>nodejs最新版可以在<a href="http://nodejs.org/download/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">wget http://nodejs.org/dist/v0.8.18/node-v0.8.18-linux-x86.tar.gz</div><div class="line">tar zfvx node-v0.8.18-linux-x86.tar.gz</div><div class="line">cp node-v0.8.18-linux-x86/bin/node /usr/bin/</div><div class="line">echo &quot;(node /var/shadowsocks/server.js &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div></pre></td></tr></table></figure></p>
+<h3 id="部署obfsproxy"><a href="#部署obfsproxy" class="headerlink" title="部署obfsproxy"></a>部署obfsproxy</h3><h4 id="安装obfsproxy支持环境"><a href="#安装obfsproxy支持环境" class="headerlink" title="安装obfsproxy支持环境"></a>安装obfsproxy支持环境</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install autoconf automake gcc make openssl-devel pkgconfig</div></pre></td></tr></table></figure>
+<h4 id="安装libevent2"><a href="#安装libevent2" class="headerlink" title="安装libevent2"></a>安装libevent2</h4><p>libevent2最新版本可在<a href="http://libevent.org/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz</div><div class="line">tar zfvx libevent-2.0.21-stable.tar.gz</div><div class="line">cd libevent-2.0.21-stable</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cd ..</div></pre></td></tr></table></figure></p>
+<h4 id="安装并配置obfsproxy"><a href="#安装并配置obfsproxy" class="headerlink" title="安装并配置obfsproxy"></a>安装并配置obfsproxy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">git clone https://git.torproject.org/obfsproxy.git</div><div class="line">cd obfsproxy</div><div class="line">export libevent_CFLAGS=-I/usr/local/include</div><div class="line">export libevent_LIBS=&quot;-L/usr/local/lib -levent&quot;</div><div class="line">export LD_LIBRARY_PATH=/usr/local/lib/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cp /usr/local/lib/libevent-2.0.so.5 /usr/lib/</div><div class="line">cd ..</div><div class="line">echo &quot;(/usr/local/bin/obfsproxy obfs2 --dest=127.0.0.1:12345 server 0.0.0.0:54321 &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div><div class="line">iptables -A INPUT -p tcp --dport 54321 -j ACCEPT</div><div class="line">yum install policycoreutils</div><div class="line">service iptables save</div><div class="line">service iptables restart</div><div class="line">exit</div><div class="line">exit</div><div class="line">exit</div></pre></td></tr></table></figure>
+<p>此处端口12345为shadowsocks-nodejs的<code>server_port</code>，54321为obfsproxy 负责接收和发送混杂数据的端口。</p>
+<p>然后请参考<a href="http://yinhm.appspot.com/2010/11/amazon-ec2-tunnel-guide-part-three-vpn" target="_blank" rel="external">Amazon AWS 漫游指南三：VPN</a>一文里的防火墙设置，并将12345和54321两个端口添加一下，添加好后重启实例。</p>
+<hr>
+<h2 id="部署客户端"><a href="#部署客户端" class="headerlink" title="部署客户端"></a>部署客户端</h2><ol>
+<li><p>从<a href="https://www.torproject.org/projects/obfsproxy.html.en" target="_blank" rel="external">tor官网</a>下载含Obfsproxy的Tor包，此包是自解压包，将解压后得到的APP目录中的所有文件拷贝到一个合适的目录，如D:\nodejs</p>
+</li>
+<li><p>从<a href="http://nodejs.org/download/" target="_blank" rel="external">nodejs官网</a>下载node Windows包，下载得到node.exe直接拷贝到D:\nodejs</p>
+</li>
+<li><p>访问<a href="https://github.com/clowwindy/shadowsocks-nodejs" target="_blank" rel="external">shadowsocks-nodejs</a>项目主页，点击界面中的zip，下载得到一个zip包，解压后将shadowsocks-nodejs-master目录中的所有文件全部拷贝至D:\nodejs</p>
+</li>
+<li><p>编辑config.json，将<code>password</code>修改为之前制定的密码，其它无需修改。</p>
+</li>
+<li><p>在D:\nodejs目录中新建一个文件，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">START node.exe local.js</div><div class="line">START obfsproxy obfs2 –dest=111.111.111.111:54321 client 127.0.0.1:8388</div><div class="line">EXIT</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中111.111.111.111为服务器IP地址，例如，如果Amazon EC2实例的public dns为ec2-111-111-111-111.us-west-1.compute.amazonaws.com，那么，此处的IP就填111.111.111.111。然后将文件保存为批处理文件，后缀为<code>bat</code>。</p>
+<ol>
+<li>双击该批处理文件，并将浏览器的代理设置为SOCKS5 127.0.0.1:1080 即可。</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="http://sae.chenshaoju.com/?p=14" target="_blank" rel="external">如何使用obfsproxy搭配shadowsocks-nodejs安全高效的访问互联网</a></li>
+<li><a href="http://lordong.me/wp/post/1448.html" target="_blank" rel="external">自建obfsproxy的速度还不错</a></li>
+<li><a href="https://gist.github.com/1802068" target="_blank" rel="external">Tor with obfsproxy on Amazon’s AMI</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/" data-id="cj591hwtc006lkgnxn65tukrm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GFW/">GFW</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>专心的编辑器Dark Room，和Term一样的邮件客户端Alpine | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.Dark Room   就是一个全屏的编辑软件，运行之后会遮盖住你的屏幕。好处就是让你更专心一点，在写东西（日志、报告、程序）的时候心无旁骛，不会写一点就去上网啥的。另外小众推荐过Q10，但是Q10不是很稳定，我今天早上用的时候就死掉两次，还好我是翻译文档，写得不够快，要不然肯定又是遗憾终身了。    缺点就是没有语法着色,然后字体渲染好像也有点问题。我想用gvim来着，但是gvim的上下键">
+<meta property="og:type" content="article">
+<meta property="og:title" content="专心的编辑器Dark Room，和Term一样的邮件客户端Alpine">
+<meta property="og:url" content="http://blog.yesmryang.net/dark-room-and-alpine/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="1.Dark Room   就是一个全屏的编辑软件，运行之后会遮盖住你的屏幕。好处就是让你更专心一点，在写东西（日志、报告、程序）的时候心无旁骛，不会写一点就去上网啥的。另外小众推荐过Q10，但是Q10不是很稳定，我今天早上用的时候就死掉两次，还好我是翻译文档，写得不够快，要不然肯定又是遗憾终身了。    缺点就是没有语法着色,然后字体渲染好像也有点问题。我想用gvim来着，但是gvim的上下键">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-220530-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223437-thumb.png">
+<meta property="og:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223521-thumb.png">
+<meta property="og:updated_time" content="2013-01-09T03:57:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="专心的编辑器Dark Room，和Term一样的邮件客户端Alpine">
+<meta name="twitter:description" content="1.Dark Room   就是一个全屏的编辑软件，运行之后会遮盖住你的屏幕。好处就是让你更专心一点，在写东西（日志、报告、程序）的时候心无旁骛，不会写一点就去上网啥的。另外小众推荐过Q10，但是Q10不是很稳定，我今天早上用的时候就死掉两次，还好我是翻译文档，写得不够快，要不然肯定又是遗憾终身了。    缺点就是没有语法着色,然后字体渲染好像也有点问题。我想用gvim来着，但是gvim的上下键">
+<meta name="twitter:image" content="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-220530-thumb.png">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-dark-room-and-alpine" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/dark-room-and-alpine/" class="article-date">
+  <time datetime="2009-02-25T16:00:00.000Z" itemprop="datePublished">Feb 26 2009</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      专心的编辑器Dark Room，和Term一样的邮件客户端Alpine
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 1.Dark Room   <br>就是一个全屏的编辑软件，运行之后会遮盖住你的屏幕。好处就是让你更专心一点，在写东西（日志、报告、程序）的时候心无旁骛，不会写一点就去上网啥的。另外小众推荐过Q10，但是Q10不是很稳定，我今天早上用的时候就死掉两次，还好我是翻译文档，写得不够快，要不然肯定又是遗憾终身了。    <br>缺点就是没有语法着色,然后字体渲染好像也有点问题。我想用gvim来着，但是gvim的上下键不能在行内移动光标，这很郁闷。谁知道解决方案告诉我啊    <br>效果如下图： </p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-220530.png" target="_blank" rel="external"><img title="2009-02-26_220530" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="364" alt="2009-02-26_220530" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-220530-thumb.png" width="484" border="0"></a> </p>  <p>下载在<a title="http://they.misled.us/dark-room" href="http://they.misled.us/dark-room" target="_blank" rel="external">http://they.misled.us/dark-room</a></p>  <p>2.Alpine   <br>是华盛顿大学出品的一款邮件客户端，操作上和term的感觉一样。适合那些订阅了很多邮件列表，并且邮件中没有多少图片的人，因为你阅读邮件列表中的邮件和上bbs并没有什么不同……</p>  <p>效果如下图： </p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223437.png" target="_blank" rel="external"><img title="2009-02-26_223437" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="302" alt="2009-02-26_223437" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223437-thumb.png" width="484" border="0"></a> </p>  <p>建议下载安装版（因为我下压缩版之后死活没法配置），在安装过程中，会询问你配置文件是在网上还是本地，当然选择本地了。安装好之后用文本编辑器编辑安装目录下的pinerc文件,Gmail的IMAP设置如下：</p>  <blockquote>   <p>personal-name显示名</p>    <p>user-id用户名     <br></p>    <p>user-domain=gmail.com</p> </blockquote>  <p>收件箱配置</p>  <blockquote>   <p>inbox-path={imap.gmail.com/ssl/user=YOURNAME@gmail.com}</p> </blockquote>  <p>   <br>发送服务器配置是</p>  <blockquote>   <p>smtp-server=smtp.gmail.com:587/tls</p> </blockquote>  <p>要看Gmail的标签</p>  <blockquote>   <p>folder-collections=mail[],Gmail {imap.gmail.com/ssl/user=YOURNAME@gmail.com}[] </p> </blockquote>  <p>程序启动之后，进入L就能看到Gmail的标签了，不过似乎中文的显示不出来……怎么修改编码我也不知道 </p>  <p><a href="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223521.png" target="_blank" rel="external"><img title="2009-02-26_223521" style="border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px" height="302" alt="2009-02-26_223521" src="http://laoyang.yo2.cn/wp-content/uploads/300/30018/2009/02/20090226-223521-thumb.png" width="484" border="0"></a>&#160;</p>  <p>下载在<a title="http://www.washington.edu/alpine/acquire/" href="http://www.washington.edu/alpine/acquire/" target="_blank" rel="external">http://www.washington.edu/alpine/acquire/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/dark-room-and-alpine/" data-id="cj591hwmr001akgnx92c4260a" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/dark-room-and-alpine/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/think-of-opera/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          关于Opera的一些想法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/web-ethic-20/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">(zz)工作观2.0：从勤奋升级到专心</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/dark-room-and-alpine/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

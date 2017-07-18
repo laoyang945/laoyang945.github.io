@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/page/11/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-wordpress-migration" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/wordpress-migration/" class="article-date">
+  <time datetime="2010-03-06T16:00:00.000Z" itemprop="datePublished">Mar 7 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/wordpress-migration/">Wordpress更改博客地址及backupify备份工具使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>原来我的博客地址是<a href="http://laoyang.info/blog" target="_blank" rel="external">http://laoyang.info/blog</a>，这也是wordpress的安装地址，现在修改到了<a href="http://laoyang.info" target="_blank" rel="external">http://laoyang.info</a>。操作其实很简单：</p>  <ul>   <li>在博客后台，设置-通用里面像下图一样设置一下： </li> </ul>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="left" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb.png" width="484" height="142"></a> </p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <p>&#160;</p>  <ul>   <li>然后将/blog/index.php拷贝到根目录下，将require(‘./wp-blog-header.php’)改为require(‘./blog/wp-blog-header.php’)即可 </li> </ul>  <p>另外，在<a href="http://laoyang.info/?p=47251" target="_blank">上一篇日志</a>里面提到了<a href="http://www.backupify.com/" target="_blank">Backupify</a>这个很有用的服务网站，可以方便的帮助你备份wordpress以及其他一系列的网络服务，包括Flickr，Twitter等，并且即将推出对Youtube, xmarks, rssfeed和Tumblr的支持。注册之后有2G的免费空间供你使用。</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image1.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb1.png" width="452" height="580"></a> </p>  <p>拿Backupify备份wordpress更为简单，先在网站注册，然后下载<a href="http://www.backupify.com/tools/wordpress/wp-backupify-1.0.5.zip" target="_blank">这个插件</a>后，将其上传到你的wordpress里面，启用。这个时候后台就会有Backupify的图标出现了：</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image2.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb2.png" width="228" height="226"></a> </p>  <p>点击之后在主窗口里面就会有三项选择，第一次使用的话只需要点Login-initialize 就OK</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/03/image3.png" target="_blank" rel="external"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://laoyang.info/blog/wp-content/uploads/2010/03/image_thumb3.png" width="436" height="258"></a> </p>  <p></p>  <p></p>  <p>好了，以后Backupify就会自动在后台帮你备份wordpress的全部内容，包括文件和数据库，找到备份文件只需要登录进Backupify后点“Archives”就可以看到。另外需要注意的是，要谨慎使用上图中的Full Backup now的命令，因为这个备份的文件同样是放在wordpress的安装目录下，在下次备份的时候会把上次备份的文件再打包进去，造成备份文件越来越大。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/wordpress-migration/" data-id="cj591hwp0003ckgnx6cutnq2l" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/wordpress-migration/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-host-to-godaddy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/host-to-godaddy/" class="article-date">
+  <time datetime="2010-03-03T16:00:00.000Z" itemprop="datePublished">Mar 4 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/host-to-godaddy/">主机转移到Godaddy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近有挺多想法的但是一直都没写，原因就是博客要更换主机</p>
+<p>自从开设独立博客以来就用的是dreamhost的主机，用了有小半年了吧，有几个问题搞得我有点不爽</p>
+<p><ul><br>    <li>慢</li><br>    <li>时不时就断掉连不上，没有任何解释……</li><br>    <li>这个主机我还拿来用MyEnTunnel，所以……你懂的</li><br></ul><br>那天在twitter上找<a href="http://twitter.com/iamzzm" target="_blank" rel="external">@iamzzm</a>合租了这个Godaddy的空间，经过一番折腾，终于把整个主机转移过来了。其中有几个地方需要注意的：</p>
+<p><ol><br>    <li>Godaddy的域名只能绑定1个Godadday的主机，原来我绑定过买域名的时候送的那个免费空间，所以@iamzzm一直不能帮我绑定。后来发现了这个问题，解除那个免费空间的绑定就好。（Godaddy的解除绑定的提示做得像广告一样，让我一直在等弹出的对话框……）</li><br>    <li>用<a href="http://www.backupify.com/" target="_blank">Backupify</a>这个网站的服务很不错，定期能帮你备份文件和数据库。这次搬家我就是直接把Backupify备份的文件上传到FTP，数据库文件导入到新的数据库（不过好像少了几天的评论？）。导入之后记得修改wp-config.php里面数据库相关的url还有用户名密码</li><br>    <li>Backupify导出的数据库文件导入到新数据库的时候，访问wordpress有乱码，需要在wp-config.php里面加一行define(‘DB_CHARSET’, ‘utf8’);因此前几天有人访问我的博客的时候全是？？？，居然还留言了（好像是<a href="http://www.xyzlove.com" target="_blank">午夜兰花</a>？怎么网站无法访问了？），当然留言也是乱码，我看不见。</li><br></ol><br>在搬家的时候还帮<a href="http://twitter.com/bigzui" target="_blank" rel="external">@bigzui</a> 建了一个独立的博客，域名是<a href="http://bigzui.info" target="_blank">bigzui.info</a>，哈哈，大家可以去看看，一个很有趣的大一学生。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/host-to-godaddy/" data-id="cj591hwoz003bkgnx42ia2889" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/host-to-godaddy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-renren-blog-export" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/renren-blog-export/" class="article-date">
+  <time datetime="2010-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/renren-blog-export/">人人网(校内网)日志导出方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><span style="color: #ff0000;"><strong>[2010年3月31日更新]</strong></span></p>
+<p>新增功能：导出为article.xml，直接可以在wordpress里面通过RSS导入，其他博客服务未测试。</p>
+<p><a href="http://www.uushare.com/user/laoyang945/file/2806841" target="_blank">点击这里</a> 下载脚本文件，用命令行运行xiaoneibackup20100331.py即可</p>
+<p><strong><span style="color: #ff0000;">[2010年2月19日更新]</span></strong></p>
+<p>感谢<a href="mailto:ht.simple.happy@163.com" target="_blank" rel="external">elfin</a>的工作，使得原来的人人日志导出脚本能够继续使用下去。他在邮件中提到：“今天用工具分析了下renren的http，发现主要原因是Content-Encoding使用了gzip。直接用python的解码模块解码即可。”解决了原来我说的乱码问题。</p>
+<p><span style="color: #ff0000;"><strong>使用方法：</strong></span></p>
+<ol><br>    <li>下载python2.4或者2.6版本。（因为python.org/download被不可思议的墙掉了，所以不给链接，请自行搜索下载）</li><br>    <li>下载脚本</li><br>    <li>在命令行（开始-运行-cmd）中执行脚本</li><br>    <li>输入邮箱和密码，脚本就会自动下载你的日志到同目录下的article.xml</li><br></ol><br>已知问题：<br><ol><br>    <li><span style="text-decoration: line-through;">人人网的日志计数可能有误，因此实际下载日志数会小于等于显示日志数</span></li><br>    <li>不能下载图片，不能下载评论</li><br>    <li><span style="text-decoration: line-through;">导出的文件不能直接导入wordpress。</span></li><br></ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/renren-blog-export/" data-id="cj591hwoy0039kgnxwc4uie2q" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/renren-blog-export/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-book-from-grandpa" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/book-from-grandpa/" class="article-date">
+  <time datetime="2010-02-14T16:00:00.000Z" itemprop="datePublished">Feb 15 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/book-from-grandpa/">从外公家搜出一本书</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/02/P10500791.jpg" target="_blank" rel="external"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="P1050079-小" border="0" alt="P1050079-小" src="http://laoyang.info/blog/wp-content/uploads/2010/02/P1050079_thumb1.jpg" width="484" height="364"></a> </p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/02/P10500761.jpg" target="_blank" rel="external"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="P1050076-小" border="0" alt="P1050076-小" src="http://laoyang.info/blog/wp-content/uploads/2010/02/P1050076_thumb1.jpg" width="484" height="364"></a> </p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/02/P10500771.jpg" target="_blank" rel="external"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="P1050077-小" border="0" alt="P1050077-小" src="http://laoyang.info/blog/wp-content/uploads/2010/02/P1050077_thumb1.jpg" width="484" height="364"></a> </p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/02/P10500781.jpg" target="_blank" rel="external"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="P1050078-小" border="0" alt="P1050078-小" src="http://laoyang.info/blog/wp-content/uploads/2010/02/P1050078_thumb1.jpg" width="484" height="364"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/book-from-grandpa/" data-id="cj591hwow0037kgnxp0o10s4j" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/book-from-grandpa/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-caligraphy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/caligraphy/" class="article-date">
+  <time datetime="2010-01-25T16:00:00.000Z" itemprop="datePublished">Jan 26 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/caligraphy/">写字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久都没有用笔写字了，昨天一时兴起，写了几个字贴在水房的洗衣机上</p>  <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/01/P1050049.jpg" target="_blank" rel="external"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="P1050049-小" border="0" alt="P1050049-小" src="http://laoyang.info/blog/wp-content/uploads/2010/01/P1050049_thumb.jpg" width="484" height="644"></a>&#160;</p>  <p>看着还行</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/caligraphy/" data-id="cj591hwox0038kgnxembjxx8o" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/caligraphy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fifty-cents" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/fifty-cents/" class="article-date">
+  <time datetime="2010-01-20T16:00:00.000Z" itemprop="datePublished">Jan 21 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/fifty-cents/">立此存照：中国官员必修课之第一讲</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by 韩寒</p>
+<p>正如一位网友所说，中国现阶段的主要矛盾是人民群众日益增长的智商和官员们不断下降的道德之间的矛盾，但是，在道德下降之余，他们的判断力，决策力，眼 光，公关能力，口语表达，个人魅力，危机处理能力也在不断的下降，经过我多年的观察，我发现其实很多事，本来没事，但经过一些官员出面处理以后，小事化 大，大事化炸,最后成为焦点新闻。在这里，我将讲述一些在我国如何正确处理一些危机和政府事物的技巧和常识，以帮助各个领导更快的升官发财。今天的是第一 讲。我们从一条新闻说起:</p>
+<p>据甘肃省新闻网报道,甘肃将要组建一支650人的网络评论员队伍，正确的引导舆论。</p>
+<p>这条新闻起先是由甘肃省自己的内部新闻网发布，甘肃省本想将此当做重大的政绩工程来宣传，本意是想向上级政府邀功请赏。甘肃的政府各部门特地在兰州开会，省宣传部部长特地讲话，最后作为新闻对外发布。</p>
+<p>在互联网上，我们经常看到有人说，兰州悲剧了。当然，甘肃省的领导们肯定不知道这句话什么意思。如今我们真正看到兰州悲剧了。在这个新闻发布以后，被各大 网站转载，但是今天打开这些网站，发现所有的新闻链接都已经失效，没有一条能够打开。是谁能和谐省宣传部呢，当然是宣传总部。甘肃省的领导们对圣旨的领悟 能力极差。他们犯下了重大的错误。马屁拍在老虎屁股上。</p>
+<p>网络评论员也叫五毛党，乃是地下党。你把成立一支地下党的消息以及名单直接公布了，乃是大忌。这个消息应该是一个密件，由专人送达上级部门，那么上级部门 必将重重有赏。这个新闻直接透露了政府一直不愿意承认的一个事实，那就是五毛党的存在。如果一个人想要获得赞美和拥护必须要靠花钱收买别人的嘴才可以，那 说明这个人肯定够丑的。这条新闻直接摧毁了上级部门努力营造的假象。兰州宣传部门的领导看来一辈子升官无望。</p>
+<p>另外，这条新闻的灾难性在于，他完全暴露了五毛党的结构组成以及基本人数，并且容易被一些网友所利用,新闻里说，今年甘肃省要加快网监、网评队伍建设，形 成以50名网络评论“高手”为核心层、100名网络评论“好手”为紧密层、500名网络评论“写手”为外围层的网评队伍体系。</p>
+<p>在甘肃省这么一个小省里，尚且需要新增添650的专业网络评论员，那么好事者很容易推算出，在全国范围内，专业网络评论员的数量应该不下十万人。假设每个 网络评论员的年工资平均为五万元人民币，那么政府每年要为自己夸奖自己支付50亿人民币，也就是25000个希望小学，或者十分之一个三峡大坝，或者杨浦 大桥加南浦大桥加东方明珠打包带走还是双份，或者30架波音737，或者一个中型航空母舰，或者90台在汶川地震中急缺的只向俄罗斯租借到一台的空中巨无 霸米26H直升机。这个数据如果不小心让人知道了，非常容易引起人民群众和政府之间的矛盾，往自己脸上贴金乃是人之常情，贴金就要花钱，但往自己脸上贴航 母的确说明这脸有点太大了。好在还没有好事者这样推算过，至今也没有人提出过质疑，算是万幸。</p>
+<p>通过这场兰州悲剧，各位领导们也知道了领会上级精神和误会上级精神之间其实只有一念之差，各省市宣传部领导们应该引以为戒。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/fifty-cents/" data-id="cj591hwov0036kgnxjjg9ic27" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/fifty-cents/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hanhan-vulgar" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hanhan-vulgar/" class="article-date">
+  <time datetime="2010-01-19T16:00:00.000Z" itemprop="datePublished">Jan 20 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hanhan-vulgar/">立此存照：今天起，做一个低俗的人</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by 韩寒</p>
+<p>近日，全国开始打击手机低俗涉黄短信。在上上一篇文章中（从次序上来讲的确是上上篇，但是从视觉上来讲却是上一篇），我说到我将发各种黄段子给各个朋友， 看看这个尺度到底在哪里，因为难得我们国家有这么仁慈的惩罚手段，在违背了政府的意愿以后只需要停机，而不是像贵州村民一样直接停尸。既然只需要停机，为 什么不试试呢。</p>
+<p>但是我很后悔，因为这个行为破坏了我和很多朋友之间的感情，不少朋友在这两天直接质 问我，为什么我没有收到黄段子，难道你不把我当朋友么？其实不是这样的，有可能你本人很黄，但我的黄段子不够黄，被你当成了一个普通笑话，有可能你本人不 黄，但我的黄段子足够黄，被中国移动直接屏蔽，并不是每一个朋友我都发，因为很多朋友平时看上去还是比较正经的，没想到你们那么不正经。</p>
+<p>除了给男性朋友黄段子以外，从明天开始，我决定双管齐下，对一些女性朋友进行性骚 扰。这一切其实都是为了弥补政府的失职。我坚决拥护政府的决策，但是政府没有告诉我们对黄段子和色情短信的界定，相关部门应该在人民日报和新闻联播里刊登 朗诵不能通过的黄段子或者淫秽词汇，比如说在新闻联播中，女播音员说，相关部门决定对手机涉黄进行严厉打击，防止手机短信低俗化，出席本次活动的屏蔽词有 ——“阴道”，男播音员接着说道“阴茎”……这才是负责认真的态度。</p>
+<p>其实，黄段子和性骚扰完全不一样，黄段子在人际交往里扮演着重要的角色，黄段子是拉 近人与人之间距离的重要手段。我身边的朋友没有人看到有人在手机里给他发了一个黄段子而暴跳如雷的，唯一不爽的可能性只有两种，第一种就是这个黄段子不够 好玩，第二个就是这个黄段子是自己刚刚看过并且转发出去的。当然，由于我们经常站在民意的对立面，所以也不排除政府做一个调查，百分之九十的人表示，非常 讨厌黄段子，黄段子给他们的生活带来了巨大的困扰，比如导致他学习分心，考不上研究生，当不了公务员。</p>
+<p>第二种短信就是性暗示短信或者调情短信，调情短信在人际交往里扮演着重要的角色，调 情短信是拉近人与人之间距离的重要手段。既然都能发出这样的短信了，估计已经有着很高的回床率了，无论是情人情侣或者夫妻，这样的短信也是必不可少，合情 合理，我又没有在新民晚报上登报表示就喜欢人家什么姿势，这种单对单的消息当事人双方都表示没意见，但是连当事人还没插入，怎么突然间政府就插手了呢。</p>
+<p>所以，我相信政府此举的目的其实是要屏蔽一些卖淫嫖娼信息，比如说我收到过的“各地小妹，贴心服务，白领<span style="font-family: Times New Roman;">500</span><span style="font-family: 宋体;">元，学生妹</span><span style="font-family: Times New Roman;">600</span><span style="font-family: 宋体;">元，模特</span><span style="font-family: Times New Roman;">800</span><span style="font-family: 宋体;">元，洋妞</span><span style="font-family: Times New Roman;">1200</span><span style="font-family: 宋体;">元，破处</span><span style="font-family: Times New Roman;">3000</span><span style="font-family: 宋体;">元”，从这条消息里我们得知两个讯息，第一个就是往往这样的短信里并不含有屏蔽词，第二个就是白领真的很可怜，生活工作压力大，连出去卖或者假装这个身份出去卖都卖不出一个好价钱。</span></p>
+<p>另外我又一个疑惑的是，这究竟是怎样的一个审查系统，我从来不把侵犯人权和隐私权用 来做文章，这是一个夫妻做爱都有人破门而入命令你拔出的地方。但是我很好奇，比如说你和你女人调情，结果被电脑先屏蔽审查了，然后就是相关部门的人员进行 人工审查，最后审查下来没问题，这短信发出去了，你这应该算是一条短信调戏了两个人啊，连组织的女人都被你一并调戏了。另外，这个系统肯定会截停很多各种 人的低俗短信，无论是各地领导，社会名流，文体明星，工人农民等等，虽然这些人可能最后没有被停机，但是每天看他们发送的各种短信应该很有意思，说不定还 有屏幕前的你你你你你你你。</p>
+<p>在二十年前，我国对于要消灭的群体都冠以流氓两字，然后判刑的判刑，枪毙的枪毙， 到了今天，这个词汇变成了“低俗”，要消灭你，你就是低俗的。我花了很长时间去想，那些界定别人低俗的人，他们到底高雅在哪里，比如说有人花一百块嫖娼是 低俗，有人用一百万去玩艺人就是高雅，有人看黄色图片是低俗，有人看红头文件是高雅，有人买个仿真枪是低俗，有人真枪一暴两个头是高雅，有人玩魔兽就是低 俗，有人玩模特就是高雅，当然，这个谁都说不清楚，说清楚了，就不能随心所欲了。为了防止有一天我突然变成一个低俗的人，我率先低俗，并承认</p>
+<p>从今天起，做一个低俗的人</p>
+<p>劈腿翻墙  周游世界</p>
+<p>从今天起，污染粮食和蔬菜</p>
+<p>我有一个房子  面向大海  却被强拆</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/hanhan-vulgar/" data-id="cj591hwou0035kgnxsms0b0bc" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/hanhan-vulgar/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hanhan-thinking" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hanhan-thinking/" class="article-date">
+  <time datetime="2010-01-19T16:00:00.000Z" itemprop="datePublished">Jan 20 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/hanhan-thinking/">立此存照：我只是在猜想</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by 韩寒</p>
+<div><br><div><br><div><br><br>2010<span>年       谷歌宣布退出中国。</span><br><br>2010<span>年       谷歌又宣布留在中国。</span><br><br>2010<span>年       谷歌又宣布退出中国。</span><br><br>2010<span>年       中国开展互联网整治活动，活动口号为“三天不打，上房揭瓦”</span><br><br>2010<span>年       相关部门扩大屏蔽词词库，汉字“档”和英文字母“</span><span>D</span><span>”在大陆消失。当当网和豆瓣网被迫改名为肮肮网和藕瓣网。</span><br><br>2010<span>年</span><span>6</span><span>月   政府启动“保护儿童“项目，儿童节被提到和国庆节相 同的位置，并且宣布，严格限制一切不利于少年儿童健康成长的资讯。同时，上海世博会提出“世博会，世博会，捉奸在床一万对”的口号，线上线下同时启动扫黄 项目，政府明确表示，一切和黄色有关的东西，都将被屏蔽，黄色代表色情和封建。小学生们都被发动了起来，纷纷走上街头，表示不放过一切黄色的东西。</span><br><br>2010<span>年</span><span>7</span><span>月   政府宣布，因为五星红旗上的</span><span>5</span><span>个五角星为黄色，不符合时代的进步思想，经过相关部门的研究，决定将五个五角星改为红色。</span><br><br>2010<span>年</span><span>8</span><span>月   政府发现，将五角星改为红色以后，和国旗原背景色一样，导致分辨困难，经过小学生代表的提议，国旗上五角星被改为绿色，代表着绿领巾和绿霸。</span><br><br>2010<span>年       根据小学生爱护委员会和小学生代表的提议，政府收紧图片审查标准，并提出“激凸等于露点”的战略指导思想。</span><br><br>2010<span>年       所有论坛的版主被收编为公务员。</span><br><br>2010<span>年       政府退</span><span>]</span><span>推出全新网络长城，该长城系统汇聚了无数中国各行各业专家的智慧，他们在一个军事基地中集中工作，他们工作的卫星照片一度被海内外误读为中国在制造航母。</span><br><br>2011<span>年</span><span>1</span><span>月   政府新一轮经济刺激计划中拨款</span><span>1000</span><span>亿用于网络评论员，网络评论员的薪水由每条五毛涨为每条一元，</span><span>2011</span><span>年的目标是有</span><span>1000</span><span>亿条正面评论，坚守在评论征地的五毛党们黯然落泪，苦撑多年，被骂无数，终于等来了大部队。从此，在各大互联网评论中，网评员和正常人类的比例达到</span><span>5</span><span>比</span><span>5</span><span>。</span><br><br>2011<span>年 </span><span>GOOGLE</span><span>，</span><span>YOUTUBE</span><span>，</span><span>FACEBOOK</span><span>，</span><span>TWITTER</span><span>等网站宣布重返中国并开放注册。</span><br><br>同时         所有上诉网站在美国宣布并未在中国开展任何业务。<br><br>马上         这条消息被全新长城系统屏蔽，在国内无人知晓。<br><br>2011<span>年       在上诉网站注册的用户被长城系统追踪，他们的电脑被锁定，综合类网站只能打开人民网，新华网，论坛类网站只能打开强国论坛和铁血论坛，视频类网站只能打开央视一套。经过系统重装，都不能破解锁定。</span><br><br>2011<span>年       电脑涨价一倍，出现卖电脑的黄牛。但用户买回新电脑以后发现还是只能打开上诉规定网站。</span><br><br>2011<span>年       房地产涨价一倍，在房地产交易网上，房源必须标明是上网房和限网房。</span><br><br>2011<span>年       南方都市报，南方周末被改名为男方都市报和男方周末，被重新转型为婚姻介绍类报纸。同时，网评员和正常人类的比例达到</span><span>9</span><span>比</span><span>1</span><span>。</span><br><br>2011<span>年       某市领导被人肉搜索。</span><br><br>2011<span>年       互联网第二轮整治，所有搜索网站被关闭，各大门户网站和报纸发表“搜索，让我们变成懒人”“网络搜索严重影响小学生的动脑动手能力”等文章，领导们表示，我们从来不用网络搜索，也到了今天的地位，说明网络搜索百害而无一利。</span><br><br>2011<span>年       百度被百事收购，成为饮料官方网站。</span><br><br>2012<span>年       新浪网曝光某村领导收受贿赂</span><span>500</span><span>元，该新闻被评为</span><span>2012</span><span>中国年度新闻，该新闻点击量达到</span><span>5000</span><span>亿，很多人反复点击，经过删除后留言量高达一百万条，很多人认为，这是舆论监督重新开始的一个新起点。但是网络投票中，九成网友认为该新闻不应该发表，因为破坏了社会的稳定，甚至可能导致民族的分裂。</span><br><br>2012<span>年       新浪网被小学生举报搜索到有人激凸。新浪网被停业整治。</span><br><br>2013<span>年       所有论坛停止注册和发帖功能，中国作家协会和中国文联接受互联网，成为互联网内容提供商。互联网从</span><span>WEB 3.0</span><span>退回到</span><span>WEB 0.3</span><span>，网络模式改为只能浏览资讯，不能发帖。</span><br><br>2013<span>年      小学生健康成长委员会举报新浪网又出现激凸。</span><br><br>2014<span>年      新浪被激浪收购，成为饮料官方网站。</span><br><br>2014<span>年      小学生健康成长委员会举报，有人在</span><span>QQ</span><span>上向他们发送露点照片，导致该学生看到以后上街强奸了数十人。</span><br><br>2014<span>年 </span><span>QQ</span><span>，</span><span>MSN</span><span>等聊天工具被禁止，个人博克和微博被禁止，但是屡屡有不法分子通过各种技术手段上传一些私人的想法和信息。政府非常头疼。</span><br><br>2015<span>年      政府部门将网络全部切断，并统一推出上网专用电脑，只有用该电脑才能上网，没有键盘的接口，只给你一个鼠标。改专项整治活动的口号为“只给你丫一鼠标，看你还能怎么着”。</span><br><br>2016<span>年      中国的网民下降为只有</span><span>250</span><span>万，其中</span><span>150</span><span>万为作家协会的中国互联网创作家，负责每天进行创作，提供内容。</span><span>100</span><span>万互联网从业人员失业，但是政府已经为他们安排好了工作，他们都成为了中国互联网创作家的打字员。</span><br><br>以下内容请大家自由发挥，趁互联网还能互动的时候。说不定你的提议很有可能被政府部门采纳。<br><br>2016<span>年   中国网民下降到</span><span>100</span><span>万，所有网站合并为一个网站，输入任何网址都将链接入</span><span>www.china.com.</span><span>，该网址更新内容以当天人民日报为准。同年，中国的互联网产业消失，直接导致近</span><span>500</span><span>万互联网相关产业从业人员失业，除了因电子邮件被取消后重新兴起的邮政行业接纳了十万人以外，</span><span>490</span><span>万人面临再就业困难。同时，近</span><span>100</span><span>万五毛党失业。五毛党感叹道，做牛做马做狗了半辈子，连退休金都没有。</span><br><br>2016<span>年   人民日报发文，牺牲了一个产业，换来了国家的稳定，值。</span><br><br>2016<span>年   新闻联播评论，互联网产业发展下去，国家将面临分裂的危险，国外反华势力和国内分裂势力借助着互联网煽动群众，幸亏有关部门采取强硬手段，避免了事态的扩大。</span><br><br>2016<span>年   周久耕平反。周出狱后任命信息产业部部长。余秋雨被任命为文化部部长。</span><br><br>2016<span>年 </span><span>100</span><span>万失业的五毛党因为根本没有其他技能，一直找不到 工作，没有生活保障，数万五毛党开始向北京聚集，该年儿童节，十万五毛党在政府门前静坐绝食，要求政府安排工作或者买断工龄，并追加公务员称号。人民日报 发文表示，政府从来没有过网络评论员这个职业，所有的网络评论均为五毛当自发评论。五毛党们拿不出任何劳动合同来证明其和政府之间的劳动关系。</span><br><br>五毛党的发言人表示，他们当年是地下工作者，为国家的稳定立下了汗马功劳。<br><br>政府表示，限五毛党三日内离京，否则将予以逮捕。人民日报发文表示，由衷地赞美政府就不应该向政府施加压力。赞美政府不能作为换取钱财的条件。赞美都应该是无偿的。<br><br>2016<span>年    五毛党继续绝食，市民们表示，支持五毛党绝食，绝不向五毛党提供食物，并且监督五毛党绝食，切断一切五毛党可以获得食物的途径。</span><br><br>第二天，文化部部长余秋雨在绝食现场发表“含泪劝五毛书”。五毛党们纷纷表示，讲的太深奥，听不懂啥意思。<br><br>2016<span>年    五毛党的行为被定义为企图颠覆国家，其他罪民包括非法集党，非法游行，非法示威，攻击政府，暴力抗法，诽谤政 府，危害公共安全，违章停车等。组织者被逮捕，但政府表示，宽容对待不明真相的盲从者，给他们一个改编自新的机会，给绝食者每人发五毛用于充饥。五毛见五 毛，两眼泪汪汪。</span><br><br>2016<span>年    五毛危机平安解决，再现党和政府稳定局面的能力。为首的五毛党面对央视记者的采访，说了三个字，悔当初。</span><br><br>2017<span>年    失业人数剧增，互联网产业的崩溃导致经济严重衰退，政府表示，制造业将再一次作为国家支柱产业，中国应当利用一切自然的资源，以低价的优势向海外出口。</span><br><br>2017<span>年    海外反华势力勾结起来，狼狈为奸，蛊惑联合国，通过了各国家禁止向中国进口任何商品，以反对中国对互联网进行封锁。中国政府强烈的谴责，表示中国的互联网管理是中国的内政，其他国家无权干涉。其他国家表示不向中国进口商品是该国的内政，中国政府无权干涉。</span><br><br>2019<span>年     国庆</span><span>70</span><span>周年大阅兵，在阅兵当天，政府表示，闭关锁国，苦练内功，让一切反动势力在我们面前颤抖吧。当天，中国向全世界发出电文，电文内容共八个字：三天不打，上房揭瓦。很多国家表示难以翻译。</span><br><br>2020<span>年     ……</span><br><br>2020<span>年     地球毁灭，玛雅人的后代表示，前后十年内的误差是正常的。</span><br><br></div><br></div><br></div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/hanhan-thinking/" data-id="cj591hwot0034kgnxpd86l33z" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/hanhan-thinking/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-snapshot" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/google-snapshot/" class="article-date">
+  <time datetime="2010-01-12T16:00:00.000Z" itemprop="datePublished">Jan 13 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/google-snapshot/">立此存照：Google市侩，我感到恶心</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><div>今天下午 1时20分，百度首席产品设计师孙云丰在自己的博客中撰文关于谷歌退出中国，直指Google退出中国的姿态证明自己是市侩分子，对此感到恶心。</div></p>
+<p><div>他的博客全文如下：</div></p>
+<p><blockquote>google宣称要退出中国，所证明的，恰恰不是市面上的那些g粉所宣称的那样，google是个人权斗士，而 刚好反了过来，正好证明google是个市侩分子。</blockquote></p>
+<p>google的首席法律顾问的调调让我感到恶心。因经济利益退出，就直白白的说好了，把自己涂脂抹粉一番，还煞 有介事的提到google被中国人攻击，中国异议分子的Gmail信箱被攻击，把这些事情作为退出中国的铺垫，这种论调是侮辱中国普通老百姓的智商，但还 真有可能迎合那帮目空一切，但从未到过中国、对中国没有丝毫了解，却又喜欢对中国说三道四的西方人的假想。</p>
+<p>只提一个假设，如果谷歌占据了中国80%的搜索市场份额，google的高管，还会这么高调的宣称要do no evil，从中国退出吗？</p>
+<p>整个事情给我的唯一感 受，就是恶心。</p>
+<p>科普一点：</p>
+<p>信息不对称是造成社会不平等最主要的原因之一。而对普通百姓最为关键的信息，并非中南海秘闻，而是最为常规的经济、文化、科技等领域信息。尽可能的为普通老百姓对这些领域的信息提供便捷，并消弭信息占有的不对称，这是搜索引擎存在的最大社会政治意义之一。</p>
+<p>从这个角度而言，尽可能的设法为百姓提供便捷的信息获取技术服务，提供切实的价值，而不是挂羊头卖狗肉的宣称自己do no evil和政府撕破脸皮搞壮烈，才是一种真切的负责态度。找台阶下可以，但不要拿一个高管制国家的民众感情来做台阶，这是极其不道德的。</p>
+<p>政治环境短期内是无法改变的。在中国，每个企业或者个人，都必须戴着镣铐跳舞。其实在别国一样，只是程度之别。但这是现实。在有限的条件下，尽可能的提供自己勉力而为的一份子，才是一个真切的做企业、做人态度。</p>
+<p>在我博客上乱喷的兄弟，甚至还有搞笑的喷我five毛党的，都回家好好的念点书，再回来喷吧。希望看得见点水平的，而不是除了咒死爹死娘就不知道说啥的。 80年代的愤青，可不是现在这副衰样儿。<br>————–<br>以 上是作为一个曾经的忠实google用户而说的，和百度无关。市面上沾沾自喜于了解一点google的产品技术细节将google奉为道德楷模而自封G粉 的兄弟，请勿跟帖瞎喷，你们根本不懂什么叫搜索引擎，什么叫自由人权。<br>立此存照的原因在于，原帖 <a rel="external" href="http://news.csdn.net/a/20100113/216459.html" target="_blank">http://news.csdn.net/a/20100113/216459.html</a> 被百度的人要求删掉，所以本着对历史负责的态度，保存与此，欢迎转帖。</p>
+<p>[转自 Bruce Wang 的<a href="http://brucewang.net/2010/01/14/202" target="_blank">http://brucewang.net/2010/01/14/202</a>] </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/google-snapshot/" data-id="cj591hwos0033kgnx3m160pxp" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/google-snapshot/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-from-opera-to-firefox" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/from-opera-to-firefox/" class="article-date">
+  <time datetime="2010-01-09T16:00:00.000Z" itemprop="datePublished">Jan 10 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/from-opera-to-firefox/">从Opera转到Firefox</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大概从5年还是6年前，我就开始用Opera作为我的主浏览器。一直很喜欢，还在我的博客里面写了不少文章来介绍Opera，比如<a href="http://laoyang.info/blog/?p=1762" target="_blank">[日常软件使用技巧]12.我最喜爱的浏览器–Opera</a>以及<a href="http://laoyang.info/blog/?p=35297" target="_blank">关于Opera的一些想法</a>。说实话我觉得Opera是一个不需要太多配置就可以用好的浏览器。但是有几个原因迫使我在去年的冬天从Opera转到了Firefox：</p>
+<p><ul><br>    <li>Autoproxy，用处打地道。Opera只能自己写pac文件，太麻烦了。Autoproxy的列表可以订阅更新，这就很好。而且Opera还不支持socks代理</li><br>    <li>感觉Opera和Google的关系不怎么好，用Gmail和Google Reader的时候明显的感觉载入会慢。时不时的还会出现排版错乱。而且Opera的user script<span style="text-decoration: line-through;">只能针对一个站点</span>不能调整在一个站点中的使用范围，这就很郁闷了。我还得把各个脚本集合起来，然后根据url的不同来区别对待。</li><br>    <li>Opera上淘宝很奇怪的会有时候没图</li><br>    <li>Opera原生不支持带格式复制，这很郁闷。（Firefox原生不支持纯文本复制，这也很郁闷）</li><br></ul><br>其实后面两点还好，主要是第一点驱使我使用Firefox，并且我感觉Opera的用户还是太少，对站点来说估计不会考虑做专门的测试。</p>
+<p>现在用了将近两个月的Firefox，感觉还好。需要配置一下，不过也不算复杂，实现Opera的自带功能需要的Firefox对应扩展如下：</p>
+<p><table border="1" cellspacing="0" cellpadding="2" width="490"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top"><strong>Opera自带功能</strong></td></p>
+<p><td width="266" valign="top"><strong>Firefox所需对应扩展</strong></td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">同步书签</td></p>
+<p><td width="266" valign="top">Weave/XMarks，后者须翻墙</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">笔记(无格式文本)+同步笔记</td></p>
+<p><td width="266" valign="top">zotero/scrapbook+dropbox</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">粘贴并转到</td></p>
+<p><td width="266" valign="top">paste and go</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">隐藏菜单栏</td></p>
+<p><td width="266" valign="top">Personal Menu</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">跳转至URL</td></p>
+<p><td width="266" valign="top">Take me to url</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">鼠标手势</td></p>
+<p><td width="266" valign="top">All in one gestures</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">快捷键设定</td></p>
+<p><td width="266" valign="top">keyconfig</td><br></p>
+<p><tr></tr></p>
+<p><td width="222" valign="top">广告过滤(A.shun说还有Adblock+很好用)</td></p>
+<p><td width="266" valign="top">Adblock Plus（功能更强）</td><br><br><br><br>由于Firefox用户较多，所以淘宝开发了淘宝旺旺的协议扩展，这样就能从Firefox里面启动旺旺了，好像Opera经过什么设置也是可以的。另外FlashGot和一个能看youtube视频的油猴脚本也很好用。</p>
+<p>使用的扩展大多数已经整理在<a href="https://addons.mozilla.org/zh-CN/firefox/collection/laoyang945" target="_blank">我的扩展列表收藏集</a>里面，需要参考的可以去看看</p>
+<p>最后Firefox被我折腾成了Opera的顺心功能+Chrome的外观的混合体。收藏栏的效果，只需要把标题去掉只保留图标就行，可以安装一个IdentFavIcon来重载网站图标</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/01/image.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/01/image_thumb.png" border="0" alt="image" width="484" height="350"></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/from-opera-to-firefox/" data-id="cj591hwos0032kgnxvc73hcaa" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/from-opera-to-firefox/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/10/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/12/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

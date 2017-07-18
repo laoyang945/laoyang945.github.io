@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Game | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/Game/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-civ5-research-overflow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/civ5-research-overflow/" class="article-date">
+  <time datetime="2014-01-06T07:45:35.000Z" itemprop="datePublished">Jan 6 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/civ5-research-overflow/">文明5科研溢出打法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近很是喜欢打《文明5》这个游戏，这个游戏的本质就是计算，对内政外交军事科技方方面面进行计算，在给定的约束下用各种资源和放大器(政策，宗教，意识形态，文明特性)来最大化输出(魅力，兵力，科技，同盟)，尽可能快的获取对应的胜利。</p>
+<p>既然是计算，免不了要知道各种计算规则，有些玩家为了更好的了解规则去读公开的代码，于是发现了各种可利用的算法漏洞。</p>
+<p>比如自主政策左二的移民生产时间减半以及虔信开门的大小庙时间减半，被大家发现减半不是成本减半，而是锤子翻倍，由此诞生了溢出锤微操和拆庙微操。不过这两种处理时可以理解的，溢出值都是有上限的，也不会累加到再下一轮。</p>
+<p>前段时间更有人发现了科技值的溢出方法，在这个方法里，溢出值是无限的。我认为这是一个bug，因为同一个科技贬值计算了两次。</p>
+<p>#科技贬值</p>
+<p>在文明5里面，一个科技，如果其他已遇见的玩家已经研究完成了，它需要的点数就比没人研究好的时候要少，8人标准图上，这个折算系数最多是1.2625，也就是七个玩家都完成了，就你没完成，那你需要的科技点数就是百科中显示点数的的1/1.2625≈79%.</p>
+<p>#外籍学者提案</p>
+<p>在世界议会里面，还能有一个提案叫做scholar resident，说明是「已被发现的科技，研究加速20%」，也就是说只要有人研究过，那折算系数最多变为1.515，而此时研究该科技的花费变成百科上写的66%.</p>
+<p>#科研溢出</p>
+<p>如果每回合的科研收益大于这个回合研究科技需要的点数，那么科研点数会溢出。</p>
+<p>但是溢出并不是按1：1溢出的，而是看这个回合研究的科技有没有贬值。这个地方我估计文明的想法是「在贬值的科技上投入的科研点数要折算成未贬值的科研点数」，于是<strong>溢出的点数乘以科研贬值的折算系数，并且累计到下一个回合</strong>，具体的计算公式如下</p>
+<pre><code>本回合溢出=max{上回合溢出×折算系数+本回合科研点数-科技实际成本,0}
+</code></pre><p>和0比较是因为如果上回合的折算溢出加上回合科研点数也研究不完当前科技的话，下一个回合的溢出就是0了。这也是我觉得不合理的地方，因为在科技实际成本里面已经计算过了科技贬值，但是在溢出的时候又要算一遍。但是平时溢出不会太多，至少不会超过你的回合科研点数。如果你是按步就班的进行科研，那么基本上你感觉不到溢出，因为科技成本是相当高的。</p>
+<p>#滚雪球</p>
+<p>但是，如果你留了不少远古科技还没有研究的话，比如青铜（单城标图，就你没研究的话，成本是40），回合科研是100，上一回合刚好研究完成溢出了99，把这个溢出用去研究青铜，一个回合就研究好，下一轮的溢出是多少？按照上面的公式计算的话，下一轮的溢出是209。那如果再把这209的溢出投入到建筑构造学（成本80）的话，再下一轮的溢出就是337了，如果你铁器（80）也没研究的话，再来一次溢出就是531了。这样你研究好了三个科技，溢出不但没有变成0，反而翻了5倍，变成了531，是你三个回合科研点数总和的两倍不到。</p>
+<p>如果你第一个回合的溢出是899呢？三个科技后溢出变成2243，是你三个回合科研点数总和的7倍还多！如果有10个科技都是1.515的折算系数，那么走完这10个科技，你的溢出值将是41287，是你十个回合科研点数总和的40倍。</p>
+<p>所以，到这里，你该知道怎样利用这个溢出来滚雪球了吧：</p>
+<ul>
+<li>压上线或者下线科技不研究，最大化折算系数</li>
+<li>在某科技研究好之后，烧一个大科学家，获得8倍的回合科研点数的溢出</li>
+<li>选择远古科技，依次秒掉被压的科技，溢出值以1.5为底的指数上升</li>
+</ul>
+<p>所以爱因斯坦说「<strong>复利是宇宙间最伟大的力量</strong>」</p>
+<p>#秒掉未来科技？</p>
+<p>那在启蒙时期烧一个大科的话，可以秒掉未来科技吗？答案是可以。</p>
+<p>我们先看看从各个时期开始到飞船所有科技研究完所需要的科研点数（表格没有考虑科研的惩罚，如果是单城应该再乘以1.05，双城乘以1.10，以此类推）：</p>
+<table> <tbody> <tr> <th style="border-bottom:2px solid; min-width:100px"> 初始时期 </th> <th style="border-bottom:2px solid; min-width:100px"> 所需点数 </th> </tr> <tr><td>文艺1</td><td>178915</td></tr> <tr><td>文艺2</td><td>174625</td></tr> <tr><td>工业1</td><td>168300</td></tr> <tr><td>工业2</td><td>157740</td></tr> <tr><td>现代1</td><td>147400</td></tr> <tr><td>现代2</td><td>130350</td></tr> <tr><td>原子1</td><td>112310</td></tr> <tr><td>原子2</td><td>89870</td></tr> <tr><td>信息1</td><td>61710</td></tr> <tr><td>信息2</td><td>19360</td></tr> </tbody> </table>
+
+
+<p>有18万左右的溢出值，是有可能秒掉所有飞船科技的。但是溢出值并不是可以无限指数上升，它的的上限是214748。这个数据说和2的31次方减1有关。超过了这个上限，呵呵，你的溢出值就变成负数了，这样面板就会显示你完成一个研究需要上千回合。</p>
+<p>如果你想用这个方法放飞船的话，一定要选择好秒科技的路径，不要让溢出值超过上限。适当的秒一些电脑没有研究过的科技来减少溢出值，最好到18万左右，而且接下来所有科技电脑都没研究过（这个通过成本可以看出来），接下来就是纯消耗，不会再有复利了。</p>
+<p>这里还要注意，为了避免溢出超过上限，可以利用牛津大学和理性关门来秒掉一些关键的科技，减少连乘的次数。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/civ5-research-overflow/" data-id="cj591hwth006tkgnxeq40vclm" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/civ5-research-overflow/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Game/">Game</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

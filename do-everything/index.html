@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Directory Opus和Everything共同使用设置 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="有很多人在DO技术讨论群里面问这个问题，我索性整理出来 ##用Dopus中打开Everything搜索结果 很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果12open_folder_path_command=$exec(&amp;quot;Dopus安装路径\dopusrt.exe&amp;quot; /cmd GO &amp;quot;$pa">
+<meta name="keywords" content="DOpus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Directory Opus和Everything共同使用设置">
+<meta property="og:url" content="http://blog.yesmryang.net/do-everything/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="有很多人在DO技术讨论群里面问这个问题，我索性整理出来 ##用Dopus中打开Everything搜索结果 很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果12open_folder_path_command=$exec(&amp;quot;Dopus安装路径\dopusrt.exe&amp;quot; /cmd GO &amp;quot;$pa">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1dy54nw7pgej.jpg">
+<meta property="og:updated_time" content="2014-08-28T10:10:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Directory Opus和Everything共同使用设置">
+<meta name="twitter:description" content="有很多人在DO技术讨论群里面问这个问题，我索性整理出来 ##用Dopus中打开Everything搜索结果 很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果12open_folder_path_command=$exec(&amp;quot;Dopus安装路径\dopusrt.exe&amp;quot; /cmd GO &amp;quot;$pa">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/640a227egw1dy54nw7pgej.jpg">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-do-everything" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/do-everything/" class="article-date">
+  <time datetime="2012-10-23T06:00:00.000Z" itemprop="datePublished">Oct 23 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Directory Opus和Everything共同使用设置
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有很多人在DO技术讨论群里面问这个问题，我索性整理出来</p>
+<p>##用Dopus中打开Everything搜索结果</p>
+<p>很简单，只要编辑Everything的设置ini文件，修改以下两行，即可以制定用Dopus打开Everything的搜索结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">open_folder_path_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;$parent(%1)&quot; NewTab)</div><div class="line">open_folder_command=$exec(&quot;Dopus安装路径\dopusrt.exe&quot; /cmd GO &quot;%1&quot; NewTab)</div></pre></td></tr></table></figure></p>
+<p>##在Dopus中添加Everything按钮</p>
+<p>下载<a href="http://resource.dopus.com/download/file.php?id=5570&amp;sid=44caa6d03101d4eb44cb4b81bc50e4d1" target="_blank" rel="external">这个文件</a>，将压缩包内所有文件解压到Everything的安装路径</p>
+<p>复制以下代码(如果你的Everything安装路径不同请稍作修改）<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">separate</span>=<span class="string">"yes"</span> <span class="attr">type</span>=<span class="string">"three_button"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Dialog)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Specified Keyword(s)<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;dlgstring&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Clipboard)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Search Everything for Current Clipboard Text<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#default:find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>@admin<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\SearchEverything.exe &amp;quot;&#123;clip&#125;&amp;quot;<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">button</span> <span class="attr">backcol</span>=<span class="string">"none"</span> <span class="attr">display</span>=<span class="string">"both"</span> <span class="attr">icon_size</span>=<span class="string">"large"</span> <span class="attr">label_pos</span>=<span class="string">"right"</span> <span class="attr">textcol</span>=<span class="string">"none"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">label</span>&gt;</span>Everything (Program)<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tip</span>&gt;</span>Starts / Brings Everything to Front<span class="tag">&lt;/<span class="name">tip</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">icon1</span>&gt;</span>#find<span class="tag">&lt;/<span class="name">icon1</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">function</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>cd Everything路径<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">instruction</span>&gt;</span>Everything路径\Everything.exe<span class="tag">&lt;/<span class="name">instruction</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">function</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dy54nw7pgej.jpg" width="500"></p>
+<p>如上图，在Dopus菜单栏上右键-自定义（customize），再在菜单栏上右键选粘贴（paste），你就会看到一个叫做Everything的按钮出现在你的菜单栏上。其功能为：</p>
+<ul>
+<li><p>左键点击：用Everything搜索文件</p>
+</li>
+<li><p>右键点击：用Everything搜索剪贴板内容</p>
+</li>
+<li><p>中键点击：打开Everything窗口</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/do-everything/" data-id="cj591hwsz0067kgnxbc8wk8yb" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/do-everything/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/change-icon-of-user-dic/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Mac用户文件夹移动后恢复默认图标
+        
+      </div>
+    </a>
+  
+  
+    <a href="/rime-setting/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">中州韵（小狼毫，鼠须管）输入法设置</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/do-everything/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

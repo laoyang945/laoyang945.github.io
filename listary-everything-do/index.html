@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Listary——给DOpus和Everything搭个桥 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的解决方法，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了">
+<meta name="keywords" content="DOpus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Listary——给DOpus和Everything搭个桥">
+<meta property="og:url" content="http://blog.yesmryang.net/listary-everything-do/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的解决方法，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/640a227egw1e346i4842eg.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e346ib00rjg.gif">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/640a227egw1e3478o3f2eg.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e3478w1pw4g.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e347bscrqug.gif">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/640a227egw1e347c351kjg.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e347956gjwg.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/640a227egw1e34d1qo4z0g.gif">
+<meta property="og:updated_time" content="2013-12-31T08:33:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Listary——给DOpus和Everything搭个桥">
+<meta name="twitter:description" content="尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的解决方法，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-listary-everything-do" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/listary-everything-do/" class="article-date">
+  <time datetime="2013-03-27T03:17:02.000Z" itemprop="datePublished">Mar 27 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Listary——给DOpus和Everything搭个桥
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的<a href="http://blog.yesmryang.net/do-everything/">解决方法</a>，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了强大的文件管理工具链。</p>
+<ul>
+<li>Listary beta版下载地址 <a href="http://www.listary.com/download/beta/ListaryBeta1180.exe" target="_blank" rel="external">http://www.listary.com/download/beta/ListaryBeta1180.exe</a></li>
+<li>Directory Opus beta版下载地址 <a href="http://blog.dopus.com/2013/03/directory-opus-10505-beta.html" target="_blank" rel="external">http://blog.dopus.com/2013/03/directory-opus-10505-beta.html</a></li>
+</ul>
+<h1 id="Listary设置"><a href="#Listary设置" class="headerlink" title="Listary设置"></a>Listary设置</h1><p>安装好之后，我做的设置是：</p>
+<ul>
+<li>搜索-磁盘搜索中，使用Everything</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置里面，Directory Opus关闭「查找你键入的内容」（Find-As-You-Type）选项，这样是为了不和DOpus自己的Find-As-You-Type功能冲突</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e346i4842eg.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置-Desktop，关闭「鼠标在空白区域弹出Listary快捷菜单」，以免和DOpus的双击唤出冲突。</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e346ib00rjg.gif" width="500"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="从桌面搜索"><a href="#从桌面搜索" class="headerlink" title="从桌面搜索"></a>从桌面搜索</h2><p>只要焦点在桌面，只要开始输入就是在桌面内查找你输入的内容</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e3478o3f2eg.gif" width="500"></p>
+<p>以「&gt;」开始的搜索则是全局搜索</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e3478w1pw4g.gif" width="500"></p>
+<h2 id="在DOpus里搜索"><a href="#在DOpus里搜索" class="headerlink" title="在DOpus里搜索"></a>在DOpus里搜索</h2><p>按Win+s或者鼠标中键，打开Listary工具栏，同样，在当前路径下查找你输入的内容，如果输入以「&gt;」开头，则是全局搜索</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347bscrqug.gif" width="500"></p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347c351kjg.gif" width="500"></p>
+<h2 id="在文件打开菜单中"><a href="#在文件打开菜单中" class="headerlink" title="在文件打开菜单中"></a>在文件打开菜单中</h2><p>比如在Gmail里面点击「添加附件」，在「打开文件」对话框下面就会有Listary的工具栏，在这里输入的任何内容都是搜索，用「&gt;」开头的都是全局搜索，如果焦点不在Listary上的话，按Win+s聚焦到Listary的对话框上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e347956gjwg.gif" width="500"></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>Listary支持搜索的时候用拼音首字母查询，弥补了DOpus的不足，不过如果你使用的是Everything的引擎，则全局搜索的时候就没法用拼音首字母了。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e34d1qo4z0g.gif" width="500"></p>
+<p>Listary和TC可以更好的集成使用，就是在上述「打开文件」对话框中按Win+o可以打开一个TC标签，然后在此TC标签中进行操作，选中文件后再按Win+o，选中文件的路径就通过TC传给Listary然后传给「打开文件」的对话框了，这样在「打开文件」也可以使用TC进行操作。详见<a href="http://xbeta.info/tc-listary.htm" target="_blank" rel="external">Listary+TC: 提高效率，取代传统低效的”打开/保存”对话框 | 善用佳软</a>。然而现在对DOpus还没有Win+o支持，不过作者说这已经在他的开发计划之内了。</p>
+<p>另外，Listary Pro现在正在以50人民币的优惠价进行销售，我本身这个软件用得不多，Pro版的介绍和购买详情也请移步善用佳软大哥的文章<a href="http://xbeta.info/listary4.htm" target="_blank" rel="external">Listary:搜索增强软件，新版v4发布(赠Pro许可+优惠销售) | 善用佳软</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/listary-everything-do/" data-id="cj591hwte006pkgnxzs1ge6s9" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/listary-everything-do/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOpus/">DOpus</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/pathogen-vim-latex/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Windows下vim-LaTeX和Pathogen的问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/dopus-10-5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">DOpus 10.5 更新日志</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/listary-everything-do/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

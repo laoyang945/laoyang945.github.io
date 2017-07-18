@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Keepass帮你管理密码 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在网络上注册的服务是越来越多了，虽然有时候可以用Google帐号或者Twitter帐号来使用，但是这样的网站还是不多，多数网站仍然要你自己创建一个帐户。在帐号和密码的管理上，大概有这么几种形式：     多帐号同密码：非常不安全，只要攻破一个帐户拿到密码就相当于把你的邮箱也破掉了。    多帐号多密码，密码按安全要求分级：相对更好，安全性取决于密码的强度。今天推荐一个密码管理软件Keepass，它">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keepass帮你管理密码">
+<meta property="og:url" content="http://blog.yesmryang.net/keepass-help-you-manage-password/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="在网络上注册的服务是越来越多了，虽然有时候可以用Google帐号或者Twitter帐号来使用，但是这样的网站还是不多，多数网站仍然要你自己创建一个帐户。在帐号和密码的管理上，大概有这么几种形式：     多帐号同密码：非常不安全，只要攻破一个帐户拿到密码就相当于把你的邮箱也破掉了。    多帐号多密码，密码按安全要求分级：相对更好，安全性取决于密码的强度。今天推荐一个密码管理软件Keepass，它">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb1.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb2.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb3.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb4.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb5.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb6.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113153_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113202_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113217_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113227_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113258_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113310_thumb.png">
+<meta property="og:updated_time" content="2013-01-09T03:58:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keepass帮你管理密码">
+<meta name="twitter:description" content="在网络上注册的服务是越来越多了，虽然有时候可以用Google帐号或者Twitter帐号来使用，但是这样的网站还是不多，多数网站仍然要你自己创建一个帐户。在帐号和密码的管理上，大概有这么几种形式：     多帐号同密码：非常不安全，只要攻破一个帐户拿到密码就相当于把你的邮箱也破掉了。    多帐号多密码，密码按安全要求分级：相对更好，安全性取决于密码的强度。今天推荐一个密码管理软件Keepass，它">
+<meta name="twitter:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb.png">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-keepass-help-you-manage-password" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/keepass-help-you-manage-password/" class="article-date">
+  <time datetime="2010-04-02T16:00:00.000Z" itemprop="datePublished">Apr 3 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Keepass帮你管理密码
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在网络上注册的服务是越来越多了，虽然有时候可以用Google帐号或者Twitter帐号来使用，但是这样的网站还是不多，多数网站仍然要你自己创建一个帐户。在帐号和密码的管理上，大概有这么几种形式：</p>
+<p><ul><br>    <li>多帐号同密码：非常不安全，只要攻破一个帐户拿到密码就相当于把你的邮箱也破掉了。</li><br>    <li>多帐号多密码，密码按安全要求分级：相对更好，安全性取决于密码的强度。</li><br></ul><br>今天推荐一个密码管理软件<a href="http://keepass.info/" target="_blank">Keepass</a>，它能够帮你生成安全性很高的随机密码并对各个网站的密码进行管理，对我来说显得更方便的是<strong>，Keepass有对应的Firefox扩展和黑莓手机客户端！</strong></p>
+<p></p><h4>下载及安装</h4><br>这个软件的使用就很简单了，在<a title="http://keepass.info/download.html" href="http://keepass.info/download.html" target="_blank" rel="external">http://keepass.info/download.html</a>下载1.17版本或者2.10版本（两者的不同在于后者需要.Net框架或者Mono），下载可选择安装版或便携版，我下载的是1.17便携版本。<p></p>
+<p>同时在下载页面上还可以看到有多种手机平台的客户端下载</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb.png" border="0" alt="image" width="484" height="304"></a></p>
+<p>作为一个黑莓玩家，显然会下载黑莓版本的客户端，下载地址在<a title="http://f5bbutils.fairview5.com/keepassbb/download/" href="http://f5bbutils.fairview5.com/keepassbb/download/" target="_blank" rel="external">http://f5bbutils.fairview5.com/keepassbb/download/</a>，选最新版本的zip包下载，解压之后用DM或者将cod+jad文件拷贝到手机上安装。</p>
+<p></p><h4>桌面端</h4><br>运行之后选择新建一个数据库，输入并确认新数据库的管理密码，Keepass会提示你密码的强度如何，在新建的时候可以选择一个文件作为钥匙，这样以后打开数据库的时候除了密码还需要那个钥匙文件：<p></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image1.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb1.png" border="0" alt="image" width="484" height="372"></a></p>
+<p>主界面上左边是树状目录，右边显示详情：</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image2.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb2.png" border="0" alt="image" width="484" height="372"></a></p>
+<p>新建密码，点击“Add Entry”即可，需要注意的是那个Title设置是很有用的，他可以帮助Keepass在自动填表的时候识别目标网址或者程序。密码可以输入或者随机生成。添加完成后别忘了点保存保存数据文件（.kdb格式）。</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image3.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb3.png" border="0" alt="image" width="483" height="535"></a></p>
+<p>Keepass能够自动填表，比如我新建一个标题为“豆瓣”的项目，URL也填写豆瓣的</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image4.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb4.png" border="0" alt="image" width="484" height="138"></a></p>
+<p>以后只要在Keepass开启的情况下，打开豆瓣网的首页，光标定位到Email，按下Ctrl+Alt+A（如果QQ在Keepass之前运行这个全局快捷键就会失效）就能自动输入Keepass中保存的这一条目。除了在网页上，在应用软件中也可以自动填表，支持包括MSN,QQ等很多软件。</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image5.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb5.png" border="0" alt="image" width="484" height="164"></a></p>
+<p>需要注意的是，如果从Keepass拷贝内容（用户名，密码）到剪贴板的话，是有时间限制的：</p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/image6.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="image" src="http://laoyang.info/blog/wp-content/uploads/2010/04/image_thumb6.png" border="0" alt="image" width="407" height="36"></a></p>
+<p></p><h4>Firefox扩展</h4><br>一个名叫<a href="http://keefox.org/" target="_blank">KeeFox</a>的项目，使得Firefox和Keepass能够整合到一起，但是目前还是在开发期。同时它只支持2.x以上的Keepass。我这里没有测试，感兴趣的读者可以参考<a href="http://api.postrank.com/log?url=http%3A%2F%2Fplaypcesor.blogspot.com%2F2010%2F03%2Fkeefox-keepass-firefox.html" target="_blank" rel="external">KeeFox 將 KeePass 密碼管理軟體整合進 Firefox 當中</a>这篇文章。<p></p>
+<p></p><h4>黑莓端</h4><br>安装完成后，Keepass就会出现在你的桌面，操作比较简单，看图不说话～<p></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113153.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113153" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113153_thumb.png" border="0" alt="20100403113153" width="324" height="244"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113202.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113202" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113202_thumb.png" border="0" alt="20100403113202" width="324" height="244"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113217.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113217" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113217_thumb.png" border="0" alt="20100403113217" width="324" height="244"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113227.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113227" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113227_thumb.png" border="0" alt="20100403113227" width="324" height="244"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113258.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113258" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113258_thumb.png" border="0" alt="20100403113258" width="324" height="244"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113310.png" target="_blank" rel="external"><img style="display: inline; border: 0px;" title="20100403113310" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100403113310_thumb.png" border="0" alt="20100403113310" width="324" height="244"></a></p>
+<p>其实黑莓也自带密码管理器，但是电脑上的密码很难一个一个的输入手机，所以我觉得Keepass会显得方便～。我现在两台电脑的kdb文件用的是<a href="http://www.dropbox.com" target="_blank">dropbox</a>来同步，手机可以访问m.dropbox.com来下载kdb文件。</p>
+<p>最后有一个小小的请求，如果读者有还没有开始使用<a href="http://www.dropbox.com" target="_blank">dropbox</a>的，可以通过<a title="https://www.dropbox.com/referrals/NTEwNjA1OTY5" href="https://www.dropbox.com/referrals/NTEwNjA1OTY5" target="_blank" rel="external">https://www.dropbox.com/referrals/NTEwNjA1OTY5</a> 这个链接注册并下载程序使用一次，这样我们的容量都能增加。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/keepass-help-you-manage-password/" data-id="cj591hwp6003jkgnx92cp2rv3" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/keepass-help-you-manage-password/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/use-whatsapp-to-chat-among-bbers/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          BBer之间聊天还发短信？你凹凸了，赶紧试试WhatsApp！
+        
+      </div>
+    </a>
+  
+  
+    <a href="/recent-zturn/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">近日所得</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/keepass-help-you-manage-password/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

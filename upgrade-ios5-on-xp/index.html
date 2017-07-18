@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在精简版的XP下升级iOS需要注意的问题 | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这次寒假回家帮姐姐把她的3GS（32GB）从3.x升级到5.0.1，一路可以说是历尽辛苦，前后刷机历时大概是整整三天。为什么这么久呢？ 家里面网速比较慢，只有1M的网速，下载固件（2遍）以及新版的iTunes就花了不少时间，这一项大概花了有大半天。 备份屡次失败，一次是因为备份的时候看了短信，一次是因为硬盘的空间不够。我现在觉得硬盘分很多个区是一种比较傻的思路。这样又是小半天…… 真正刷机，大概刷">
+<meta name="keywords" content="software,iTunes,Apple,Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在精简版的XP下升级iOS需要注意的问题">
+<meta property="og:url" content="http://blog.yesmryang.net/upgrade-ios5-on-xp/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="这次寒假回家帮姐姐把她的3GS（32GB）从3.x升级到5.0.1，一路可以说是历尽辛苦，前后刷机历时大概是整整三天。为什么这么久呢？ 家里面网速比较慢，只有1M的网速，下载固件（2遍）以及新版的iTunes就花了不少时间，这一项大概花了有大半天。 备份屡次失败，一次是因为备份的时候看了短信，一次是因为硬盘的空间不够。我现在觉得硬盘分很多个区是一种比较傻的思路。这样又是小半天…… 真正刷机，大概刷">
+<meta property="og:updated_time" content="2014-08-28T10:13:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在精简版的XP下升级iOS需要注意的问题">
+<meta name="twitter:description" content="这次寒假回家帮姐姐把她的3GS（32GB）从3.x升级到5.0.1，一路可以说是历尽辛苦，前后刷机历时大概是整整三天。为什么这么久呢？ 家里面网速比较慢，只有1M的网速，下载固件（2遍）以及新版的iTunes就花了不少时间，这一项大概花了有大半天。 备份屡次失败，一次是因为备份的时候看了短信，一次是因为硬盘的空间不够。我现在觉得硬盘分很多个区是一种比较傻的思路。这样又是小半天…… 真正刷机，大概刷">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-upgrade-ios5-on-xp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/upgrade-ios5-on-xp/" class="article-date">
+  <time datetime="2012-02-26T15:26:00.000Z" itemprop="datePublished">Feb 26 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在精简版的XP下升级iOS需要注意的问题
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这次寒假回家帮姐姐把她的3GS（32GB）从3.x升级到5.0.1，一路可以说是历尽辛苦，前后刷机历时大概是整整三天。为什么这么久呢？</p>
+<p>家里面网速比较慢，只有1M的网速，下载固件（2遍）以及新版的iTunes就花了不少时间，这一项大概花了有大半天。</p>
+<p>备份屡次失败，一次是因为备份的时候看了短信，一次是因为硬盘的空间不够。我现在觉得硬盘分很多个区是一种比较傻的思路。这样又是小半天……</p>
+<p>真正刷机，大概刷了有十遍……前面失败的几次iTunes报1601/1602/1604各种错误的都有，然后手机直接黑屏，我那个汗啊，到处去查这几个错误是咋回事，在<a href="http://itools.hk/cms/?p=282" target="_blank" rel="external">这个帖子</a>里第一眼看到：</p>
+<blockquote>
+<p>1600，及附近（1601，1602）错误，1600错误是指的硬件错误，比如说USB，USB线，手机插口的数据传输可能不通，也可以尝试一下把防火墙关闭。<br>还有可能是因为固件不正常导致。如果你刷的是自刷固件，那么刷回官方固件可能会解决1600.</p>
+</blockquote>
+<p>查了一下<a href="http://support.apple.com/kb/TS3694#error1601" target="_blank" rel="external">苹果自己的技术支持</a>，也是这么说。</p>
+<p>反正家里面苹果的线不少，换了一根，把防火墙关了再继续刷，但是依然是反复报错，也是照样黑屏，后来用那个红雪把iPhone恢复到刷机前的状态才让我稍微冷静了点，开始认真的找问题在哪里。后来发现上面那个贴子我没看完，在下面对1601/1604错误有补充</p>
+<blockquote>
+<p>服务里找到 Terminal Services，Messenger，Telnet，设置为启动</p>
+</blockquote>
+<p>看到这里我大概知道问题在哪里了，经检查，三个服务都是处于停止状态，terminal services和telnet都是可以启动的，messenger不行，在网上搜了一下解决方案，应该是精简版XP把对应的文件修改了，下了一个dll文件并修改了注册表，重启系统后刷机就顺利完成了。</p>
+<p>我自己的设备一直都是在Windows 7下面升级的，从来没有遇到过这些问题，一开始就没往系统的问题上想。刷好后觉得这些精简版的操作系统还是有风险的，说不定精简掉的啥系统模块就是将来哪天你需要的，到时候完全没有头绪的话估计麻烦还不小，只有重新装系统咯。另一方面，我觉得苹果也是很奇怪，明明依靠于这些服务来进行设备升级，报错的时候也不提示一下，反而报一个十万八千里之外的硬件错误，对用户完全就是一个误导。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/upgrade-ios5-on-xp/" data-id="cj591hwsr005skgnx8b7iqixh" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/upgrade-ios5-on-xp/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apple/">Apple</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows/">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iTunes/">iTunes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/supermemo-mobile-converter/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Supermemo iPhone版课程生成脚本
+        
+      </div>
+    </a>
+  
+  
+    <a href="/windows-octopress-python/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Windows下使用Octopress嵌入Python代码的问题</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/upgrade-ios5-on-xp/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

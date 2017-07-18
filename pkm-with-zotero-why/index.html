@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>用Zotero建立个人知识管理系统-Why | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="大约半年前我就在构思用Zotero来建立一个完整的个人知识管理系统，但是有几个关键的问题没有解决所以迟迟没有把这个想法整理出来。现在基本上算是解决了这些问题，因此准备写一系列文章和大家分享我的想法。整个系列大概分为Why-What-How三个部分，这篇文章是第一部分。但是还是要记住，方法和工具并不能代替你思考，你才是个人知识管理中最重要的部分，要让工具为你所用，而不被工具所限制住，更不要过多浪费">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Zotero建立个人知识管理系统-Why">
+<meta property="og:url" content="http://blog.yesmryang.net/pkm-with-zotero-why/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta property="og:description" content="大约半年前我就在构思用Zotero来建立一个完整的个人知识管理系统，但是有几个关键的问题没有解决所以迟迟没有把这个想法整理出来。现在基本上算是解决了这些问题，因此准备写一系列文章和大家分享我的想法。整个系列大概分为Why-What-How三个部分，这篇文章是第一部分。但是还是要记住，方法和工具并不能代替你思考，你才是个人知识管理中最重要的部分，要让工具为你所用，而不被工具所限制住，更不要过多浪费">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_210138_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215023_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215444_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215557_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220142_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220303_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220848_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_223104_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221435_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221621_thumb.png">
+<meta property="og:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_222225_thumb.png">
+<meta property="og:updated_time" content="2013-01-09T03:58:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用Zotero建立个人知识管理系统-Why">
+<meta name="twitter:description" content="大约半年前我就在构思用Zotero来建立一个完整的个人知识管理系统，但是有几个关键的问题没有解决所以迟迟没有把这个想法整理出来。现在基本上算是解决了这些问题，因此准备写一系列文章和大家分享我的想法。整个系列大概分为Why-What-How三个部分，这篇文章是第一部分。但是还是要记住，方法和工具并不能代替你思考，你才是个人知识管理中最重要的部分，要让工具为你所用，而不被工具所限制住，更不要过多浪费">
+<meta name="twitter:image" content="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_210138_thumb.png">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-pkm-with-zotero-why" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/pkm-with-zotero-why/" class="article-date">
+  <time datetime="2010-04-07T16:00:00.000Z" itemprop="datePublished">Apr 8 2010</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      用Zotero建立个人知识管理系统-Why
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_210138.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="2010-04-08_210138" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_210138_thumb.png" border="0" alt="2010-04-08_210138" width="243" height="88"></a></p>
+<p>大约半年前我就在构思用Zotero来建立一个完整的个人知识管理系统，但是有几个关键的问题没有解决所以迟迟没有把这个想法整理出来。现在基本上算是解决了这些问题，因此准备写一系列文章和大家分享我的想法。整个系列大概分为Why-What-How三个部分，这篇文章是第一部分。但是还是要记住，<strong>方法和工具并不能代替你思考，你才是个人知识管理中最重要的部分，要让工具为你所用，而不被工具所限制住，更不要过多浪费时间在选择工具上。</strong></p>
+<p></p><h4 style="background-color: grey; color: white;">Zotero是什么？</h4><br>Zotero是Firefox的一个扩展，它的<a href="http://www.zotero.org/" target="_blank">官方网站</a>上介绍是<strong>“a free, easy-to-use Firefox extension to help you collect, manage, cite, and share your research sources.”。它</strong>符合我在<a href="http://laoyang.info/think-about-pkm" target="_blank" rel="external">关于个人知识管理的思考</a>中提到的<strong>输入-输出</strong>模型，能够让你的知识管理内容能够行云流水一般流动。<p></p>
+<p></p><h4 style="background-color: grey; color: white;">Zotero和其他笔记/摘录软件的比较</h4><br>因为是Firefox的一个扩展，所以能够在多种操作系统下运行，<strong>跨平台问题原生解决</strong>。另外，Zotero保存的网页直接存储在硬盘上，索引存放在zotero.sqllite数据库中，<strong>相对onenote来说更为开放，数据迁移也更为方便</strong>。在<a href="http://www.productivelife.cn" target="_blank">葡挞生活</a>的<a href="http://www.productivelife.cn/2009/08/personal-note-management.html" target="_blank" rel="external">资料管理：个人笔记管理</a>中比较了几种笔记软件的运行效率，评语是“数据体积较大时有略微延迟，不影响使用。”<p></p>
+<p></p><h4 style="background-color: grey; color: white;">Zotero的输入</h4><p></p>
+<p><ul><br>    <li>支持定制快捷键，呼出Zotero，摘录，写便签都十分方便</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215023.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_215023" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215023_thumb.png" border="0" alt="2010-04-08_215023" width="484" height="382"></a></p>
+<p><ul><br>    <li>能够管理本地文件（官网上的介绍叫做<strong>Store Anything</strong>），<strong>这样你的知识管理系统就能把硬盘上的电子书，有声书甚至视频都包括进来！</strong> 通过设置可以直接在Firefox里面对txt和PDF文本进行批注和高亮文本。对于以附件形式存在的文件，可以在Zotero里面直接其修改其文件名。</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215444.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_215444" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215444_thumb.png" border="0" alt="2010-04-08_215444" width="464" height="318"></a></p>
+<p><ul><br>    <li>对网页快照，能够方便的高亮文本，以及添加批注</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215557.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="2010-04-08_215557" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_215557_thumb.png" border="0" alt="2010-04-08_215557" width="484" height="170"></a></p>
+<p></p><h4 style="background-color: grey; color: white;">Zotero的输出</h4><p></p>
+<p><ul><br>    <li>条目-附件的形式，符合知识管理中的一个个知识碎片慢慢集中的过程。</li><br>    <li>条目可以生成报告，包括了条目所附便签的内容，便于总结输出</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220142.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_220142" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220142_thumb.png" border="0" alt="2010-04-08_220142" width="473" height="301"></a></p>
+<p><ul><br>    <li>批注可以搜索</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220303.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_220303" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220303_thumb.png" border="0" alt="2010-04-08_220303" width="484" height="178"></a></p>
+<p><ul><br>    <li>对于每一条目，都有<strong><span style="color: #ff0000;">分类-标签-搜索-相关条目</span></strong>的管理和连接方式，涵盖了yibie他在“思考：个人知识管理”中讨论的几种知识的存储方式。</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220848.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_220848" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_220848_thumb.png" border="0" alt="2010-04-08_220848" width="484" height="126"></a></p>
+<p><ul><br>    <li>每一条目的附件，可以用鼠标直接拖到桌面上，缩短分享路径</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_223104.png" target="_blank" rel="external"><img style="display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;" title="2010-04-08_223104" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_223104_thumb.png" border="0" alt="2010-04-08_223104" width="484" height="202"></a></p>
+<p><ul><br>    <li>对于科研人员，Zotero结合各种翻译器，能方便快捷的抓取文献的元信息，按需求输出文献目录：</li><br></ul><br><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221435.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="2010-04-08_221435" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221435_thumb.png" border="0" alt="2010-04-08_221435" width="484" height="472"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221621.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="2010-04-08_221621" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_221621_thumb.png" border="0" alt="2010-04-08_221621" width="341" height="399"></a></p>
+<p><a href="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_222225.png" target="_blank" rel="external"><img style="display: inline; border-width: 0px;" title="2010-04-08_222225" src="http://laoyang.info/blog/wp-content/uploads/2010/04/20100408_222225_thumb.png" border="0" alt="2010-04-08_222225" width="479" height="418"></a></p>
+<p>其他优势还请各位Zotero的资深用户补充，Zotero的具体安装和设置，一些使用技巧和细节会在How部分给出。</p>
+<p>因此，<strong><span style="color: #ff0000;">Zotero并不只是一个笔记软件，他完全可以成为你的知识管理系统。</span></strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/pkm-with-zotero-why/" data-id="cj591hwpo003pkgnxsa66r7w0" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/pkm-with-zotero-why/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/tb-do-zotero/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          最近折腾:Thunderbird,Do,Zotero
+        
+      </div>
+    </a>
+  
+  
+    <a href="/think-about-pkm/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">关于个人知识管理的思考</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  var disqus_url = 'http://blog.yesmryang.net/pkm-with-zotero-why/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

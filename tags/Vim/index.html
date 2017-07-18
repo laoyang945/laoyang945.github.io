@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Vim | 大家都叫我老杨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="大家都叫我老杨">
+<meta property="og:url" content="http://blog.yesmryang.net/tags/Vim/index.html">
+<meta property="og:site_name" content="大家都叫我老杨">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大家都叫我老杨">
+<meta name="twitter:creator" content="@laoyang945">
+<link rel="publisher" href="laoyang945">
+  
+    <link rel="alternative" href="/atom.xml" title="大家都叫我老杨" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27860850-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大家都叫我老杨</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">要自由，才能有幸福；要勇敢，才能有自由</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.yesmryang.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-pathogen-vim-latex" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/pathogen-vim-latex/" class="article-date">
+  <time datetime="2013-12-31T08:14:52.000Z" itemprop="datePublished">Dec 31 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/pathogen-vim-latex/">Windows下vim-LaTeX和Pathogen的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久都没有写博客了，不知道还有人看不。</p>
+<p>很久以前，升级vim插件里的vim-LaTeX，突然发现Windows下无法编译任何的tex文件，反复报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">Error detected while processing function Tex_RunLaTeX:</div><div class="line">line 7:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E15: Invalid expression: s:target</div><div class="line">line 10:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 12:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_GetVarValue(&apos;Tex_FormatDependency\_&apos;.s:target) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_GetVarValue(&apos;Tex_FormatDependency_&apos;.s:target) != &apos;&apos;</div><div class="line">line 21:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 25:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">line 51:</div><div class="line">E121: Undefined variable: initTarget</div><div class="line">E15: Invalid expression: initTarget</div></pre></td></tr></table></figure>
+<p>然后也报错没有TCLevel这个命令，但是我在OSX下用是好的，所以就没管，只是没有在Windows下写TeX而已。</p>
+<p>昨天才发现是这样的，不知道从哪个版本开始，vim-latex套件里面多了一个compiler文件夹，里面有一个tex.vim文件，按照官方的说法，这个文件夹应该是拷贝到你的vimfiles里面的。照理说pathogen应该是可以管理的，问题就在于Windows下，Vim的安装文件夹/compiler里面也有一个tex.vim，不知道是调用先后顺序还是怎样，Windows不会载入vim-latex里面的这个tex.vim，而是载入Vim自带的那个，所以……</p>
+<p>解决方法就很简单了，把自带的那个tex.vim删了就行，一切变得正常</p>
+<p>祝大家新年快乐！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/pathogen-vim-latex/" data-id="cj591hwtf006rkgnxxssk16k0" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/pathogen-vim-latex/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pathogen-snipmate-windows" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/pathogen-snipmate-windows/" class="article-date">
+  <time datetime="2013-01-15T08:49:19.000Z" itemprop="datePublished">Jan 15 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/pathogen-snipmate-windows/">Snipmate在Windows下和pathogen的兼容问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在Windows台式机上写LaTeX的时候忽然发现怎么Snipmate不好使了，Tab键都要被按烂了居然还不能补全，但是OSX上用又是好的。</p>
+<p>Google了各种关键字，都没有能直接解决问题的。StackOverflow和superuser上的问题更多的是关于如何载入自定义的代码段。</p>
+<p>后来把Snipmate直接拷贝到Vim的安装文件夹下面，改名vimfiles，发现是可以用的，再结合googlecode上的一个issue，发现是snipmate/after这个文件夹pathogen没有载入，估计是不符合vim插件的通常结构。</p>
+<p>于是解决方法很简单了，在.vimrc文件中加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set runtime+=~/.vim/bundle/snipmate/after</div></pre></td></tr></table></figure></p>
+<p>因为我环境变量里面有$HOME，所以就可以用~来代替个人文件夹了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/pathogen-snipmate-windows/" data-id="cj591hwt4006gkgnx6xizlfwl" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/pathogen-snipmate-windows/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vimflowy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/vimflowy/" class="article-date">
+  <time datetime="2012-12-13T07:19:00.000Z" itemprop="datePublished">Dec 13 2012</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/vimflowy/">vimflowy: workflowy的vim实现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在很早一篇<a href="http://blog.yesmryang.net/gtd-as-twittering/">《像发微博一样做GTD》</a>里面，我提到可以在Vim里面实现workflowy的功能。经过参考 Vimoutliner 和 VimOrganizer，我自己做了一个vim插件，可以实现workflowy的大部分功能。同时因为是基于纯文本的，随便扔一个网盘就可以同步了，移动设备上也可以方便的查看。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li>大纲列表，用缩进表示层级，TAB键可以切换展开/折叠</li>
+<li>#和@关键字高亮和过滤</li>
+<li>标记完成功能</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>项目主页在 <a href="http://www.github.com/laoyang945/vimflowy" target="_blank" rel="external">http://www.github.com/laoyang945/vimflowy</a></p>
+<p>安装只需要把文件拷贝到pathogen设定的插件目录即可</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>用vim打开后缀为otl的文本文件后，插件就自动加载了。使用方法和workflowy基本相同，都是使用缩进来标记大纲层次，用冒号或者分号来标记补充内容。由于是基于vim的，对快捷键的支持当然是必须的</p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>[normal],,N(N=0~9): 所有条目展开到第N级，当N=0的时候表示全部展开</li>
+<li>[normal],,dn: 标记当前节点及其所有子节点完成，并附加完成时间</li>
+<li>[normal]zs: 显示所有含有光标下单词的条目（不包括补充内容）</li>
+<li>[normal]zn: 和,,0的效果一样</li>
+<li>[normal &amp; insert],,d: 插入日期</li>
+<li>[normal &amp; insert],,t: 插入时间</li>
+</ul>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p>大纲，折叠，关键字和标记完成</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gk9zh4g.gif" width="500"></p>
+<p>文本过滤</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gdvk7ng.gif" width="500"></p>
+<p>欢迎各位Vimer和GTDer使用并提出意见和建议。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/vimflowy/" data-id="cj591hwt3006ekgnxfzmbxm48" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/vimflowy/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GTD/">GTD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-markdown-latex" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/markdown-latex/" class="article-date">
+  <time datetime="2011-12-29T05:37:00.000Z" itemprop="datePublished">Dec 29 2011</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/markdown-latex/">用markdown来写LaTeX</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>注：<a href="http://laoyang945.github.com/latex-gvim-sumatrapdf-setting/" target="_blank" rel="external">LaTeX+gVim+SumatraPDF设置</a>这篇文章里最后_vimrc设置有修改，将pdflatex改为xelatex，以便方便的用在LaTeX里面使用中文。</p>
+<p>自从用了markdown这个轻量级标记语言，我是觉得写东西的感觉顺畅了许多，再加上Vim这个超级好用的编辑器，想不写东西都难。慢慢的拾起自己的读书笔记吧。</p>
+<p>现在的问题是，我的文献综述是在LaTeX下面写的，在排版的时候倒是很方便，基本不用我自己操心什么的，但是写作的时候感觉着实是不好，特别是在分章节、加粗体的时候，操作相当的“重”，我就想着能不能把markdown和LaTeX结合起来，公式什么的使用LaTeX，在输入的时候使用markdown的风格。</p>
+<p>在Google上搜索了一番，还真的让我找到了<a href="http://johnmacfarlane.net/pandoc/" target="_blank" rel="external">pandoc</a>这个软件，让人惊喜的是他居然还支持参考文献的引用和列表生成，那我所有的需求都可以满足了。如何使用请查阅pandoc的用户手册</p>
+<p>现在我用markdown文件写文献综述或者文献笔记，用markdown+LaTeX的语法，通过pandoc把markdown文件转换为LaTeX文本（如果没有参考文献的需要可以直接把markdown转化为pdf）。</p>
+<p>为了在markdown里面更好的区分LaTeX代码，需要修改一下Vim的markdown语法高亮文件，路径在vim73/syntax/markdown.vim，添加以下几行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">syn region markdownTexInline start=&quot;\$&quot; end=&quot;\$&quot; keepend oneline</div><div class="line">syn region markdownTexBlock start=&quot;\\begin&#123;.*&#125;&quot; end=&quot;\\end&#123;.*&#125;&quot; keepend </div><div class="line">hi def link markdownTexBlock Tag</div><div class="line">hi def link markdownTexInline Tag</div></pre></td></tr></table></figure>
+<p>这样在markdown文件里面就可以高亮显示用LaTeX写的多数数学式子了，实在是太方便。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/markdown-latex/" data-id="cj591hwso005nkgnxh9ljjn6e" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/markdown-latex/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Research/">Research</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-latex-gvim-multiple-compile" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/latex-gvim-multiple-compile/" class="article-date">
+  <time datetime="2011-12-04T16:00:00.000Z" itemprop="datePublished">Dec 5 2011</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/latex-gvim-multiple-compile/">LaTeX+gVim多次编译设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>如果你是按照我前一篇文章设置的话，文章中有参考文献或者目录而需要多次反复编译的时候，可能会出问题，需要的东西没有显示出来。</p>
+<p>解决方案是，修改Vim安装目录\vimfiles\ftplugin\latex-suite\texrc，将<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TexLet g:Tex_MultipleCompileFormats = &apos;dvi&apos;</div></pre></td></tr></table></figure></p>
+<p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TexLet g:Tex_MultipleCompileFormats = &apos;pdf,dvi&apos;</div></pre></td></tr></table></figure></p>
+<p>即可对pdf格式的输出进行多次编译</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/latex-gvim-multiple-compile/" data-id="cj591hwsh005ckgnxoh3p09hu" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/latex-gvim-multiple-compile/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-latex-gvim-sumatrapdf-setting" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/latex-gvim-sumatrapdf-setting/" class="article-date">
+  <time datetime="2011-10-03T16:00:00.000Z" itemprop="datePublished">Oct 4 2011</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/latex-gvim-sumatrapdf-setting/">LaTeX+gVim+SumatraPDF设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>【本文仅讨论windows平台下设置】</p>
+<p>##一句话介绍：</p>
+<ul>
+<li>LaTeX：所想即所得的科学论文排版工具，介绍见 <a href="http://zzg34b.w3.c361.com/homepage/TeXintroduction.htm" target="\_blank">http://zzg34b.w3.c361.com/homepage/TeXintroduction.htm</a>，<a href="http://liyanrui.is-programmer.com/2009/9/29/Prologue.11788.html" target="\_blank">这里</a>有一篇很有趣的文章介绍TeX的发展（<a href="http://hi.baidu.com/jiyeqian/blog/item/240a01031555d8fe09fa93ac.html" target="\_blank">备用链接</a>）</li>
+<li>gVim：编辑器中的战斗机，介绍见 <a href="http://xbeta.info/vim-tutorials.htm" target="\_blank">http://xbeta.info/vim-tutorials.htm</a></li>
+<li>Sumatra PDF：轻量又快速的PDF阅读器，介绍见 <a href="http://xbeta.info/sumatra-pdf.htm" target="\_blank">http://xbeta.info/sumatra-pdf.htm</a></li>
+</ul>
+<p>##安装及下载：</p>
+<ul>
+<li>LaTeX我推荐安装texlive，在线安装请点<a href="http://www.tug.org/texlive/acquire-netinstall.html" target="\_blank">这里</a>，下载光盘镜像（2.3G）请看<a href="http://www.tug.org/texlive/acquire-iso.html" target="\_blank">这里</a>，运行install-tl.bat进行安装，安装路径不要有空格</li>
+<li>gVim请到官网 <a href="http://www.vim.org/download.php" target="\_blank">http://www.vim.org/download.php</a>，安装路径不要有空格，假设安装到了c:\vim</li>
+<li>latex-vim插件：<a href="http://vim-latex.svn.sourceforge.net/viewvc/vim-latex/trunk/vimfiles/" target="\_blank">http://vim-latex.svn.sourceforge.net/viewvc/vim-latex/trunk/vimfiles/</a> 点页面底部的“Download GNU tarball”即可</li>
+<li>Sumatra PDF <a href="http://blog.kowalczyk.info/software/sumatrapdf/download-free-pdf-viewer-cn.html" target="\_blank">http://blog.kowalczyk.info/software/sumatrapdf/download-free-pdf-viewer-cn.html</a></li>
+<li>一个小补丁 <a href="http://min.us/mTFMMfLs8" target="\_blank">http://min.us/mTFMMfLs8</a>, 感谢原作者liangzi@bbs.ctex.org</li>
+</ul>
+<p>##配置：    </p>
+<ul>
+<li>将下载的vim-latex-vimfiles.tar.gz解压到c:\vim\vimfiles</li>
+<li>将sumatraPDF的安装路径和c:\vim\vim73加入环境变量</li>
+<li><p>修改c:\vim\_vimrc文件，添加如下几行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">filetype plugin on</div><div class="line">set shellslash</div><div class="line">set grepprg=grep\ -nH\ $*</div><div class="line">filetype indent on</div><div class="line">let g:tex_flavor=&apos;latex&apos;</div><div class="line">let g:Tex_DefaultTargetFormat = &apos;pdf&apos;</div><div class="line">let g:Tex_ViewRule_pdf = &apos;SumatraPDF -reuse-instance -inverse-search &quot;gvim -c \&quot;:RemoteOpen +\%l \%f\&quot;&quot;&apos; </div><div class="line">let g:Tex_CompileRule_pdf = &apos;xelatex --synctex=-1 -src-specials -interaction=nonstopmode $*&apos;</div></pre></td></tr></table></figure>
+</li>
+<li><p>将补丁解压到c:\vim\vimfiles\ftplugin\latex-suite，覆盖compiler.vim文件</p>
+</li>
+</ul>
+<p>OK，大功告成了，至于如何使用LaTeX写论文请待下一篇文章</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.yesmryang.net/latex-gvim-sumatrapdf-setting/" data-id="cj591hwsg005bkgnx0gsos6vb" class="article-share-link">分享到</a>
+      
+        <a href="http://blog.yesmryang.net/latex-gvim-sumatrapdf-setting/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vim/">Vim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3C/">3C</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Apple/">Apple</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOpus/">DOpus</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dropbox/">Dropbox</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English-learning/">English learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Evernote/">Evernote</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GFW/">GFW</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GTD/">GTD</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kindle/">Kindle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Octopress/">Octopress</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rime/">Rime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vimperator/">Vimperator</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/">Windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Zotero/">Zotero</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/i9k/">i9k</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTunes/">iTunes</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/twitter/">twitter</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 老杨<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape+</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mystaticblog';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
