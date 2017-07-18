@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>大家都叫我老杨</title>
+  <subtitle>要自由，才能有幸福；要勇敢，才能有自由</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.yesmryang.net/"/>
+  <updated>2017-07-18T04:02:39.000Z</updated>
+  <id>http://blog.yesmryang.net/</id>
+  
+  <author>
+    <name>老杨</name>
+    <email>laoyang945@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vimwiki配置</title>
+    <link href="http://blog.yesmryang.net/vimwiki/"/>
+    <id>http://blog.yesmryang.net/vimwiki/</id>
+    <published>2017-07-18T03:31:09.000Z</published>
+    <updated>2017-07-18T04:02:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>能开始使用的话，需要以下几个插件</p>
+<ul>
+<li>Plugin ‘vimwiki/vimwiki’</li>
+<li>Plugin ‘mattn/calendar-vim’</li>
+</ul>
+<p>其中日历插件是用来显示日记的</p>
+<p>如果需要实时预览markdown的话，还需要安装</p>
+<ul>
+<li>Plugin ‘suan/vim-instant-markdown’</li>
+</ul>
+<p>另外，之前的snipmate有冲突，使用以下几个</p>
+<ul>
+<li>Plugin ‘MarcWeber/vim-addon-mw-utils’</li>
+<li>Plugin ‘tomtom/tlib_vim’</li>
+<li>Plugin ‘garbas/vim-snipmate’</li>
+</ul>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:vimwiki_list = [&#123;&apos;path&apos;: &apos;~/Dropbox/vimwiki/&apos;,</div><div class="line">&apos;ext&apos;: &apos;.markdown&apos;, &apos;syntax&apos;: &apos;markdown&apos;&#125;]</div></pre></td></tr></table></figure>
+<p>这一个设置项做了三件事，一是制定vimwiki的根目录，二是把vimwiki的后缀改成了markdown，三是使用markdown语法而不是维基语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">map &lt;A-Space&gt; &lt;Plug&gt;VimwikiToggleListItem</div><div class="line">let g:vimwiki_table_mappings = 0</div><div class="line">let g:vimwiki_global_ext = 0</div></pre></td></tr></table></figure>
+<p>这三个设置的意义分别是使用Alt+Space来开关待办任务的状态，关闭在插入表格时的Tab键映射, 最后一个的意思是只在根目录下面把markdown识别为vimwiki格式，在其他地方还是使用vim自己的markdown处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let g:instant_markdown_autostart = 0	&quot;disable autostart</div><div class="line">map &lt;leader&gt;md :InstantMarkdownPreview&lt;CR&gt;</div></pre></td></tr></table></figure>
+<p>这两项是instand-markdown的设置，不自动开启，并且把映射键位改成<code>&lt;Leader&gt;md</code></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>基本上把帮助文件看一遍就知道了</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/gotbletu/shownotes/blob/master/vimwiki.md" target="_blank" rel="external">https://github.com/gotbletu/shownotes/blob/master/vimwiki.md</a></p>
+<p><a href="https://github.com/vimwiki/vimwiki/issues/95" target="_blank" rel="external">https://github.com/vimwiki/vimwiki/issues/95</a></p>
+<p><a href="https://github.com/carlhuda/janus/issues/479" target="_blank" rel="external">https://github.com/carlhuda/janus/issues/479</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;能开始使用的话，需要以下几个插件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plugin ‘vimwiki/vimwiki’&lt;/li&gt;
+&lt;li&gt;Plugin
+    
+    </summary>
+    
+    
+      <category term="Vim" scheme="http://blog.yesmryang.net/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DOpus三大问：如何保存显示格式设置</title>
+    <link href="http://blog.yesmryang.net/do-save-display-settings/"/>
+    <id>http://blog.yesmryang.net/do-save-display-settings/</id>
+    <published>2015-03-11T09:39:28.000Z</published>
+    <updated>2015-03-12T15:27:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>经常有朋友在群里面问：</p>
+<blockquote>
+<p>上次我把这个文件夹设置成这个样子，怎么下次我一打开我的设置就没了？</p>
+</blockquote>
+<p>这里我解释一下</p>
+<blockquote>
+<p>你对文件显示栏的操作（添加/删除列、排序、分组）等，如果你不保存的话，其范围仅限于当前标签页</p>
+</blockquote>
+<p>也就是说，只要当前标签页关闭，你对当前文件夹显示所作的修改都作废，通通恢复到默认的设置。</p>
+<p>DOpus的逻辑是这样的：如果你没有特定指明哪个文件夹需要特殊对待，那么我就用默认的形式来给你显示，这样的话我需要记的东西比较少，占用的系统资源也不高。</p>
+<p>那么，我们如何来保存对文件显示栏的修改呢？这就需要使用文件夹选项了。我用一个例子来说明如何操作。如下左图，我增加了「文件总数」一栏，并且按照最后修改时间反序排列。</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1eq36jsxqo4j20ho0itjy1.jpg" width="500"></p>
+<p>但是如果我新打开一个标签页，还是同样的路径，显示的样式又回到了默认，只剩名称、大小、类型、修改时间及属性五列，按名称正序，如下右图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36jwqm9jj20ho0itgr9.jpg" width="500"></p>
+<p>如果我要为这个文件夹保存我设定的显示格式，那么就需要点击菜单栏中的「文件夹-文件夹选项」，然后选择「保存当前文件夹格式」右边的「保存-仅此文件夹」，如下图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1eq36k0ypyqj20kv0ipq8j.jpg" width="500"></p>
+<p>之后再一次打开这个文件夹，不管在什么标签里面，就会使用你保存过的显示格式了，如下图。如果需要清除已经保存的格式，也请在文件夹选项中选择「清除-仅此文件夹」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eq36k57gj5j20ho0itn40.jpg" width="500"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经常有朋友在群里面问：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上次我把这个文件夹设置成这个样子，怎么下次我一打开我的设置就没了？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里我解释一下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你对文件显示栏的操作（添加/删除列、排序、分
+    
+    </summary>
+    
+    
+      <category term="DOpus" scheme="http://blog.yesmryang.net/tags/DOpus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DOpus三大问：如何单窗口运行</title>
+    <link href="http://blog.yesmryang.net/do-one-window/"/>
+    <id>http://blog.yesmryang.net/do-one-window/</id>
+    <published>2015-03-11T09:39:28.000Z</published>
+    <updated>2015-03-11T10:00:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>经常有朋友在群里面问，如何才能让DOpus只打开一个窗口（单实例），下面先说说哪些情况可以设置单窗口</p>
+<ul>
+<li>如果用桌面快捷方式、任务栏中键和Win+Shift+E来启动DOpus，不管你如何设置，都不可能是单窗口</li>
+<li>剩下的双击桌面空白区域、双击系统托盘、打开常规文件夹以及Win+E启动DOpus，可以设置单窗口模式</li>
+</ul>
+<p>设置方法如下三图：</p>
+<p>「选项-DOpus启动-从任务栏图标-在任务栏图标上双击」里，选择「激活最近活动的窗口(若无,则打开窗口)」</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227ejw1eq1xet2580j20k30du413.jpg " width="500"></p>
+<p>「选项-DOpus启动-从桌面-在桌面上双击」里，选择「激活最近活动的窗口(若无,则打开默认窗口)」</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227ejw1eq1xeuiznbj20k30dugo6.jpg " width="500"></p>
+<p>「选项-DOpus 启动-资源管理器替代」中，勾选「在新标签中打开外部文件夹」和「在打开一个新窗口时打开默认窗口的所有标签」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227ejw1eq1xewmjsjj20k30duq6z.jpg " width="500"></p>
+<p>当你按照上面的设置做了之后，自然DOpus就是单窗口运行的了，除非你使用快捷方式、任务栏中键和Win+Shift+E叫DOpus再打开一个窗口</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经常有朋友在群里面问，如何才能让DOpus只打开一个窗口（单实例），下面先说说哪些情况可以设置单窗口&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果用桌面快捷方式、任务栏中键和Win+Shift+E来启动DOpus，不管你如何设置，都不可能是单窗口&lt;/li&gt;
+&lt;li&gt;剩下的双击桌面空白区域
+    
+    </summary>
+    
+    
+      <category term="DOpus" scheme="http://blog.yesmryang.net/tags/DOpus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「新五毛」的推文分析</title>
+    <link href="http://blog.yesmryang.net/wumao-tweet/"/>
+    <id>http://blog.yesmryang.net/wumao-tweet/</id>
+    <published>2014-09-12T03:50:06.000Z</published>
+    <updated>2014-09-12T11:12:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过对「新五毛」的账户信息以及关注情况，大概了解其规模和社交网络情况，平均来说他们的发推量不高，因此我直接抓取了这<strong>2581</strong>个账户的<strong>54737</strong>条推文（包括转推）来分析，看看能不能得到一些有趣的结果。</p>
+<p>在推文分析之前，有一个有趣的结论可以和大家分享，在这2581个「新五毛」账户中，有接近<strong>1200</strong> 个昵称能在<strong>搜狐微博</strong>里面100%匹配，不知道是同一家营销公司在管理，或者是用爬虫抓出来的。查看了一下，匹配到的搜狐微博用户多数停用已经很久了。这个发现要感谢 @<a href="https://www.twitter.com/Arctosia" target="_blank" rel="external">Arctosia</a>。</p>
+<h3 id="推文时间分布"><a href="#推文时间分布" class="headerlink" title="推文时间分布"></a>推文时间分布</h3><p>首先看了下每日推文发送时间，看不出什么规律。再看推文的按月分布，如下图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9uwgikipg21kw0r1afr.gif" width="500"></p>
+<p>有三个明显的时间高峰，大概是3月初，6月初和9月初。考虑到推文有两种情况：鸡汤和五毛，所以将不同类别的推文分开统计，红色表示五毛推文，绿色表示鸡汤推文，我们可以得到如下直方图：</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9uxl5g93g21kw0zo771.gif" width="500"></p>
+<p>从这幅图我们大概可以看出，「新五毛」攻击最活跃的时候就是在6月初，之后只是保持一个大致稳定的发推频率，但是鸡汤推文的数目在9月之后显著的增加了。</p>
+<p>可以列一个推数前十名的统计数据，对比之后就更明显了：</p>
+<p>五毛推日期 数量 鸡汤推日期 数量 </p>
+<hr>
+<p>6-4           4726 9-1               4161<br>6-1           2127 9-2               3695<br>6-3           2051 9-7               3085<br>3-8           1415 9-3               2248<br>3-9        1375 9-9               2221<br>5-21       833  9-5        2111<br>5-20       617  9-4        2083<br>6-23       430  9-8        2070<br>7-22       422  6-12       1939</p>
+<a id="more"></a>
+<h3 id="鸡汤推"><a href="#鸡汤推" class="headerlink" title="鸡汤推"></a>鸡汤推</h3><p>我们先看看鸡汤推，里面有个看起来像是乱入的峰值6-12，从6-12抽五条出来看看：</p>
+<blockquote>
+<p>#Nice爱旅游# 【欧洲音乐之旅第二弹】FM99 @天津音乐广播 八月暑期欧洲音乐之旅2.0来也！8月3日@DJ吴优 与你一起感受法意瑞风情！咨询电话:工作时间拨打23601215，中国国旅报名电话83451828.名额有限,额满为止！详细行程请点击 </p>
+<p>#QQ音乐首发预告#@潘瑋柏 2014唱跳剧作专辑《王者丑生》即将在@QQ音乐 独家首发！这是潘玮柏的第十张专辑，用了近两年的时间才完成这张专辑，每一首歌曲的配置都有他想传达的想法！锁定6月13日QQ音乐独家首发，请支持正版音乐</p>
+<p>//@爱上丶微小説: 分享给想开网店，准备开网店创业的童鞋。 </p>
+<p>#最推荐#英国人气民谣才女#Birdy#深情演唱《Tee Shirt》~[好喜欢]清纯的低吟浅唱女声，穿插电影《The Fault in Our Stars》中悲欢离合的画面，泪点低的同学在看MV时请自备纸巾。[lxhx喵 </p>
+<p>我已经不知道该看哪里了！[花心]喜欢另类幽默的不要错过哦~~[阴险]你懂得</p>
+</blockquote>
+<p>推文扑面而来浓浓的<strong>新浪微博</strong>营销风有木有！从斜杠、标签和表情的使用上也能看出来是从新浪微博转出来的，搜一搜你就能看出来这些微博的「原作者」基本上都是营销账号（当然也有可能是爬虫抓取的）。但是特别注意前两条，来自天津什么广播和QQ音乐，都是蓝V账号，这两条微博在新浪微博上发出的时间分别是17:21的16:58，而在推特上出现的时间也17:21和16:59，<strong>如果是爬虫抓取的话同步速度会有这么快吗？</strong></p>
+<p>而9月1号随机抽出的5条是：</p>
+<blockquote>
+<p> 说个真事，现在外教都不太懂中文…………从前上外教，班里一同学看点名册有的同学名字后面有个A，觉得那是课堂表现的打分，就趁外教不注意在自己名字后面写了一大长串A。结果后来才知道，那个A的意思是absent。意思是缺勤……. <a href="http://t.co/IM5hXo0aOd" target="_blank" rel="external">http://t.co/IM5hXo0aOd</a></p>
+<p> 一农村少妇其貌不扬，家里买一电脑上网聊天！聊一网友相约见面！于是偷偷去了市里约 会。男的请吃饭，点了一桌菜然后男的开溜了，结果没钱买单让饭店给扣住了。打电话给老公过去付款赎的人！ <a href="http://t.co/19Z4Db5bmW" target="_blank" rel="external">http://t.co/19Z4Db5bmW</a></p>
+<p> 【】早上起来发现IPAD充不进电，上网查了下说是这玩意怕冷，5度左右开始就充不进电了。现在给它装了个热水袋盖着被子充电……这什么傲娇啊…现在才刚过冬至啊…到春天回暖之前我每天都得给它弄暖水袋盖被子么……… <a href="http://t.co/nYhiCJpHMJ" target="_blank" rel="external">http://t.co/nYhiCJpHMJ</a> </p>
+<p> 也许一个人最好的样子就是静一点，哪怕一个人生活，穿越一个又一个城市，走过一条又一条街道，仰望一片又一片天空，见证一场又一场离别，于是终于可以坦然的说：我终于不那么执着。 <a href="http://t.co/x0dDFGLByL" target="_blank" rel="external">http://t.co/x0dDFGLByL</a> </p>
+<p> 【DIY丝瓜瘦肉汤】1、将丝瓜切片，肉丝切片；2、锅内放入橄榄油将肉丝炒香，倒入水全同煮一会儿；3、加入丝瓜，煮沸，最后入盐调味即可。 <a href="http://t.co/v4SVoR8JqB" target="_blank" rel="external">http://t.co/v4SVoR8JqB</a></p>
+</blockquote>
+<p>从风格上就可以看出两者有很大的不同。6月12号的，发送时间分别是9月1号开始的推文呢，则是纯粹的小清新风格，所有的都是文字+图片。</p>
+<p><strong>一个猜测：6月12号同步推只是一个测试，发现如果就这么同步的话留下的破绽太多，然后改成了9月份的鸡汤风格</strong></p>
+<h3 id="五毛推"><a href="#五毛推" class="headerlink" title="五毛推"></a>五毛推</h3><p>从五毛推的分布来说，可以看到有三个明显的峰值分别出现：3月8号和9号，5月20号和21号，6月1号到4号。将所有攻击型推文按照这三个时间分成A、B和C三组，剩下的所有分为D组，分别统计每组推文中提及的账号以及对五毛推文进行文字挖掘，看看能有什么结果</p>
+<p>首先是A组，时间是在3月8号到9号，从下图看攻击对象主要是@<a href="https://www.twitter.com/wenyunchao" target="_blank" rel="external">wenyunchao</a>，并且从文字云图来看主要是各种攻击和谩骂，「钓鱼岛」一词多出现在「温云超居然说钓鱼岛是日本的」这句话里面。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9v0j8sfjg20dc0dcaas.gif" width="500"></p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1ek9v0vdgvpg20dc0dcq3x.gif" width="500"></p>
+<p>然后看B组，5月20号到21号，这个时间点我是看了分析出来的结果才明白是怎么回事。5月19号美国说要起诉5名中国军人，于是「新五毛」就开始发动了。发动主要体现在转推上，其中转推@<a href="https://www.twitter.com/puchaopei136443" target="_blank" rel="external">puchaopei136443</a>和 @<a href="https://www.twitter.com/tanjunyuan13644" target="_blank" rel="external">tanjunyuan13644</a>的最多，基本每一条推都有起码二三十的转发。关键字也在强调「互联网安全」以及「美国才是互联网最大的敌人」。在B组中五毛账号不仅仅用来攻击，更多的体现在互相RT上，这可能是以后五毛的一种策略。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v1e92qdg20dc0dc0t9.gif" width="500"></p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v1nuvqpg20dc0dc3z1.gif" width="500"></p>
+<p>C组的时间点就不用解释了，因为有「六四穿黑衫」以及「重返天安门」这两个活动，所以五毛对@<a href="https://www.twitter.com/64\_black\_shirt" target="_blank" rel="external">64_black_shirt</a>和@<a href="https://www.twitter.com/backtotiananmen" target="_blank" rel="external">backtotiananmen</a>这两个账号格外的照顾。图中xiexue系列账号应该也是机器人，或者某人的一系列马甲。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v26tpljg20dc0dc750.gif" width="500"></p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v2gimejg20dc0dcdgm.gif" width="500"></p>
+<p>D组是剩下的推文，他们主要就是在骂温云超以及转推这个假黄宾@<a href="https://www.twitter.com/huanqbin87" target="_blank" rel="external">huanqbin87</a>的有关盘古乐队的视频。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1ek9v2rpjydg20dc0dcjsy.gif" width="500"></p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v32oggpg20dc0dcabg.gif" width="500"></p>
+<p>从内容上看，除了辱骂的推文之外，五毛的一个关键目标就是用各种关键字来混淆推特的搜索，包括hashtag和文本搜索，何必呢，推特的中文搜索就是渣，我正常搜都搜不到想要的结果，你混淆了和不混淆效果不也一样么……</p>
+<h3 id="转推"><a href="#转推" class="headerlink" title="转推"></a>转推</h3><p>别以为五毛就会自己发自己的，他们也会转推哦！</p>
+<p>在所有这54737条推文中，转推有8190条，列出被五毛转推最多的十条：</p>
+<blockquote>
+<p>@huanqbin87: 看到一首好玩的歌曲，盘古乐队。<a href="http://t.co/7C8f9BDRZN" target="_blank" rel="external">http://t.co/7C8f9BDRZN</a></p>
+<p>@huanqbin87: 走狗歌-盘古乐队是走狗<a href="http://t.co/PVRov1c4fE" target="_blank" rel="external">http://t.co/PVRov1c4fE</a></p>
+<p>@huanqbin87: 盘古之烂苹果，太好听了！ <a href="http://t.co/WADLhCm8kt" target="_blank" rel="external">http://t.co/WADLhCm8kt</a></p>
+<p>@huanqbin87: 骂盘古乐队倍儿爽 <a href="http://t.co/FZWvyVavrt" target="_blank" rel="external">http://t.co/FZWvyVavrt</a></p>
+<p>@kingatnba: 香港和平佔中游行怪象百出，看热闹的比游行的多，看来香港人真的是习惯了游行，游行成了他们表达个人诉求的流行方式 ，就像成龙说的，香港已变成流行之都。#占领深圳 <a href="http://t.co/h0R35N8ANc" target="_blank" rel="external">http://t.co/h0R35N8ANc</a></p>
+<p>@Cher64693876: <a href="http://t.co/8U3VkiDGo9港媒质疑香港非法公投：投票系统漏洞多" target="_blank" rel="external">http://t.co/8U3VkiDGo9港媒质疑香港非法公投：投票系统漏洞多</a> 票数水分极大</p>
+<p>@Cherie29980851: 港媒质疑香港非法公投：投票系统漏洞多，票数水分极大 <a href="http://t.co/3K2I5llxmG" target="_blank" rel="external">http://t.co/3K2I5llxmG</a></p>
+<p>@DavidLyo: 做不了太多，这几年都有用手机播放血染的风采行走于路上 RT @yimings8964: 六四一起穿黑衫！今年穿，明年还穿！让有态度的文化衫在广场绽放！</p>
+<p>@hu_jia: 你自己知道六四穿黑衫的意思即可。你自己了解了真相、打破了恐惧、以行动实践了，就是黑衫最大的意义。@dragonflytiger9 只要穿黑衫就可以吗，感觉没什么用啊！在我的学校穿黑衫，同学们也不知道是什么意思！@64_black_shirt</p>
+<p>@RTKcn: 17+ RT @Sherry45778748: <a href="http://t.co/B3Mr4MkH79港媒质疑香港非法公投：投票系统漏洞多" target="_blank" rel="external">http://t.co/B3Mr4MkH79港媒质疑香港非法公投：投票系统漏洞多</a> 票数水分极大</p>
+</blockquote>
+<p>看来五毛最关心的除了盘古就是香港了。</p>
+<h3 id="反应时间与强度"><a href="#反应时间与强度" class="headerlink" title="反应时间与强度"></a>反应时间与强度</h3><p>以五毛开始攻击与原推文发出时间之差作为横轴，纵轴为累积数，可做如下直方图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9v56029ng21kw14lju9.gif" width="500"></p>
+<p>峰值在24小时左右，也就是说五毛的反应时间也不是很快，10个小时左右是正常水平。</p>
+<p>以一条推文引来五毛的数目作为横轴可以作出如下直方图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1ek9vha94qxg21kw0tkwgv.gif" width="500"></p>
+<p>看起一推引来5位五毛是正常情况，让人好奇的是怎样的推才可以引来超过100条五毛回复的？就是xiexue系列账号发有关温云超的推（一种后现代主义的感觉）</p>
+<h3 id="五毛关心什么"><a href="#五毛关心什么" class="headerlink" title="五毛关心什么"></a>五毛关心什么</h3><p>用文本挖掘的方法对那些引出了五毛的推文进行分析，可以得到一个文字云图：</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1ek9vqyr24pg20dc0dc0t1.gif" width="500"></p>
+<p>显然习总书记是他们最关心的对象。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过对「新五毛」的账户信息以及关注情况，大概了解其规模和社交网络情况，平均来说他们的发推量不高，因此我直接抓取了这&lt;strong&gt;2581&lt;/strong&gt;个账户的&lt;strong&gt;54737&lt;/strong&gt;条推文（包括转推）来分析，看看能不能得到一些有趣的结果。&lt;/p&gt;
+&lt;p&gt;在推文分析之前，有一个有趣的结论可以和大家分享，在这2581个「新五毛」账户中，有接近&lt;strong&gt;1200&lt;/strong&gt; 个昵称能在&lt;strong&gt;搜狐微博&lt;/strong&gt;里面100%匹配，不知道是同一家营销公司在管理，或者是用爬虫抓出来的。查看了一下，匹配到的搜狐微博用户多数停用已经很久了。这个发现要感谢 @&lt;a href=&quot;https://www.twitter.com/Arctosia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Arctosia&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;推文时间分布&quot;&gt;&lt;a href=&quot;#推文时间分布&quot; class=&quot;headerlink&quot; title=&quot;推文时间分布&quot;&gt;&lt;/a&gt;推文时间分布&lt;/h3&gt;&lt;p&gt;首先看了下每日推文发送时间，看不出什么规律。再看推文的按月分布，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/640a227egw1ek9uwgikipg21kw0r1afr.gif&quot; width=&quot;500&quot;&gt;&lt;/p&gt;
+&lt;p&gt;有三个明显的时间高峰，大概是3月初，6月初和9月初。考虑到推文有两种情况：鸡汤和五毛，所以将不同类别的推文分开统计，红色表示五毛推文，绿色表示鸡汤推文，我们可以得到如下直方图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/640a227egw1ek9uxl5g93g21kw0zo771.gif&quot; width=&quot;500&quot;&gt;&lt;/p&gt;
+&lt;p&gt;从这幅图我们大概可以看出，「新五毛」攻击最活跃的时候就是在6月初，之后只是保持一个大致稳定的发推频率，但是鸡汤推文的数目在9月之后显著的增加了。&lt;/p&gt;
+&lt;p&gt;可以列一个推数前十名的统计数据，对比之后就更明显了：&lt;/p&gt;
+&lt;p&gt;五毛推日期 数量 鸡汤推日期 数量 &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;6-4           4726 9-1               4161&lt;br&gt;6-1           2127 9-2               3695&lt;br&gt;6-3           2051 9-7               3085&lt;br&gt;3-8           1415 9-3               2248&lt;br&gt;3-9        1375 9-9               2221&lt;br&gt;5-21       833  9-5        2111&lt;br&gt;5-20       617  9-4        2083&lt;br&gt;6-23       430  9-8        2070&lt;br&gt;7-22       422  6-12       1939&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="R" scheme="http://blog.yesmryang.net/tags/R/"/>
+    
+      <category term="twitter" scheme="http://blog.yesmryang.net/tags/twitter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推特上有多少「新五毛」？</title>
+    <link href="http://blog.yesmryang.net/wumao-twitter/"/>
+    <id>http://blog.yesmryang.net/wumao-twitter/</id>
+    <published>2014-09-09T13:07:11.000Z</published>
+    <updated>2014-09-12T11:05:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>大家都知道，相对于微博来说，推特上不存在言论管制，但是这种事情怎么可以让他发生呢？那还不天下大乱？随时随地都要关心你的组织当然得把伟大的光芒投射到这一片「法外之地」，于是从很久以前开始，组织就会弄很多帐号来关心大家的思想动态。当然，有的负责听，有的负责说。不过之前的手段都很粗糙，特别是顶着一个蛋头，说一些连微博上的五毛都不好意思说的话，广大推友们迅速就能识别，要么拉黑要么举报，很快的这些帐号就消失了，也不知道组织设立这些帐号的成本有多大。当然，另一方面，如果只是以发推数目来计算工作量，而不是以「舆论导向」的结果来算的话，我觉得这些帐号还是完成任务了的。</p>
+<p>很长一段时间都没有被这样的五毛帐号（我称之为「老五毛」）骚扰了，突然前几天，我发了一条</p>
+<blockquote>
+<p>中纪委给老外解释”四风”:都是”胖子”干坏事：形式主义：一个干部模样的胖子被公章、文件包围；官僚主义：还是那个胖子坐在高椅上，另外一个瘦瘦的群众模样的人可怜地站在下面仰望他；享乐主义：胖子躺进酒杯里，脸喝得红扑扑；奢靡之风：摆满大餐的桌前，胖子大吃大喝——习总：尼玛</p>
+</blockquote>
+<p>过会在推上突然就遭到了围攻，如下图：</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1ek6j00uxung20ga0d73zn.gif" width="500"></p>
+<a id="more"></a>
+<p>然后我点开进去这些账号的页面看了看，发现似乎官方在利用另一个方法来开展五毛活动（我称之为「新五毛」），具体表现如下：</p>
+<ul>
+<li>头像不再是蛋头，而且昵称显得比较正常</li>
+<li>用户名多数是字母+数字，而且多数情况下字母是若干英文名拼起来的，比如matthewjesus00，quentinsamuel8</li>
+<li>大多数时间，自动发鸡汤段子，而且一定带图，鸡汤段子一般来自Twitter for Google TV这个客户端，估计是自己写的，而且一看就是自动发的，比如<a href="https://twitter.com/eubinnvrok/status/508832988369403904" target="_blank" rel="external">这条</a></li>
+<li>条件触发后，若干个账号会开始同时攻击，攻击推文一般来自Twitter for iPhone和TweetDeck</li>
+<li>不再关注「敏感人士」，而是关注其他的「五毛账号」</li>
+</ul>
+<p>既然有这最后一点，于是我写了个爬虫，从某一个账号开始，抓取他的关注列表，筛选后放入数据库，然后再抓这些关注列表中五毛的关注列表，就这样不断循环。筛选标准为</p>
+<ul>
+<li>发的是中文推</li>
+<li>Fav很少，这里阈值我取的是5</li>
+<li>最后一推基本上来自iPad、Windows Phone、Google TV、TweetDeck和Mac这几个客户端，显然是用的官方Key/Secret</li>
+<li>注册时间晚于13年1月1日</li>
+</ul>
+<p>一开始我还想着这样的账号很多，我这样抓应该是抓不完的，万万没想到，最后抓取能够完成，并且形成了一个封闭的集合。一共抓取到<strong>2581</strong>名用户，<strong>148995</strong>条互相关注的信息。</p>
+<p>下面是对这些账号和关注情况的分析：</p>
+<ol>
+<li><p>74.6%采用字母+数字作为账号，纯字母为25.1%，纯数字不到1%</p>
+</li>
+<li><p>有很多很明显的冒充账号，集中在 @<a href="https://www.twitter.com/huangbin87" target="_blank" rel="external">huangbin87</a> 和 @<a href="https://www.twitter.com/ggnn9" target="_blank" rel="external">ggnn9</a>，前者有19个冒充账号，后者有22个冒充账号，名字和头像都一样。这个冒充账号 @<a href="https://www.twitter.com/huanqbin87" target="_blank" rel="external">huanqbin87</a> 简直可以以假乱真，看foer里面有不少是上当受骗了的。</p>
+</li>
+<li><p>都是2014年注册的，注册月份分布如下图：</p>
+<pre><code>&lt;img src=&quot;http://ww4.sinaimg.cn/large/640a227egw1ek6l8of543g21kw0smdie.gif&quot; width=&quot;500&quot; /&gt;
+看来六月份一定有什么要紧的事件，需要这么多的账号来引导舆论。
+</code></pre></li>
+<li><p>计算一下在他的Foing/Foer里面有多少是抓取到的五毛，这个分布说明抓取的结果还是不错的</p>
+<pre><code>&lt;img src=&quot;http://ww1.sinaimg.cn/large/640a227egw1ek6l8x43fzg21kw0oddhm.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>Foing/Foers数分布集中在200左右，如下图</p>
+<pre><code>&lt;img src=&quot;http://ww4.sinaimg.cn/large/640a227egw1ek6l8qzlntg21kw1azmzr.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>最后一推的客户端分布，以TweetDeck和Google TV为主</p>
+<pre><code>&lt;img src=&quot;http://ww4.sinaimg.cn/large/640a227egw1ek6l8t2mjig21kw0uo0uk.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>日推分布，不高：</p>
+<pre><code>&lt;img src=&quot;http://ww3.sinaimg.cn/large/640a227egw1ek6l8v9xbdg21kw0odq70.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>将他们的最后一推按时间分布，看不出什么规律，不过似乎我们睡觉的时候五毛也睡了。</p>
+<pre><code>&lt;img src=&quot;http://ww2.sinaimg.cn/large/640a227egw1ek6lydcge6g21kw0zk130.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>最后，看一张「新五毛网络」全图：</p>
+<pre><code>&lt;img src=&quot;http://ww3.sinaimg.cn/large/640a227egw1ek6l9jsll7g20go0go77c.gif&quot; width=&quot;500&quot; /&gt;
+</code></pre></li>
+<li><p>在这个高度互相关注的「新五毛网络」里面，Foer最多的是 @<a href="https://www.twitter.com/eubinnvrok" target="_blank" rel="external">eubinnvrok</a> 这个账号，高达719位，而他实际上也就只有719个Foer，第二多的是 @<a href="https://www.twitter.com/ioannrfcptasy" target="_blank" rel="external">ioannrfcptasy</a> 这个账号，有642位「新五毛」关注了他，但是他的Foer是有643位，是哪一个正常账号会关注他呢？一看是一位叫做「五毛党主席」的 @<a href="https://www.twitter.com/lpzhawei" target="_blank" rel="external">lpzhawei</a>，实至名归。</p>
+</li>
+</ol>
+<p>总结：看来现在组织对之前的「人盯人」五毛已经不是很满意了，开发出了新一代的「鸡汤五毛」，平时装作鸡汤手，还能骗几个fo，条件一触发（不知道是人肉还是自动）就展开攻击。但是能不能装得更像正常人一点呢？或许人工智能的突破口就在这里呢。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大家都知道，相对于微博来说，推特上不存在言论管制，但是这种事情怎么可以让他发生呢？那还不天下大乱？随时随地都要关心你的组织当然得把伟大的光芒投射到这一片「法外之地」，于是从很久以前开始，组织就会弄很多帐号来关心大家的思想动态。当然，有的负责听，有的负责说。不过之前的手段都很粗糙，特别是顶着一个蛋头，说一些连微博上的五毛都不好意思说的话，广大推友们迅速就能识别，要么拉黑要么举报，很快的这些帐号就消失了，也不知道组织设立这些帐号的成本有多大。当然，另一方面，如果只是以发推数目来计算工作量，而不是以「舆论导向」的结果来算的话，我觉得这些帐号还是完成任务了的。&lt;/p&gt;
+&lt;p&gt;很长一段时间都没有被这样的五毛帐号（我称之为「老五毛」）骚扰了，突然前几天，我发了一条&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;中纪委给老外解释”四风”:都是”胖子”干坏事：形式主义：一个干部模样的胖子被公章、文件包围；官僚主义：还是那个胖子坐在高椅上，另外一个瘦瘦的群众模样的人可怜地站在下面仰望他；享乐主义：胖子躺进酒杯里，脸喝得红扑扑；奢靡之风：摆满大餐的桌前，胖子大吃大喝——习总：尼玛&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;过会在推上突然就遭到了围攻，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/640a227egw1ek6j00uxung20ga0d73zn.gif&quot; width=&quot;500&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="R" scheme="http://blog.yesmryang.net/tags/R/"/>
+    
+      <category term="twitter" scheme="http://blog.yesmryang.net/tags/twitter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RStudio使用Knitr遇到的问题</title>
+    <link href="http://blog.yesmryang.net/rstudio-mac-knitr/"/>
+    <id>http://blog.yesmryang.net/rstudio-mac-knitr/</id>
+    <published>2014-08-28T09:02:01.000Z</published>
+    <updated>2014-08-28T09:42:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近正在读<a href="http://adv-r.had.co.nz/" target="_blank" rel="external">Advanced R</a>这本书，作者非常慷慨的的在github上提供了书的源代码，正好我就学习一下怎么样用Rmarkdown来记笔记。</p>
+<p>我的Windows台式机和MBP上都有RStudio，但是两者都不是装好了knitr包就能用的，其中遇到了好几个奇怪的问题，就在这里记录一下</p>
+<h1 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h1><p>Windows 上面安装的是texlive 2013版本，平时使用的时候没什么问题，但是knitr编译pdf始终显示<code>article.cls&#39; not found</code>, 我干脆重新安装了一个texlive 2014，然后升级RStudio以及和knitr相关的包到最新版本。问题就这么解决了。</p>
+<h1 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h1><p>Mac上的texlive版本就是2014，不知道为什么RStudio总是提示<code>&#39;TeX installation not detected&#39;</code>, 在RStudio的网站支持里面相关问题只有<a href="https://support.rstudio.com/hc/communities/public/questions/201410073-pdflatex-error-on-OSX" target="_blank" rel="external">这篇</a>提供了一个解决方法，就是在<code>/usr/bin</code>里面建立三个符号链接</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/texbin/pdflatex /usr/bin/pdflatex</div><div class="line">sudo ln -s /usr/texbin/xdvipdfmx /usr/bin/xdvipdfmx</div><div class="line">sudo ln -s /usr/texbin/xelatex /usr/bin/xelatex</div></pre></td></tr></table></figure>
+<p>然后RStudio就能检测到TeX，于是能编译出PDF文件了，不过怎么弄中文我还没明白。</p>
+<p>说来也怪，明明我的PATH里面就有<code>/usr/textbin/</code>，但是RStudio死活找不到这几个命令的位置。</p>
+<p>另外，OSX默认长按某键的默认是出现声调变体，在RStudio的vim模式里面，这会导致默认英文输入法里面长按j/k无法上下移动游标，解决方法是在终端里面输入（注意大小写）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defaults write -g ApplePressAndHoldEnabled -bool false</div></pre></td></tr></table></figure>
+<p>然后重启即可。</p>
+<p>knitr真是一个强大的包，慢慢琢磨怎么用吧</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近正在读&lt;a href=&quot;http://adv-r.had.co.nz/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Advanced R&lt;/a&gt;这本书，作者非常慷慨的的在github上提供了书的源代码，正好我就学习一下怎么样用Rmarkdown来记笔
+    
+    </summary>
+    
+    
+      <category term="R" scheme="http://blog.yesmryang.net/tags/R/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KPW：左右你的左右</title>
+    <link href="http://blog.yesmryang.net/kpw/"/>
+    <id>http://blog.yesmryang.net/kpw/</id>
+    <published>2014-08-25T14:40:53.000Z</published>
+    <updated>2014-08-27T12:21:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间美国亚马逊金盒促销，官方翻新版的KPW2叫价85美元，看看自己都已经成为战斗成色的K4，想想换一个倒是也不错，于是马上下单，差不多两周之后通过转运到了手上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/b4824a3fgw1ejpal2juscj20sg0izdjm.jpg" width="500"><br>到手之后，发现机身上有几道划痕，虽然知道依照亚马逊一向的好服务，换一个「外表全新」的应该没啥问题，但是又要寄回又得转运（寄回去还非得用UPS或者DHL），这样一个月估计就过去了，再说也不影响阅读，于是开了在线客服抱怨了一通了事。</p>
+<p>另一个和客服有关的事情是，这个版本是带美国亚马逊促销广告的，但是我在上面用中国亚马逊的账号，这些广告用不上，点了也没法买。搜了搜有没有什么去广告的办法，也就三个字「找客服」，于是又一次打开在线客服聊天窗口，给客服说了说情况，他很爽快的说「行」，然后广告就没了……</p>
+<p>使用两个星期后，个人感觉，尽管内容上可以购买中文书方便不少，但是操作上体反而不如有实体键的K4。</p>
+<p>首先是上下翻页，本人拇指较短，且习惯用左手握持Kindle，这样要稍微用力一点才方便点到那个右边那个下翻页的区域。用右手倒是下翻页没有什么问题，就是上翻页变得更为困难。难道最后要我双手拿着看书么？</p>
+<p>另一个容易误操作的地方是如果电子书整页好几段都是超链接（确实遇到这样的），上下翻页很容易就被误认为是点击链接——打开浏览器，之后需要点击屏幕上的「后退」才能返回刚才阅读的页面，问题是再次上下翻页还是有很大概率变成发生误触事件。</p>
+<p>第三个是，现在上一章/下一章的操作也更麻烦，要先从屏幕下方往上划一下，弹出一个类似预览的窗口再点击左右的导航按钮，K4因为有实体键反而方便许多。</p>
+<p>当然，热门标记和X-Ray功能还是很不错滴，字典功能也比K4方便不少，哪里不会点哪里，再加上生词本简直就是英语复习的利器。至于背景灯，我用得很少，基本上读书的地方都比较明亮。而且KPW终于支持手机分享出来的热点网络了。</p>
+<p>要是K4能在中国亚马逊上买书多好！ </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前段时间美国亚马逊金盒促销，官方翻新版的KPW2叫价85美元，看看自己都已经成为战斗成色的K4，想想换一个倒是也不错，于是马上下单，差不多两周之后通过转运到了手上。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/b4824a3fg
+    
+    </summary>
+    
+    
+      <category term="3C" scheme="http://blog.yesmryang.net/tags/3C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>现在还有多少读者？</title>
+    <link href="http://blog.yesmryang.net/remaining-readers/"/>
+    <id>http://blog.yesmryang.net/remaining-readers/</id>
+    <published>2014-08-03T13:32:06.000Z</published>
+    <updated>2014-08-03T13:46:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道现在这个博客还有多少读者，从feedly的订阅来看，大概刚刚超过1000人。另外随着微信微博的冲击，GReader的关闭，估计本来有的阅读RSS的习惯也在慢慢减退（我自己就是这样），十天半个月不看一眼，好像生活也没什么影响。</p>
+<p>既然不读，那也懒得写。最近两年确实写得太少了，说好的DOpus的完整教程迟迟没有写完，平时灵光一现，想讲的话在Twitter就已经讲完，铺陈一篇很长的文章实在是需要勇气。不过还好的是，写博客不是写连载小说，不像起点那些作者，更新不够快的话就没有月票，直接影响了收入。</p>
+<p>如果你还在读我的博客的话，方便留言让我知道一下吗？这样我写作的动力说不定就会被点燃了。干脆就把DOpus的使用小技巧，一则一则的发出来好了。</p>
+<p>谢谢你的阅读。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知道现在这个博客还有多少读者，从feedly的订阅来看，大概刚刚超过1000人。另外随着微信微博的冲击，GReader的关闭，估计本来有的阅读RSS的习惯也在慢慢减退（我自己就是这样），十天半个月不看一眼，好像生活也没什么影响。&lt;/p&gt;
+&lt;p&gt;既然不读，那也懒得写。最近两
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="http://blog.yesmryang.net/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在DOpus中实现指定层级的平面查看</title>
+    <link href="http://blog.yesmryang.net/dopus-flatview-depth/"/>
+    <id>http://blog.yesmryang.net/dopus-flatview-depth/</id>
+    <published>2014-08-01T07:06:50.000Z</published>
+    <updated>2014-08-28T10:35:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天DOpus中文讨论群里「昨日依然」问了个问题，说是他将工作文档按天归类，如下图，怎样才能「把里面的文件都显示出来呢？平面显示会将所有的文件都显示出来，我只要一级就可以，因为每天的文件夹里面都有子文件夹，全部都显示出来就太乱了。」</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eix5kfz0cnj20980fmabw.jpg"></p>
+<p>实际上在DOpus的官网上也有人问这个问题，不过官方表示「平面显示」暂时无法指定显示深度，但是提供了一种替代的思路，就是用「查找」功能里面的过滤器来实现「显示文件夹中到指定深度」功能。下面我就介绍下这个方法。</p>
+<a id="more"></a>
+<p>示例文件结构如下图，在D:\Test 文件夹下有两个子文件夹sub1和sub2，sub1里面有三个子文件夹 subsub1，subsub2 和subsub3 还有几个文件，sub2里面只有几个文件，subsub系列文件夹里面有不少文件</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1eix5imh5v0g20g30lx0ui.gif" width="500"></p>
+<p>如果使用「平面显示-混合（无文件夹）」的话，显示的结果是这样</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1eix5inu9cug20g30lxabm.gif" width="500"></p>
+<p>这不是我们想要实现的结果，我们想要的就只显示sub1和sub2的内容，而不再往深处递归了，于是在D:\Test 里面使用文件查找功能，切换到「高级标签」</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1eix5ip3syvg20hj0lxab8.gif" width="500"></p>
+<p>在高级里面新建一个过滤器，内容如上图, 过滤内容为「子文件夹匹配-位置不匹配*\*\*」，然后查找就可以看到在查找结果中只包括了和subsub系列平级的内容，再深一层次的没有</p>
+<p> <img src="http://ww2.sinaimg.cn/large/640a227egw1eix5iqhjzhg20hj0lxdhn.gif" width="500"></p>
+<p>如何理解这个用法？</p>
+<ul>
+<li>因为我们勾选了「搜索子文件夹」，所以过滤器针对子文件夹的位置进行过滤</li>
+<li>「位置」子句针对的是<strong>完整路径</strong></li>
+<li>当程序扫描到subsub1时，其「位置」为D:\Test\sub1，正好和*\*\*匹配，于是程序不再深入搜索其内容</li>
+</ul>
+<p>因此，利用这个思路，很容易就可以对指定深度进行平面查看。过滤器也可以保存以便今后调用。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天DOpus中文讨论群里「昨日依然」问了个问题，说是他将工作文档按天归类，如下图，怎样才能「把里面的文件都显示出来呢？平面显示会将所有的文件都显示出来，我只要一级就可以，因为每天的文件夹里面都有子文件夹，全部都显示出来就太乱了。」&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/640a227egw1eix5kfz0cnj20980fmabw.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;实际上在DOpus的官网上也有人问这个问题，不过官方表示「平面显示」暂时无法指定显示深度，但是提供了一种替代的思路，就是用「查找」功能里面的过滤器来实现「显示文件夹中到指定深度」功能。下面我就介绍下这个方法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="DOpus" scheme="http://blog.yesmryang.net/tags/DOpus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Do you hear the people sing诸多中文翻译</title>
+    <link href="http://blog.yesmryang.net/do-you-hear-the-people-sing/"/>
+    <id>http://blog.yesmryang.net/do-you-hear-the-people-sing/</id>
+    <published>2014-04-22T08:50:58.000Z</published>
+    <updated>2014-08-28T10:33:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h2><p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! </p>
+<p>Will you join in our crusade?/Who will be strong and stand with me? /Beyond the barricade/Is there a world you long to see?</p>
+<p>Then join in the fight/That will give you the right to be free! </p>
+<p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes!</p>
+<p>Will you give all you can give/So that our banner may advance/Some will fall and some will live/Will you stand up and take your chance?/The blood of the martyrs/Will water the meadows of France! </p>
+<p>Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! </p>
+<a id="more"></a>
+<h2 id="译文1"><a href="#译文1" class="headerlink" title="译文1"></a>译文1</h2><p>作者：借灯<br>看看人间的苦难，可听见人民在呐喊？/再不愿忍受剥削的人们/将这世道来推翻。/让你良心的碰撞，敲得那战鼓声声响。/让我们以勇敢去迎来新生曙光！ </p>
+<p>你会加入正义军吗？与我并肩去作战。/用血肉筑起街垒，为那理想共患难！/铲除不平，让人人共享那自由灿烂。 </p>
+<p>看看人间的苦难，听听这人民的呐喊？/再不愿忍受剥削的人们/将这世道来推翻。/让你良心的碰撞，敲得那战鼓声声响。/让我们以勇敢去迎来新生曙光！</p>
+<p>来吧奉献你的力量，紧跟红旗闯前方。/前仆后继、不怕牺牲，牺牲总比苟活强。/让烈士的鲜血使法兰西四季芬芳！</p>
+<p>看看人间的苦难，听听这见人民的呐喊？/再不愿忍受剥削的人们/将这世道来推翻。/让你良心的碰撞，敲得那战鼓声声响。/让我们以勇敢去迎来新生曙光！ </p>
+<h2 id="译文2"><a href="#译文2" class="headerlink" title="译文2"></a>译文2</h2><p>作者：李宇晖<br>你可听见这怒火/冲进每个人的耳朵/千年的奴隶已被唤醒/挣脱全身的枷锁。/你我心中的孤单/正被那战鼓声打破/生命里新的一天不能够再蹉跎。</p>
+<p>现在就请你同行/让我们并肩如兄弟/穿过弥漫硝烟/彼岸的世界渐清晰/请用战斗证明你为自由在所不惜。</p>
+<p>你可听见这怒火/冲进每个人的耳朵/千年的奴隶已被唤醒/挣脱全身的枷锁。/你我心中的孤单/正被那战鼓声打破/生命里新的一天不能够再蹉跎。</p>
+<p>是否你愿用全力/挥舞这旗帜迎风展/成败不可预知/你是否愿背水一战/让心上人擦干泪等我们胜利凯旋。</p>
+<p>你可听见这怒火/冲进每个人的耳朵/千年的奴隶已被唤醒/挣脱全身的枷锁。/你我心中的孤单/正被那战鼓声打破/生命里新的一天不能够再蹉跎。/</p>
+<h2 id="译文3"><a href="#译文3" class="headerlink" title="译文3"></a>译文3</h2><p>作者 yajun<br>听那人民的怒唱/愤怒歌声逐渐响亮/那是自由的呼唤/回响在苦难的土地上/若你胸中的热血/伴随这歌声在激荡/新世界就在前方/看曙光已点亮/</p>
+<p>你可愿意和我站在一起肩并肩抗敌/穿越那硝烟看见未来世界的美丽</p>
+<p>就快拿起武器去争取那自由权力 （alt：快拿起武器勇敢去争取自由权力）</p>
+<p>听那人民的怒唱/愤怒歌声逐渐响亮/那是自由的呼唤回响在苦难的土地上/若你胸中的热血/伴随这歌声在激荡/新世界就在前方/看曙光已点亮</p>
+<p>你可愿意付出一切/保卫飘扬的战旗/用生命去换生存/有人前仆有人后继/用鲜血来浇灌这负满伤痕的土地（alt:用鲜血来浇灌我们共同的法兰西）</p>
+<p>听那人民的怒唱/愤怒歌声逐渐响亮/那是自由的呼唤回响在苦难的土地上/若你胸中的热血/伴随这歌声在激荡/新世界就在前方/看曙光已点亮/</p>
+<h2 id="译文4"><a href="#译文4" class="headerlink" title="译文4"></a>译文4</h2><p>作者 Phil<br>你可听到这歌声/心中的怒火在翻腾/不愿做奴隶的人们/要起来为自由斗争/你可听到这鼓声/不停地敲醒每个人/世界将会被改变/未来属于我们/</p>
+<p>是否愿意肩并肩/加入这英雄的行列/穿过那街垒你可看到/未来新世界/</p>
+<p>来手挽手冲向前/去迎接自由明天/</p>
+<p>你可听到这歌声/心中的怒火在翻腾/不愿做努力的人们/要起来为自由斗争/你可听到那鼓声/不停地敲醒每个人/世界将会被改变/未来属于我们/</p>
+<p>是否愿意放下一切/高高举起这红旗/用生命来换取生存/什么都在所不惜//要抛头颅洒热血/来浇灌自由土地/</p>
+<p>你可听到这歌声/心中的怒火在翻腾/不愿做奴隶的人们/快起来为自由斗争/你可听到这鼓声/不停地敲醒每个人/世界将会被改变/未来属于我们/</p>
+<h2 id="译文5"><a href="#译文5" class="headerlink" title="译文5"></a>译文5</h2><p>香港的「人民之歌」</p>
+<h2 id="译文6"><a href="#译文6" class="headerlink" title="译文6"></a>译文6</h2><p>台语版的「你敢有聽着咱的歌」</p>
+<h2 id="译文6-1"><a href="#译文6-1" class="headerlink" title="译文6"></a>译文6</h2><p>第一段有类似诗经的译法，我稍微做了修改：</p>
+<p>民之所欲，可存汝心？/民之所怨，尔等可听？/ 民之所抗，奴役必亡/ 民之所向，浩浩蕩蕩/ 民之所歌，蕩氣迴腸/民之所盼，歷歷在望/ 民之所期，结束暴政，维新！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;原文&quot;&gt;&lt;a href=&quot;#原文&quot; class=&quot;headerlink&quot; title=&quot;原文&quot;&gt;&lt;/a&gt;原文&lt;/h2&gt;&lt;p&gt;Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! &lt;/p&gt;
+&lt;p&gt;Will you join in our crusade?/Who will be strong and stand with me? /Beyond the barricade/Is there a world you long to see?&lt;/p&gt;
+&lt;p&gt;Then join in the fight/That will give you the right to be free! &lt;/p&gt;
+&lt;p&gt;Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes!&lt;/p&gt;
+&lt;p&gt;Will you give all you can give/So that our banner may advance/Some will fall and some will live/Will you stand up and take your chance?/The blood of the martyrs/Will water the meadows of France! &lt;/p&gt;
+&lt;p&gt;Do you hear the people sing?/Singing a song of angry men?/It is the music of a people/Who will not be slaves again!/When the beating of your heart/Echoes the beating of the drums/There is a life about to start/When tomorrow comes! &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="English learning" scheme="http://blog.yesmryang.net/tags/English-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文明5科研溢出打法</title>
+    <link href="http://blog.yesmryang.net/civ5-research-overflow/"/>
+    <id>http://blog.yesmryang.net/civ5-research-overflow/</id>
+    <published>2014-01-06T07:45:35.000Z</published>
+    <updated>2014-08-02T01:30:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近很是喜欢打《文明5》这个游戏，这个游戏的本质就是计算，对内政外交军事科技方方面面进行计算，在给定的约束下用各种资源和放大器(政策，宗教，意识形态，文明特性)来最大化输出(魅力，兵力，科技，同盟)，尽可能快的获取对应的胜利。</p>
+<p>既然是计算，免不了要知道各种计算规则，有些玩家为了更好的了解规则去读公开的代码，于是发现了各种可利用的算法漏洞。</p>
+<p>比如自主政策左二的移民生产时间减半以及虔信开门的大小庙时间减半，被大家发现减半不是成本减半，而是锤子翻倍，由此诞生了溢出锤微操和拆庙微操。不过这两种处理时可以理解的，溢出值都是有上限的，也不会累加到再下一轮。</p>
+<p>前段时间更有人发现了科技值的溢出方法，在这个方法里，溢出值是无限的。我认为这是一个bug，因为同一个科技贬值计算了两次。</p>
+<p>#科技贬值</p>
+<p>在文明5里面，一个科技，如果其他已遇见的玩家已经研究完成了，它需要的点数就比没人研究好的时候要少，8人标准图上，这个折算系数最多是1.2625，也就是七个玩家都完成了，就你没完成，那你需要的科技点数就是百科中显示点数的的1/1.2625≈79%.</p>
+<p>#外籍学者提案</p>
+<p>在世界议会里面，还能有一个提案叫做scholar resident，说明是「已被发现的科技，研究加速20%」，也就是说只要有人研究过，那折算系数最多变为1.515，而此时研究该科技的花费变成百科上写的66%.</p>
+<p>#科研溢出</p>
+<p>如果每回合的科研收益大于这个回合研究科技需要的点数，那么科研点数会溢出。</p>
+<p>但是溢出并不是按1：1溢出的，而是看这个回合研究的科技有没有贬值。这个地方我估计文明的想法是「在贬值的科技上投入的科研点数要折算成未贬值的科研点数」，于是<strong>溢出的点数乘以科研贬值的折算系数，并且累计到下一个回合</strong>，具体的计算公式如下</p>
+<pre><code>本回合溢出=max{上回合溢出×折算系数+本回合科研点数-科技实际成本,0}
+</code></pre><p>和0比较是因为如果上回合的折算溢出加上回合科研点数也研究不完当前科技的话，下一个回合的溢出就是0了。这也是我觉得不合理的地方，因为在科技实际成本里面已经计算过了科技贬值，但是在溢出的时候又要算一遍。但是平时溢出不会太多，至少不会超过你的回合科研点数。如果你是按步就班的进行科研，那么基本上你感觉不到溢出，因为科技成本是相当高的。</p>
+<p>#滚雪球</p>
+<p>但是，如果你留了不少远古科技还没有研究的话，比如青铜（单城标图，就你没研究的话，成本是40），回合科研是100，上一回合刚好研究完成溢出了99，把这个溢出用去研究青铜，一个回合就研究好，下一轮的溢出是多少？按照上面的公式计算的话，下一轮的溢出是209。那如果再把这209的溢出投入到建筑构造学（成本80）的话，再下一轮的溢出就是337了，如果你铁器（80）也没研究的话，再来一次溢出就是531了。这样你研究好了三个科技，溢出不但没有变成0，反而翻了5倍，变成了531，是你三个回合科研点数总和的两倍不到。</p>
+<p>如果你第一个回合的溢出是899呢？三个科技后溢出变成2243，是你三个回合科研点数总和的7倍还多！如果有10个科技都是1.515的折算系数，那么走完这10个科技，你的溢出值将是41287，是你十个回合科研点数总和的40倍。</p>
+<p>所以，到这里，你该知道怎样利用这个溢出来滚雪球了吧：</p>
+<ul>
+<li>压上线或者下线科技不研究，最大化折算系数</li>
+<li>在某科技研究好之后，烧一个大科学家，获得8倍的回合科研点数的溢出</li>
+<li>选择远古科技，依次秒掉被压的科技，溢出值以1.5为底的指数上升</li>
+</ul>
+<p>所以爱因斯坦说「<strong>复利是宇宙间最伟大的力量</strong>」</p>
+<p>#秒掉未来科技？</p>
+<p>那在启蒙时期烧一个大科的话，可以秒掉未来科技吗？答案是可以。</p>
+<p>我们先看看从各个时期开始到飞船所有科技研究完所需要的科研点数（表格没有考虑科研的惩罚，如果是单城应该再乘以1.05，双城乘以1.10，以此类推）：</p>
+<table> <tbody> <tr> <th style="border-bottom:2px solid; min-width:100px"> 初始时期 </th> <th style="border-bottom:2px solid; min-width:100px"> 所需点数 </th> </tr> <tr><td>文艺1</td><td>178915</td></tr> <tr><td>文艺2</td><td>174625</td></tr> <tr><td>工业1</td><td>168300</td></tr> <tr><td>工业2</td><td>157740</td></tr> <tr><td>现代1</td><td>147400</td></tr> <tr><td>现代2</td><td>130350</td></tr> <tr><td>原子1</td><td>112310</td></tr> <tr><td>原子2</td><td>89870</td></tr> <tr><td>信息1</td><td>61710</td></tr> <tr><td>信息2</td><td>19360</td></tr> </tbody> </table>
+
+
+<p>有18万左右的溢出值，是有可能秒掉所有飞船科技的。但是溢出值并不是可以无限指数上升，它的的上限是214748。这个数据说和2的31次方减1有关。超过了这个上限，呵呵，你的溢出值就变成负数了，这样面板就会显示你完成一个研究需要上千回合。</p>
+<p>如果你想用这个方法放飞船的话，一定要选择好秒科技的路径，不要让溢出值超过上限。适当的秒一些电脑没有研究过的科技来减少溢出值，最好到18万左右，而且接下来所有科技电脑都没研究过（这个通过成本可以看出来），接下来就是纯消耗，不会再有复利了。</p>
+<p>这里还要注意，为了避免溢出超过上限，可以利用牛津大学和理性关门来秒掉一些关键的科技，减少连乘的次数。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近很是喜欢打《文明5》这个游戏，这个游戏的本质就是计算，对内政外交军事科技方方面面进行计算，在给定的约束下用各种资源和放大器(政策，宗教，意识形态，文明特性)来最大化输出(魅力，兵力，科技，同盟)，尽可能快的获取对应的胜利。&lt;/p&gt;
+&lt;p&gt;既然是计算，免不了要知道各种计算
+    
+    </summary>
+    
+    
+      <category term="Game" scheme="http://blog.yesmryang.net/tags/Game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下vim-LaTeX和Pathogen的问题</title>
+    <link href="http://blog.yesmryang.net/pathogen-vim-latex/"/>
+    <id>http://blog.yesmryang.net/pathogen-vim-latex/</id>
+    <published>2013-12-31T08:14:52.000Z</published>
+    <updated>2014-08-28T10:05:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>很久都没有写博客了，不知道还有人看不。</p>
+<p>很久以前，升级vim插件里的vim-LaTeX，突然发现Windows下无法编译任何的tex文件，反复报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">Error detected while processing function Tex_RunLaTeX:</div><div class="line">line 7:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E15: Invalid expression: s:target</div><div class="line">line 10:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 12:</div><div class="line">E121: Undefined variable: s:target</div><div class="line">E116: Invalid arguments for function Tex_GetVarValue(&apos;Tex_FormatDependency\_&apos;.s:target) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_GetVarValue(&apos;Tex_FormatDependency_&apos;.s:target) != &apos;&apos;</div><div class="line">line 21:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Debug</div><div class="line">line 25:</div><div class="line">E121: Undefined variable: dependency</div><div class="line">E116: Invalid arguments for function Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">E15: Invalid expression: Tex_Strntok(dependency, &apos;,&apos;, i) != &apos;&apos;</div><div class="line">line 51:</div><div class="line">E121: Undefined variable: initTarget</div><div class="line">E15: Invalid expression: initTarget</div></pre></td></tr></table></figure>
+<p>然后也报错没有TCLevel这个命令，但是我在OSX下用是好的，所以就没管，只是没有在Windows下写TeX而已。</p>
+<p>昨天才发现是这样的，不知道从哪个版本开始，vim-latex套件里面多了一个compiler文件夹，里面有一个tex.vim文件，按照官方的说法，这个文件夹应该是拷贝到你的vimfiles里面的。照理说pathogen应该是可以管理的，问题就在于Windows下，Vim的安装文件夹/compiler里面也有一个tex.vim，不知道是调用先后顺序还是怎样，Windows不会载入vim-latex里面的这个tex.vim，而是载入Vim自带的那个，所以……</p>
+<p>解决方法就很简单了，把自带的那个tex.vim删了就行，一切变得正常</p>
+<p>祝大家新年快乐！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很久都没有写博客了，不知道还有人看不。&lt;/p&gt;
+&lt;p&gt;很久以前，升级vim插件里的vim-LaTeX，突然发现Windows下无法编译任何的tex文件，反复报错&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
+    
+    </summary>
+    
+    
+      <category term="Vim" scheme="http://blog.yesmryang.net/tags/Vim/"/>
+    
+      <category term="LaTeX" scheme="http://blog.yesmryang.net/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Listary——给DOpus和Everything搭个桥</title>
+    <link href="http://blog.yesmryang.net/listary-everything-do/"/>
+    <id>http://blog.yesmryang.net/listary-everything-do/</id>
+    <published>2013-03-27T03:17:02.000Z</published>
+    <updated>2013-12-31T08:33:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的<a href="http://blog.yesmryang.net/do-everything/">解决方法</a>，但是毕竟是一种硬编码的形式，路径什么的一旦不对就没法使用，现在好了，Listary的最新beta版本支持DOpus的beta版本，并且可以直接调用everything的搜索结果，让DOpus-Listary-Everything构成了强大的文件管理工具链。</p>
+<ul>
+<li>Listary beta版下载地址 <a href="http://www.listary.com/download/beta/ListaryBeta1180.exe" target="_blank" rel="external">http://www.listary.com/download/beta/ListaryBeta1180.exe</a></li>
+<li>Directory Opus beta版下载地址 <a href="http://blog.dopus.com/2013/03/directory-opus-10505-beta.html" target="_blank" rel="external">http://blog.dopus.com/2013/03/directory-opus-10505-beta.html</a></li>
+</ul>
+<h1 id="Listary设置"><a href="#Listary设置" class="headerlink" title="Listary设置"></a>Listary设置</h1><p>安装好之后，我做的设置是：</p>
+<ul>
+<li>搜索-磁盘搜索中，使用Everything</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e346hxak10g.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置里面，Directory Opus关闭「查找你键入的内容」（Find-As-You-Type）选项，这样是为了不和DOpus自己的Find-As-You-Type功能冲突</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e346i4842eg.gif" width="500"></p>
+<ul>
+<li>窗口类型独立设置-Desktop，关闭「鼠标在空白区域弹出Listary快捷菜单」，以免和DOpus的双击唤出冲突。</li>
+</ul>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e346ib00rjg.gif" width="500"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="从桌面搜索"><a href="#从桌面搜索" class="headerlink" title="从桌面搜索"></a>从桌面搜索</h2><p>只要焦点在桌面，只要开始输入就是在桌面内查找你输入的内容</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e3478o3f2eg.gif" width="500"></p>
+<p>以「&gt;」开始的搜索则是全局搜索</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e3478w1pw4g.gif" width="500"></p>
+<h2 id="在DOpus里搜索"><a href="#在DOpus里搜索" class="headerlink" title="在DOpus里搜索"></a>在DOpus里搜索</h2><p>按Win+s或者鼠标中键，打开Listary工具栏，同样，在当前路径下查找你输入的内容，如果输入以「&gt;」开头，则是全局搜索</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347bscrqug.gif" width="500"></p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e347c351kjg.gif" width="500"></p>
+<h2 id="在文件打开菜单中"><a href="#在文件打开菜单中" class="headerlink" title="在文件打开菜单中"></a>在文件打开菜单中</h2><p>比如在Gmail里面点击「添加附件」，在「打开文件」对话框下面就会有Listary的工具栏，在这里输入的任何内容都是搜索，用「&gt;」开头的都是全局搜索，如果焦点不在Listary上的话，按Win+s聚焦到Listary的对话框上。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e347956gjwg.gif" width="500"></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>Listary支持搜索的时候用拼音首字母查询，弥补了DOpus的不足，不过如果你使用的是Everything的引擎，则全局搜索的时候就没法用拼音首字母了。</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e34d1qo4z0g.gif" width="500"></p>
+<p>Listary和TC可以更好的集成使用，就是在上述「打开文件」对话框中按Win+o可以打开一个TC标签，然后在此TC标签中进行操作，选中文件后再按Win+o，选中文件的路径就通过TC传给Listary然后传给「打开文件」的对话框了，这样在「打开文件」也可以使用TC进行操作。详见<a href="http://xbeta.info/tc-listary.htm" target="_blank" rel="external">Listary+TC: 提高效率，取代传统低效的”打开/保存”对话框 | 善用佳软</a>。然而现在对DOpus还没有Win+o支持，不过作者说这已经在他的开发计划之内了。</p>
+<p>另外，Listary Pro现在正在以50人民币的优惠价进行销售，我本身这个软件用得不多，Pro版的介绍和购买详情也请移步善用佳软大哥的文章<a href="http://xbeta.info/listary4.htm" target="_blank" rel="external">Listary:搜索增强软件，新版v4发布(赠Pro许可+优惠销售) | 善用佳软</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;尽管Directory Opus很好用了，但是一直以来的问题就是他没法和everything这一超强的搜索引擎结合起来，尽管之前我也翻译过DOpus论坛上的&lt;a href=&quot;http://blog.yesmryang.net/do-everything/&quot;&gt;解决方法&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="DOpus" scheme="http://blog.yesmryang.net/tags/DOpus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DOpus 10.5 更新日志</title>
+    <link href="http://blog.yesmryang.net/dopus-10-5/"/>
+    <id>http://blog.yesmryang.net/dopus-10-5/</id>
+    <published>2013-02-05T03:09:34.000Z</published>
+    <updated>2013-12-31T08:33:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译</p>
+<h1 id="Windows-8"><a href="#Windows-8" class="headerlink" title="Windows 8"></a>Windows 8</h1><p>已官方支持Windows 8，以下问题已解决</p>
+<ul>
+<li>双击文件启动的只是桌面程序，而不是Metro程序</li>
+<li>双击未知格式文件不再打开同步中心</li>
+<li>打开新列表窗的快捷键改为Win+Shift+E，Win+O不再生效</li>
+<li>「复制文件路径」功能正常</li>
+</ul>
+<h1 id="原生支持MTP设备"><a href="#原生支持MTP设备" class="headerlink" title="原生支持MTP设备"></a>原生支持MTP设备</h1><p>本版本开始原生支持MTP（Media Transfer Protocol）设备，MTP设备在DOpus里面以mtp://语法打开，现在在「计算机」里面可以看到已经连接的MTP设备并双击可以打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0lx8i9g.gif" width="500"></p>
+<h1 id="标签群组可分别设置左右栏"><a href="#标签群组可分别设置左右栏" class="headerlink" title="标签群组可分别设置左右栏"></a>标签群组可分别设置左右栏</h1><p>现在标签群组里面新增一个选项「特定边框」（Specific Sides，这里中文译得不好）可以制定组中的标签是在左栏还是右栏打开</p>
+<p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if0rwkm7g.gif" width="500"></p>
+<p>当勾选这一选项后，其左边的按钮可以用来将标签从左边移动到右边或者反过来</p>
+<p>标签栏的右键菜单新增「Save Both Sides，保存两者」（中文还是没译好）命令，可以将目前打开的标签按照分栏保存成标签群组。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if0ysnimg.gif" width="500"></p>
+<h1 id="标签组管理"><a href="#标签组管理" class="headerlink" title="标签组管理"></a>标签组管理</h1><p>「首选项-文件夹标签-标签群组」中可以用文件夹来管理，只需要点击「新建文件夹」按钮并拖拽。 另外也新增一个「标记为隐藏」按钮。一旦一个标签群组被标记为隐藏，它就不会出现在标签栏右键菜单中。</p>
+<h1 id="可链接标签"><a href="#可链接标签" class="headerlink" title="可链接标签"></a>可链接标签</h1><p>在双栏视图中，可以将左右的标签页链接起来，点击已链接标签中的一个，在另一栏会自动跳到和它链接的那个标签。同时最多设置8对链接标签页。已链接标签会用不同颜色标识，该颜色可在首选项中修改。</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1381lng.gif" width="500"></p>
+<p>已链接标签可选择为「Slave Tab, 附属模式」。一旦设置为附属模式，该标签的内容会和它的链接标签保持一致。附属模式的标签会变成斜体。附属模式的设置和取消在标签栏的右键菜单中。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if17onisg.gif" width="500"></p>
+<p>首选项-文件夹标签-标签群组的编辑中也可以设置链接标签</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e1if1fmw9kg.gif" width="500"></p>
+<p>链接标签的快捷键：</p>
+<ul>
+<li>Ctrl+点击：设置/取消到当前标签的链接</li>
+<li>Ctrl+Shift+点击：设置/取消到当前标签的附属模式链接</li>
+<li>Shift+点击：在另一栏中不跳转到链接的标签</li>
+</ul>
+<h1 id="列表窗样式使用标签群组"><a href="#列表窗样式使用标签群组" class="headerlink" title="列表窗样式使用标签群组"></a>列表窗样式使用标签群组</h1><p>在列表窗样式中，之前是可以分别定义左右栏的标签，现在该功能用标签群组代替。</p>
+<h1 id="标签外观改进"><a href="#标签外观改进" class="headerlink" title="标签外观改进"></a>标签外观改进</h1><p><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if1k8dajg.gif"><br><img src="http://ww3.sinaimg.cn/large/640a227egw1e1if8vv3wtg.gif"></p>
+<h1 id="标签栏改进"><a href="#标签栏改进" class="headerlink" title="标签栏改进"></a>标签栏改进</h1><ul>
+<li>「首选项-文件夹标签」新增外观页</li>
+<li>「首选项-文件夹标签-选项」，新增「点击列表窗关闭按钮时只关闭活动标签」（而不是关闭整个列表窗），「显示新标签按钮」「在当前标签旁打开新标签」以及「当标签减少时显示菜单」</li>
+<li>把一个标签拖到桌面可以打开一个新的列表窗</li>
+<li>直到鼠标按键释放才激活标签（就是你拖动标签的时候不会马上切换过去）</li>
+<li>鼠标中键可以关闭标签（就是按滚轮），双击标签也可以（需要在「首选项-文件夹标签-选项」中设置）</li>
+<li>「首选项-文件夹树-选择事件」新增「切换至现有标签」选项，选中后在文件夹树里面点击一个已经在标签中打开的文件夹的时候会切换到该标签，而不是在当前标签打开这个文件夹。</li>
+</ul>
+<h1 id="即时查找可以切换标签"><a href="#即时查找可以切换标签" class="headerlink" title="即时查找可以切换标签"></a>即时查找可以切换标签</h1><p>快捷键是「@」，可以在「首选项-列表窗-即时查找」中修改<br>在使用即时查找切换标签时，会弹出符合描述的标签列表，匹配的是路径和标签标题</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1otz9wg.gif" width="500"></p>
+<h1 id="文件夹树高亮当前文件夹路径"><a href="#文件夹树高亮当前文件夹路径" class="headerlink" title="文件夹树高亮当前文件夹路径"></a>文件夹树高亮当前文件夹路径</h1><p>在「首选项-文件夹树-高亮显示所选文件夹的路径」中设置。勾选「高亮显示当前所有打开的标签」后非活动标签的高亮颜色较淡</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1e1ifdghttug.gif"><br><img src="http://ww1.sinaimg.cn/large/640a227egw1e1if1ufpl2g.gif"></p>
+<h1 id="群组栏"><a href="#群组栏" class="headerlink" title="群组栏"></a>群组栏</h1><p>当文件以群组方式显示时，可以显示一个群组栏，在「首选项-文件夹-文件夹显示-当文件被分组时自动添加‘群组’栏」，群组栏的颜色和宽度可在首选项中设置。</p>
+<p><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if36d30cg.gif"><br><img src="http://ww2.sinaimg.cn/large/640a227egw1e1if3znul4g.gif"></p>
+<h1 id="Ctrl-滚轮可以调整字体和缩略图大小"><a href="#Ctrl-滚轮可以调整字体和缩略图大小" class="headerlink" title="Ctrl+滚轮可以调整字体和缩略图大小"></a>Ctrl+滚轮可以调整字体和缩略图大小</h1><ul>
+<li>在缩略图中，可以调整缩略图尺寸</li>
+<li>在详细信息或者加强模式视图中，可以调整字体大小</li>
+</ul>
+<h1 id="列表窗可以自定义标题"><a href="#列表窗可以自定义标题" class="headerlink" title="列表窗可以自定义标题"></a>列表窗可以自定义标题</h1><p>在「首选项-显示-选项」中，可以自定义列表窗标题栏，其中可以用到几个特殊控制字</p>
+<ul>
+<li>%P 当前文件夹完整路径</li>
+<li>%N 当前文件夹名</li>
+<li>%R 当前文件夹根目录</li>
+<li>%D 当前目标文件夹完整路径</li>
+<li>%M 当前目标文件夹名</li>
+<li>%L 当前列表窗布局名</li>
+<li>%T 最初标题</li>
+</ul>
+<p>%P，%N和%R还可以在给标签命名的时候使用</p>
+<h1 id="其他改进和bug-fix"><a href="#其他改进和bug-fix" class="headerlink" title="其他改进和bug fix"></a>其他改进和bug fix</h1><p>（略）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2013年1月31日，Directory Opus稳定版升级到了10.5.0.0，以下是升级日志的大致翻译&lt;/p&gt;
+&lt;h1 id=&quot;Windows-8&quot;&gt;&lt;a href=&quot;#Windows-8&quot; class=&quot;headerlink&quot; title=&quot;Windows 8&quot;&gt;&lt;/
+    
+    </summary>
+    
+    
+      <category term="DOpus" scheme="http://blog.yesmryang.net/tags/DOpus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在AWS上搭建shadowsocks-nodejs环境并搭配obfsproxy使用</title>
+    <link href="http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/"/>
+    <id>http://blog.yesmryang.net/shadowsocks-nodejs-obfsproxy-aws/</id>
+    <published>2013-01-20T13:56:17.000Z</published>
+    <updated>2014-08-28T10:08:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文作者为<a href="https://twitter.com/unclepulp" target="_blank" rel="external">unclepulp</a>，感谢赐稿</p>
+<p>本文服务端为Amazon Linux AMI 2012.09（32bit），客户端为Windows7。</p>
+<p>Amazon AWS的注册、EC2的开通（电话验证如不成功，可用Google voice验证）以及实例的启用请参考<a href="http://yinhm.appspot.com/2010/10/amazon-ec2-micro-instance-and-tunnel-guide" target="_blank" rel="external">Amazon AWS 漫游指南</a>。</p>
+<p>首先使用PuTTY登录EC2，然后输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo su</div></pre></td></tr></table></figure></p>
+<p>为避免部署的过程中出现网络中断的情况，可使用<code>screen</code>命令创建一个会话（<code>screen</code>命令的使用请参考<a href="http://www.vpser.net/manage/screen.html" target="_blank" rel="external">SSH远程会话管理工具 - screen使用教程</a>）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">screen -S nodejs</div></pre></td></tr></table></figure></p>
+<p>接着更新一下系统：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum update</div></pre></td></tr></table></figure></p>
+<h2 id="部署服务端"><a href="#部署服务端" class="headerlink" title="部署服务端"></a>部署服务端</h2><h3 id="部署shadowsocks-nodejs"><a href="#部署shadowsocks-nodejs" class="headerlink" title="部署shadowsocks-nodejs"></a>部署shadowsocks-nodejs</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">mkdir tmp</div><div class="line">cd tmp</div><div class="line">yum install git</div><div class="line">git clone https://github.com/clowwindy/shadowsocks-nodejs.git</div><div class="line">cd shadowsocks-nodejs</div><div class="line">vi config.json</div></pre></td></tr></table></figure>
+<p>按<code>i</code>开始修改，修改<code>server_port</code>（如12345）和<code>password</code>。修改好后按<code>ESC</code>，然后输入 <code>:wq</code> 保存退出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ..</div><div class="line">mkdir /var/shadowsocks</div><div class="line">cp shadowsocks-nodejs/ /var/shadowsocks -r</div></pre></td></tr></table></figure></p>
+<h3 id="安装并部署nodejs"><a href="#安装并部署nodejs" class="headerlink" title="安装并部署nodejs"></a>安装并部署nodejs</h3><p>nodejs最新版可以在<a href="http://nodejs.org/download/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">wget http://nodejs.org/dist/v0.8.18/node-v0.8.18-linux-x86.tar.gz</div><div class="line">tar zfvx node-v0.8.18-linux-x86.tar.gz</div><div class="line">cp node-v0.8.18-linux-x86/bin/node /usr/bin/</div><div class="line">echo &quot;(node /var/shadowsocks/server.js &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div></pre></td></tr></table></figure></p>
+<h3 id="部署obfsproxy"><a href="#部署obfsproxy" class="headerlink" title="部署obfsproxy"></a>部署obfsproxy</h3><h4 id="安装obfsproxy支持环境"><a href="#安装obfsproxy支持环境" class="headerlink" title="安装obfsproxy支持环境"></a>安装obfsproxy支持环境</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install autoconf automake gcc make openssl-devel pkgconfig</div></pre></td></tr></table></figure>
+<h4 id="安装libevent2"><a href="#安装libevent2" class="headerlink" title="安装libevent2"></a>安装libevent2</h4><p>libevent2最新版本可在<a href="http://libevent.org/" target="_blank" rel="external">官网</a>获取<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz</div><div class="line">tar zfvx libevent-2.0.21-stable.tar.gz</div><div class="line">cd libevent-2.0.21-stable</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cd ..</div></pre></td></tr></table></figure></p>
+<h4 id="安装并配置obfsproxy"><a href="#安装并配置obfsproxy" class="headerlink" title="安装并配置obfsproxy"></a>安装并配置obfsproxy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">git clone https://git.torproject.org/obfsproxy.git</div><div class="line">cd obfsproxy</div><div class="line">export libevent_CFLAGS=-I/usr/local/include</div><div class="line">export libevent_LIBS=&quot;-L/usr/local/lib -levent&quot;</div><div class="line">export LD_LIBRARY_PATH=/usr/local/lib/</div><div class="line">./autogen.sh</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">cp /usr/local/lib/libevent-2.0.so.5 /usr/lib/</div><div class="line">cd ..</div><div class="line">echo &quot;(/usr/local/bin/obfsproxy obfs2 --dest=127.0.0.1:12345 server 0.0.0.0:54321 &gt;/dev/null 2&gt;&amp;1 &amp;)&quot; &gt;&gt; /etc/rc.local</div><div class="line">iptables -A INPUT -p tcp --dport 54321 -j ACCEPT</div><div class="line">yum install policycoreutils</div><div class="line">service iptables save</div><div class="line">service iptables restart</div><div class="line">exit</div><div class="line">exit</div><div class="line">exit</div></pre></td></tr></table></figure>
+<p>此处端口12345为shadowsocks-nodejs的<code>server_port</code>，54321为obfsproxy 负责接收和发送混杂数据的端口。</p>
+<p>然后请参考<a href="http://yinhm.appspot.com/2010/11/amazon-ec2-tunnel-guide-part-three-vpn" target="_blank" rel="external">Amazon AWS 漫游指南三：VPN</a>一文里的防火墙设置，并将12345和54321两个端口添加一下，添加好后重启实例。</p>
+<hr>
+<h2 id="部署客户端"><a href="#部署客户端" class="headerlink" title="部署客户端"></a>部署客户端</h2><ol>
+<li><p>从<a href="https://www.torproject.org/projects/obfsproxy.html.en" target="_blank" rel="external">tor官网</a>下载含Obfsproxy的Tor包，此包是自解压包，将解压后得到的APP目录中的所有文件拷贝到一个合适的目录，如D:\nodejs</p>
+</li>
+<li><p>从<a href="http://nodejs.org/download/" target="_blank" rel="external">nodejs官网</a>下载node Windows包，下载得到node.exe直接拷贝到D:\nodejs</p>
+</li>
+<li><p>访问<a href="https://github.com/clowwindy/shadowsocks-nodejs" target="_blank" rel="external">shadowsocks-nodejs</a>项目主页，点击界面中的zip，下载得到一个zip包，解压后将shadowsocks-nodejs-master目录中的所有文件全部拷贝至D:\nodejs</p>
+</li>
+<li><p>编辑config.json，将<code>password</code>修改为之前制定的密码，其它无需修改。</p>
+</li>
+<li><p>在D:\nodejs目录中新建一个文件，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">START node.exe local.js</div><div class="line">START obfsproxy obfs2 –dest=111.111.111.111:54321 client 127.0.0.1:8388</div><div class="line">EXIT</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中111.111.111.111为服务器IP地址，例如，如果Amazon EC2实例的public dns为ec2-111-111-111-111.us-west-1.compute.amazonaws.com，那么，此处的IP就填111.111.111.111。然后将文件保存为批处理文件，后缀为<code>bat</code>。</p>
+<ol>
+<li>双击该批处理文件，并将浏览器的代理设置为SOCKS5 127.0.0.1:1080 即可。</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="http://sae.chenshaoju.com/?p=14" target="_blank" rel="external">如何使用obfsproxy搭配shadowsocks-nodejs安全高效的访问互联网</a></li>
+<li><a href="http://lordong.me/wp/post/1448.html" target="_blank" rel="external">自建obfsproxy的速度还不错</a></li>
+<li><a href="https://gist.github.com/1802068" target="_blank" rel="external">Tor with obfsproxy on Amazon’s AMI</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文作者为&lt;a href=&quot;https://twitter.com/unclepulp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;unclepulp&lt;/a&gt;，感谢赐稿&lt;/p&gt;
+&lt;p&gt;本文服务端为Amazon Linux AMI 2012.09（32bi
+    
+    </summary>
+    
+    
+      <category term="GFW" scheme="http://blog.yesmryang.net/tags/GFW/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>鼠须管里使用颜文字</title>
+    <link href="http://blog.yesmryang.net/rime-kaomoji/"/>
+    <id>http://blog.yesmryang.net/rime-kaomoji/</id>
+    <published>2013-01-19T07:07:54.000Z</published>
+    <updated>2014-08-28T09:56:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>综合参考官方文档和<a href="https://gist.github.com/3848421" target="_blank" rel="external">这个教程</a>。鼠须管里使用颜文字步骤如下，设置目录为<code>~/Library/Rime</code></p>
+<h3 id="新增一个输入法"><a href="#新增一个输入法" class="headerlink" title="新增一个输入法"></a>新增一个输入法</h3><p>在<code>default.custom.yaml</code>里面添加patch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line"> schema_list:</div><div class="line">  - schema: kaomoji</div></pre></td></tr></table></figure>
+<h3 id="编辑颜文字输入法"><a href="#编辑颜文字输入法" class="headerlink" title="编辑颜文字输入法"></a>编辑颜文字输入法</h3><p>新建<code>kaomoji.schema.yaml</code>文件，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">schema:</div><div class="line">  schema_id: kaomoji</div><div class="line">  name: kaomoji</div><div class="line"></div><div class="line">engine:</div><div class="line">  processors:</div><div class="line">    - key_binder</div><div class="line">    - speller</div><div class="line">    - selector</div><div class="line">    - navigator</div><div class="line">    - express_editor</div><div class="line">  segmentors:</div><div class="line">    - abc_segmentor</div><div class="line">    - fallback_segmentor</div><div class="line">  translators:</div><div class="line">    - r10n_translator</div><div class="line">  filters:</div><div class="line">    - uniquifier</div><div class="line"></div><div class="line">translator:</div><div class="line">  dictionary: kaomoji</div><div class="line">  spelling_hints: 1</div><div class="line"></div><div class="line">key_binder:</div><div class="line">  import_preset: default</div><div class="line"></div><div class="line">speller:</div><div class="line">  alphabet: zyxwvutsrqponmlkjihgfedcba</div><div class="line">  delimiter: &quot; ;&apos;&quot;</div><div class="line">  algebra:</div><div class="line">    - &quot;derive/^.+$/all/&quot;</div></pre></td></tr></table></figure>
+<h3 id="编辑词库"><a href="#编辑词库" class="headerlink" title="编辑词库"></a>编辑词库</h3><p>新建<code>kaomoji.dict.yaml</code>文件，建立颜文字词库，文件格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">name: kaomoji</div><div class="line">version: &quot;0.1&quot;</div><div class="line">sort: origin</div><div class="line"></div><div class="line">颜文字1[TAB键]输入码1</div><div class="line">颜文字2[TAB键]输入码2</div></pre></td></tr></table></figure>
+<p>例如</p>
+<pre><code>d=====(￣▽￣*)b [顶!]    ding
+</code></pre><h3 id="在当前输入法中使用颜文字"><a href="#在当前输入法中使用颜文字" class="headerlink" title="在当前输入法中使用颜文字"></a>在当前输入法中使用颜文字</h3><p>修改你输入法的<code>*.schema.custom.yaml</code>文件，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">patch:</div><div class="line">  schema/dependencies:</div><div class="line">    - kaomoji</div><div class="line">  abc_segmentor/extra_tags:</div><div class="line">    - reverse_lookup</div><div class="line">  reverse_lookup:</div><div class="line">    dictionary: kaomoji</div><div class="line">    enable_completion: false</div><div class="line">    prefix: &quot;`&quot;</div><div class="line">    tips: &quot;[颜文字]&quot;</div></pre></td></tr></table></figure>
+<h3 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h3><p>重新部署鼠须管即可生效</p>
+<p>注意此时文件夹内应该多出来<code>kaomoji.table.bin</code>, <code>kaomoji.reverse.bin</code>及<code>kaomoji.prism.bin</code>三个文件</p>
+<p>截图</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1e0ywvjg9ysg.gif" width="500"></p>
+<h3 id="颜文字整理下载"><a href="#颜文字整理下载" class="headerlink" title="颜文字整理下载"></a>颜文字整理下载</h3><ul>
+<li><a href="https://github.com/hitigon/meow-emoji-rime" target="_blank" rel="external">https://github.com/hitigon/meow-emoji-rime</a></li>
+<li><a href="https://gist.github.com/3848421" target="_blank" rel="external">https://gist.github.com/3848421</a></li>
+<li><a href="http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt" target="_blank" rel="external">http://code.google.com/p/houkanshantest/downloads/detail?name=yanwenzi.txt</a> 请删除里面包括…的颜文字行，会导致编译错误</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;综合参考官方文档和&lt;a href=&quot;https://gist.github.com/3848421&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这个教程&lt;/a&gt;。鼠须管里使用颜文字步骤如下，设置目录为&lt;code&gt;~/Library/Rime&lt;/code&gt;
+    
+    </summary>
+    
+    
+      <category term="Rime" scheme="http://blog.yesmryang.net/tags/Rime/"/>
+    
+      <category term="Mac" scheme="http://blog.yesmryang.net/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Snipmate在Windows下和pathogen的兼容问题</title>
+    <link href="http://blog.yesmryang.net/pathogen-snipmate-windows/"/>
+    <id>http://blog.yesmryang.net/pathogen-snipmate-windows/</id>
+    <published>2013-01-15T08:49:19.000Z</published>
+    <updated>2014-08-28T10:09:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在Windows台式机上写LaTeX的时候忽然发现怎么Snipmate不好使了，Tab键都要被按烂了居然还不能补全，但是OSX上用又是好的。</p>
+<p>Google了各种关键字，都没有能直接解决问题的。StackOverflow和superuser上的问题更多的是关于如何载入自定义的代码段。</p>
+<p>后来把Snipmate直接拷贝到Vim的安装文件夹下面，改名vimfiles，发现是可以用的，再结合googlecode上的一个issue，发现是snipmate/after这个文件夹pathogen没有载入，估计是不符合vim插件的通常结构。</p>
+<p>于是解决方法很简单了，在.vimrc文件中加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set runtime+=~/.vim/bundle/snipmate/after</div></pre></td></tr></table></figure></p>
+<p>因为我环境变量里面有$HOME，所以就可以用~来代替个人文件夹了</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在Windows台式机上写LaTeX的时候忽然发现怎么Snipmate不好使了，Tab键都要被按烂了居然还不能补全，但是OSX上用又是好的。&lt;/p&gt;
+&lt;p&gt;Google了各种关键字，都没有能直接解决问题的。StackOverflow和superuser上的问题更多的是关
+    
+    </summary>
+    
+    
+      <category term="Vim" scheme="http://blog.yesmryang.net/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vimflowy: workflowy的vim实现</title>
+    <link href="http://blog.yesmryang.net/vimflowy/"/>
+    <id>http://blog.yesmryang.net/vimflowy/</id>
+    <published>2012-12-13T07:19:00.000Z</published>
+    <updated>2013-01-19T07:50:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在很早一篇<a href="http://blog.yesmryang.net/gtd-as-twittering/">《像发微博一样做GTD》</a>里面，我提到可以在Vim里面实现workflowy的功能。经过参考 Vimoutliner 和 VimOrganizer，我自己做了一个vim插件，可以实现workflowy的大部分功能。同时因为是基于纯文本的，随便扔一个网盘就可以同步了，移动设备上也可以方便的查看。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul>
+<li>大纲列表，用缩进表示层级，TAB键可以切换展开/折叠</li>
+<li>#和@关键字高亮和过滤</li>
+<li>标记完成功能</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>项目主页在 <a href="http://www.github.com/laoyang945/vimflowy" target="_blank" rel="external">http://www.github.com/laoyang945/vimflowy</a></p>
+<p>安装只需要把文件拷贝到pathogen设定的插件目录即可</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>用vim打开后缀为otl的文本文件后，插件就自动加载了。使用方法和workflowy基本相同，都是使用缩进来标记大纲层次，用冒号或者分号来标记补充内容。由于是基于vim的，对快捷键的支持当然是必须的</p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>[normal],,N(N=0~9): 所有条目展开到第N级，当N=0的时候表示全部展开</li>
+<li>[normal],,dn: 标记当前节点及其所有子节点完成，并附加完成时间</li>
+<li>[normal]zs: 显示所有含有光标下单词的条目（不包括补充内容）</li>
+<li>[normal]zn: 和,,0的效果一样</li>
+<li>[normal &amp; insert],,d: 插入日期</li>
+<li>[normal &amp; insert],,t: 插入时间</li>
+</ul>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p>大纲，折叠，关键字和标记完成</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gk9zh4g.gif" width="500"></p>
+<p>文本过滤</p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dzs3gdvk7ng.gif" width="500"></p>
+<p>欢迎各位Vimer和GTDer使用并提出意见和建议。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在很早一篇&lt;a href=&quot;http://blog.yesmryang.net/gtd-as-twittering/&quot;&gt;《像发微博一样做GTD》&lt;/a&gt;里面，我提到可以在Vim里面实现workflowy的功能。经过参考 Vimoutliner 和 VimOrganizer，
+    
+    </summary>
+    
+    
+      <category term="Vim" scheme="http://blog.yesmryang.net/tags/Vim/"/>
+    
+      <category term="GTD" scheme="http://blog.yesmryang.net/tags/GTD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Dropbox（或者其他网盘）同步Zotero需要注意的事项</title>
+    <link href="http://blog.yesmryang.net/zotero-dropbox-sync/"/>
+    <id>http://blog.yesmryang.net/zotero-dropbox-sync/</id>
+    <published>2012-12-12T10:16:00.000Z</published>
+    <updated>2014-08-28T10:09:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道像我一样有两台电脑，又是zotero的忠实粉丝的人多不多。这种情况下就需要保持两台电脑上zotero数据的同步，免得在台式机上添加的文献后来在笔记本上看不了。</p>
+<p>但是如果你只是简单的在zotero的设置-高级选项里面将zotero的文件夹放到dropbox（或者其他网盘）里面的话，你可能会遇到一个很大的问题：zotero.sqlite文件，就是zotero的数据库文件里面的数据会不完整，或者你发现在zotoro的数据文件夹里面有一堆的conflict文件，如果你的zotero.sqlite文件有数十兆的话，二三十个冲突文件就能有快1G的容量了。</p>
+<p>这个问题的原因是，zotero.sqlite在打开的时候会被zotero锁定，此时Dropbox就认为这个文件已经有了修改，经过<strong>二进制对比</strong>，Dropbox会把修改部分上传并同步。如果两台电脑同时打开zotero/firefox的话，Dropbox会认为两边都是在更新这个文件，于是他会把对应修改的<strong>二进制文件</strong>合并到一块去，如果不能合并到一块去的话就生成冲突文件，在这个过程中很有可能就造成数据库文件的损坏（回想一下数据库课程里面是怎么说的）。因为这个原因，我一直避免同时打开两台电脑上的firefox。</p>
+<p>昨天稍微研究了一下，这个问题还是挺容易解决的。其实只需要让zotero自己提供的网络同步功能同步<strong>数据库文件</strong>即可，然后存储在zotero里面的附件文件夹用符号链接的方式放到Dropbox目录里就可以了，这样把数据库和外部附件分开，以免Dropbox去处理zotero.sqlite。</p>
+<p>具体的操作就是先把Zotero从Dropbox里面移出并在Firefox里面设置好，然后在Mac终端里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s Zotero目录/storage Dropbox目录/zotero/storage</div></pre></td></tr></table></figure></p>
+<p>或者在Windows下，打开命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mklink /D Zotero目录/storage Dropbox目录/zotero/storage</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知道像我一样有两台电脑，又是zotero的忠实粉丝的人多不多。这种情况下就需要保持两台电脑上zotero数据的同步，免得在台式机上添加的文献后来在笔记本上看不了。&lt;/p&gt;
+&lt;p&gt;但是如果你只是简单的在zotero的设置-高级选项里面将zotero的文件夹放到dropbox
+    
+    </summary>
+    
+    
+      <category term="Zotero" scheme="http://blog.yesmryang.net/tags/Zotero/"/>
+    
+      <category term="Dropbox" scheme="http://blog.yesmryang.net/tags/Dropbox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac用户文件夹移动后恢复默认图标</title>
+    <link href="http://blog.yesmryang.net/change-icon-of-user-dic/"/>
+    <id>http://blog.yesmryang.net/change-icon-of-user-dic/</id>
+    <published>2012-11-15T06:26:00.000Z</published>
+    <updated>2013-01-09T04:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>很多人把MBP里面的光驱拆掉换成SSD+HDD的搭配，然后把个人文件夹中的一部分，比如音乐或者视频，放到HDD里面去，然后用软链接链回来。这样做的问题就是，这些文件夹没有特定的图标了。</p>
+<p>如果想要把图标找回来，其实也挺简单，只需要在<code>/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources</code>下找到对应的icns文件，打开icns文件并复制其中某个分辨率的图标图像，然后在文件夹上右键选择<code>Get Info</code>，在新窗口点一下左上角的图标，然后粘贴即可。</p>
+<p>有一个挺好使的免费软件Candybar（最近才免费的），可以替换系统图标，但是我并不是想替换系统默认的图标只是要使用默认图标而已。</p>
+<p>至于侧边栏的图标，找了一圈没有什么好的方法，只有用XtraFinder开启彩色模式才能显示文件夹的图标。</p>
+<p>最终的效果</p>
+<p><img src="http://ww4.sinaimg.cn/large/640a227egw1dyvqqshc69g.gif" width="500"></p>
+<p><img src="http://ww1.sinaimg.cn/large/640a227egw1dyvqqzv0pkg.gif"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很多人把MBP里面的光驱拆掉换成SSD+HDD的搭配，然后把个人文件夹中的一部分，比如音乐或者视频，放到HDD里面去，然后用软链接链回来。这样做的问题就是，这些文件夹没有特定的图标了。&lt;/p&gt;
+&lt;p&gt;如果想要把图标找回来，其实也挺简单，只需要在&lt;code&gt;/System/L
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://blog.yesmryang.net/tags/mac/"/>
+    
+  </entry>
+  
+</feed>
